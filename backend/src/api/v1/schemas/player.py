@@ -12,12 +12,14 @@ class PlayerBase(BaseModel):
     name: str = Field(..., description="玩家名字")
     role: str = Field(..., description="角色: Villager, Werewolf, Seer, Doctor")
     model: str = Field(..., description="使用的LLM模型ID")
+    avatar: Optional[str] = Field(None, description="玩家头像URL")
 
 
 class PlayerDetail(PlayerBase):
     """玩家详细信息"""
     alive: bool = Field(True, description="是否存活")
     observations: List[str] = Field(default_factory=list, description="观察记录")
+    reasoning: Optional[str] = Field(None, description="玩家推理信息")
 
 
 class PlayerAction(BaseModel):
@@ -51,7 +53,9 @@ class PlayerResponse(BaseModel):
                     "role": "Seer",
                     "model": "glm/GLM-Z1-Flash",
                     "alive": True,
-                    "observations": ["Round 1: Bob is a Werewolf"]
+                    "observations": ["Round 1: Bob is a Werewolf"],
+                    "avatar": "https://example.com/avatars/alice.png",
+                    "reasoning": "I think Bob might be suspicious based on his behavior."
                 },
                 "actions": []
             }

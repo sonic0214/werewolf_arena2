@@ -113,11 +113,13 @@ class Player(Deserializable):
         role: str,
         model: Optional[str] = None,
         personality: Optional[str] = "",
+        avatar: Optional[str] = None,
     ):
         self.name = name
         self.role = role
         self.personality = personality
         self.model = model
+        self.avatar = avatar
         self.observations: List[str] = []
         self.bidding_rationale = ""
         self.gamestate: Optional[GameView] = None
@@ -281,7 +283,8 @@ class Player(Deserializable):
         name = data["name"]
         role = data["role"]
         model = data.get("model", None)
-        o = cls(name=name, role=role, model=model)
+        avatar = data.get("avatar", None)
+        o = cls(name=name, role=role, model=model, avatar=avatar)
         o.gamestate = data.get("gamestate", None)
         o.bidding_rationale = data.get("bidding_rationale", "")
         o.observations = data.get("observations", [])
@@ -296,16 +299,18 @@ class Villager(Player):
         name: str,
         model: Optional[str] = None,
         personality: Optional[str] = None,
+        avatar: Optional[str] = None,
     ):
         super().__init__(
-            name=name, role=VILLAGER, model=model, personality=personality
+            name=name, role=VILLAGER, model=model, personality=personality, avatar=avatar
         )
 
     @classmethod
     def from_json(cls, data: dict[Any, Any]):
         name = data["name"]
         model = data.get("model", None)
-        o = cls(name=name, model=model)
+        avatar = data.get("avatar", None)
+        o = cls(name=name, model=model, avatar=avatar)
         o.gamestate = data.get("gamestate", None)
         o.bidding_rationale = data.get("bidding_rationale", "")
         o.observations = data.get("observations", [])
@@ -320,9 +325,10 @@ class Werewolf(Player):
         name: str,
         model: Optional[str] = None,
         personality: Optional[str] = None,
+        avatar: Optional[str] = None,
     ):
         super().__init__(
-            name=name, role=WEREWOLF, model=model, personality=personality
+            name=name, role=WEREWOLF, model=model, personality=personality, avatar=avatar
         )
 
     def _get_game_state(self, **kwargs) -> Dict[str, Any]:
@@ -402,7 +408,8 @@ class Werewolf(Player):
     def from_json(cls, data: dict[Any, Any]):
         name = data["name"]
         model = data.get("model", None)
-        o = cls(name=name, model=model)
+        avatar = data.get("avatar", None)
+        o = cls(name=name, model=model, avatar=avatar)
         o.gamestate = data.get("gamestate", None)
         o.bidding_rationale = data.get("bidding_rationale", "")
         o.observations = data.get("observations", [])
@@ -417,8 +424,9 @@ class Seer(Player):
         name: str,
         model: Optional[str] = None,
         personality: Optional[str] = None,
+        avatar: Optional[str] = None,
     ):
-        super().__init__(name=name, role=SEER, model=model, personality=personality)
+        super().__init__(name=name, role=SEER, model=model, personality=personality, avatar=avatar)
         self.previously_unmasked: Dict[str, str] = {}
 
     def unmask(self) -> Tuple[Optional[str], LmLog]:
@@ -463,9 +471,10 @@ class Doctor(Player):
         name: str,
         model: Optional[str] = None,
         personality: Optional[str] = None,
+        avatar: Optional[str] = None,
     ):
         super().__init__(
-            name=name, role=DOCTOR, model=model, personality=personality
+            name=name, role=DOCTOR, model=model, personality=personality, avatar=avatar
         )
 
     def save(self) -> Tuple[Optional[str], LmLog]:
@@ -486,7 +495,8 @@ class Doctor(Player):
     def from_json(cls, data: dict[Any, Any]):
         name = data["name"]
         model = data.get("model", None)
-        o = cls(name=name, model=model)
+        avatar = data.get("avatar", None)
+        o = cls(name=name, model=model, avatar=avatar)
         o.gamestate = data.get("gamestate", None)
         o.bidding_rationale = data.get("bidding_rationale", "")
         o.observations = data.get("observations", [])
