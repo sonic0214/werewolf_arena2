@@ -29,6 +29,7 @@ export FRONTEND_BUILD_PATH=/app/frontend/.next/standalone
 export FRONTEND_STATIC_PATH=/app/frontend/.next/static
 
 # Launch FastAPI backend on Render's port
+# 使用 --port 参数覆盖配置文件中的默认端口
 uvicorn src.api.app:app \
   --host 0.0.0.0 \
   --port "${MAIN_PORT}" \
