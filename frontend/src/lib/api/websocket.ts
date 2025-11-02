@@ -20,7 +20,7 @@ class WebSocketClient {
   private shouldReconnect: boolean = true; // 添加是否应该重连的标志
 
   constructor(url?: string) {
-    this.url = url || process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:8000';
+    this.url = url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev';
   }
 
   // Connect to WebSocket server
