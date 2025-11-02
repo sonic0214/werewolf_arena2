@@ -65,7 +65,9 @@ class WebSocketClient {
       this.currentSessionId = sessionId;
 
       // 每次连接时都重新获取环境变量
-      const currentUrl = this.url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev';
+      // 临时硬编码以确保使用正确的URL
+      const currentUrl = 'wss://werewolf-arena-backend.fly.dev';
+      // const currentUrl = this.url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev';
       const wsUrl = `${currentUrl}/ws/${sessionId}`;
 
       // 添加调试日志
