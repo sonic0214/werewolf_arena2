@@ -20,13 +20,8 @@ class WebSocketClient {
   private shouldReconnect: boolean = true; // 添加是否应该重连的标志
 
   constructor(url?: string) {
-    // 添加调试日志
-    console.log('🔍 WebSocket环境变量调试:');
-    console.log('- process.env.NEXT_PUBLIC_WS_URL:', process.env.NEXT_PUBLIC_WS_URL);
-    console.log('- 传入的url参数:', url);
-    console.log('- 最终使用的URL:', url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev');
-
-    this.url = url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev';
+    // 初始化时不设置URL，在连接时动态获取
+    this.url = url || '';
   }
 
   // Connect to WebSocket server
@@ -68,7 +63,17 @@ class WebSocketClient {
       this.isConnecting = true;
       this.shouldReconnect = true;
       this.currentSessionId = sessionId;
-      const wsUrl = `${this.url}/ws/${sessionId}`;
+
+      // 每次连接时都重新获取环境变量
+      const currentUrl = this.url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev';
+      const wsUrl = `${currentUrl}/ws/${sessionId}`;
+
+      // 添加调试日志
+      console.log('🔍 WebSocket连接调试:');
+      console.log('- this.url (构造函数传入):', this.url);
+      console.log('- process.env.NEXT_PUBLIC_WS_URL:', process.env.NEXT_PUBLIC_WS_URL);
+      console.log('- 最终使用的WebSocket URL:', currentUrl);
+      console.log('- 完整连接URL:', wsUrl);
       const connectionId = Math.random().toString(36).substring(7);
       console.log(`[WS:${connectionId}] Connecting to ${wsUrl}`);
 
@@ -414,6 +419,7 @@ class WebSocketClient {
 
       this.reconnectTimeout = setTimeout(() => {
         if (this.currentSessionId && this.shouldReconnect) {
+          console.log('[WS] 重连前重新获取环境变量...');
           this.connect(this.currentSessionId).catch((error) => {
             console.error('[WS] Reconnection failed:', error);
           });
