@@ -9,13 +9,12 @@ import GameInfo from "@/components/GameInfo";
 import GameProgress from "@/components/GameProgress";
 import { WebSocketMessageFormatter, FormattedMessage } from "@/lib/websocket-formatter";
 import { ArrowLeft, MessageCircle, Zap, Moon, Sun, Users, Skull, Volume2, DollarSign } from "lucide-react";
+import { Player as GamePlayer } from "@/types/game";
 
-interface Player {
-  id: number;
-  name: string;
-  role: string;
-  status: "alive" | "eliminated";
+// 本地Player接口，扩展GamePlayer添加votes和avatar字段
+interface Player extends GamePlayer {
   votes: number;
+  avatar?: string;
 }
 
 const LiveGamePage = () => {

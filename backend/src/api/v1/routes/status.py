@@ -6,7 +6,7 @@ Status API Routes
 from fastapi import APIRouter
 from typing import Dict, Any
 import platform
-import psutil
+import os
 from datetime import datetime
 
 from src.config.settings import settings
@@ -34,15 +34,14 @@ async def server_info() -> Dict[str, Any]:
     服务器信息
     Get server information
     """
-    # 获取系统信息
-    cpu_percent = psutil.cpu_percent(interval=1)
-    memory = psutil.virtual_memory()
-    disk = psutil.disk_usage('/')
-
     # 获取游戏会话统计
     sessions = game_manager.get_all_sessions()
     running_games = sum(1 for s in sessions.values() if s.is_running)
     completed_games = sum(1 for s in sessions.values() if s.state.winner)
+
+    # 基本系统信息（不使用psutil）
+    import multiprocessing
+    cpu_count = multiprocessing.cpu_count()
 
     return {
         "service": {
@@ -55,19 +54,19 @@ async def server_info() -> Dict[str, Any]:
             "platform": platform.system(),
             "platform_version": platform.version(),
             "python_version": platform.python_version(),
-            "cpu_count": psutil.cpu_count(),
-            "cpu_percent": cpu_percent,
+            "cpu_count": cpu_count,
+            "cpu_percent": None,  # psutil依赖项已移除
         },
         "resources": {
             "memory": {
-                "total_mb": round(memory.total / 1024 / 1024, 2),
-                "used_mb": round(memory.used / 1024 / 1024, 2),
-                "percent": memory.percent
+                "total_mb": None,  # psutil依赖项已移除
+                "used_mb": None,
+                "percent": None
             },
             "disk": {
-                "total_gb": round(disk.total / 1024 / 1024 / 1024, 2),
-                "used_gb": round(disk.used / 1024 / 1024 / 1024, 2),
-                "percent": disk.percent
+                "total_gb": None,  # psutil依赖项已移除
+                "used_gb": None,
+                "percent": None
             }
         },
         "games": {
