@@ -12,8 +12,9 @@ import { ArrowLeft, MessageCircle, Zap, Moon, Sun, Users, Skull, Volume2, Dollar
 import { Player as GamePlayer } from "@/types/game";
 
 // 本地Player接口，扩展GamePlayer添加votes字段
-interface Player extends GamePlayer {
+interface Player extends Omit<GamePlayer, 'role'> {
   votes: number;
+  role: string; // 允许后端返回任意字符串的角色名称
 }
 
 const LiveGamePage = () => {
@@ -499,6 +500,7 @@ const LiveGamePage = () => {
           id: playerId,
           name: playerName,
           role: player?.role || "未知",
+          alive: player?.alive !== false,
           status: (player?.alive !== false ? "alive" : "eliminated") as "alive" | "eliminated",
           votes: 0,
         };
