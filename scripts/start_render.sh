@@ -24,9 +24,9 @@ echo "📡 Main port: ${MAIN_PORT}"
 cd /app/backend
 
 # Set environment for backend to serve frontend
-export PYTHONPATH=/app/backend:$PYTHONPATH
-export FRONTEND_BUILD_PATH=/app/frontend/.next
-export FRONTEND_STATIC_PATH=/app/frontend/public
+export PYTHONPATH=/app/backend:${PYTHONPATH:-}
+export FRONTEND_BUILD_PATH=/app/frontend/.next/standalone
+export FRONTEND_STATIC_PATH=/app/frontend/.next/static
 
 # Launch FastAPI backend on Render's port
 uvicorn src.api.app:app \
