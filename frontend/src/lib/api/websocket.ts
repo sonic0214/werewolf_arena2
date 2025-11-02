@@ -20,6 +20,12 @@ class WebSocketClient {
   private shouldReconnect: boolean = true; // 添加是否应该重连的标志
 
   constructor(url?: string) {
+    // 添加调试日志
+    console.log('🔍 WebSocket环境变量调试:');
+    console.log('- process.env.NEXT_PUBLIC_WS_URL:', process.env.NEXT_PUBLIC_WS_URL);
+    console.log('- 传入的url参数:', url);
+    console.log('- 最终使用的URL:', url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev');
+
     this.url = url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev';
   }
 
