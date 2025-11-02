@@ -11,10 +11,9 @@ import { WebSocketMessageFormatter, FormattedMessage } from "@/lib/websocket-for
 import { ArrowLeft, MessageCircle, Zap, Moon, Sun, Users, Skull, Volume2, DollarSign } from "lucide-react";
 import { Player as GamePlayer } from "@/types/game";
 
-// 本地Player接口，扩展GamePlayer添加votes和avatar字段
+// 本地Player接口，扩展GamePlayer添加votes字段
 interface Player extends GamePlayer {
   votes: number;
-  avatar?: string;
 }
 
 const LiveGamePage = () => {

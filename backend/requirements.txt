@@ -1,5 +1,6 @@
 # ========================================
 # Werewolf Arena Backend Dependencies
+# Render Compatible Version
 # ========================================
 
 # Core Framework
@@ -22,10 +23,9 @@ anthropic==0.7.0
 # Configuration
 pyyaml==6.0.1
 
-# Utilities
+# Utilities (psutil removed for Alpine compatibility)
 jinja2==3.1.2
 tqdm==4.66.1
-pandas>=2.1.4
 requests==2.31.0
 
 # Logging
@@ -47,3 +47,6 @@ ruff==0.1.6
 # Legacy dependencies (from original project)
 absl-py==2.0.0
 marko==2.0.3
+
+# Note: pandas and psutil removed for Render/Alpine compatibility
+# pandas can be added back if needed for data processing features
