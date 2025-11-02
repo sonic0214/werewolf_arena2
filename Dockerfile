@@ -46,7 +46,9 @@ COPY --from=backend-builder /tmp/wheels /tmp/wheels
 COPY backend/requirements.txt /app/backend/requirements.txt
 
 # Install Node.js and backend dependencies to avoid C++ ABI issues
-RUN apk add --no-cache nodejs npm bash \
+# Use the exact same Alpine version that the Python image is based on
+RUN apk update \
+    && apk add --no-cache nodejs npm bash \
     && pip install --no-cache-dir --upgrade pip \
     && pip install --no-index --find-links=/tmp/wheels -r /app/backend/requirements.txt
 
