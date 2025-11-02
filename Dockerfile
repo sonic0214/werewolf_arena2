@@ -41,18 +41,14 @@ ENV PYTHONUNBUFFERED=1 \
     NEXT_PUBLIC_API_URL=/api \
     NEXT_PUBLIC_WS_URL=ws://localhost:8000
 
-# Reuse Node.js runtime from builder image for the standalone Next.js server.
-COPY --from=frontend-builder /usr/local/bin/node /usr/local/bin/node
-COPY --from=frontend-builder /usr/local/lib/node_modules /usr/local/lib/node_modules
-COPY --from=frontend-builder /usr/local/bin/corepack /usr/local/bin/corepack
-COPY --from=frontend-builder /usr/local/bin/npm /usr/local/bin/npm
-
 # Install backend dependencies from cached wheels.
 COPY --from=backend-builder /tmp/wheels /tmp/wheels
 COPY backend/requirements.txt /app/backend/requirements.txt
-RUN pip install --no-cache-dir --upgrade pip \
-    && pip install --no-index --find-links=/tmp/wheels -r /app/backend/requirements.txt \
-    && apk add --no-cache bash
+
+# Install Node.js and backend dependencies to avoid C++ ABI issues
+RUN apk add --no-cache nodejs npm bash \
+    && pip install --no-cache-dir --upgrade pip \
+    && pip install --no-index --find-links=/tmp/wheels -r /app/backend/requirements.txt
 
 # Copy application code.
 COPY --from=backend-builder /app/backend /app/backend
