@@ -11,10 +11,11 @@ import { WebSocketMessageFormatter, FormattedMessage } from "@/lib/websocket-for
 import { ArrowLeft, MessageCircle, Zap, Moon, Sun, Users, Skull, Volume2, DollarSign } from "lucide-react";
 import { Player as GamePlayer } from "@/types/game";
 
-// 本地Player接口，扩展GamePlayer添加votes字段
+// 本地Player接口，扩展GamePlayer添加votes和status字段
 interface Player extends Omit<GamePlayer, 'role'> {
   votes: number;
   role: string; // 允许后端返回任意字符串的角色名称
+  status: "alive" | "eliminated"; // 添加status字段用于本地状态管理
 }
 
 const LiveGamePage = () => {
