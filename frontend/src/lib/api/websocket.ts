@@ -65,17 +65,11 @@ class WebSocketClient {
       this.currentSessionId = sessionId;
 
       // 每次连接时都重新获取环境变量
-      // 临时硬编码以确保使用正确的URL
-      const currentUrl = 'wss://werewolf-arena-backend.fly.dev';
-      // const currentUrl = this.url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev';
+      const currentUrl = this.url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev';
       const wsUrl = `${currentUrl}/ws/${sessionId}`;
 
-      // 添加调试日志
-      console.log('🔍 WebSocket连接调试:');
-      console.log('- this.url (构造函数传入):', this.url);
-      console.log('- process.env.NEXT_PUBLIC_WS_URL:', process.env.NEXT_PUBLIC_WS_URL);
-      console.log('- 最终使用的WebSocket URL:', currentUrl);
-      console.log('- 完整连接URL:', wsUrl);
+      // 添加连接日志
+      console.log(`🔗 WebSocket连接到: ${wsUrl}`);
       const connectionId = Math.random().toString(36).substring(7);
       console.log(`[WS:${connectionId}] Connecting to ${wsUrl}`);
 
