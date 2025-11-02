@@ -17,13 +17,11 @@ services:
       - key: PYTHONDONTWRITEBYTECODE
         value: "1"
 
-      # 端口配置 (Render自动设置PORT环境变量)
-      - key: BACKEND_PORT
-        value: 8000
-      - key: FRONTEND_PORT
+      # 端口配置 (Render自动设置PORT环境变量为3000)
+      - key: PORT
         value: 3000
 
-      # URL配置 (Render会提供自动生成的URL)
+      # URL配置
       - key: BACKEND_URL
         value: https://werewolf-arena.onrender.com
       - key: NEXT_PUBLIC_API_URL
@@ -31,13 +29,14 @@ services:
       - key: NEXT_PUBLIC_WS_URL
         value: wss://werewolf-arena.onrender.com
 
-      # LLM配置 (需要在Render控制台中设置)
+      # LLM配置 - 重要：需要在Render控制台中设置实际的API密钥
+      # 注意：环境变量名要与settings.py中的字段名匹配（下划线分隔）
+      - key: siliconflow_api_key
+        sync: false
       - key: OPENAI_API_KEY
         sync: false
       - key: ANTHROPIC_API_KEY
         sync: false
-      - key: DEFAULT_LLM_PROVIDER
-        value: openai
 
       # 游戏配置
       - key: GAME_TIMEOUT_SECONDS
