@@ -93,7 +93,7 @@ export interface APIError {
 }
 
 // Game API Types
-export interface GameStartRequest {
+export interface GameStartAPIRequest {
   villager_model: string;
   werewolf_model: string;
   player_names?: string[];
@@ -101,13 +101,13 @@ export interface GameStartRequest {
   max_rounds?: number;
 }
 
-export interface GameStartResponse {
+export interface GameStartAPIResponse {
   session_id: string;
   status: string;
   message: string;
 }
 
-export interface GameStatusResponse {
+export interface GameStatusAPIResponse {
   session_id: string;
   status: 'pending' | 'running' | 'finished';
   current_round?: any;
@@ -119,7 +119,7 @@ export interface GameStatusResponse {
   settings?: any;
 }
 
-export interface GameListResponse {
+export interface GameListAPIResponse {
   games: Array<{
     session_id: string;
     status: string;

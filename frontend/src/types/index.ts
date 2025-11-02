@@ -34,7 +34,7 @@ export interface BaseComponentProps {
 
 export interface ButtonProps extends BaseComponentProps {
   variant?: 'primary' | 'secondary' | 'danger' | 'ghost';
-  size?: 'sm' | 'md' | 'lg';
+  size?: 'sm' | 'md' | 'lg' | 'icon';
   disabled?: boolean;
   loading?: boolean;
   onClick?: () => void;

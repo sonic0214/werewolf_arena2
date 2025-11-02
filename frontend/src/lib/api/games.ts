@@ -1,16 +1,16 @@
 import { apiClient } from './client';
 import {
-  GameStartRequest,
-  GameStartResponse,
-  GameStatusResponse,
-  GameListResponse,
+  GameStartAPIRequest,
+  GameStartAPIResponse,
+  GameStatusAPIResponse,
+  GameListAPIResponse,
   API_ENDPOINTS,
 } from '@/types/api';
 
 export const gamesAPI = {
   // Start a new game
-  async startGame(request: GameStartRequest): Promise<GameStartResponse> {
-    const response = await apiClient.post<GameStartResponse>(API_ENDPOINTS.GAME_START, request);
+  async startGame(request: GameStartAPIRequest): Promise<GameStartAPIResponse> {
+    const response = await apiClient.post<GameStartAPIResponse>(API_ENDPOINTS.GAME_START, request);
 
     if (!response.success || !response.data) {
       throw new Error(response.error || 'Failed to start game');
@@ -20,8 +20,8 @@ export const gamesAPI = {
   },
 
   // Get game status
-  async getGameStatus(sessionId: string): Promise<GameStatusResponse> {
-    const response = await apiClient.get<GameStatusResponse>(API_ENDPOINTS.GAME_STATUS(sessionId));
+  async getGameStatus(sessionId: string): Promise<GameStatusAPIResponse> {
+    const response = await apiClient.get<GameStatusAPIResponse>(API_ENDPOINTS.GAME_STATUS(sessionId));
 
     if (!response.success || !response.data) {
       throw new Error(response.error || 'Failed to get game status');
@@ -31,8 +31,8 @@ export const gamesAPI = {
   },
 
   // List all games
-  async listGames(): Promise<GameListResponse> {
-    const response = await apiClient.get<GameListResponse>(API_ENDPOINTS.GAMES);
+  async listGames(): Promise<GameListAPIResponse> {
+    const response = await apiClient.get<GameListAPIResponse>(API_ENDPOINTS.GAMES);
 
     if (!response.success || !response.data) {
       throw new Error(response.error || 'Failed to list games');
@@ -76,7 +76,7 @@ export const gamesAPI = {
   // Poll game status for real-time updates
   async pollGameStatus(
     sessionId: string,
-    callback: (status: GameStatusResponse) => void,
+    callback: (status: GameStatusAPIResponse) => void,
     interval: number = 2000
   ): Promise<() => void> {
     const pollInterval = setInterval(async () => {

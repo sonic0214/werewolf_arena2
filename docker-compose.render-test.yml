@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  werewolf-arena-render-test:
+    build:
+      context: .
+      dockerfile: Dockerfile.render
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - BACKEND_PORT=8000
+      - FRONTEND_PORT=3000
+      - BACKEND_URL=http://127.0.0.1:8000
+      - NEXT_PUBLIC_API_URL=/api
+      - NEXT_PUBLIC_WS_URL=ws://localhost:3000
+      - DEFAULT_LLM_PROVIDER=siliconflow
+      - DEBUG=false
+      - GAME_TIMEOUT_SECONDS=300
+      - MAX_PLAYERS=20
+      - MIN_PLAYERS=4
+      # 需要设置你的实际API密钥
+      - SILICONFLOW_API_KEY=${SILICONFLOW_API_KEY:-test-key}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-test-key}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    restart: unless-stopped
