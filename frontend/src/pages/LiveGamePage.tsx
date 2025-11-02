@@ -20,8 +20,20 @@ interface Player {
 
 const LiveGamePage = () => {
   const params = useParams();
-  const sessionId = params.sessionId as string;
+  const sessionId = params?.sessionId as string;
   const router = useRouter();
+
+  // Guard clause for missing sessionId
+  if (!sessionId) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-2xl font-bold text-slate-400 mb-4">会话ID缺失</h1>
+          <Button onClick={() => router.push("/")}>返回首页</Button>
+        </div>
+      </div>
+    );
+  }
 
   const [godMode] = useState<"inside" | "outside">("outside");
   const [currentSpeaker, setCurrentSpeaker] = useState<number>(-1); // 初始状态为-1，表示没有活跃发言者
@@ -488,8 +500,8 @@ const LiveGamePage = () => {
         return {
           id: playerId,
           name: playerName,
-              role: player?.role || "未知",
-              status: player?.alive !== false ? "alive" : "eliminated",
+          role: player?.role || "未知",
+          status: (player?.alive !== false ? "alive" : "eliminated") as "alive" | "eliminated",
           votes: 0,
         };
           });
@@ -503,7 +515,7 @@ const LiveGamePage = () => {
           const backendPlayer = game_state.players[prevPlayer.name];
           
           if (backendPlayer) {
-            const newStatus = backendPlayer.alive !== false ? "alive" : "eliminated";
+            const newStatus = (backendPlayer.alive !== false ? "alive" : "eliminated") as "alive" | "eliminated";
             
             // 如果状态发生变化，输出日志
             if (prevPlayer.status !== newStatus) {
@@ -715,8 +727,6 @@ const LiveGamePage = () => {
 
                 {/* 发言内容区域 */}
                 <div className="flex-1 flex items-center justify-center p-8 overflow-y-auto">
-                  {/* 调试信息 */}
-                  {console.log(`[渲染] gameEnded=${gameEnded}, gamePhaseType="${gamePhaseType}", currentSpeech=${!!currentSpeech}, currentSpeaker=${currentSpeaker}, voteRecords=${voteRecords.length}, nightActions=${nightActions.length}`)}
                   
                   {gameEnded ? (
                     // 游戏结束 - 简化显示获胜信息
