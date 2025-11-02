@@ -343,6 +343,18 @@ class GameMaster:
 
     if bid > 1:
       tqdm.tqdm.write(f"{player_name} bid: {bid}")
+
+    # 发送竞价WebSocket通知
+    self._notify_player_action(
+      action_type="bid",
+      player_name=player_name,
+      player_role=player.role,
+      details={
+        "action": f"竞价: {bid}分",
+        "reasoning": log
+      }
+    )
+
     return bid, log
 
   def get_next_speaker(self):
@@ -915,6 +927,49 @@ class GameMaster:
 
     except Exception as e:
       print(f"[WebSocket错误] 夜间行动通知失败: {e}")
+
+  def _notify_player_action(self, action_type: str, player_name: str, player_role: str, target_name: Optional[str] = None, details: Optional[Dict[str, Any]] = None):
+    """发送玩家行动 WebSocket 通知"""
+    try:
+      from src.services.game_manager.session_manager import _notify_player_action
+      from src.services.game_manager.sequence_manager import ActionType
+      import asyncio
+
+      def run_async():
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        try:
+          action_type_enum = ActionType(action_type)
+          loop.run_until_complete(
+            _notify_player_action(
+              session_id=self.state.session_id,
+              action_type=action_type_enum,
+              player_name=player_name,
+              player_role=player_role,
+              target_name=target_name,
+              details=details
+            )
+          )
+          print(f"[WebSocket] 玩家行动通知已发送: {action_type} by {player_name}")
+        except Exception as e:
+          print(f"[WebSocket错误] 玩家行动通知发送失败: {e}")
+        finally:
+          loop.close()
+
+      import concurrent.futures
+      executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
+      future = executor.submit(run_async)
+      try:
+        future.result(timeout=1.0)
+      except concurrent.futures.TimeoutError:
+        print(f"[WebSocket警告] 玩家行动通知发送超时")
+      except Exception as e:
+        print(f"[WebSocket错误] 玩家行动通知异常: {e}")
+      finally:
+        executor.shutdown(wait=True)  # 等待任务完成后再关闭
+
+    except Exception as e:
+      print(f"[WebSocket错误] 玩家行动通知失败: {e}")
 
   def _notify_debate_turn(self, player_name: str, dialogue: str, player_role: str, turn_number: int):
     """发送辩论发言 WebSocket 通知"""

@@ -15,7 +15,7 @@ class GameSettings(BaseSettings):
     num_players: int = 6
     max_debate_turns: int = 1  # 增加辩论轮数到5轮
     default_threads: int = 4
-    debate_concurrent: int = 3  # 发言阶段并发数
+    debate_concurrent: int = 1  # 发言阶段并发数
     retries: int = 2
     run_synthetic_votes: bool = True
 

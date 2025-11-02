@@ -24,6 +24,8 @@ const GAME_MESSAGE_TYPES = {
     'night_action',
     'phase_change',
     'player_action',
+    'player_exile',
+    'player_summary',
     'round_complete',
     'game_complete',
     'connection_established',
@@ -77,6 +79,15 @@ export class WebSocketMessageFormatter {
 
       case 'night_action':
         return this.formatNightAction(messageData, messageId);
+
+      case 'player_action':
+        return this.formatPlayerAction(messageData, messageId);
+
+      case 'player_exile':
+        return this.formatPlayerExile(messageData, messageId);
+
+      case 'player_summary':
+        return this.formatPlayerSummary(messageData, messageId);
 
       case 'game_update':
         return this.formatGameUpdate(messageData, messageId);
@@ -269,6 +280,94 @@ export class WebSocketMessageFormatter {
   }
 
   /**
+   * 格式化玩家行动消息
+   */
+  private static formatPlayerAction(data: any, messageId: string): FormattedMessage {
+    const { action_type, player_name, player_role, target_name, details } = data;
+
+    let content = '';
+    let icon = '';
+
+    switch (action_type) {
+      case 'night_eliminate':
+        content = `🐺 狼人选择击杀目标`;
+        icon = '🐺';
+        break;
+      case 'night_protect':
+        content = `⚕️ 医生选择保护目标`;
+        icon = '⚕️';
+        break;
+      case 'night_investigate':
+        content = `🔮 预言家选择查验目标`;
+        icon = '🔮';
+        break;
+      case 'bid':
+        content = `💰 ${player_name}竞价发言权`;
+        icon = '💰';
+        break;
+      default:
+        content = `⚡ ${player_name}执行了${action_type}`;
+        icon = '⚡';
+    }
+
+    if (target_name) {
+      content += ` (目标: ${target_name})`;
+    }
+
+    if (details?.action) {
+      content += `\n📝 ${details.action}`;
+    }
+
+    return {
+      id: messageId,
+      timestamp: new Date().toLocaleTimeString(),
+      type: 'action',
+      content,
+      playerName: player_name,
+      targetName: target_name,
+      icon,
+      colorClass: 'text-indigo-500',
+      isSystemMessage: false
+    };
+  }
+
+  /**
+   * 格式化玩家放逐消息
+   */
+  private static formatPlayerExile(data: any, messageId: string): FormattedMessage {
+    const { exiled_player, round_number } = data;
+
+    return {
+      id: messageId,
+      timestamp: new Date().toLocaleTimeString(),
+      type: 'action',
+      content: `⚖️ ${exiled_player}被投票放逐 (第${round_number}轮)`,
+      playerName: exiled_player,
+      icon: '⚖️',
+      colorClass: 'text-red-500',
+      isSystemMessage: false
+    };
+  }
+
+  /**
+   * 格式化玩家总结消息
+   */
+  private static formatPlayerSummary(data: any, messageId: string): FormattedMessage {
+    const { player_name, summary, round_number } = data;
+
+    return {
+      id: messageId,
+      timestamp: new Date().toLocaleTimeString(),
+      type: 'speech',
+      content: `📝 ${player_name}总结: ${summary}`,
+      playerName: player_name,
+      icon: '📝',
+      colorClass: 'text-cyan-500',
+      isSystemMessage: false
+    };
+  }
+
+  /**
    * 格式化游戏更新消息
    */
   private static formatGameUpdate(data: any, messageId: string): FormattedMessage {
@@ -338,7 +437,7 @@ export class WebSocketMessageFormatter {
       const totalCount = players.length;
 
       // 统计各角色数量
-      const roleStats = players.reduce((acc: any, player: any) => {
+      const roleStats: Record<string, number> = players.reduce((acc: Record<string, number>, player: any) => {
         acc[player.role] = (acc[player.role] || 0) + 1;
         return acc;
       }, {});

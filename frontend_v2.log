@@ -7,19 +7,224 @@
   - Environments: .env.local
 
  ✓ Starting...
- ✓ Ready in 2.5s
+ ✓ Ready in 3.8s
  ○ Compiling / ...
- ✓ Compiled / in 12.7s (1986 modules)
+ ✓ Compiled / in 3.9s (1963 modules)
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
- GET / 200 in 13336ms
+ GET / 200 in 4521ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 32ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 28ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 33ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 43ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 26ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 600ms (1065 modules)
+ GET /favicon.ico 200 in 928ms
+ ○ Compiling /live-game/[sessionId] ...
+ ✓ Compiled /live-game/[sessionId] in 2.4s (2043 modules)
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 651ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 23ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 48ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 28ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 15ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 14ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 19ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 18ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 20ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 16ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 16ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 17ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 32ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 21ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 16ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 20ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 17ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 24ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 24ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 18ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 13ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 18ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 17ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 27ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
  GET / 200 in 45ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 41ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 368ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 39ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 43ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 40ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 41ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 28ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 25ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 21ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 19ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 19ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
@@ -34,15 +239,42 @@ The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
- GET / 200 in 52ms
- ○ Compiling /favicon.ico ...
- ✓ Compiled /favicon.ico in 1453ms (1065 modules)
- GET /favicon.ico 200 in 1642ms
+ GET / 200 in 28ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
- GET / 200 in 215ms
+ GET / 200 in 59ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 31ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 63ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 40ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 23ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 27ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 23ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
@@ -52,146 +284,122 @@ The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
- GET / 200 in 18ms
+ GET / 200 in 25ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
- GET / 200 in 30ms
- ○ Compiling /live-game/[sessionId] ...
- ⚠ ./src/components/ui/Badge.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Badge.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|app-pages-browser
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/badge.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
-
-Import trace for requested module:
-./src/components/ui/Badge.tsx
-./src/app/page.tsx
-
-./src/components/ui/Button.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Button.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|app-pages-browser
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/button.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
-
-Import trace for requested module:
-./src/components/ui/Button.tsx
-./src/app/page.tsx
-
-./src/components/ui/Card.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Card.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|app-pages-browser
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/card.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
-
-Import trace for requested module:
-./src/components/ui/Card.tsx
-./src/app/page.tsx
-
-./src/components/ui/Input.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Input.tsx|app-pages-browser
-    Used by 1 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/index.ts|app-pages-browser
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/input.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
-
-Import trace for requested module:
-./src/components/ui/Input.tsx
-./src/components/ui/index.ts
-./src/pages/LiveGamePage.tsx
-./src/app/live-game/[sessionId]/page.tsx
-
-./src/components/ui/Badge.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Badge.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|ssr
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/badge.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
-
-Import trace for requested module:
-./src/components/ui/Badge.tsx
-./src/app/page.tsx
-
-./src/components/ui/Button.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Button.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|ssr
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/button.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
-
-Import trace for requested module:
-./src/components/ui/Button.tsx
-./src/app/page.tsx
-
-./src/components/ui/Card.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Card.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|ssr
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/card.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
-
-Import trace for requested module:
-./src/components/ui/Card.tsx
-./src/app/page.tsx
-
-./src/components/ui/Input.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Input.tsx|ssr
-    Used by 1 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/index.ts|ssr
-* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/input.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
-
-Import trace for requested module:
-./src/components/ui/Input.tsx
-./src/components/ui/index.ts
-./src/pages/LiveGamePage.tsx
-./src/app/live-game/[sessionId]/page.tsx
+ GET / 200 in 19ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
- GET / 200 in 110ms
+ GET / 200 in 17ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 17ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 19ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
  GET / 200 in 16ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 21ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 27ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 15ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 26ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 34ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 17ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 30ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 33ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 34ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 34ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 31ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 30ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 21ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 24ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 28ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 21ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 29ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 37ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
@@ -202,3 +410,124 @@ The width(-1) and height(-1) of chart should be greater than 0,
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
  GET / 200 in 24ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 50ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 26ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 32ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 24ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 27ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 31ms
+ ✓ Compiled in 1376ms (2011 modules)
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 454ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 45ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 30ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 27ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 27ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 23ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 23ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 23ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 22ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 97ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 64ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 19ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 17ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 26ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 37ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 49ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 41ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 89ms

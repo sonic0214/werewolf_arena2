@@ -32,6 +32,7 @@ interface UIStoreState {
   removeNotification: (id: string) => void;
   clearNotifications: () => void;
   toggleSound: () => void;
+  playNotificationSound: (type: Notification['type']) => void;
 
   // Loading
   setGlobalLoading: (loading: LoadingState) => void;

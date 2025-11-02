@@ -124,6 +124,8 @@ export interface WebSocketMessage {
     | 'night_action'
     | 'phase_change'
     | 'player_action'
+    | 'player_exile'
+    | 'player_summary'
     | 'status_update';
   data: any;
   timestamp: string;
@@ -210,6 +212,26 @@ export interface PlayerActionMessage extends WebSocketMessage {
   };
 }
 
+export interface PlayerExileMessage extends WebSocketMessage {
+  type: 'player_exile';
+  data: {
+    sequence_number: number;
+    exiled_player: string;
+    round_number: number;
+    timestamp: string;
+  };
+}
+
+export interface PlayerSummaryMessage extends WebSocketMessage {
+  type: 'player_summary';
+  data: {
+    sequence_number: number;
+    player_name: string;
+    summary: string;
+    round_number: number;
+    timestamp: string;
+  };
+}
 
 export interface StatusUpdateMessage extends WebSocketMessage {
   type: 'status_update';

@@ -1,3 +1,5 @@
+import type { HTMLAttributes, ReactNode } from 'react';
+
 // Re-export all types from submodules
 export * from './game';
 export * from './api';
@@ -27,7 +29,7 @@ export interface ThemeConfig {
 // Component Props Types
 export interface BaseComponentProps {
   className?: string;
-  children?: React.ReactNode;
+  children?: ReactNode;
 }
 
 export interface ButtonProps extends BaseComponentProps {
@@ -39,7 +41,7 @@ export interface ButtonProps extends BaseComponentProps {
   type?: 'button' | 'submit' | 'reset';
 }
 
-export interface CardProps extends BaseComponentProps {
+export interface CardProps extends BaseComponentProps, HTMLAttributes<HTMLDivElement> {
   title?: string;
   subtitle?: string;
   footer?: React.ReactNode;

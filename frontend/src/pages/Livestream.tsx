@@ -1,18 +1,25 @@
 import { useState, useEffect } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { useRouter } from "next/router";
+import { Button } from "@/components/ui/Button";
+import { Card } from "@/components/ui/Card";
+import { Badge } from "@/components/ui/Badge";
 import ModelAvatar from "@/components/ModelAvatar";
 import GameInfo from "@/components/GameInfo";
 import { ArrowLeft } from "lucide-react";
 
 const Livestream = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
-  const [godMode] = useState<"inside" | "outside">(
-    (location.state?.godMode as "inside" | "outside") || "outside"
-  );
+  const router = useRouter();
+  const [godMode, setGodMode] = useState<"inside" | "outside">("outside");
+
+  useEffect(() => {
+    if (!router.isReady) return;
+    const queryValue = router.query.godMode;
+
+    if (typeof queryValue === "string") {
+      const normalized = queryValue === "inside" ? "inside" : "outside";
+      setGodMode(normalized);
+    }
+  }, [router.isReady, router.query.godMode]);
   const [currentSpeaker, setCurrentSpeaker] = useState(0);
 
   // 模拟轮流发言
@@ -56,7 +63,7 @@ const Livestream = () => {
             <Button
               variant="ghost"
               size="sm"
-              onClick={() => navigate("/")}
+              onClick={() => router.push("/")}
               className="gap-2"
             >
               <ArrowLeft className="w-4 h-4" />

@@ -69,6 +69,7 @@ htmlcov/
 # Scripts (exclude build scripts)
 scripts/
 !/scripts/deploy-fly.sh
+!/scripts/start_combined.sh
 
 # Development tools
 .eslintrc*

@@ -190,6 +190,13 @@ class WebSocketClient {
   private onGameUpdate?: WebSocketEventHandler;
   private onRoundComplete?: WebSocketEventHandler;
   private onGameComplete?: WebSocketEventHandler;
+  private onDebateTurn?: WebSocketEventHandler;
+  private onVoteCast?: WebSocketEventHandler;
+  private onNightAction?: WebSocketEventHandler;
+  private onPhaseChange?: WebSocketEventHandler;
+  private onPlayerAction?: WebSocketEventHandler;
+  private onPlayerExile?: WebSocketEventHandler;
+  private onPlayerSummary?: WebSocketEventHandler;
   private onError?: WebSocketErrorHandler;
   private onConnect?: () => void;
   private onDisconnect?: WebSocketEventHandler;
@@ -198,6 +205,13 @@ class WebSocketClient {
   on(event: 'game_update', handler: (data: GameUpdateMessage) => void): void;
   on(event: 'round_complete', handler: (data: RoundCompleteMessage) => void): void;
   on(event: 'game_complete', handler: (data: GameCompleteMessage) => void): void;
+  on(event: 'debate_turn', handler: (data: any) => void): void;
+  on(event: 'vote_cast', handler: (data: any) => void): void;
+  on(event: 'night_action', handler: (data: any) => void): void;
+  on(event: 'phase_change', handler: (data: any) => void): void;
+  on(event: 'player_action', handler: (data: any) => void): void;
+  on(event: 'player_exile', handler: (data: any) => void): void;
+  on(event: 'player_summary', handler: (data: any) => void): void;
   on(event: 'error', handler: (error: Error) => void): void;
   on(event: 'connect', handler: () => void): void;
   on(event: 'disconnect', handler: (reason: string) => void): void;
@@ -211,6 +225,27 @@ class WebSocketClient {
         break;
       case 'game_complete':
         this.onGameComplete = handler as (data: GameCompleteMessage) => void;
+        break;
+      case 'debate_turn':
+        this.onDebateTurn = handler;
+        break;
+      case 'vote_cast':
+        this.onVoteCast = handler;
+        break;
+      case 'night_action':
+        this.onNightAction = handler;
+        break;
+      case 'phase_change':
+        this.onPhaseChange = handler;
+        break;
+      case 'player_action':
+        this.onPlayerAction = handler;
+        break;
+      case 'player_exile':
+        this.onPlayerExile = handler;
+        break;
+      case 'player_summary':
+        this.onPlayerSummary = handler;
         break;
       case 'error':
         this.onError = handler as WebSocketErrorHandler;
@@ -235,6 +270,27 @@ class WebSocketClient {
         break;
       case 'game_complete':
         this.onGameComplete = undefined;
+        break;
+      case 'debate_turn':
+        this.onDebateTurn = undefined;
+        break;
+      case 'vote_cast':
+        this.onVoteCast = undefined;
+        break;
+      case 'night_action':
+        this.onNightAction = undefined;
+        break;
+      case 'phase_change':
+        this.onPhaseChange = undefined;
+        break;
+      case 'player_action':
+        this.onPlayerAction = undefined;
+        break;
+      case 'player_exile':
+        this.onPlayerExile = undefined;
+        break;
+      case 'player_summary':
+        this.onPlayerSummary = undefined;
         break;
       case 'error':
         this.onError = undefined;
@@ -270,6 +326,46 @@ class WebSocketClient {
         case 'game_complete':
           if (this.onGameComplete) {
             this.onGameComplete(message as GameCompleteMessage);
+          }
+          break;
+        case 'debate_turn':
+          if (this.onDebateTurn) {
+            this.onDebateTurn(message);
+          }
+          break;
+        case 'vote_cast':
+          if (this.onVoteCast) {
+            this.onVoteCast(message);
+          }
+          break;
+        case 'night_action':
+          if (this.onNightAction) {
+            this.onNightAction(message);
+          }
+          break;
+        case 'phase_change':
+          if (this.onPhaseChange) {
+            this.onPhaseChange(message);
+          }
+          break;
+        case 'player_action':
+          if (this.onPlayerAction) {
+            this.onPlayerAction(message);
+          }
+          break;
+        case 'player_exile':
+          if (this.onPlayerExile) {
+            this.onPlayerExile(message);
+          }
+          break;
+        case 'player_summary':
+          if (this.onPlayerSummary) {
+            this.onPlayerSummary(message);
+          }
+          break;
+        case 'status_update':
+          if (this.onGameUpdate) {
+            this.onGameUpdate(message as GameUpdateMessage);
           }
           break;
         case 'ping':

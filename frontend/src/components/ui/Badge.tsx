@@ -3,7 +3,7 @@ import { cn } from '@/lib/utils';
 import { BaseComponentProps } from '@/types';
 
 interface BadgeProps extends BaseComponentProps {
-  variant?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
+  variant?: 'default' | 'primary' | 'secondary' | 'success' | 'warning' | 'danger' | 'outline' | 'info' | 'destructive';
   size?: 'sm' | 'md' | 'lg';
 }
 
@@ -17,6 +17,9 @@ export function Badge({ className, variant = 'default', size = 'md', children, .
     success: 'bg-green-100 text-green-800',
     warning: 'bg-yellow-100 text-yellow-800',
     danger: 'bg-red-100 text-red-800',
+    destructive: 'bg-red-100 text-red-800',
+    outline: 'border border-current text-current bg-transparent',
+    info: 'bg-sky-100 text-sky-800',
   };
 
   const sizes = {
