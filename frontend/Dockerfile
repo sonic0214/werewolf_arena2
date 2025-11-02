@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Copy package files
 COPY package*.json ./
-RUN npm ci --omit=dev
+RUN npm ci
 
 # Rebuild the source code only when needed
 FROM base AS builder

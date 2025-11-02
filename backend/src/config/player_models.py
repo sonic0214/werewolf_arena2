@@ -4,13 +4,15 @@ Player Model Mapping Configuration
 """
 
 # 玩家模型名到完整模型ID的一对一映射
+# 注意：所有模型ID已通过硅基流动API测试验证可用
 PLAYER_MODEL_MAPPING = {
-    "MiniMax-M1-80k": "MiniMaxAI/MiniMax-M1-80k",
-    "GLM-4.6": "THUDM/GLM-Z1-9B-0414",
-    "Qwen3-32B": "siliconflow/Qwen/Qwen3-32B",
-    "DeepSeek-V3.2": "siliconflow/deepseek-ai/DeepSeek-V3.2-Exp",
-    "Kimi-Dev-72B": "siliconflow/moonshotai/Kimi-Dev-72B",
-    "Ring-flash-2.0": "inclusionAI/Ling-mini-2.0"
+    # 2025-11-02 实测支持 JSON 模式的模型，请确保账号具备访问权限
+    "MiniMax": "MiniMaxAI/MiniMax-M2",
+    "GLM": "zai-org/GLM-4.6",
+    "Qwen": "Qwen/Qwen3-32B",
+    "DeepSeek": "deepseek-ai/DeepSeek-V3",
+    "Kimi": "moonshotai/Kimi-K2-Instruct-0905",
+    "Inclusion": "inclusionAI/Ring-1T",
 }
 
 def get_model_for_player(player_name: str, role: str = None) -> str:

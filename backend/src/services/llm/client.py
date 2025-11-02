@@ -52,9 +52,11 @@ class LLMClient:
         """
         provider = self._get_provider_for_model(model)
 
-        # 如果model包含提供商前缀（如 glm/），去掉前缀
+        # 仅当模型ID明确以提供商名前缀（如 siliconflow/）开头时才去掉前缀
         if "/" in model:
-            model = model.split("/", 1)[1]
+            prefix, suffix = model.split("/", 1)
+            if prefix.lower() in {"siliconflow"}:
+                model = suffix
 
         return provider.generate(
             model=model,
@@ -78,48 +80,8 @@ class LLMClient:
         Raises:
             ValueError: 找不到对应的提供商
         """
-        # 检查是否有显式的提供商前缀
-        if model.startswith("siliconflow/"):
-            return self._get_provider("siliconflow")
-        elif model.startswith("glm/"):
-            return self._get_provider("glm")
-        elif model.startswith("openrouter/"):
-            return self._get_provider("openrouter")
-        elif model.startswith("minimax/"):
-            return self._get_provider("minimax")
-        elif "gpt" in model.lower():
-            return self._get_provider("openai")
-        elif "claude" in model.lower():
-            # Claude模型可能通过OpenRouter访问
-            if "openrouter" in self.providers:
-                return self._get_provider("openrouter")
-            raise ValueError(
-                f"No provider available for model: {model}. "
-                "Claude models require OpenRouter provider."
-            )
-        elif "minimax" in model.lower() or "M2" in model:
-            # MiniMax模型
-            if "minimax" in self.providers:
-                return self._get_provider("minimax")
-            raise ValueError(
-                f"No provider available for model: {model}. "
-                "MiniMax provider not configured."
-            )
-        elif any(keyword in model.lower() for keyword in ["deepseek", "qwen", "glm", "kimi", "hunyuan", "moonshot"]):
-            # 硅基流动支持的模型
-            if "siliconflow" in self.providers:
-                return self._get_provider("siliconflow")
-            raise ValueError(
-                f"No provider available for model: {model}. "
-                "SiliconFlow provider not configured."
-            )
-        else:
-            # 默认尝试硅基流动
-            if "siliconflow" in self.providers:
-                return self._get_provider("siliconflow")
-            elif "glm" in self.providers:
-                return self._get_provider("glm")
-            raise ValueError(f"No provider available for model: {model}")
+        # 所有模型都使用硅基流动
+        return self._get_provider("siliconflow")
 
     def _get_provider(self, provider_name: str) -> LLMProvider:
         """
@@ -167,37 +129,7 @@ class LLMClient:
         """
         providers = {}
 
-        # 配置GLM
-        if settings.llm.glm_api_key:
-            providers["glm"] = LLMFactory.create("glm", {
-                "api_key": settings.llm.glm_api_key,
-                "base_url": settings.llm.glm_base_url,
-            })
-
-        # 配置OpenAI
-        if settings.llm.openai_api_key:
-            providers["openai"] = LLMFactory.create("openai", {
-                "api_key": settings.llm.openai_api_key,
-                "base_url": settings.llm.openai_base_url,
-            })
-
-        # 配置OpenRouter
-        if settings.llm.openrouter_api_key:
-            providers["openrouter"] = LLMFactory.create("openrouter", {
-                "api_key": settings.llm.openrouter_api_key,
-                "base_url": settings.llm.openrouter_base_url,
-                "referrer": settings.llm.openrouter_referrer,
-                "app_title": settings.llm.openrouter_app_title,
-            })
-
-        # 配置MiniMax
-        if settings.llm.minimax_api_key:
-            providers["minimax"] = LLMFactory.create("minimax", {
-                "api_key": settings.llm.minimax_api_key,
-                "base_url": settings.llm.minimax_base_url,
-            })
-
-        # 配置SiliconFlow
+        # 只配置SiliconFlow
         if settings.llm.siliconflow_api_key:
             providers["siliconflow"] = LLMFactory.create("siliconflow", {
                 "api_key": settings.llm.siliconflow_api_key,
@@ -206,7 +138,7 @@ class LLMClient:
         if not providers:
             raise RuntimeError(
                 "No LLM providers configured. "
-                "Please set at least one API key in configuration."
+                "Please set SiliconFlow API key in configuration."
             )
 
         return cls(providers)

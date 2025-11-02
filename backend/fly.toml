@@ -29,25 +29,6 @@ primary_region = "sin"
   soft_limit = 100
   hard_limit = 120
 
-# WebSocket support
-[[services]]
-  protocol = "tcp"
-  internal_port = 8000
-  processes = ["app"]
-
-[[services.ports]]
-  handlers = ["proxy_proto"]
-  port = 443
-
-[[services.ports]]
-  handlers = ["tls", "http"]
-  port = 80
-
-[[services.tcp_checks]]
-  interval = "15s"
-  timeout = "10s"
-  grace_period = "1s"
-
 [[vm]]
   memory = "512mb"
   cpu_kind = "shared"
@@ -58,6 +39,8 @@ primary_region = "sin"
   PYTHONPATH = "/app"
   PYTHONUNBUFFERED = "1"
   PORT = "8000"
+  ENVIRONMENT = "production"
+  CORS__ALLOW_ORIGINS = "[\"https://werewolf-arena-frontend.fly.dev\",\"https://werewolf-arena-backend.fly.dev\"]"
 
 # Secrets (set via flyctl secrets set)
 # SILICONFLOW_API_KEY = "your_siliconflow_key" (推荐)
@@ -70,4 +53,4 @@ primary_region = "sin"
   destination = "/app/logs"
 
 [deploy]
-  strategy = "canary"
+  strategy = "rolling"

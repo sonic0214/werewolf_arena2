@@ -1,36 +1,40 @@
-INFO:     Will watch for changes in these directories: ['/Users/admin/Project/HauntedHackathon/werewolf_arena/backend']
+INFO:     Will watch for changes in these directories: ['/Users/admin/Project/werewolf_arena/backend']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [65854] using WatchFiles
-INFO:     Started server process [65857]
+INFO:     Started reloader process [71332] using WatchFiles
+INFO:     Started server process [71337]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-✅ 已加载延迟配置: /Users/admin/Project/HauntedHackathon/werewolf_arena/backend/src/config/timing_config.yaml
+✅ 已加载延迟配置: /Users/admin/Project/werewolf_arena/backend/src/config/timing_config.yaml
 📊 Sequence Manager initialized
 🚀 Starting Werewolf Arena API...
 📝 Environment: development
 🔧 Debug mode: False
-🤖 LLM Providers Health: {'glm': True, 'minimax': True, 'siliconflow': True}
+🤖 LLM Providers Health: {'siliconflow': True}
 ✅ Global LLM client initialized successfully
 🎮 Ready to start games!
-INFO:     127.0.0.1:58880 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59092 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59158 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59263 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:59302 - "OPTIONS /api/v1/games/start HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50500 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50698 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50731 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50820 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50982 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51103 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51155 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51236 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51245 - "OPTIONS /api/v1/games/start HTTP/1.1" 200 OK
 创建新游戏：6个玩家，每个玩家使用不同的模型
-玩家列表：['MiniMax-M1-80k', 'GLM-4.6', 'Qwen3-32B', 'DeepSeek-V3.2', 'Kimi-Dev-72B', 'Ring-flash-2.0']
-预言家 MiniMax-M1-80k -> MiniMaxAI/MiniMax-M1-80k
-医生 Ring-flash-2.0 -> inclusionAI/Ling-mini-2.0
-狼人 Qwen3-32B -> siliconflow/Qwen/Qwen3-32B
-村民 DeepSeek-V3.2 -> siliconflow/deepseek-ai/DeepSeek-V3.2-Exp
-村民 Kimi-Dev-72B -> siliconflow/moonshotai/Kimi-Dev-72B
-村民 GLM-4.6 -> THUDM/GLM-Z1-9B-0414
+玩家列表：['MiniMax', 'GLM', 'Qwen', 'DeepSeek', 'Kimi', 'Inclusion']
+预言家 Kimi -> moonshotai/Kimi-K2-Instruct-0905
+医生 MiniMax -> MiniMaxAI/MiniMax-M2
+狼人 GLM -> zai-org/GLM-4.6
+村民 DeepSeek -> deepseek-ai/DeepSeek-V3
+村民 Inclusion -> inclusionAI/Ring-1T
+村民 Qwen -> Qwen/Qwen3-32B
 🎮 应用游戏模式 normal，延迟倍数: 1.0x
 🎮 游戏模式: normal (延迟倍数: 1.0x)
-INFO:     127.0.0.1:59302 - "POST /api/v1/games/start HTTP/1.1" 201 Created
-INFO:     ('127.0.0.1', 59393) - "WebSocket /ws/session_20251101_025935" [accepted]
+INFO:     127.0.0.1:51245 - "POST /api/v1/games/start HTTP/1.1" 201 Created
+INFO:     ('127.0.0.1', 51271) - "WebSocket /ws/session_20251102_051005" [accepted]
 INFO:     connection open
-INFO:     ('127.0.0.1', 59395) - "WebSocket /ws/session_20251101_025935" [accepted]
+INFO:     ('127.0.0.1', 51273) - "WebSocket /ws/session_20251102_051005" [accepted]
 INFO:     connection open
 STARTING ROUND: 0
 
@@ -40,28 +44,28 @@ STARTING ROUND: 0
 
 ⏱️ [夜晚开始] 切换暂停1秒...
 ⏱️ [夜晚切换] 夜晚切换完成: 1.00秒
-[RealtimeLogger] Initialized session session_20251101_025935, log file: logs/session_20251101_025935/realtime_logs.jsonl
-[RealtimeLogger] session_20251101_025935 [phase_change] 进入night阶段
+[RealtimeLogger] Initialized session session_20251102_051005, log file: logs/session_20251102_051005/realtime_logs.jsonl
+[RealtimeLogger] session_20251102_051005 [phase_change] 进入night阶段
 [WebSocket] 阶段变更通知已发送: night (第0轮)
 ⏱️ [夜晚通知] 夜晚通知发送: 0.00秒
 
 ⏱️ 【狼人正在选择淘汰目标。】
 ⏱️ [夜间延迟] 暂停1.00秒
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/Qwen/Qwen3-32B | 温度: 0.50
-WebSocket connected for session session_20251101_025935. Total connections: 1
-WebSocket connected for session session_20251101_025935. Total connections: 2
-INFO:     127.0.0.1:59400 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 201 字符
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 0.50
+WebSocket connected for session session_20251102_051005. Total connections: 1
+WebSocket connected for session session_20251102_051005. Total connections: 2
+INFO:     127.0.0.1:51305 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 178 字符
 [LLM原始响应开始]
 {
-"reasoning": "在游戏刚刚开始时，狼人需要优先清除可能威胁到自己的角色。预言家和医生是关键角色，但目前无法确定谁是预言家。因此，选择一个对游戏经验或发言能力较强的角色进行淘汰，可以打乱好人方的节奏。根据名字的常见性以及可能的玩家策略，Kimi-Dev-72B 有可能是预言家或医生的扮演者，优先处理他可以降低游戏早期的好人胜率。",
-"remove": "Kimi-Dev-72B"
+"reasoning": "作为狼人，我需要在第一轮夜晚阶段选择一个目标进行淘汰。由于这是游戏开始阶段，我没有任何关于其他玩家身份的信息。在这种情况下，我需要随机选择一个目标。我选择淘汰Qwen，这纯属随机选择，没有特别的理由。在后续的游戏中，我会根据白天阶段的发言和投票情况来收集信息，制定更有针对性的策略。",
+"remove": "Qwen"
 }
 [LLM原始响应结束]
 [JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 201 字符
+[JSON解析] 开始解析，输入文本长度: 178 字符
 [JSON解析] 输入文本预览: {
-"reasoning": "在游戏刚刚开始时，狼人需要优先清除可能威胁到自己的角色。预言家和医生是关键角色，但目前无法确定谁是预言家。因此，选择一个对游戏经验或发言能力较强的角色进行淘汰，可以打乱...
+"reasoning": "作为狼人，我需要在第一轮夜晚阶段选择一个目标进行淘汰。由于这是游戏开始阶段，我没有任何关于其他玩家身份的信息。在这种情况下，我需要随机选择一个目标。我选择淘汰Qwen，...
 [语言清理] 开始清理混合语言响应...
 [语言清理] 策略2成功：提取到完整JSON对象
 [JSON解析] 尝试从markdown中解析JSON...
@@ -75,1085 +79,117 @@ INFO:     127.0.0.1:59400 - "GET /health HTTP/1.1" 200 OK
 [JSON解析] markdown解析结果: None
 [JSON解析] markdown解析失败，尝试直接解析JSON字符串...
 [JSON字符串解析] 开始解析，输入文本: '{
-"reasoning": "在游戏刚刚开始时，狼人需要优先清除可能威胁到自己的角色。预言家和医生是关键角色，但目前无法确定谁是预言家。因此，选择一个对游戏经验或发言能力较强的角色进行淘汰，可以打乱好人方的节奏。根据名字的常见性以及可能的玩家策略，Kimi-Dev-72B 有可能是预言家或医生的扮演者，优先处理他可以降低游戏早期的好人胜率。",
-"remove": "Kimi-Dev-72B"
+"reasoning": "作为狼人，我需要在第一轮夜晚阶段选择一个目标进行淘汰。由于这是游戏开始阶段，我没有任何关于其他玩家身份的信息。在这种情况下，我需要随机选择一个目标。我选择淘汰Qwen，这纯属随机选择，没有特别的理由。在后续的游戏中，我会根据白天阶段的发言和投票情况来收集信息，制定更有针对性的策略。",
+"remove": "Qwen"
 }'
-[JSON字符串解析] 文本长度: 201 字符
+[JSON字符串解析] 文本长度: 178 字符
 [JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '在游戏刚刚开始时，狼人需要优先清除可能威胁到自己的角色。预言家和医生是关键角色，但目前无法确定谁是预言家。因此，选择一个对游戏经验或发言能力较强的角色进行淘汰，可以打乱好人方的节奏。根据名字的常见性以及可能的玩家策略，Kimi-Dev-72B 有可能是预言家或医生的扮演者，优先处理他可以降低游戏早期的好人胜率。', 'remove': 'Kimi-Dev-72B'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '在游戏刚刚开始时，狼人需要优先清除可能威胁到自己的角色。预言家和医生是关键角色，但目前无法确定谁是预言家。因此，选择一个对游戏经验或发言能力较强的角色进行淘汰，可以打乱好人方的节奏。根据名字的常见性以及可能的玩家策略，Kimi-Dev-72B 有可能是预言家或医生的扮演者，优先处理他可以降低游戏早期的好人胜率。', 'remove': 'Kimi-Dev-72B'}
-[JSON解析] 直接解析结果: {'reasoning': '在游戏刚刚开始时，狼人需要优先清除可能威胁到自己的角色。预言家和医生是关键角色，但目前无法确定谁是预言家。因此，选择一个对游戏经验或发言能力较强的角色进行淘汰，可以打乱好人方的节奏。根据名字的常见性以及可能的玩家策略，Kimi-Dev-72B 有可能是预言家或医生的扮演者，优先处理他可以降低游戏早期的好人胜率。', 'remove': 'Kimi-Dev-72B'}
-[JSON解析] 最终结果: {'reasoning': '在游戏刚刚开始时，狼人需要优先清除可能威胁到自己的角色。预言家和医生是关键角色，但目前无法确定谁是预言家。因此，选择一个对游戏经验或发言能力较强的角色进行淘汰，可以打乱好人方的节奏。根据名字的常见性以及可能的玩家策略，Kimi-Dev-72B 有可能是预言家或医生的扮演者，优先处理他可以降低游戏早期的好人胜率。', 'remove': 'Kimi-Dev-72B'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '在游戏刚刚开始时，狼人需要优先清除可能威胁到自己的角色。预言家和医生是关键角色，但目前无法确定谁是预言家。因此，选择一个对游戏经验或发言能力较强的角色进行淘汰，可以打乱好人方的节奏。根据名字的常见性以及可能的玩家策略，Kimi-Dev-72B 有可能是预言家或医生的扮演者，优先处理他可以降低游戏早期的好人胜率。', 'remove': 'Kimi-Dev-72B'}
-[LLM结果] 提取键 'remove': Kimi-Dev-72B
-[LLM成功] 返回有效结果: Kimi-Dev-72B
-⏱️ [狼人击杀] 狼人 Qwen3-32B 行动完成: 6.63秒
-Qwen3-32B eliminated Kimi-Dev-72B
-[WebSocket] 夜间行动通知已发送: night_eliminate by Qwen3-32B
-⏱️ [狼人正在选择淘汰目标。] 狼人正在选择淘汰目标。完成: 6.64秒
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为狼人，我需要在第一轮夜晚阶段选择一个目标进行淘汰。由于这是游戏开始阶段，我没有任何关于其他玩家身份的信息。在这种情况下，我需要随机选择一个目标。我选择淘汰Qwen，这纯属随机选择，没有特别的理由。在后续的游戏中，我会根据白天阶段的发言和投票情况来收集信息，制定更有针对性的策略。', 'remove': 'Qwen'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为狼人，我需要在第一轮夜晚阶段选择一个目标进行淘汰。由于这是游戏开始阶段，我没有任何关于其他玩家身份的信息。在这种情况下，我需要随机选择一个目标。我选择淘汰Qwen，这纯属随机选择，没有特别的理由。在后续的游戏中，我会根据白天阶段的发言和投票情况来收集信息，制定更有针对性的策略。', 'remove': 'Qwen'}
+[JSON解析] 直接解析结果: {'reasoning': '作为狼人，我需要在第一轮夜晚阶段选择一个目标进行淘汰。由于这是游戏开始阶段，我没有任何关于其他玩家身份的信息。在这种情况下，我需要随机选择一个目标。我选择淘汰Qwen，这纯属随机选择，没有特别的理由。在后续的游戏中，我会根据白天阶段的发言和投票情况来收集信息，制定更有针对性的策略。', 'remove': 'Qwen'}
+[JSON解析] 最终结果: {'reasoning': '作为狼人，我需要在第一轮夜晚阶段选择一个目标进行淘汰。由于这是游戏开始阶段，我没有任何关于其他玩家身份的信息。在这种情况下，我需要随机选择一个目标。我选择淘汰Qwen，这纯属随机选择，没有特别的理由。在后续的游戏中，我会根据白天阶段的发言和投票情况来收集信息，制定更有针对性的策略。', 'remove': 'Qwen'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为狼人，我需要在第一轮夜晚阶段选择一个目标进行淘汰。由于这是游戏开始阶段，我没有任何关于其他玩家身份的信息。在这种情况下，我需要随机选择一个目标。我选择淘汰Qwen，这纯属随机选择，没有特别的理由。在后续的游戏中，我会根据白天阶段的发言和投票情况来收集信息，制定更有针对性的策略。', 'remove': 'Qwen'}
+[LLM结果] 提取键 'remove': Qwen
+[LLM成功] 返回有效结果: Qwen
+⏱️ [狼人击杀] 狼人 GLM 行动完成: 10.04秒
+GLM eliminated Qwen
+[WebSocket] 夜间行动通知已发送: night_eliminate by GLM
+⏱️ [狼人正在选择淘汰目标。] 狼人正在选择淘汰目标。完成: 10.05秒
 
 ⏱️ 【医生正在选择保护目标。】
 ⏱️ [夜间延迟] 暂停1.00秒
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.50
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.70
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.90
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⏱️ [医生保护] 医生 Ring-flash-2.0 行动完成: 1.18秒
-Warning: Ring-flash-2.0 failed to choose protection target, randomly selected Ring-flash-2.0
-Ring-flash-2.0 protected Ring-flash-2.0
-[WebSocket] 夜间行动通知已发送: night_protect by Ring-flash-2.0
-⏱️ [医生正在选择保护目标。] 医生正在选择保护目标。完成: 1.18秒
+[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M2 | 温度: 0.50
+[LLM响应] 成功获取响应，长度: 127 字符
+[LLM原始响应开始]
+{
+  "reasoning": "第一轮没有信息，只能随机选择。考虑到狼人可能会优先淘汰发言活跃或逻辑性强的玩家，我选择保护Kimi，因为ta的名字在列表中排第二，避开第一个和最后一个可能成为焦点的人选。",
+  "protect": "Kimi"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 127 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "第一轮没有信息，只能随机选择。考虑到狼人可能会优先淘汰发言活跃或逻辑性强的玩家，我选择保护Kimi，因为ta的名字在列表中排第二，避开第一个和最后一个可能成为焦点的...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "第一轮没有信息，只能随机选择。考虑到狼人可能会优先淘汰发言活跃或逻辑性强的玩家，我选择保护Kimi，因为ta的名字在列表中排第二，避开第一个和最后一个可能成为焦点的人选。",
+  "protect": "Kimi"
+}'
+[JSON字符串解析] 文本长度: 127 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '第一轮没有信息，只能随机选择。考虑到狼人可能会优先淘汰发言活跃或逻辑性强的玩家，我选择保护Kimi，因为ta的名字在列表中排第二，避开第一个和最后一个可能成为焦点的人选。', 'protect': 'Kimi'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '第一轮没有信息，只能随机选择。考虑到狼人可能会优先淘汰发言活跃或逻辑性强的玩家，我选择保护Kimi，因为ta的名字在列表中排第二，避开第一个和最后一个可能成为焦点的人选。', 'protect': 'Kimi'}
+[JSON解析] 直接解析结果: {'reasoning': '第一轮没有信息，只能随机选择。考虑到狼人可能会优先淘汰发言活跃或逻辑性强的玩家，我选择保护Kimi，因为ta的名字在列表中排第二，避开第一个和最后一个可能成为焦点的人选。', 'protect': 'Kimi'}
+[JSON解析] 最终结果: {'reasoning': '第一轮没有信息，只能随机选择。考虑到狼人可能会优先淘汰发言活跃或逻辑性强的玩家，我选择保护Kimi，因为ta的名字在列表中排第二，避开第一个和最后一个可能成为焦点的人选。', 'protect': 'Kimi'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '第一轮没有信息，只能随机选择。考虑到狼人可能会优先淘汰发言活跃或逻辑性强的玩家，我选择保护Kimi，因为ta的名字在列表中排第二，避开第一个和最后一个可能成为焦点的人选。', 'protect': 'Kimi'}
+[LLM结果] 提取键 'protect': Kimi
+[LLM成功] 返回有效结果: Kimi
+⏱️ [医生保护] 医生 MiniMax 行动完成: 3.77秒
+MiniMax protected Kimi
+[WebSocket] 夜间行动通知已发送: night_protect by MiniMax
+⏱️ [医生正在选择保护目标。] 医生正在选择保护目标。完成: 3.78秒
 
 ⏱️ 【预言家正在查验身份。】
 ⏱️ [夜间延迟] 暂停1.00秒
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.50
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.70
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.90
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⏱️ [预言家查验] 预言家 MiniMax-M1-80k 行动完成: 1.46秒
-Warning: MiniMax-M1-80k failed to choose investigation target, randomly selected GLM-4.6
-[WebSocket] 夜间行动通知已发送: night_investigate by MiniMax-M1-80k
-⏱️ [预言家正在查验身份。] 预言家正在查验身份。完成: 1.47秒
+[LLM调用] 第1/3次尝试 | 模型: moonshotai/Kimi-K2-Instruct-0905 | 温度: 0.50
+INFO:     127.0.0.1:51416 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 83 字符
+[LLM原始响应开始]
+{"reasoning":"第一晚毫无线索，只能凭直觉。我随机把视线投向DeepSeek，希望运气站在好人这边。","investigate":"DeepSeek"}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 83 字符
+[JSON解析] 输入文本: {"reasoning":"第一晚毫无线索，只能凭直觉。我随机把视线投向DeepSeek，希望运气站在好人这边。","investigate":"DeepSeek"}
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{"reasoning":"第一晚毫无线索，只能凭直觉。我随机把视线投向DeepSeek，希望运气站在好人这边。","investigate":"DeepSeek"}'
+[JSON字符串解析] 文本长度: 83 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '第一晚毫无线索，只能凭直觉。我随机把视线投向DeepSeek，希望运气站在好人这边。', 'investigate': 'DeepSeek'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '第一晚毫无线索，只能凭直觉。我随机把视线投向DeepSeek，希望运气站在好人这边。', 'investigate': 'DeepSeek'}
+[JSON解析] 直接解析结果: {'reasoning': '第一晚毫无线索，只能凭直觉。我随机把视线投向DeepSeek，希望运气站在好人这边。', 'investigate': 'DeepSeek'}
+[JSON解析] 最终结果: {'reasoning': '第一晚毫无线索，只能凭直觉。我随机把视线投向DeepSeek，希望运气站在好人这边。', 'investigate': 'DeepSeek'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '第一晚毫无线索，只能凭直觉。我随机把视线投向DeepSeek，希望运气站在好人这边。', 'investigate': 'DeepSeek'}
+[LLM结果] 提取键 'investigate': DeepSeek
+[LLM成功] 返回有效结果: DeepSeek
+⏱️ [预言家查验] 预言家 Kimi 行动完成: 7.87秒
+[WebSocket] 夜间行动通知已发送: night_investigate by Kimi
+⏱️ [预言家正在查验身份。] 预言家正在查验身份。完成: 7.89秒
 
 ⏱️ 【夜晚阶段解决】
-[调试] 成功从current_players中移除玩家: Kimi-Dev-72B, 剩余玩家: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B', 'DeepSeek-V3.2', 'GLM-4.6']
-Player Kimi-Dev-72B not in current players: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B', 'DeepSeek-V3.2', 'GLM-4.6']
-[调试] remove_player调用时玩家Kimi-Dev-72B已不在current_players中，可能是重复移除或状态不同步
-Player Kimi-Dev-72B not in current players: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B', 'DeepSeek-V3.2', 'GLM-4.6']
-[调试] remove_player调用时玩家Kimi-Dev-72B已不在current_players中，可能是重复移除或状态不同步
-Player Kimi-Dev-72B not in current players: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B', 'DeepSeek-V3.2', 'GLM-4.6']
-[调试] remove_player调用时玩家Kimi-Dev-72B已不在current_players中，可能是重复移除或状态不同步
-Player Kimi-Dev-72B not in current players: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B', 'DeepSeek-V3.2', 'GLM-4.6']
-[调试] remove_player调用时玩家Kimi-Dev-72B已不在current_players中，可能是重复移除或状态不同步
-狼人在夜晚阶段淘汰了Kimi-Dev-72B。
+[调试] 成功从current_players中移除玩家: Qwen, 剩余玩家: ['Kimi', 'MiniMax', 'GLM', 'DeepSeek', 'Inclusion']
+Player Qwen not in current players: ['Kimi', 'MiniMax', 'GLM', 'DeepSeek', 'Inclusion']
+[调试] remove_player调用时玩家Qwen已不在current_players中，可能是重复移除或状态不同步
+Player Qwen not in current players: ['Kimi', 'MiniMax', 'GLM', 'DeepSeek', 'Inclusion']
+[调试] remove_player调用时玩家Qwen已不在current_players中，可能是重复移除或状态不同步
+Player Qwen not in current players: ['Kimi', 'MiniMax', 'GLM', 'DeepSeek', 'Inclusion']
+[调试] remove_player调用时玩家Qwen已不在current_players中，可能是重复移除或状态不同步
+Player Qwen not in current players: ['Kimi', 'MiniMax', 'GLM', 'DeepSeek', 'Inclusion']
+[调试] remove_player调用时玩家Qwen已不在current_players中，可能是重复移除或状态不同步
+狼人在夜晚阶段淘汰了Qwen。
 ⏱️ [天亮阶段] 切换暂停1秒...
-[RealtimeLogger] session_20251101_025935 [phase_change] 进入day阶段
-[WebSocket] 阶段变更通知已发送: day (第0轮)
-⏱️ [夜晚阶段解决] 夜晚阶段解决完成: 1.02秒
-
-⏱️ 【夜晚阶段后检查胜负。】
-⏱️ [夜晚阶段后检查胜负。] 夜晚阶段后检查胜负。完成: 0.00秒
-
-⏱️ 【玩家开始辩论和投票。】
-⏱️ [阶段切换] 暂停1秒...
-⏱️ [切换暂停] 切换暂停完成: 1.00秒
-[RealtimeLogger] session_20251101_025935 [phase_change] 进入debate阶段
-[WebSocket] 阶段变更通知已发送: debate (第0轮)
-⏱️ [阶段通知] 阶段通知发送: 0.00秒
-本轮发言顺序: Qwen3-32B, GLM-4.6, DeepSeek-V3.2, Ring-flash-2.0, MiniMax-M1-80k
-[并发生成] 使用3线程并发生成发言内容...
-[批次 1/2] 并发生成: Qwen3-32B, GLM-4.6, DeepSeek-V3.2
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/Qwen/Qwen3-32B | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/deepseek-ai/DeepSeek-V3.2-Exp | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: GLM-4.6 did not return a valid dialogue, using default
-INFO:     127.0.0.1:59463 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 264 字符
-[LLM原始响应开始]
-{
-  "reasoning": "我是孤狼，现在其他角色都还活着。我需要利用狼人的身份优势，在白天阶段制造混乱，并将怀疑的矛头指向其他玩家。可以通过暗示自己可能是好人（如说自己验过某人是狼人）来混淆视听，同时故意追究其他嫌疑人的责任或捏造对他们的怀疑，让村民无法判断谁才是真正的狼人。",
-  "say": "大家好，我是Qwen3-32B，我昨晚已经查过迷你预言家了，他不是狼人。大家不要被谎言迷惑，要学会观察每个人的逻辑是否自洽。我怀疑环形逻辑其实是狼人，他昨晚试图掩盖什么。我们既要团结但也要谨慎，选出真正的敌人！"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 264 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "我是孤狼，现在其他角色都还活着。我需要利用狼人的身份优势，在白天阶段制造混乱，并将怀疑的矛头指向其他玩家。可以通过暗示自己可能是好人（如说自己验过某人是狼人）来混淆...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "我是孤狼，现在其他角色都还活着。我需要利用狼人的身份优势，在白天阶段制造混乱，并将怀疑的矛头指向其他玩家。可以通过暗示自己可能是好人（如说自己验过某人是狼人）来混淆视听，同时故意追究其他嫌疑人的责任或捏造对他们的怀疑，让村民无法判断谁才是真正的狼人。",
-  "say": "大家好，我是Qwen3-32B，我昨晚已经查过迷你预言家了，他不是狼人。大家不要被谎言迷惑，要学会观察每个人的逻辑是否自洽。我怀疑环形逻辑其实是狼人，他昨晚试图掩盖什么。我们既要团结但也要谨慎，选出真正的敌人！"
-}'
-[JSON字符串解析] 文本长度: 264 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '我是孤狼，现在其他角色都还活着。我需要利用狼人的身份优势，在白天阶段制造混乱，并将怀疑的矛头指向其他玩家。可以通过暗示自己可能是好人（如说自己验过某人是狼人）来混淆视听，同时故意追究其他嫌疑人的责任或捏造对他们的怀疑，让村民无法判断谁才是真正的狼人。', 'say': '大家好，我是Qwen3-32B，我昨晚已经查过迷你预言家了，他不是狼人。大家不要被谎言迷惑，要学会观察每个人的逻辑是否自洽。我怀疑环形逻辑其实是狼人，他昨晚试图掩盖什么。我们既要团结但也要谨慎，选出真正的敌人！'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '我是孤狼，现在其他角色都还活着。我需要利用狼人的身份优势，在白天阶段制造混乱，并将怀疑的矛头指向其他玩家。可以通过暗示自己可能是好人（如说自己验过某人是狼人）来混淆视听，同时故意追究其他嫌疑人的责任或捏造对他们的怀疑，让村民无法判断谁才是真正的狼人。', 'say': '大家好，我是Qwen3-32B，我昨晚已经查过迷你预言家了，他不是狼人。大家不要被谎言迷惑，要学会观察每个人的逻辑是否自洽。我怀疑环形逻辑其实是狼人，他昨晚试图掩盖什么。我们既要团结但也要谨慎，选出真正的敌人！'}
-[JSON解析] 直接解析结果: {'reasoning': '我是孤狼，现在其他角色都还活着。我需要利用狼人的身份优势，在白天阶段制造混乱，并将怀疑的矛头指向其他玩家。可以通过暗示自己可能是好人（如说自己验过某人是狼人）来混淆视听，同时故意追究其他嫌疑人的责任或捏造对他们的怀疑，让村民无法判断谁才是真正的狼人。', 'say': '大家好，我是Qwen3-32B，我昨晚已经查过迷你预言家了，他不是狼人。大家不要被谎言迷惑，要学会观察每个人的逻辑是否自洽。我怀疑环形逻辑其实是狼人，他昨晚试图掩盖什么。我们既要团结但也要谨慎，选出真正的敌人！'}
-[JSON解析] 最终结果: {'reasoning': '我是孤狼，现在其他角色都还活着。我需要利用狼人的身份优势，在白天阶段制造混乱，并将怀疑的矛头指向其他玩家。可以通过暗示自己可能是好人（如说自己验过某人是狼人）来混淆视听，同时故意追究其他嫌疑人的责任或捏造对他们的怀疑，让村民无法判断谁才是真正的狼人。', 'say': '大家好，我是Qwen3-32B，我昨晚已经查过迷你预言家了，他不是狼人。大家不要被谎言迷惑，要学会观察每个人的逻辑是否自洽。我怀疑环形逻辑其实是狼人，他昨晚试图掩盖什么。我们既要团结但也要谨慎，选出真正的敌人！'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '我是孤狼，现在其他角色都还活着。我需要利用狼人的身份优势，在白天阶段制造混乱，并将怀疑的矛头指向其他玩家。可以通过暗示自己可能是好人（如说自己验过某人是狼人）来混淆视听，同时故意追究其他嫌疑人的责任或捏造对他们的怀疑，让村民无法判断谁才是真正的狼人。', 'say': '大家好，我是Qwen3-32B，我昨晚已经查过迷你预言家了，他不是狼人。大家不要被谎言迷惑，要学会观察每个人的逻辑是否自洽。我怀疑环形逻辑其实是狼人，他昨晚试图掩盖什么。我们既要团结但也要谨慎，选出真正的敌人！'}
-[LLM成功] 返回有效结果: {'reasoning': '我是孤狼，现在其他角色都还活着。我需要利用狼人的身份优势，在白天阶段制造混乱，并将怀疑的矛头指向其他玩家。可以通过暗示自己可能是好人（如说自己验过某人是狼人）来混淆视听，同时故意追究其他嫌疑人的责任或捏造对他们的怀疑，让村民无法判断谁才是真正的狼人。', 'say': '大家好，我是Qwen3-32B，我昨晚已经查过迷你预言家了，他不是狼人。大家不要被谎言迷惑，要学会观察每个人的逻辑是否自洽。我怀疑环形逻辑其实是狼人，他昨晚试图掩盖什么。我们既要团结但也要谨慎，选出真正的敌人！'}
-  ✓ Qwen3-32B 发言生成完成 (105字)
-  ✓ GLM-4.6 发言生成完成 (13字)
-INFO:     127.0.0.1:59586 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 312 字符
-[LLM原始响应开始]
-{
-  "reasoning": "作为村民，我需要通过逻辑推理和观察来找到狼人。第一天就有一名玩家被淘汰，这是重要线索。我应当呼吁大家分享信息，分析夜间行动的逻辑，特别关注那些发言可疑或回避讨论的玩家。由于我是村民，没有特殊能力，必须依靠推理和团队合作。",
-  "say": "各位玩家，游戏刚开始就有一名同伴被淘汰，这让我们必须立刻警惕起来。作为村民，我没有任何特殊能力，只能依靠大家的推理和合作。我建议每个人都发言，分享自己的观察和怀疑对象，尤其是对昨晚狼人选择淘汰Kimi-Dev-72B的原因进行分析。狼人可能基于某种策略选择了这个目标，我们需要找出其中的逻辑。谁愿意先发言？或者有人注意到什么异常行为吗？"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 312 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "作为村民，我需要通过逻辑推理和观察来找到狼人。第一天就有一名玩家被淘汰，这是重要线索。我应当呼吁大家分享信息，分析夜间行动的逻辑，特别关注那些发言可疑或回避讨论的玩...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "作为村民，我需要通过逻辑推理和观察来找到狼人。第一天就有一名玩家被淘汰，这是重要线索。我应当呼吁大家分享信息，分析夜间行动的逻辑，特别关注那些发言可疑或回避讨论的玩家。由于我是村民，没有特殊能力，必须依靠推理和团队合作。",
-  "say": "各位玩家，游戏刚开始就有一名同伴被淘汰，这让我们必须立刻警惕起来。作为村民，我没有任何特殊能力，只能依靠大家的推理和合作。我建议每个人都发言，分享自己的观察和怀疑对象，尤其是对昨晚狼人选择淘汰Kimi-Dev-72B的原因进行分析。狼人可能基于某种策略选择了这个目标，我们需要找出其中的逻辑。谁愿意先发言？或者有人注意到什么异常行为吗？"
-}'
-[JSON字符串解析] 文本长度: 312 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为村民，我需要通过逻辑推理和观察来找到狼人。第一天就有一名玩家被淘汰，这是重要线索。我应当呼吁大家分享信息，分析夜间行动的逻辑，特别关注那些发言可疑或回避讨论的玩家。由于我是村民，没有特殊能力，必须依靠推理和团队合作。', 'say': '各位玩家，游戏刚开始就有一名同伴被淘汰，这让我们必须立刻警惕起来。作为村民，我没有任何特殊能力，只能依靠大家的推理和合作。我建议每个人都发言，分享自己的观察和怀疑对象，尤其是对昨晚狼人选择淘汰Kimi-Dev-72B的原因进行分析。狼人可能基于某种策略选择了这个目标，我们需要找出其中的逻辑。谁愿意先发言？或者有人注意到什么异常行为吗？'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '作为村民，我需要通过逻辑推理和观察来找到狼人。第一天就有一名玩家被淘汰，这是重要线索。我应当呼吁大家分享信息，分析夜间行动的逻辑，特别关注那些发言可疑或回避讨论的玩家。由于我是村民，没有特殊能力，必须依靠推理和团队合作。', 'say': '各位玩家，游戏刚开始就有一名同伴被淘汰，这让我们必须立刻警惕起来。作为村民，我没有任何特殊能力，只能依靠大家的推理和合作。我建议每个人都发言，分享自己的观察和怀疑对象，尤其是对昨晚狼人选择淘汰Kimi-Dev-72B的原因进行分析。狼人可能基于某种策略选择了这个目标，我们需要找出其中的逻辑。谁愿意先发言？或者有人注意到什么异常行为吗？'}
-[JSON解析] 直接解析结果: {'reasoning': '作为村民，我需要通过逻辑推理和观察来找到狼人。第一天就有一名玩家被淘汰，这是重要线索。我应当呼吁大家分享信息，分析夜间行动的逻辑，特别关注那些发言可疑或回避讨论的玩家。由于我是村民，没有特殊能力，必须依靠推理和团队合作。', 'say': '各位玩家，游戏刚开始就有一名同伴被淘汰，这让我们必须立刻警惕起来。作为村民，我没有任何特殊能力，只能依靠大家的推理和合作。我建议每个人都发言，分享自己的观察和怀疑对象，尤其是对昨晚狼人选择淘汰Kimi-Dev-72B的原因进行分析。狼人可能基于某种策略选择了这个目标，我们需要找出其中的逻辑。谁愿意先发言？或者有人注意到什么异常行为吗？'}
-[JSON解析] 最终结果: {'reasoning': '作为村民，我需要通过逻辑推理和观察来找到狼人。第一天就有一名玩家被淘汰，这是重要线索。我应当呼吁大家分享信息，分析夜间行动的逻辑，特别关注那些发言可疑或回避讨论的玩家。由于我是村民，没有特殊能力，必须依靠推理和团队合作。', 'say': '各位玩家，游戏刚开始就有一名同伴被淘汰，这让我们必须立刻警惕起来。作为村民，我没有任何特殊能力，只能依靠大家的推理和合作。我建议每个人都发言，分享自己的观察和怀疑对象，尤其是对昨晚狼人选择淘汰Kimi-Dev-72B的原因进行分析。狼人可能基于某种策略选择了这个目标，我们需要找出其中的逻辑。谁愿意先发言？或者有人注意到什么异常行为吗？'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为村民，我需要通过逻辑推理和观察来找到狼人。第一天就有一名玩家被淘汰，这是重要线索。我应当呼吁大家分享信息，分析夜间行动的逻辑，特别关注那些发言可疑或回避讨论的玩家。由于我是村民，没有特殊能力，必须依靠推理和团队合作。', 'say': '各位玩家，游戏刚开始就有一名同伴被淘汰，这让我们必须立刻警惕起来。作为村民，我没有任何特殊能力，只能依靠大家的推理和合作。我建议每个人都发言，分享自己的观察和怀疑对象，尤其是对昨晚狼人选择淘汰Kimi-Dev-72B的原因进行分析。狼人可能基于某种策略选择了这个目标，我们需要找出其中的逻辑。谁愿意先发言？或者有人注意到什么异常行为吗？'}
-[LLM成功] 返回有效结果: {'reasoning': '作为村民，我需要通过逻辑推理和观察来找到狼人。第一天就有一名玩家被淘汰，这是重要线索。我应当呼吁大家分享信息，分析夜间行动的逻辑，特别关注那些发言可疑或回避讨论的玩家。由于我是村民，没有特殊能力，必须依靠推理和团队合作。', 'say': '各位玩家，游戏刚开始就有一名同伴被淘汰，这让我们必须立刻警惕起来。作为村民，我没有任何特殊能力，只能依靠大家的推理和合作。我建议每个人都发言，分享自己的观察和怀疑对象，尤其是对昨晚狼人选择淘汰Kimi-Dev-72B的原因进行分析。狼人可能基于某种策略选择了这个目标，我们需要找出其中的逻辑。谁愿意先发言？或者有人注意到什么异常行为吗？'}
-  ✓ DeepSeek-V3.2 发言生成完成 (168字)
-⏱️ [批次1] 批次1完成: 15.45秒
-[批次 2/2] 并发生成: Ring-flash-2.0, MiniMax-M1-80k
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: Ring-flash-2.0 did not return a valid dialogue, using default
-  ✓ Ring-flash-2.0 发言生成完成 (13字)
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: MiniMax-M1-80k did not return a valid dialogue, using default
-  ✓ MiniMax-M1-80k 发言生成完成 (13字)
-⏱️ [批次2] 批次2完成: 0.29秒
-⏱️ [发言生成] 所有发言生成完成: 15.74秒
-[生成完成] 所有发言已生成，开始按顺序发送和展示...
-[1/5] Qwen3-32B (Werewolf): 大家好，我是Qwen3-32B，我昨晚已经查过迷你预言家了，他不是狼人。大家不要被谎言迷惑，要学会观察每个人的逻辑是否自洽。我怀疑环形逻辑其实是狼人，他昨晚试图掩盖什么。我们既要团结但也要谨慎，选出真正的敌人！
-[RealtimeLogger] session_20251101_025935 [action] Qwen3-32B 发言: 大家好，我是Qwen3-32B，我昨晚已经查过迷你预言家了，他不是狼人。大家不要被谎言迷惑，要学会观察每个人的逻辑是否自洽。我怀疑环形逻辑其实是狼人，他昨晚试图掩盖什么。我们既要团结但也要谨慎，选出真正的敌人！
-[WebSocket] 辩论发言通知已发送: Qwen3-32B
-⏱️ [发送-Qwen3-32B] Qwen3-32B发送完成: 0.01秒
-⏱️ [展示暂停] 105字 → 暂停 7.0秒
-INFO:     127.0.0.1:59667 - "GET /health HTTP/1.1" 200 OK
-[2/5] GLM-4.6 (Villager): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_025935 [action] GLM-4.6 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: GLM-4.6
-⏱️ [发送-GLM-4.6] GLM-4.6发送完成: 0.01秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-[3/5] DeepSeek-V3.2 (Villager): 各位玩家，游戏刚开始就有一名同伴被淘汰，这让我们必须立刻警惕起来。作为村民，我没有任何特殊能力，只能依靠大家的推理和合作。我建议每个人都发言，分享自己的观察和怀疑对象，尤其是对昨晚狼人选择淘汰Kimi-Dev-72B的原因进行分析。狼人可能基于某种策略选择了这个目标，我们需要找出其中的逻辑。谁愿意先发言？或者有人注意到什么异常行为吗？
-[RealtimeLogger] session_20251101_025935 [action] DeepSeek-V3.2 发言: 各位玩家，游戏刚开始就有一名同伴被淘汰，这让我们必须立刻警惕起来。作为村民，我没有任何特殊能力，只能依靠大家的推理和合作。我建议每个人都发言，分享自己的观察和怀疑对象，尤其是对昨晚狼人选择淘汰Kimi-Dev-72B的原因进行分析。狼人可能基于某种策略选择了这个目标，我们需要找出其中的逻辑。谁愿意先发言？或者有人注意到什么异常行为吗？
-[WebSocket] 辩论发言通知已发送: DeepSeek-V3.2
-⏱️ [发送-DeepSeek-V3.2] DeepSeek-V3.2发送完成: 0.01秒
-⏱️ [展示暂停] 168字 → 暂停 11.2秒
-INFO:     127.0.0.1:59751 - "GET /health HTTP/1.1" 200 OK
-[4/5] Ring-flash-2.0 (Doctor): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_025935 [action] Ring-flash-2.0 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: Ring-flash-2.0
-⏱️ [发送-Ring-flash-2.0] Ring-flash-2.0发送完成: 0.01秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-[5/5] MiniMax-M1-80k (Seer): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_025935 [action] MiniMax-M1-80k 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: MiniMax-M1-80k
-⏱️ [发送-MiniMax-M1-80k] MiniMax-M1-80k发送完成: 0.01秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-⏱️ [发言发送] 所有发言发送完成: 20.87秒
-⏱️ [发言暂停汇总] 总暂停时间: 20.8秒
-⏱️ [发言阶段] 发言阶段总耗时: 37.61秒
-⏱️ [投票阶段] 切换暂停1秒...
-⏱️ [投票切换] 投票切换完成: 1.00秒
-[RealtimeLogger] session_20251101_025935 [phase_change] 进入voting阶段
-[WebSocket] 阶段变更通知已发送: voting (第0轮)
-⏱️ [投票通知] 投票通知发送: 0.00秒
-⏱️ [投票] 开始顺序处理投票（15秒超时）...
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/deepseek-ai/DeepSeek-V3.2-Exp | 温度: 0.50
-INFO:     127.0.0.1:59836 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 303 字符
-[LLM原始响应开始]
-{
-  "reasoning": "作为村民，我没有任何特殊能力，只能依靠分析玩家发言和行为来寻找狼人。当前游戏刚开始，只有我和Qwen3-32B做了实质性发言，其他三位玩家都只是简单重复'需要仔细观察并寻找线索'，这种异常一致的沉默行为值得怀疑。特别是Qwen3-32B声称查验了MiniMax-M1-80k不是狼人，但作为村民我无法验证这个信息的真实性。考虑到狼人可能会选择隐藏身份并保持低调，我决定从保持沉默的玩家中选择一个进行投票。Ring-flash-2.0的发言与其他沉默玩家完全一致，缺乏独立思考，可能是狼人试图混入村民中的策略。",
-  "vote": "Ring-flash-2.0"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 303 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "作为村民，我没有任何特殊能力，只能依靠分析玩家发言和行为来寻找狼人。当前游戏刚开始，只有我和Qwen3-32B做了实质性发言，其他三位玩家都只是简单重复'需要仔细观...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "作为村民，我没有任何特殊能力，只能依靠分析玩家发言和行为来寻找狼人。当前游戏刚开始，只有我和Qwen3-32B做了实质性发言，其他三位玩家都只是简单重复'需要仔细观察并寻找线索'，这种异常一致的沉默行为值得怀疑。特别是Qwen3-32B声称查验了MiniMax-M1-80k不是狼人，但作为村民我无法验证这个信息的真实性。考虑到狼人可能会选择隐藏身份并保持低调，我决定从保持沉默的玩家中选择一个进行投票。Ring-flash-2.0的发言与其他沉默玩家完全一致，缺乏独立思考，可能是狼人试图混入村民中的策略。",
-  "vote": "Ring-flash-2.0"
-}'
-[JSON字符串解析] 文本长度: 303 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': "作为村民，我没有任何特殊能力，只能依靠分析玩家发言和行为来寻找狼人。当前游戏刚开始，只有我和Qwen3-32B做了实质性发言，其他三位玩家都只是简单重复'需要仔细观察并寻找线索'，这种异常一致的沉默行为值得怀疑。特别是Qwen3-32B声称查验了MiniMax-M1-80k不是狼人，但作为村民我无法验证这个信息的真实性。考虑到狼人可能会选择隐藏身份并保持低调，我决定从保持沉默的玩家中选择一个进行投票。Ring-flash-2.0的发言与其他沉默玩家完全一致，缺乏独立思考，可能是狼人试图混入村民中的策略。", 'vote': 'Ring-flash-2.0'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': "作为村民，我没有任何特殊能力，只能依靠分析玩家发言和行为来寻找狼人。当前游戏刚开始，只有我和Qwen3-32B做了实质性发言，其他三位玩家都只是简单重复'需要仔细观察并寻找线索'，这种异常一致的沉默行为值得怀疑。特别是Qwen3-32B声称查验了MiniMax-M1-80k不是狼人，但作为村民我无法验证这个信息的真实性。考虑到狼人可能会选择隐藏身份并保持低调，我决定从保持沉默的玩家中选择一个进行投票。Ring-flash-2.0的发言与其他沉默玩家完全一致，缺乏独立思考，可能是狼人试图混入村民中的策略。", 'vote': 'Ring-flash-2.0'}
-[JSON解析] 直接解析结果: {'reasoning': "作为村民，我没有任何特殊能力，只能依靠分析玩家发言和行为来寻找狼人。当前游戏刚开始，只有我和Qwen3-32B做了实质性发言，其他三位玩家都只是简单重复'需要仔细观察并寻找线索'，这种异常一致的沉默行为值得怀疑。特别是Qwen3-32B声称查验了MiniMax-M1-80k不是狼人，但作为村民我无法验证这个信息的真实性。考虑到狼人可能会选择隐藏身份并保持低调，我决定从保持沉默的玩家中选择一个进行投票。Ring-flash-2.0的发言与其他沉默玩家完全一致，缺乏独立思考，可能是狼人试图混入村民中的策略。", 'vote': 'Ring-flash-2.0'}
-[JSON解析] 最终结果: {'reasoning': "作为村民，我没有任何特殊能力，只能依靠分析玩家发言和行为来寻找狼人。当前游戏刚开始，只有我和Qwen3-32B做了实质性发言，其他三位玩家都只是简单重复'需要仔细观察并寻找线索'，这种异常一致的沉默行为值得怀疑。特别是Qwen3-32B声称查验了MiniMax-M1-80k不是狼人，但作为村民我无法验证这个信息的真实性。考虑到狼人可能会选择隐藏身份并保持低调，我决定从保持沉默的玩家中选择一个进行投票。Ring-flash-2.0的发言与其他沉默玩家完全一致，缺乏独立思考，可能是狼人试图混入村民中的策略。", 'vote': 'Ring-flash-2.0'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': "作为村民，我没有任何特殊能力，只能依靠分析玩家发言和行为来寻找狼人。当前游戏刚开始，只有我和Qwen3-32B做了实质性发言，其他三位玩家都只是简单重复'需要仔细观察并寻找线索'，这种异常一致的沉默行为值得怀疑。特别是Qwen3-32B声称查验了MiniMax-M1-80k不是狼人，但作为村民我无法验证这个信息的真实性。考虑到狼人可能会选择隐藏身份并保持低调，我决定从保持沉默的玩家中选择一个进行投票。Ring-flash-2.0的发言与其他沉默玩家完全一致，缺乏独立思考，可能是狼人试图混入村民中的策略。", 'vote': 'Ring-flash-2.0'}
-[LLM结果] 提取键 'vote': Ring-flash-2.0
-[LLM成功] 返回有效结果: Ring-flash-2.0
-[RealtimeLogger] session_20251101_025935 [vote] DeepSeek-V3.2 投票给 Ring-flash-2.0
-[WebSocket] 投票通知已发送: DeepSeek-V3.2 -> Ring-flash-2.0
-⏱️ [投票-DeepSeek-V3.2] DeepSeek-V3.2投票完成: 14.08秒
-⚠️ 未知的延迟类型: vote
-INFO:     127.0.0.1:59908 - "GET /health HTTP/1.1" 200 OK
-[LLM调用] 第1/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.50
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.70
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.90
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⚠️ [GLM-4.6] 未返回有效投票，使用默认投票
-[RealtimeLogger] session_20251101_025935 [vote] GLM-4.6 投票给 DeepSeek-V3.2
-[WebSocket] 投票通知已发送: GLM-4.6 -> DeepSeek-V3.2
-⏱️ [投票-GLM-4.6] GLM-4.6投票完成: 0.18秒
-⚠️ 未知的延迟类型: vote
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/Qwen/Qwen3-32B | 温度: 0.50
-[LLM响应] 成功获取响应，长度: 196 字符
-[LLM原始响应开始]
-{
-  "reasoning": "我选择投票淘汰DeepSeek-V3.2。他作为村民中的一员，发言时表现出较强的分析意愿和组织能力，可能会在后续阶段对狼人策略产生干扰。此外，他主动提出让其他玩家分享怀疑对象，这种行为可能试图引导讨论方向，从而掩盖某些关键信息。从狼人角度出发，我们需要优先排除可能的威胁，而他的发言模式值得警惕。",
-  "vote": "DeepSeek-V3.2"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 196 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "我选择投票淘汰DeepSeek-V3.2。他作为村民中的一员，发言时表现出较强的分析意愿和组织能力，可能会在后续阶段对狼人策略产生干扰。此外，他主动提出让其他玩家分...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "我选择投票淘汰DeepSeek-V3.2。他作为村民中的一员，发言时表现出较强的分析意愿和组织能力，可能会在后续阶段对狼人策略产生干扰。此外，他主动提出让其他玩家分享怀疑对象，这种行为可能试图引导讨论方向，从而掩盖某些关键信息。从狼人角度出发，我们需要优先排除可能的威胁，而他的发言模式值得警惕。",
-  "vote": "DeepSeek-V3.2"
-}'
-[JSON字符串解析] 文本长度: 196 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '我选择投票淘汰DeepSeek-V3.2。他作为村民中的一员，发言时表现出较强的分析意愿和组织能力，可能会在后续阶段对狼人策略产生干扰。此外，他主动提出让其他玩家分享怀疑对象，这种行为可能试图引导讨论方向，从而掩盖某些关键信息。从狼人角度出发，我们需要优先排除可能的威胁，而他的发言模式值得警惕。', 'vote': 'DeepSeek-V3.2'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '我选择投票淘汰DeepSeek-V3.2。他作为村民中的一员，发言时表现出较强的分析意愿和组织能力，可能会在后续阶段对狼人策略产生干扰。此外，他主动提出让其他玩家分享怀疑对象，这种行为可能试图引导讨论方向，从而掩盖某些关键信息。从狼人角度出发，我们需要优先排除可能的威胁，而他的发言模式值得警惕。', 'vote': 'DeepSeek-V3.2'}
-[JSON解析] 直接解析结果: {'reasoning': '我选择投票淘汰DeepSeek-V3.2。他作为村民中的一员，发言时表现出较强的分析意愿和组织能力，可能会在后续阶段对狼人策略产生干扰。此外，他主动提出让其他玩家分享怀疑对象，这种行为可能试图引导讨论方向，从而掩盖某些关键信息。从狼人角度出发，我们需要优先排除可能的威胁，而他的发言模式值得警惕。', 'vote': 'DeepSeek-V3.2'}
-[JSON解析] 最终结果: {'reasoning': '我选择投票淘汰DeepSeek-V3.2。他作为村民中的一员，发言时表现出较强的分析意愿和组织能力，可能会在后续阶段对狼人策略产生干扰。此外，他主动提出让其他玩家分享怀疑对象，这种行为可能试图引导讨论方向，从而掩盖某些关键信息。从狼人角度出发，我们需要优先排除可能的威胁，而他的发言模式值得警惕。', 'vote': 'DeepSeek-V3.2'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '我选择投票淘汰DeepSeek-V3.2。他作为村民中的一员，发言时表现出较强的分析意愿和组织能力，可能会在后续阶段对狼人策略产生干扰。此外，他主动提出让其他玩家分享怀疑对象，这种行为可能试图引导讨论方向，从而掩盖某些关键信息。从狼人角度出发，我们需要优先排除可能的威胁，而他的发言模式值得警惕。', 'vote': 'DeepSeek-V3.2'}
-[LLM结果] 提取键 'vote': DeepSeek-V3.2
-[LLM成功] 返回有效结果: DeepSeek-V3.2
-[RealtimeLogger] session_20251101_025935 [vote] Qwen3-32B 投票给 DeepSeek-V3.2
-[WebSocket] 投票通知已发送: Qwen3-32B -> DeepSeek-V3.2
-⏱️ [投票-Qwen3-32B] Qwen3-32B投票完成: 4.92秒
-⚠️ 未知的延迟类型: vote
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.50
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.70
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.90
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⚠️ [Ring-flash-2.0] 未返回有效投票，使用默认投票
-[RealtimeLogger] session_20251101_025935 [vote] Ring-flash-2.0 投票给 DeepSeek-V3.2
-[WebSocket] 投票通知已发送: Ring-flash-2.0 -> DeepSeek-V3.2
-⏱️ [投票-Ring-flash-2.0] Ring-flash-2.0投票完成: 0.16秒
-⚠️ 未知的延迟类型: vote
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.50
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.70
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.90
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⚠️ [MiniMax-M1-80k] 未返回有效投票，使用默认投票
-[RealtimeLogger] session_20251101_025935 [vote] MiniMax-M1-80k 投票给 DeepSeek-V3.2
-[WebSocket] 投票通知已发送: MiniMax-M1-80k -> DeepSeek-V3.2
-⏱️ [投票-MiniMax-M1-80k] MiniMax-M1-80k投票完成: 0.28秒
-⚠️ 未知的延迟类型: vote
-⏱️ [投票阶段] 投票阶段完成: 24.65秒
-DeepSeek-V3.2 投票淘汰 Ring-flash-2.0
-GLM-4.6 投票淘汰 DeepSeek-V3.2
-Qwen3-32B 投票淘汰 DeepSeek-V3.2
-Ring-flash-2.0 投票淘汰 DeepSeek-V3.2
-MiniMax-M1-80k 投票淘汰 DeepSeek-V3.2
-⏱️ [玩家开始辩论和投票。] 玩家开始辩论和投票。完成: 63.28秒
-
-⏱️ 【投票后放逐】
-⏱️ [放逐] DeepSeek-V3.2 被投票放逐
-[WebSocket] 玩家放逐通知已发送: DeepSeek-V3.2 (第0轮)
-[调试] 成功从current_players中移除玩家: DeepSeek-V3.2, 剩余玩家: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B', 'GLM-4.6']
-Player DeepSeek-V3.2 not in current players: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B', 'GLM-4.6']
-[调试] remove_player调用时玩家DeepSeek-V3.2已不在current_players中，可能是重复移除或状态不同步
-Player DeepSeek-V3.2 not in current players: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B', 'GLM-4.6']
-[调试] remove_player调用时玩家DeepSeek-V3.2已不在current_players中，可能是重复移除或状态不同步
-Player DeepSeek-V3.2 not in current players: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B', 'GLM-4.6']
-[调试] remove_player调用时玩家DeepSeek-V3.2已不在current_players中，可能是重复移除或状态不同步
-DeepSeek-V3.2 获得最高票数(4票)，被投票放逐。
-⏱️ [放逐处理] 放逐处理完成: 0.00秒
-⏱️ [投票后放逐] 投票后放逐完成: 0.01秒
-
-⏱️ 【白天阶段后检查胜负。】
-⏱️ [白天阶段后检查胜负。] 白天阶段后检查胜负。完成: 0.00秒
-
-⏱️ 【玩家开始总结辩论。】
-⏱️ [玩家总结] 开始收集玩家总结...
-[LLM调用] 第1/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/Qwen/Qwen3-32B | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-INFO:     127.0.0.1:59961 - "GET /health HTTP/1.1" 200 OK
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: GLM-4.6 did not return a valid summary, using default
-GLM-4.6 summary: 我需要仔细思考今天发生的情况，并仔细分析局势。
-[WebSocket] 玩家总结通知已发送: GLM-4.6
-[LLM响应] 成功获取响应，长度: 611 字符
-[LLM原始响应开始]
-{
-"reasoning": "在本轮辩论中，我作为狼人需密切关注其他玩家的发言细节，以找出他们对我的怀疑点并加以应对。GLM-4.6、Ring-flash-2.0、MiniMax-M1-80k三人表现得相对隐忍和谨慎，但缺乏明确立场，使我难以判断其重点关注对象。DeepSeek-V3.2毫无保留地提出让所有人分享观察和怀疑，这说明他可能是理性推理想象型的玩家，但发言较为普通，尚未出现暴露点。他最终也被投票淘汰，表明他可能被怀疑是组织发言或逻辑松散之人。在接下来的夜晚阶段，我应尽量避开这些目光，隐藏身份。而在白天，团结其他观察不足的玩家，共同呼吁投票淘汰理性派或发言主动的人，从而混淆同盟视线。值得关注的是，当前其他玩家还未展示能力，所以尽量让他们之间互相怀疑，保持我对预言家或医生的质疑，从而转移他们的注意力。",
-"summary": "我是Qwen3-32B，这一轮的发言中，我提到已经查验过迷你预言家，认为他是好人，同时暗示怀疑环形逻辑，并为村民提供了一些建议。我通过逻辑推断和警惕性的语言设法渲染紧凑气氛，引导注意力集中在环形逻辑身上。而多数其他玩家表现得保守和偏向观察，尽管这可能只是他们策略的一部分。关键角色可能是理性派DeepSeek-V3.2，他将是未来游戏中的主要威胁。我的策略是继续保持他的高曝光度，同时暗中争取其他被动型玩家的支持，让他们对我的言论印象良好，从而为下一轮争取信任和安全。"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 611 字符
-[JSON解析] 输入文本预览: {
-"reasoning": "在本轮辩论中，我作为狼人需密切关注其他玩家的发言细节，以找出他们对我的怀疑点并加以应对。GLM-4.6、Ring-flash-2.0、MiniMax-M1-80k三人表...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-"reasoning": "在本轮辩论中，我作为狼人需密切关注其他玩家的发言细节，以找出他们对我的怀疑点并加以应对。GLM-4.6、Ring-flash-2.0、MiniMax-M1-80k三人表现得相对隐忍和谨慎，但缺乏明确立场，使我难以判断其重点关注对象。DeepSeek-V3.2毫无保留地提出让所有人分享观察和怀疑，这说明他可能是理性推理想象型的玩家，但发言较为普通，尚未出现暴露点。他最终也被投票淘汰，表明他可能被怀疑是组织发言或逻辑松散之人。在接下来的夜晚阶段，我应尽量避开这些目光，隐藏身份。而在白天，团结其他观察不足的玩家，共同呼吁投票淘汰理性派或发言主动的人，从而混淆同盟视线。值得关注的是，当前其他玩家还未展示能力，所以尽量让他们之间互相怀疑，保持我对预言家或医生的质疑，从而转移他们的注意力。",
-"summary": "我是Qwen3-32B，这一轮的发言中，我提到已经查验过迷你预言家，认为他是好人，同时暗示怀疑环形逻辑，并为村民提供了一些建议。我通过逻辑推断和警惕性的语言设法渲染紧凑气氛，引导注意力集中在环形逻辑身上。而多数其他玩家表现得保守和偏向观察，尽管这可能只是他们策略的一部分。关键角色可能是理性派DeepSeek-V3.2，他将是未来游戏中的主要威胁。我的策略是继续保持他的高曝光度，同时暗中争取其他被动型玩家的支持，让他们对我的言论印象良好，从而为下一轮争取信任和安全。"
-}'
-[JSON字符串解析] 文本长度: 611 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '在本轮辩论中，我作为狼人需密切关注其他玩家的发言细节，以找出他们对我的怀疑点并加以应对。GLM-4.6、Ring-flash-2.0、MiniMax-M1-80k三人表现得相对隐忍和谨慎，但缺乏明确立场，使我难以判断其重点关注对象。DeepSeek-V3.2毫无保留地提出让所有人分享观察和怀疑，这说明他可能是理性推理想象型的玩家，但发言较为普通，尚未出现暴露点。他最终也被投票淘汰，表明他可能被怀疑是组织发言或逻辑松散之人。在接下来的夜晚阶段，我应尽量避开这些目光，隐藏身份。而在白天，团结其他观察不足的玩家，共同呼吁投票淘汰理性派或发言主动的人，从而混淆同盟视线。值得关注的是，当前其他玩家还未展示能力，所以尽量让他们之间互相怀疑，保持我对预言家或医生的质疑，从而转移他们的注意力。', 'summary': '我是Qwen3-32B，这一轮的发言中，我提到已经查验过迷你预言家，认为他是好人，同时暗示怀疑环形逻辑，并为村民提供了一些建议。我通过逻辑推断和警惕性的语言设法渲染紧凑气氛，引导注意力集中在环形逻辑身上。而多数其他玩家表现得保守和偏向观察，尽管这可能只是他们策略的一部分。关键角色可能是理性派DeepSeek-V3.2，他将是未来游戏中的主要威胁。我的策略是继续保持他的高曝光度，同时暗中争取其他被动型玩家的支持，让他们对我的言论印象良好，从而为下一轮争取信任和安全。'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '在本轮辩论中，我作为狼人需密切关注其他玩家的发言细节，以找出他们对我的怀疑点并加以应对。GLM-4.6、Ring-flash-2.0、MiniMax-M1-80k三人表现得相对隐忍和谨慎，但缺乏明确立场，使我难以判断其重点关注对象。DeepSeek-V3.2毫无保留地提出让所有人分享观察和怀疑，这说明他可能是理性推理想象型的玩家，但发言较为普通，尚未出现暴露点。他最终也被投票淘汰，表明他可能被怀疑是组织发言或逻辑松散之人。在接下来的夜晚阶段，我应尽量避开这些目光，隐藏身份。而在白天，团结其他观察不足的玩家，共同呼吁投票淘汰理性派或发言主动的人，从而混淆同盟视线。值得关注的是，当前其他玩家还未展示能力，所以尽量让他们之间互相怀疑，保持我对预言家或医生的质疑，从而转移他们的注意力。', 'summary': '我是Qwen3-32B，这一轮的发言中，我提到已经查验过迷你预言家，认为他是好人，同时暗示怀疑环形逻辑，并为村民提供了一些建议。我通过逻辑推断和警惕性的语言设法渲染紧凑气氛，引导注意力集中在环形逻辑身上。而多数其他玩家表现得保守和偏向观察，尽管这可能只是他们策略的一部分。关键角色可能是理性派DeepSeek-V3.2，他将是未来游戏中的主要威胁。我的策略是继续保持他的高曝光度，同时暗中争取其他被动型玩家的支持，让他们对我的言论印象良好，从而为下一轮争取信任和安全。'}
-[JSON解析] 直接解析结果: {'reasoning': '在本轮辩论中，我作为狼人需密切关注其他玩家的发言细节，以找出他们对我的怀疑点并加以应对。GLM-4.6、Ring-flash-2.0、MiniMax-M1-80k三人表现得相对隐忍和谨慎，但缺乏明确立场，使我难以判断其重点关注对象。DeepSeek-V3.2毫无保留地提出让所有人分享观察和怀疑，这说明他可能是理性推理想象型的玩家，但发言较为普通，尚未出现暴露点。他最终也被投票淘汰，表明他可能被怀疑是组织发言或逻辑松散之人。在接下来的夜晚阶段，我应尽量避开这些目光，隐藏身份。而在白天，团结其他观察不足的玩家，共同呼吁投票淘汰理性派或发言主动的人，从而混淆同盟视线。值得关注的是，当前其他玩家还未展示能力，所以尽量让他们之间互相怀疑，保持我对预言家或医生的质疑，从而转移他们的注意力。', 'summary': '我是Qwen3-32B，这一轮的发言中，我提到已经查验过迷你预言家，认为他是好人，同时暗示怀疑环形逻辑，并为村民提供了一些建议。我通过逻辑推断和警惕性的语言设法渲染紧凑气氛，引导注意力集中在环形逻辑身上。而多数其他玩家表现得保守和偏向观察，尽管这可能只是他们策略的一部分。关键角色可能是理性派DeepSeek-V3.2，他将是未来游戏中的主要威胁。我的策略是继续保持他的高曝光度，同时暗中争取其他被动型玩家的支持，让他们对我的言论印象良好，从而为下一轮争取信任和安全。'}
-[JSON解析] 最终结果: {'reasoning': '在本轮辩论中，我作为狼人需密切关注其他玩家的发言细节，以找出他们对我的怀疑点并加以应对。GLM-4.6、Ring-flash-2.0、MiniMax-M1-80k三人表现得相对隐忍和谨慎，但缺乏明确立场，使我难以判断其重点关注对象。DeepSeek-V3.2毫无保留地提出让所有人分享观察和怀疑，这说明他可能是理性推理想象型的玩家，但发言较为普通，尚未出现暴露点。他最终也被投票淘汰，表明他可能被怀疑是组织发言或逻辑松散之人。在接下来的夜晚阶段，我应尽量避开这些目光，隐藏身份。而在白天，团结其他观察不足的玩家，共同呼吁投票淘汰理性派或发言主动的人，从而混淆同盟视线。值得关注的是，当前其他玩家还未展示能力，所以尽量让他们之间互相怀疑，保持我对预言家或医生的质疑，从而转移他们的注意力。', 'summary': '我是Qwen3-32B，这一轮的发言中，我提到已经查验过迷你预言家，认为他是好人，同时暗示怀疑环形逻辑，并为村民提供了一些建议。我通过逻辑推断和警惕性的语言设法渲染紧凑气氛，引导注意力集中在环形逻辑身上。而多数其他玩家表现得保守和偏向观察，尽管这可能只是他们策略的一部分。关键角色可能是理性派DeepSeek-V3.2，他将是未来游戏中的主要威胁。我的策略是继续保持他的高曝光度，同时暗中争取其他被动型玩家的支持，让他们对我的言论印象良好，从而为下一轮争取信任和安全。'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '在本轮辩论中，我作为狼人需密切关注其他玩家的发言细节，以找出他们对我的怀疑点并加以应对。GLM-4.6、Ring-flash-2.0、MiniMax-M1-80k三人表现得相对隐忍和谨慎，但缺乏明确立场，使我难以判断其重点关注对象。DeepSeek-V3.2毫无保留地提出让所有人分享观察和怀疑，这说明他可能是理性推理想象型的玩家，但发言较为普通，尚未出现暴露点。他最终也被投票淘汰，表明他可能被怀疑是组织发言或逻辑松散之人。在接下来的夜晚阶段，我应尽量避开这些目光，隐藏身份。而在白天，团结其他观察不足的玩家，共同呼吁投票淘汰理性派或发言主动的人，从而混淆同盟视线。值得关注的是，当前其他玩家还未展示能力，所以尽量让他们之间互相怀疑，保持我对预言家或医生的质疑，从而转移他们的注意力。', 'summary': '我是Qwen3-32B，这一轮的发言中，我提到已经查验过迷你预言家，认为他是好人，同时暗示怀疑环形逻辑，并为村民提供了一些建议。我通过逻辑推断和警惕性的语言设法渲染紧凑气氛，引导注意力集中在环形逻辑身上。而多数其他玩家表现得保守和偏向观察，尽管这可能只是他们策略的一部分。关键角色可能是理性派DeepSeek-V3.2，他将是未来游戏中的主要威胁。我的策略是继续保持他的高曝光度，同时暗中争取其他被动型玩家的支持，让他们对我的言论印象良好，从而为下一轮争取信任和安全。'}
-[LLM成功] 返回有效结果: {'reasoning': '在本轮辩论中，我作为狼人需密切关注其他玩家的发言细节，以找出他们对我的怀疑点并加以应对。GLM-4.6、Ring-flash-2.0、MiniMax-M1-80k三人表现得相对隐忍和谨慎，但缺乏明确立场，使我难以判断其重点关注对象。DeepSeek-V3.2毫无保留地提出让所有人分享观察和怀疑，这说明他可能是理性推理想象型的玩家，但发言较为普通，尚未出现暴露点。他最终也被投票淘汰，表明他可能被怀疑是组织发言或逻辑松散之人。在接下来的夜晚阶段，我应尽量避开这些目光，隐藏身份。而在白天，团结其他观察不足的玩家，共同呼吁投票淘汰理性派或发言主动的人，从而混淆同盟视线。值得关注的是，当前其他玩家还未展示能力，所以尽量让他们之间互相怀疑，保持我对预言家或医生的质疑，从而转移他们的注意力。', 'summary': '我是Qwen3-32B，这一轮的发言中，我提到已经查验过迷你预言家，认为他是好人，同时暗示怀疑环形逻辑，并为村民提供了一些建议。我通过逻辑推断和警惕性的语言设法渲染紧凑气氛，引导注意力集中在环形逻辑身上。而多数其他玩家表现得保守和偏向观察，尽管这可能只是他们策略的一部分。关键角色可能是理性派DeepSeek-V3.2，他将是未来游戏中的主要威胁。我的策略是继续保持他的高曝光度，同时暗中争取其他被动型玩家的支持，让他们对我的言论印象良好，从而为下一轮争取信任和安全。'}
-Qwen3-32B summary: 我是Qwen3-32B，这一轮的发言中，我提到已经查验过迷你预言家，认为他是好人，同时暗示怀疑环形逻辑，并为村民提供了一些建议。我通过逻辑推断和警惕性的语言设法渲染紧凑气氛，引导注意力集中在环形逻辑身上。而多数其他玩家表现得保守和偏向观察，尽管这可能只是他们策略的一部分。关键角色可能是理性派DeepSeek-V3.2，他将是未来游戏中的主要威胁。我的策略是继续保持他的高曝光度，同时暗中争取其他被动型玩家的支持，让他们对我的言论印象良好，从而为下一轮争取信任和安全。
-[WebSocket] 玩家总结通知已发送: Qwen3-32B
-Warning: Ring-flash-2.0 did not return a valid summary, using default
-Ring-flash-2.0 summary: 我需要仔细思考今天发生的情况，并仔细分析局势。
-[WebSocket] 玩家总结通知已发送: Ring-flash-2.0
-Warning: MiniMax-M1-80k did not return a valid summary, using default
-MiniMax-M1-80k summary: 我需要仔细思考今天发生的情况，并仔细分析局势。
-[WebSocket] 玩家总结通知已发送: MiniMax-M1-80k
-⏱️ [玩家总结] 玩家总结完成: 10.42秒
-⏱️ [玩家开始总结辩论。] 玩家开始总结辩论。完成: 10.42秒
-INFO:     127.0.0.1:60036 - "GET /health HTTP/1.1" 200 OK
-
-⏱️ 第0轮结束
-⏱️ [第0轮] 第0轮总耗时: 85.13秒
-
-================================================================================
-📊 【第 0 轮时间统计】
-================================================================================
-  狼人正在选择淘汰目标。                   :   6.64秒 (  7.8%)
-  医生正在选择保护目标。                   :   1.18秒 (  1.4%)
-  预言家正在查验身份。                    :   1.47秒 (  1.7%)
-  夜晚阶段解决                        :   1.02秒 (  1.2%)
-  夜晚阶段后检查胜负。                    :   0.00秒 (  0.0%)
-  玩家开始辩论和投票。                    :  63.28秒 ( 74.3%)
-  投票后放逐                         :   0.01秒 (  0.0%)
-  白天阶段后检查胜负。                    :   0.00秒 (  0.0%)
-  玩家开始总结辩论。                     :  10.42秒 ( 12.2%)
-────────────────────────────────────────────────────────────────────────────────
-  总耗时                           :  85.13秒 (100.0%)
-================================================================================
-
-STARTING ROUND: 1
-
-================================================================================
-⏱️ 【第 1 轮开始】
-================================================================================
-
-⏱️ [夜晚开始] 切换暂停1秒...
-⏱️ [夜晚切换] 夜晚切换完成: 1.00秒
-[RealtimeLogger] session_20251101_025935 [phase_change] 进入night阶段
-[WebSocket] 阶段变更通知已发送: night (第1轮)
-⏱️ [夜晚通知] 夜晚通知发送: 0.00秒
-
-⏱️ 【狼人正在选择淘汰目标。】
-⏱️ [夜间延迟] 暂停1.00秒
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/Qwen/Qwen3-32B | 温度: 0.50
-[LLM响应] 成功获取响应，长度: 355 字符
-[LLM原始响应开始]
-{
-"reasoning": "在第0轮的夜晚阶段，我成功让Kimi-Dev-72B被淘汰，同时在白天的发言中，我引导大家将注意力集中在环形逻辑身上，这成功让DeepSeek-V3.2被投票放逐。现在进入第1轮夜晚阶段，我需要选择一个最具威胁性的玩家进行淘汰。目前剩余的玩家是Ring-flash-2.0、GLM-4.6、MiniMax-M1-80k和我。其中，GLM-4.6在白天的发言中表现得非常理性且逻辑性强，他可能具有预言家的身份，或者至少有很强的推理能力。而MiniMax-M1-80k和Ring-flash-2.0则显得较为沉默或被动，因此他们更可能是普通村民。为了降低预言家对我的影响，我决定在夜晚阶段淘汰GLM-4.6，以削弱村民阵营的推理核心。",
-"remove": "GLM-4.6"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 355 字符
-[JSON解析] 输入文本预览: {
-"reasoning": "在第0轮的夜晚阶段，我成功让Kimi-Dev-72B被淘汰，同时在白天的发言中，我引导大家将注意力集中在环形逻辑身上，这成功让DeepSeek-V3.2被投票放逐。现在...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-"reasoning": "在第0轮的夜晚阶段，我成功让Kimi-Dev-72B被淘汰，同时在白天的发言中，我引导大家将注意力集中在环形逻辑身上，这成功让DeepSeek-V3.2被投票放逐。现在进入第1轮夜晚阶段，我需要选择一个最具威胁性的玩家进行淘汰。目前剩余的玩家是Ring-flash-2.0、GLM-4.6、MiniMax-M1-80k和我。其中，GLM-4.6在白天的发言中表现得非常理性且逻辑性强，他可能具有预言家的身份，或者至少有很强的推理能力。而MiniMax-M1-80k和Ring-flash-2.0则显得较为沉默或被动，因此他们更可能是普通村民。为了降低预言家对我的影响，我决定在夜晚阶段淘汰GLM-4.6，以削弱村民阵营的推理核心。",
-"remove": "GLM-4.6"
-}'
-[JSON字符串解析] 文本长度: 355 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '在第0轮的夜晚阶段，我成功让Kimi-Dev-72B被淘汰，同时在白天的发言中，我引导大家将注意力集中在环形逻辑身上，这成功让DeepSeek-V3.2被投票放逐。现在进入第1轮夜晚阶段，我需要选择一个最具威胁性的玩家进行淘汰。目前剩余的玩家是Ring-flash-2.0、GLM-4.6、MiniMax-M1-80k和我。其中，GLM-4.6在白天的发言中表现得非常理性且逻辑性强，他可能具有预言家的身份，或者至少有很强的推理能力。而MiniMax-M1-80k和Ring-flash-2.0则显得较为沉默或被动，因此他们更可能是普通村民。为了降低预言家对我的影响，我决定在夜晚阶段淘汰GLM-4.6，以削弱村民阵营的推理核心。', 'remove': 'GLM-4.6'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '在第0轮的夜晚阶段，我成功让Kimi-Dev-72B被淘汰，同时在白天的发言中，我引导大家将注意力集中在环形逻辑身上，这成功让DeepSeek-V3.2被投票放逐。现在进入第1轮夜晚阶段，我需要选择一个最具威胁性的玩家进行淘汰。目前剩余的玩家是Ring-flash-2.0、GLM-4.6、MiniMax-M1-80k和我。其中，GLM-4.6在白天的发言中表现得非常理性且逻辑性强，他可能具有预言家的身份，或者至少有很强的推理能力。而MiniMax-M1-80k和Ring-flash-2.0则显得较为沉默或被动，因此他们更可能是普通村民。为了降低预言家对我的影响，我决定在夜晚阶段淘汰GLM-4.6，以削弱村民阵营的推理核心。', 'remove': 'GLM-4.6'}
-[JSON解析] 直接解析结果: {'reasoning': '在第0轮的夜晚阶段，我成功让Kimi-Dev-72B被淘汰，同时在白天的发言中，我引导大家将注意力集中在环形逻辑身上，这成功让DeepSeek-V3.2被投票放逐。现在进入第1轮夜晚阶段，我需要选择一个最具威胁性的玩家进行淘汰。目前剩余的玩家是Ring-flash-2.0、GLM-4.6、MiniMax-M1-80k和我。其中，GLM-4.6在白天的发言中表现得非常理性且逻辑性强，他可能具有预言家的身份，或者至少有很强的推理能力。而MiniMax-M1-80k和Ring-flash-2.0则显得较为沉默或被动，因此他们更可能是普通村民。为了降低预言家对我的影响，我决定在夜晚阶段淘汰GLM-4.6，以削弱村民阵营的推理核心。', 'remove': 'GLM-4.6'}
-[JSON解析] 最终结果: {'reasoning': '在第0轮的夜晚阶段，我成功让Kimi-Dev-72B被淘汰，同时在白天的发言中，我引导大家将注意力集中在环形逻辑身上，这成功让DeepSeek-V3.2被投票放逐。现在进入第1轮夜晚阶段，我需要选择一个最具威胁性的玩家进行淘汰。目前剩余的玩家是Ring-flash-2.0、GLM-4.6、MiniMax-M1-80k和我。其中，GLM-4.6在白天的发言中表现得非常理性且逻辑性强，他可能具有预言家的身份，或者至少有很强的推理能力。而MiniMax-M1-80k和Ring-flash-2.0则显得较为沉默或被动，因此他们更可能是普通村民。为了降低预言家对我的影响，我决定在夜晚阶段淘汰GLM-4.6，以削弱村民阵营的推理核心。', 'remove': 'GLM-4.6'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '在第0轮的夜晚阶段，我成功让Kimi-Dev-72B被淘汰，同时在白天的发言中，我引导大家将注意力集中在环形逻辑身上，这成功让DeepSeek-V3.2被投票放逐。现在进入第1轮夜晚阶段，我需要选择一个最具威胁性的玩家进行淘汰。目前剩余的玩家是Ring-flash-2.0、GLM-4.6、MiniMax-M1-80k和我。其中，GLM-4.6在白天的发言中表现得非常理性且逻辑性强，他可能具有预言家的身份，或者至少有很强的推理能力。而MiniMax-M1-80k和Ring-flash-2.0则显得较为沉默或被动，因此他们更可能是普通村民。为了降低预言家对我的影响，我决定在夜晚阶段淘汰GLM-4.6，以削弱村民阵营的推理核心。', 'remove': 'GLM-4.6'}
-[LLM结果] 提取键 'remove': GLM-4.6
-[LLM成功] 返回有效结果: GLM-4.6
-⏱️ [狼人击杀] 狼人 Qwen3-32B 行动完成: 4.83秒
-Qwen3-32B eliminated GLM-4.6
-[WebSocket] 夜间行动通知已发送: night_eliminate by Qwen3-32B
-⏱️ [狼人正在选择淘汰目标。] 狼人正在选择淘汰目标。完成: 4.85秒
-
-⏱️ 【医生正在选择保护目标。】
-⏱️ [夜间延迟] 暂停1.00秒
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.50
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.70
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.90
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⏱️ [医生保护] 医生 Ring-flash-2.0 行动完成: 1.16秒
-Warning: Ring-flash-2.0 failed to choose protection target, randomly selected Ring-flash-2.0
-Ring-flash-2.0 protected Ring-flash-2.0
-[WebSocket] 夜间行动通知已发送: night_protect by Ring-flash-2.0
-⏱️ [医生正在选择保护目标。] 医生正在选择保护目标。完成: 1.17秒
-
-⏱️ 【预言家正在查验身份。】
-⏱️ [夜间延迟] 暂停1.00秒
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.50
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.70
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.90
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⏱️ [预言家查验] 预言家 MiniMax-M1-80k 行动完成: 1.27秒
-Warning: MiniMax-M1-80k failed to choose investigation target, randomly selected Ring-flash-2.0
-[WebSocket] 夜间行动通知已发送: night_investigate by MiniMax-M1-80k
-⏱️ [预言家正在查验身份。] 预言家正在查验身份。完成: 1.28秒
-
-⏱️ 【夜晚阶段解决】
-[调试] 成功从current_players中移除玩家: GLM-4.6, 剩余玩家: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B']
-Player GLM-4.6 not in current players: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B']
-[调试] remove_player调用时玩家GLM-4.6已不在current_players中，可能是重复移除或状态不同步
-Player GLM-4.6 not in current players: ['MiniMax-M1-80k', 'Ring-flash-2.0', 'Qwen3-32B']
-[调试] remove_player调用时玩家GLM-4.6已不在current_players中，可能是重复移除或状态不同步
-狼人在夜晚阶段淘汰了GLM-4.6。
-⏱️ [天亮阶段] 切换暂停1秒...
-[RealtimeLogger] session_20251101_025935 [phase_change] 进入day阶段
-[WebSocket] 阶段变更通知已发送: day (第1轮)
-⏱️ [夜晚阶段解决] 夜晚阶段解决完成: 1.02秒
-
-⏱️ 【夜晚阶段后检查胜负。】
-⏱️ [夜晚阶段后检查胜负。] 夜晚阶段后检查胜负。完成: 0.00秒
-
-⏱️ 【玩家开始辩论和投票。】
-⏱️ [阶段切换] 暂停1秒...
-INFO:     127.0.0.1:60103 - "GET /health HTTP/1.1" 200 OK
-⏱️ [切换暂停] 切换暂停完成: 1.00秒
-[RealtimeLogger] session_20251101_025935 [phase_change] 进入debate阶段
-[WebSocket] 阶段变更通知已发送: debate (第1轮)
-⏱️ [阶段通知] 阶段通知发送: 0.00秒
-本轮发言顺序: Qwen3-32B, MiniMax-M1-80k, Ring-flash-2.0
-[并发生成] 使用3线程并发生成发言内容...
-[批次 1/1] 并发生成: Qwen3-32B, MiniMax-M1-80k, Ring-flash-2.0
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/Qwen/Qwen3-32B | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: MiniMax-M1-80k did not return a valid dialogue, using default
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: Ring-flash-2.0 did not return a valid dialogue, using default
-[LLM响应] 成功获取响应，长度: 365 字符
-[LLM原始响应开始]
-{
-  "reasoning": "当前场上只剩一名狼人，我需要减少被怀疑的风险，并同时制造混乱，让村民之间互相产生猜疑。可以通过暗示或误导信息，比如声称自己是医生或是预言家，从而转移环形闪存或其他玩家的注意力。通过合理指控其他玩家，并制造一个‘素描式分析’，让村民对真实情况感到模糊并偏向信任我提出的方向。同时观察他人策略，予以回应，不暴露破绽。",
-  "say": "各位乡亲，昨晚的淘汰和投票结果需要我们仔细分析一下。我昨晚好像听到环形闪存低声说到红蓝线不对称，这难道不是预言家在找茬吗？我建议是MiniMix-M1-80k才是需要怀疑的人。因为我刚刚通宵查验到一些奇怪的点，这位玩家在讨论中似乎对黑夜行动漠不关心，这很不正常。而我昨晚并没有看到其他明显嫌疑人。所以，轮到我们要认真考虑他的行动，而不是浪费时间内耗。"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 365 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "当前场上只剩一名狼人，我需要减少被怀疑的风险，并同时制造混乱，让村民之间互相产生猜疑。可以通过暗示或误导信息，比如声称自己是医生或是预言家，从而转移环形闪存或其他玩...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "当前场上只剩一名狼人，我需要减少被怀疑的风险，并同时制造混乱，让村民之间互相产生猜疑。可以通过暗示或误导信息，比如声称自己是医生或是预言家，从而转移环形闪存或其他玩家的注意力。通过合理指控其他玩家，并制造一个‘素描式分析’，让村民对真实情况感到模糊并偏向信任我提出的方向。同时观察他人策略，予以回应，不暴露破绽。",
-  "say": "各位乡亲，昨晚的淘汰和投票结果需要我们仔细分析一下。我昨晚好像听到环形闪存低声说到红蓝线不对称，这难道不是预言家在找茬吗？我建议是MiniMix-M1-80k才是需要怀疑的人。因为我刚刚通宵查验到一些奇怪的点，这位玩家在讨论中似乎对黑夜行动漠不关心，这很不正常。而我昨晚并没有看到其他明显嫌疑人。所以，轮到我们要认真考虑他的行动，而不是浪费时间内耗。"
-}'
-[JSON字符串解析] 文本长度: 365 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '当前场上只剩一名狼人，我需要减少被怀疑的风险，并同时制造混乱，让村民之间互相产生猜疑。可以通过暗示或误导信息，比如声称自己是医生或是预言家，从而转移环形闪存或其他玩家的注意力。通过合理指控其他玩家，并制造一个‘素描式分析’，让村民对真实情况感到模糊并偏向信任我提出的方向。同时观察他人策略，予以回应，不暴露破绽。', 'say': '各位乡亲，昨晚的淘汰和投票结果需要我们仔细分析一下。我昨晚好像听到环形闪存低声说到红蓝线不对称，这难道不是预言家在找茬吗？我建议是MiniMix-M1-80k才是需要怀疑的人。因为我刚刚通宵查验到一些奇怪的点，这位玩家在讨论中似乎对黑夜行动漠不关心，这很不正常。而我昨晚并没有看到其他明显嫌疑人。所以，轮到我们要认真考虑他的行动，而不是浪费时间内耗。'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '当前场上只剩一名狼人，我需要减少被怀疑的风险，并同时制造混乱，让村民之间互相产生猜疑。可以通过暗示或误导信息，比如声称自己是医生或是预言家，从而转移环形闪存或其他玩家的注意力。通过合理指控其他玩家，并制造一个‘素描式分析’，让村民对真实情况感到模糊并偏向信任我提出的方向。同时观察他人策略，予以回应，不暴露破绽。', 'say': '各位乡亲，昨晚的淘汰和投票结果需要我们仔细分析一下。我昨晚好像听到环形闪存低声说到红蓝线不对称，这难道不是预言家在找茬吗？我建议是MiniMix-M1-80k才是需要怀疑的人。因为我刚刚通宵查验到一些奇怪的点，这位玩家在讨论中似乎对黑夜行动漠不关心，这很不正常。而我昨晚并没有看到其他明显嫌疑人。所以，轮到我们要认真考虑他的行动，而不是浪费时间内耗。'}
-[JSON解析] 直接解析结果: {'reasoning': '当前场上只剩一名狼人，我需要减少被怀疑的风险，并同时制造混乱，让村民之间互相产生猜疑。可以通过暗示或误导信息，比如声称自己是医生或是预言家，从而转移环形闪存或其他玩家的注意力。通过合理指控其他玩家，并制造一个‘素描式分析’，让村民对真实情况感到模糊并偏向信任我提出的方向。同时观察他人策略，予以回应，不暴露破绽。', 'say': '各位乡亲，昨晚的淘汰和投票结果需要我们仔细分析一下。我昨晚好像听到环形闪存低声说到红蓝线不对称，这难道不是预言家在找茬吗？我建议是MiniMix-M1-80k才是需要怀疑的人。因为我刚刚通宵查验到一些奇怪的点，这位玩家在讨论中似乎对黑夜行动漠不关心，这很不正常。而我昨晚并没有看到其他明显嫌疑人。所以，轮到我们要认真考虑他的行动，而不是浪费时间内耗。'}
-[JSON解析] 最终结果: {'reasoning': '当前场上只剩一名狼人，我需要减少被怀疑的风险，并同时制造混乱，让村民之间互相产生猜疑。可以通过暗示或误导信息，比如声称自己是医生或是预言家，从而转移环形闪存或其他玩家的注意力。通过合理指控其他玩家，并制造一个‘素描式分析’，让村民对真实情况感到模糊并偏向信任我提出的方向。同时观察他人策略，予以回应，不暴露破绽。', 'say': '各位乡亲，昨晚的淘汰和投票结果需要我们仔细分析一下。我昨晚好像听到环形闪存低声说到红蓝线不对称，这难道不是预言家在找茬吗？我建议是MiniMix-M1-80k才是需要怀疑的人。因为我刚刚通宵查验到一些奇怪的点，这位玩家在讨论中似乎对黑夜行动漠不关心，这很不正常。而我昨晚并没有看到其他明显嫌疑人。所以，轮到我们要认真考虑他的行动，而不是浪费时间内耗。'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '当前场上只剩一名狼人，我需要减少被怀疑的风险，并同时制造混乱，让村民之间互相产生猜疑。可以通过暗示或误导信息，比如声称自己是医生或是预言家，从而转移环形闪存或其他玩家的注意力。通过合理指控其他玩家，并制造一个‘素描式分析’，让村民对真实情况感到模糊并偏向信任我提出的方向。同时观察他人策略，予以回应，不暴露破绽。', 'say': '各位乡亲，昨晚的淘汰和投票结果需要我们仔细分析一下。我昨晚好像听到环形闪存低声说到红蓝线不对称，这难道不是预言家在找茬吗？我建议是MiniMix-M1-80k才是需要怀疑的人。因为我刚刚通宵查验到一些奇怪的点，这位玩家在讨论中似乎对黑夜行动漠不关心，这很不正常。而我昨晚并没有看到其他明显嫌疑人。所以，轮到我们要认真考虑他的行动，而不是浪费时间内耗。'}
-[LLM成功] 返回有效结果: {'reasoning': '当前场上只剩一名狼人，我需要减少被怀疑的风险，并同时制造混乱，让村民之间互相产生猜疑。可以通过暗示或误导信息，比如声称自己是医生或是预言家，从而转移环形闪存或其他玩家的注意力。通过合理指控其他玩家，并制造一个‘素描式分析’，让村民对真实情况感到模糊并偏向信任我提出的方向。同时观察他人策略，予以回应，不暴露破绽。', 'say': '各位乡亲，昨晚的淘汰和投票结果需要我们仔细分析一下。我昨晚好像听到环形闪存低声说到红蓝线不对称，这难道不是预言家在找茬吗？我建议是MiniMix-M1-80k才是需要怀疑的人。因为我刚刚通宵查验到一些奇怪的点，这位玩家在讨论中似乎对黑夜行动漠不关心，这很不正常。而我昨晚并没有看到其他明显嫌疑人。所以，轮到我们要认真考虑他的行动，而不是浪费时间内耗。'}
-  ✓ Qwen3-32B 发言生成完成 (175字)
-  ✓ MiniMax-M1-80k 发言生成完成 (13字)
-  ✓ Ring-flash-2.0 发言生成完成 (13字)
-⏱️ [批次1] 批次1完成: 3.69秒
-⏱️ [发言生成] 所有发言生成完成: 3.69秒
-[生成完成] 所有发言已生成，开始按顺序发送和展示...
-[1/3] Qwen3-32B (Werewolf): 各位乡亲，昨晚的淘汰和投票结果需要我们仔细分析一下。我昨晚好像听到环形闪存低声说到红蓝线不对称，这难道不是预言家在找茬吗？我建议是MiniMix-M1-80k才是需要怀疑的人。因为我刚刚通宵查验到一些奇怪的点，这位玩家在讨论中似乎对黑夜行动漠不关心，这很不正常。而我昨晚并没有看到其他明显嫌疑人。所以，轮到我们要认真考虑他的行动，而不是浪费时间内耗。
-[RealtimeLogger] session_20251101_025935 [action] Qwen3-32B 发言: 各位乡亲，昨晚的淘汰和投票结果需要我们仔细分析一下。我昨晚好像听到环形闪存低声说到红蓝线不对称，这难道不是预言家在找茬吗？我建议是MiniMix-M1-80k才是需要怀疑的人。因为我刚刚通宵查验到一些奇怪的点，这位玩家在讨论中似乎对黑夜行动漠不关心，这很不正常。而我昨晚并没有看到其他明显嫌疑人。所以，轮到我们要认真考虑他的行动，而不是浪费时间内耗。
-[WebSocket] 辩论发言通知已发送: Qwen3-32B
-⏱️ [发送-Qwen3-32B] Qwen3-32B发送完成: 0.01秒
-⏱️ [展示暂停] 175字 → 暂停 11.7秒
-INFO:     127.0.0.1:60154 - "GET /health HTTP/1.1" 200 OK
-[2/3] MiniMax-M1-80k (Seer): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_025935 [action] MiniMax-M1-80k 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: MiniMax-M1-80k
-⏱️ [发送-MiniMax-M1-80k] MiniMax-M1-80k发送完成: 0.01秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-[3/3] Ring-flash-2.0 (Doctor): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_025935 [action] Ring-flash-2.0 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: Ring-flash-2.0
-⏱️ [发送-Ring-flash-2.0] Ring-flash-2.0发送完成: 0.02秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-⏱️ [发言发送] 所有发言发送完成: 13.45秒
-⏱️ [发言暂停汇总] 总暂停时间: 13.4秒
-⏱️ [发言阶段] 发言阶段总耗时: 18.15秒
-⏱️ [投票阶段] 切换暂停1秒...
-⏱️ [投票切换] 投票切换完成: 1.00秒
-[RealtimeLogger] session_20251101_025935 [phase_change] 进入voting阶段
-[WebSocket] 阶段变更通知已发送: voting (第1轮)
-⏱️ [投票通知] 投票通知发送: 0.00秒
-⏱️ [投票] 开始顺序处理投票（15秒超时）...
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/Qwen/Qwen3-32B | 温度: 0.50
-INFO:     127.0.0.1:60226 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 235 字符
-[LLM原始响应开始]
-{
-  "reasoning": "在这一轮的发言中，环形闪存和MiniMix-M1-80k都表现得较为保守，没有提供实质性的推理或信息。然而，环形闪存提到了“红蓝线不对称”，这可能暗示他具备某种特殊能力或观察力，值得进一步怀疑。而MiniMix-M1-80k的发言则显得毫无内容，可能只是一个普通村民。为了继续让环形闪存保持高嫌疑度，我建议投票淘汰MiniMix-M1-80k，以减少他干扰我们判断的机会。",
-  "vote": "MiniMax-M1-80k"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 235 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "在这一轮的发言中，环形闪存和MiniMix-M1-80k都表现得较为保守，没有提供实质性的推理或信息。然而，环形闪存提到了“红蓝线不对称”，这可能暗示他具备某种特殊...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "在这一轮的发言中，环形闪存和MiniMix-M1-80k都表现得较为保守，没有提供实质性的推理或信息。然而，环形闪存提到了“红蓝线不对称”，这可能暗示他具备某种特殊能力或观察力，值得进一步怀疑。而MiniMix-M1-80k的发言则显得毫无内容，可能只是一个普通村民。为了继续让环形闪存保持高嫌疑度，我建议投票淘汰MiniMix-M1-80k，以减少他干扰我们判断的机会。",
-  "vote": "MiniMax-M1-80k"
-}'
-[JSON字符串解析] 文本长度: 235 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '在这一轮的发言中，环形闪存和MiniMix-M1-80k都表现得较为保守，没有提供实质性的推理或信息。然而，环形闪存提到了“红蓝线不对称”，这可能暗示他具备某种特殊能力或观察力，值得进一步怀疑。而MiniMix-M1-80k的发言则显得毫无内容，可能只是一个普通村民。为了继续让环形闪存保持高嫌疑度，我建议投票淘汰MiniMix-M1-80k，以减少他干扰我们判断的机会。', 'vote': 'MiniMax-M1-80k'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '在这一轮的发言中，环形闪存和MiniMix-M1-80k都表现得较为保守，没有提供实质性的推理或信息。然而，环形闪存提到了“红蓝线不对称”，这可能暗示他具备某种特殊能力或观察力，值得进一步怀疑。而MiniMix-M1-80k的发言则显得毫无内容，可能只是一个普通村民。为了继续让环形闪存保持高嫌疑度，我建议投票淘汰MiniMix-M1-80k，以减少他干扰我们判断的机会。', 'vote': 'MiniMax-M1-80k'}
-[JSON解析] 直接解析结果: {'reasoning': '在这一轮的发言中，环形闪存和MiniMix-M1-80k都表现得较为保守，没有提供实质性的推理或信息。然而，环形闪存提到了“红蓝线不对称”，这可能暗示他具备某种特殊能力或观察力，值得进一步怀疑。而MiniMix-M1-80k的发言则显得毫无内容，可能只是一个普通村民。为了继续让环形闪存保持高嫌疑度，我建议投票淘汰MiniMix-M1-80k，以减少他干扰我们判断的机会。', 'vote': 'MiniMax-M1-80k'}
-[JSON解析] 最终结果: {'reasoning': '在这一轮的发言中，环形闪存和MiniMix-M1-80k都表现得较为保守，没有提供实质性的推理或信息。然而，环形闪存提到了“红蓝线不对称”，这可能暗示他具备某种特殊能力或观察力，值得进一步怀疑。而MiniMix-M1-80k的发言则显得毫无内容，可能只是一个普通村民。为了继续让环形闪存保持高嫌疑度，我建议投票淘汰MiniMix-M1-80k，以减少他干扰我们判断的机会。', 'vote': 'MiniMax-M1-80k'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '在这一轮的发言中，环形闪存和MiniMix-M1-80k都表现得较为保守，没有提供实质性的推理或信息。然而，环形闪存提到了“红蓝线不对称”，这可能暗示他具备某种特殊能力或观察力，值得进一步怀疑。而MiniMix-M1-80k的发言则显得毫无内容，可能只是一个普通村民。为了继续让环形闪存保持高嫌疑度，我建议投票淘汰MiniMix-M1-80k，以减少他干扰我们判断的机会。', 'vote': 'MiniMax-M1-80k'}
-[LLM结果] 提取键 'vote': MiniMax-M1-80k
-[LLM成功] 返回有效结果: MiniMax-M1-80k
-[RealtimeLogger] session_20251101_025935 [vote] Qwen3-32B 投票给 MiniMax-M1-80k
-[WebSocket] 投票通知已发送: Qwen3-32B -> MiniMax-M1-80k
-⏱️ [投票-Qwen3-32B] Qwen3-32B投票完成: 2.71秒
-⚠️ 未知的延迟类型: vote
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.50
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.70
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.90
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⚠️ [Ring-flash-2.0] 未返回有效投票，使用默认投票
-[RealtimeLogger] session_20251101_025935 [vote] Ring-flash-2.0 投票给 Qwen3-32B
-[WebSocket] 投票通知已发送: Ring-flash-2.0 -> Qwen3-32B
-⏱️ [投票-Ring-flash-2.0] Ring-flash-2.0投票完成: 0.19秒
-⚠️ 未知的延迟类型: vote
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.50
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.70
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.90
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⚠️ [MiniMax-M1-80k] 未返回有效投票，使用默认投票
-[RealtimeLogger] session_20251101_025935 [vote] MiniMax-M1-80k 投票给 Qwen3-32B
-[WebSocket] 投票通知已发送: MiniMax-M1-80k -> Qwen3-32B
-⏱️ [投票-MiniMax-M1-80k] MiniMax-M1-80k投票完成: 0.30秒
-⚠️ 未知的延迟类型: vote
-⏱️ [投票阶段] 投票阶段完成: 6.21秒
-Qwen3-32B 投票淘汰 MiniMax-M1-80k
-Ring-flash-2.0 投票淘汰 Qwen3-32B
-MiniMax-M1-80k 投票淘汰 Qwen3-32B
-⏱️ [玩家开始辩论和投票。] 玩家开始辩论和投票。完成: 25.37秒
-
-⏱️ 【投票后放逐】
-⏱️ [放逐] Qwen3-32B 被投票放逐
-[WebSocket] 玩家放逐通知已发送: Qwen3-32B (第1轮)
-[调试] 成功从current_players中移除玩家: Qwen3-32B, 剩余玩家: ['MiniMax-M1-80k', 'Ring-flash-2.0']
-Player Qwen3-32B not in current players: ['MiniMax-M1-80k', 'Ring-flash-2.0']
-[调试] remove_player调用时玩家Qwen3-32B已不在current_players中，可能是重复移除或状态不同步
-Qwen3-32B 获得最高票数(2票)，被投票放逐。
-⏱️ [放逐处理] 放逐处理完成: 0.00秒
-⏱️ [投票后放逐] 投票后放逐完成: 0.02秒
-
-⏱️ 【白天阶段后检查胜负。】
-获胜者是：好人！
-[WebSocket] 游戏结束通知已发送: 好人 获胜
-⏱️ [白天阶段后检查胜负。] 白天阶段后检查胜负。完成: 0.01秒
-
-⏱️ 第1轮结束（游戏结束）
-⏱️ [第1轮] 第1轮总耗时: 34.80秒
-
-================================================================================
-📊 【第 1 轮时间统计】
-================================================================================
-  狼人正在选择淘汰目标。                   :   4.85秒 ( 13.9%)
-  医生正在选择保护目标。                   :   1.17秒 (  3.4%)
-  预言家正在查验身份。                    :   1.28秒 (  3.7%)
-  夜晚阶段解决                        :   1.02秒 (  2.9%)
-  夜晚阶段后检查胜负。                    :   0.00秒 (  0.0%)
-  玩家开始辩论和投票。                    :  25.37秒 ( 72.9%)
-  投票后放逐                         :   0.02秒 (  0.1%)
-  白天阶段后检查胜负。                    :   0.01秒 (  0.0%)
-────────────────────────────────────────────────────────────────────────────────
-  总耗时                           :  34.80秒 (100.0%)
-================================================================================
-
-游戏结束！
-INFO:     127.0.0.1:60300 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60484 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60531 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60591 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60710 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60789 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:60938 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61068 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61192 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61324 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61395 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61448 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61479 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61553 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61623 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61670 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61725 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61762 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61874 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61924 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:61974 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62030 - "GET /health HTTP/1.1" 200 OK
-INFO:     connection closed
-WebSocket disconnected for session session_20251101_025935. Remaining connections: 1
-WebSocket disconnected for session session_20251101_025935
-INFO:     127.0.0.1:62072 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62103 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62226 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62278 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62330 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62371 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62423 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62475 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62561 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62613 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62698 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62730 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62765 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62847 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:62955 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63012 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63058 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63118 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63183 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63235 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63335 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63365 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63428 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63506 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63557 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63588 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63697 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63731 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63854 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63943 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:63989 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64091 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64276 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64376 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64454 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64507 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64551 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64601 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64676 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64742 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64804 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64860 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64928 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:64992 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:65124 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:65160 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:65220 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:65289 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:65380 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:65435 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:49166 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:49218 - "OPTIONS /api/v1/games/start HTTP/1.1" 200 OK
-创建新游戏：6个玩家，每个玩家使用不同的模型
-玩家列表：['MiniMax-M1-80k', 'GLM-4.6', 'Qwen3-32B', 'DeepSeek-V3.2', 'Kimi-Dev-72B', 'Ring-flash-2.0']
-预言家 GLM-4.6 -> THUDM/GLM-Z1-9B-0414
-医生 Kimi-Dev-72B -> siliconflow/moonshotai/Kimi-Dev-72B
-狼人 DeepSeek-V3.2 -> siliconflow/deepseek-ai/DeepSeek-V3.2-Exp
-村民 Ring-flash-2.0 -> inclusionAI/Ling-mini-2.0
-村民 Qwen3-32B -> siliconflow/Qwen/Qwen3-32B
-村民 MiniMax-M1-80k -> MiniMaxAI/MiniMax-M1-80k
-🎮 应用游戏模式 normal，延迟倍数: 1.0x
-🎮 游戏模式: normal (延迟倍数: 1.0x)
-STARTING ROUND: 0
-
-================================================================================
-⏱️ 【第 0 轮开始】
-================================================================================
-
-⏱️ [夜晚开始] 切换暂停1秒...
-INFO:     127.0.0.1:49218 - "POST /api/v1/games/start HTTP/1.1" 201 Created
-INFO:     ('127.0.0.1', 49226) - "WebSocket /ws/session_20251101_031350" [accepted]
-INFO:     connection open
-INFO:     ('127.0.0.1', 49228) - "WebSocket /ws/session_20251101_031350" [accepted]
-INFO:     connection open
-WebSocket connected for session session_20251101_031350. Total connections: 1
-WebSocket connected for session session_20251101_031350. Total connections: 2
-⏱️ [夜晚切换] 夜晚切换完成: 1.00秒
-[RealtimeLogger] Initialized session session_20251101_031350, log file: logs/session_20251101_031350/realtime_logs.jsonl
-[RealtimeLogger] session_20251101_031350 [phase_change] 进入night阶段
-[WebSocket] 阶段变更通知已发送: night (第0轮)
-⏱️ [夜晚通知] 夜晚通知发送: 0.01秒
-
-⏱️ 【狼人正在选择淘汰目标。】
-⏱️ [夜间延迟] 暂停1.00秒
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/deepseek-ai/DeepSeek-V3.2-Exp | 温度: 0.50
-INFO:     127.0.0.1:49329 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 182 字符
-[LLM原始响应开始]
-{
-"reasoning": "由于这是第0轮夜晚阶段，游戏刚刚开始，没有任何玩家的发言或行为信息可供参考。作为仅存的狼人，我需要随机选择一名玩家进行淘汰。考虑到GLM-4.6可能具有较强的推理能力，如果留到后期可能会对狼人阵营构成威胁，因此优先选择淘汰GLM-4.6。这是一个基于随机选择和潜在威胁评估的战术决策。",
-"remove": "GLM-4.6"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 182 字符
-[JSON解析] 输入文本预览: {
-"reasoning": "由于这是第0轮夜晚阶段，游戏刚刚开始，没有任何玩家的发言或行为信息可供参考。作为仅存的狼人，我需要随机选择一名玩家进行淘汰。考虑到GLM-4.6可能具有较强的推理能力，...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-"reasoning": "由于这是第0轮夜晚阶段，游戏刚刚开始，没有任何玩家的发言或行为信息可供参考。作为仅存的狼人，我需要随机选择一名玩家进行淘汰。考虑到GLM-4.6可能具有较强的推理能力，如果留到后期可能会对狼人阵营构成威胁，因此优先选择淘汰GLM-4.6。这是一个基于随机选择和潜在威胁评估的战术决策。",
-"remove": "GLM-4.6"
-}'
-[JSON字符串解析] 文本长度: 182 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '由于这是第0轮夜晚阶段，游戏刚刚开始，没有任何玩家的发言或行为信息可供参考。作为仅存的狼人，我需要随机选择一名玩家进行淘汰。考虑到GLM-4.6可能具有较强的推理能力，如果留到后期可能会对狼人阵营构成威胁，因此优先选择淘汰GLM-4.6。这是一个基于随机选择和潜在威胁评估的战术决策。', 'remove': 'GLM-4.6'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '由于这是第0轮夜晚阶段，游戏刚刚开始，没有任何玩家的发言或行为信息可供参考。作为仅存的狼人，我需要随机选择一名玩家进行淘汰。考虑到GLM-4.6可能具有较强的推理能力，如果留到后期可能会对狼人阵营构成威胁，因此优先选择淘汰GLM-4.6。这是一个基于随机选择和潜在威胁评估的战术决策。', 'remove': 'GLM-4.6'}
-[JSON解析] 直接解析结果: {'reasoning': '由于这是第0轮夜晚阶段，游戏刚刚开始，没有任何玩家的发言或行为信息可供参考。作为仅存的狼人，我需要随机选择一名玩家进行淘汰。考虑到GLM-4.6可能具有较强的推理能力，如果留到后期可能会对狼人阵营构成威胁，因此优先选择淘汰GLM-4.6。这是一个基于随机选择和潜在威胁评估的战术决策。', 'remove': 'GLM-4.6'}
-[JSON解析] 最终结果: {'reasoning': '由于这是第0轮夜晚阶段，游戏刚刚开始，没有任何玩家的发言或行为信息可供参考。作为仅存的狼人，我需要随机选择一名玩家进行淘汰。考虑到GLM-4.6可能具有较强的推理能力，如果留到后期可能会对狼人阵营构成威胁，因此优先选择淘汰GLM-4.6。这是一个基于随机选择和潜在威胁评估的战术决策。', 'remove': 'GLM-4.6'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '由于这是第0轮夜晚阶段，游戏刚刚开始，没有任何玩家的发言或行为信息可供参考。作为仅存的狼人，我需要随机选择一名玩家进行淘汰。考虑到GLM-4.6可能具有较强的推理能力，如果留到后期可能会对狼人阵营构成威胁，因此优先选择淘汰GLM-4.6。这是一个基于随机选择和潜在威胁评估的战术决策。', 'remove': 'GLM-4.6'}
-[LLM结果] 提取键 'remove': GLM-4.6
-[LLM成功] 返回有效结果: GLM-4.6
-⏱️ [狼人击杀] 狼人 DeepSeek-V3.2 行动完成: 11.39秒
-DeepSeek-V3.2 eliminated GLM-4.6
-[WebSocket] 夜间行动通知已发送: night_eliminate by DeepSeek-V3.2
-⏱️ [狼人正在选择淘汰目标。] 狼人正在选择淘汰目标。完成: 11.40秒
-
-⏱️ 【医生正在选择保护目标。】
-⏱️ [夜间延迟] 暂停1.00秒
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/moonshotai/Kimi-Dev-72B | 温度: 0.50
-INFO:     127.0.0.1:49404 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 125 字符
-[LLM原始响应开始]
-{
-"reasoning": "由于是第0轮，没有可用的信息来判断哪个玩家更脆弱。作为医生，我需要随机选择一个玩家进行保护。考虑到自己不能保护自己，我将从其他玩家中随机选择。最终选择了GLM-4.6。",
-"protect": "GLM-4.6"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 125 字符
-[JSON解析] 输入文本预览: {
-"reasoning": "由于是第0轮，没有可用的信息来判断哪个玩家更脆弱。作为医生，我需要随机选择一个玩家进行保护。考虑到自己不能保护自己，我将从其他玩家中随机选择。最终选择了GLM-4.6。...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-"reasoning": "由于是第0轮，没有可用的信息来判断哪个玩家更脆弱。作为医生，我需要随机选择一个玩家进行保护。考虑到自己不能保护自己，我将从其他玩家中随机选择。最终选择了GLM-4.6。",
-"protect": "GLM-4.6"
-}'
-[JSON字符串解析] 文本长度: 125 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '由于是第0轮，没有可用的信息来判断哪个玩家更脆弱。作为医生，我需要随机选择一个玩家进行保护。考虑到自己不能保护自己，我将从其他玩家中随机选择。最终选择了GLM-4.6。', 'protect': 'GLM-4.6'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '由于是第0轮，没有可用的信息来判断哪个玩家更脆弱。作为医生，我需要随机选择一个玩家进行保护。考虑到自己不能保护自己，我将从其他玩家中随机选择。最终选择了GLM-4.6。', 'protect': 'GLM-4.6'}
-[JSON解析] 直接解析结果: {'reasoning': '由于是第0轮，没有可用的信息来判断哪个玩家更脆弱。作为医生，我需要随机选择一个玩家进行保护。考虑到自己不能保护自己，我将从其他玩家中随机选择。最终选择了GLM-4.6。', 'protect': 'GLM-4.6'}
-[JSON解析] 最终结果: {'reasoning': '由于是第0轮，没有可用的信息来判断哪个玩家更脆弱。作为医生，我需要随机选择一个玩家进行保护。考虑到自己不能保护自己，我将从其他玩家中随机选择。最终选择了GLM-4.6。', 'protect': 'GLM-4.6'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '由于是第0轮，没有可用的信息来判断哪个玩家更脆弱。作为医生，我需要随机选择一个玩家进行保护。考虑到自己不能保护自己，我将从其他玩家中随机选择。最终选择了GLM-4.6。', 'protect': 'GLM-4.6'}
-[LLM结果] 提取键 'protect': GLM-4.6
-[LLM成功] 返回有效结果: GLM-4.6
-⏱️ [医生保护] 医生 Kimi-Dev-72B 行动完成: 4.09秒
-Kimi-Dev-72B protected GLM-4.6
-[WebSocket] 夜间行动通知已发送: night_protect by Kimi-Dev-72B
-⏱️ [医生正在选择保护目标。] 医生正在选择保护目标。完成: 4.09秒
-
-⏱️ 【预言家正在查验身份。】
-⏱️ [夜间延迟] 暂停1.00秒
-[LLM调用] 第1/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.50
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.70
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.90
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⏱️ [预言家查验] 预言家 GLM-4.6 行动完成: 1.20秒
-Warning: GLM-4.6 failed to choose investigation target, randomly selected DeepSeek-V3.2
-[WebSocket] 夜间行动通知已发送: night_investigate by GLM-4.6
-⏱️ [预言家正在查验身份。] 预言家正在查验身份。完成: 1.21秒
-
-⏱️ 【夜晚阶段解决】
-夜晚阶段没有人被淘汰（医生保护成功）。
-⏱️ [天亮阶段] 切换暂停1秒...
-[RealtimeLogger] session_20251101_031350 [phase_change] 进入day阶段
+[RealtimeLogger] session_20251102_051005 [phase_change] 进入day阶段
 [WebSocket] 阶段变更通知已发送: day (第0轮)
 ⏱️ [夜晚阶段解决] 夜晚阶段解决完成: 1.01秒
 
@@ -1163,52 +199,27 @@ Warning: GLM-4.6 failed to choose investigation target, randomly selected DeepSe
 ⏱️ 【玩家开始辩论和投票。】
 ⏱️ [阶段切换] 暂停1秒...
 ⏱️ [切换暂停] 切换暂停完成: 1.00秒
-[RealtimeLogger] session_20251101_031350 [phase_change] 进入debate阶段
+[RealtimeLogger] session_20251102_051005 [phase_change] 进入debate阶段
 [WebSocket] 阶段变更通知已发送: debate (第0轮)
 ⏱️ [阶段通知] 阶段通知发送: 0.00秒
-本轮发言顺序: Qwen3-32B, GLM-4.6, Ring-flash-2.0, Kimi-Dev-72B, MiniMax-M1-80k, DeepSeek-V3.2
+本轮发言顺序: Kimi, DeepSeek, MiniMax, Inclusion, GLM
 [并发生成] 使用3线程并发生成发言内容...
-[批次 1/2] 并发生成: Qwen3-32B, GLM-4.6, Ring-flash-2.0
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/Qwen/Qwen3-32B | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: Ring-flash-2.0 did not return a valid dialogue, using default
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: GLM-4.6 did not return a valid dialogue, using default
-[LLM响应] 成功获取响应，长度: 359 字符
+[批次 1/2] 并发生成: Kimi, DeepSeek, MiniMax
+[LLM调用] 第1/3次尝试 | 模型: moonshotai/Kimi-K2-Instruct-0905 | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: deepseek-ai/DeepSeek-V3 | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M2 | 温度: 1.00
+INFO:     127.0.0.1:51530 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 539 字符
 [LLM原始响应开始]
 {
-  "reasoning": "作为村庄的一员，我需要通过仔细的推理来帮助大家找出隐藏的狼人，并防止村庄遭受损失。在夜晚无人被淘汰的情况下，这可能暗示医生保护了狼人的目标，因此我们需要特别留心以下几点：1. 寻找狼人可能加倍隐瞒自己的行为；2. 挑选出谁可能被保护；3. 关注可疑的玩家或发言中是否有逻辑漏洞。此刻的关键是加强合作，仔细分析每个人的发言与动作，防止出现盲目投票。",
-  "say": "大家早上好，首先我想说明我的观点：既然昨晚医生成功保护了狼人的目标，说明我们目前的压力更大。从现在起，我们需要通过逻辑细致地推理和怀疑。谁的发言含糊不清，谁的行为或逻辑难以自洽，都是我们需要重点关注的对象。如果有人声称自己是预言家或医生，要认真考察他们提供信息的可信度。团结一致，谨防狼人迷惑大家的节奏。"
+  "reasoning": "作为医生，我的首要目标是保护村民阵营。我需要借助第一晚的死亡信息Qwen（已知被淘汰）以及夜验信息（如有）来分析狼人可能的身份。由于我是医生身份，关键在于保护重要目标（如预言家），同时通过误导性信息引导狼人暴露。重点关注发言中的逻辑漏洞：谁在回避投票？谁在用力推动某个结论？通过观察玩家对队友死亡的反应（Kimi未被淘汰而我曾保护她）来判断狼人_axis_x是否存在行为异常。我的策略是以模糊身份为底牌，在适当时机释放半真半假的信息加剧狼人的认知混乱，诱使其露出破绽。",
+  "say": "第一夜Qwen被淘汰说明狼人积极杀人。不过我注意到Kimi还活着——说明狼人优先攻击的不是她。既然只有她的存活被记录，排除嫌疑需要更多信息。目前我们需要交叉验证日出后的行动轨迹：比如GLM舌战时提到\"laughter\"却未给出位运算逻辑，这暴露了其逻辑断层；而DeepSeek坚持说\"利润\"却在谈论PM时语塞。对了，Kimi你此前对\"sleep data\"的回收方案是否仍有细节未披露？在投票环节，大家请重点关注以上发言中矛盾频繁的玩家，谁在用无关话题转移注意力就最可疑。这场游戏的决胜点就是信息扩散速度——希望各位诚信共享信息！"
 }
 [LLM原始响应结束]
 [JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 359 字符
+[JSON解析] 开始解析，输入文本长度: 539 字符
 [JSON解析] 输入文本预览: {
-  "reasoning": "作为村庄的一员，我需要通过仔细的推理来帮助大家找出隐藏的狼人，并防止村庄遭受损失。在夜晚无人被淘汰的情况下，这可能暗示医生保护了狼人的目标，因此我们需要特别留心以下...
+  "reasoning": "作为医生，我的首要目标是保护村民阵营。我需要借助第一晚的死亡信息Qwen（已知被淘汰）以及夜验信息（如有）来分析狼人可能的身份。由于我是医生身份，关键在于保护重要目...
 [语言清理] 开始清理混合语言响应...
 [语言清理] 策略2成功：提取到完整JSON对象
 [JSON解析] 尝试从markdown中解析JSON...
@@ -1222,50 +233,28 @@ Warning: GLM-4.6 did not return a valid dialogue, using default
 [JSON解析] markdown解析结果: None
 [JSON解析] markdown解析失败，尝试直接解析JSON字符串...
 [JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "作为村庄的一员，我需要通过仔细的推理来帮助大家找出隐藏的狼人，并防止村庄遭受损失。在夜晚无人被淘汰的情况下，这可能暗示医生保护了狼人的目标，因此我们需要特别留心以下几点：1. 寻找狼人可能加倍隐瞒自己的行为；2. 挑选出谁可能被保护；3. 关注可疑的玩家或发言中是否有逻辑漏洞。此刻的关键是加强合作，仔细分析每个人的发言与动作，防止出现盲目投票。",
-  "say": "大家早上好，首先我想说明我的观点：既然昨晚医生成功保护了狼人的目标，说明我们目前的压力更大。从现在起，我们需要通过逻辑细致地推理和怀疑。谁的发言含糊不清，谁的行为或逻辑难以自洽，都是我们需要重点关注的对象。如果有人声称自己是预言家或医生，要认真考察他们提供信息的可信度。团结一致，谨防狼人迷惑大家的节奏。"
+  "reasoning": "作为医生，我的首要目标是保护村民阵营。我需要借助第一晚的死亡信息Qwen（已知被淘汰）以及夜验信息（如有）来分析狼人可能的身份。由于我是医生身份，关键在于保护重要目标（如预言家），同时通过误导性信息引导狼人暴露。重点关注发言中的逻辑漏洞：谁在回避投票？谁在用力推动某个结论？通过观察玩家对队友死亡的反应（Kimi未被淘汰而我曾保护她）来判断狼人_axis_x是否存在行为异常。我的策略是以模糊身份为底牌，在适当时机释放半真半假的信息加剧狼人的认知混乱，诱使其露出破绽。",
+  "say": "第一夜Qwen被淘汰说明狼人积极杀人。不过我注意到Kimi还活着——说明狼人优先攻击的不是她。既然只有她的存活被记录，排除嫌疑需要更多信息。目前我们需要交叉验证日出后的行动轨迹：比如GLM舌战时提到\"laughter\"却未给出位运算逻辑，这暴露了其逻辑断层；而DeepSeek坚持说\"利润\"却在谈论PM时语塞。对了，Kimi你此前对\"sleep data\"的回收方案是否仍有细节未披露？在投票环节，大家请重点关注以上发言中矛盾频繁的玩家，谁在用无关话题转移注意力就最可疑。这场游戏的决胜点就是信息扩散速度——希望各位诚信共享信息！"
 }'
-[JSON字符串解析] 文本长度: 359 字符
+[JSON字符串解析] 文本长度: 539 字符
 [JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为村庄的一员，我需要通过仔细的推理来帮助大家找出隐藏的狼人，并防止村庄遭受损失。在夜晚无人被淘汰的情况下，这可能暗示医生保护了狼人的目标，因此我们需要特别留心以下几点：1. 寻找狼人可能加倍隐瞒自己的行为；2. 挑选出谁可能被保护；3. 关注可疑的玩家或发言中是否有逻辑漏洞。此刻的关键是加强合作，仔细分析每个人的发言与动作，防止出现盲目投票。', 'say': '大家早上好，首先我想说明我的观点：既然昨晚医生成功保护了狼人的目标，说明我们目前的压力更大。从现在起，我们需要通过逻辑细致地推理和怀疑。谁的发言含糊不清，谁的行为或逻辑难以自洽，都是我们需要重点关注的对象。如果有人声称自己是预言家或医生，要认真考察他们提供信息的可信度。团结一致，谨防狼人迷惑大家的节奏。'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '作为村庄的一员，我需要通过仔细的推理来帮助大家找出隐藏的狼人，并防止村庄遭受损失。在夜晚无人被淘汰的情况下，这可能暗示医生保护了狼人的目标，因此我们需要特别留心以下几点：1. 寻找狼人可能加倍隐瞒自己的行为；2. 挑选出谁可能被保护；3. 关注可疑的玩家或发言中是否有逻辑漏洞。此刻的关键是加强合作，仔细分析每个人的发言与动作，防止出现盲目投票。', 'say': '大家早上好，首先我想说明我的观点：既然昨晚医生成功保护了狼人的目标，说明我们目前的压力更大。从现在起，我们需要通过逻辑细致地推理和怀疑。谁的发言含糊不清，谁的行为或逻辑难以自洽，都是我们需要重点关注的对象。如果有人声称自己是预言家或医生，要认真考察他们提供信息的可信度。团结一致，谨防狼人迷惑大家的节奏。'}
-[JSON解析] 直接解析结果: {'reasoning': '作为村庄的一员，我需要通过仔细的推理来帮助大家找出隐藏的狼人，并防止村庄遭受损失。在夜晚无人被淘汰的情况下，这可能暗示医生保护了狼人的目标，因此我们需要特别留心以下几点：1. 寻找狼人可能加倍隐瞒自己的行为；2. 挑选出谁可能被保护；3. 关注可疑的玩家或发言中是否有逻辑漏洞。此刻的关键是加强合作，仔细分析每个人的发言与动作，防止出现盲目投票。', 'say': '大家早上好，首先我想说明我的观点：既然昨晚医生成功保护了狼人的目标，说明我们目前的压力更大。从现在起，我们需要通过逻辑细致地推理和怀疑。谁的发言含糊不清，谁的行为或逻辑难以自洽，都是我们需要重点关注的对象。如果有人声称自己是预言家或医生，要认真考察他们提供信息的可信度。团结一致，谨防狼人迷惑大家的节奏。'}
-[JSON解析] 最终结果: {'reasoning': '作为村庄的一员，我需要通过仔细的推理来帮助大家找出隐藏的狼人，并防止村庄遭受损失。在夜晚无人被淘汰的情况下，这可能暗示医生保护了狼人的目标，因此我们需要特别留心以下几点：1. 寻找狼人可能加倍隐瞒自己的行为；2. 挑选出谁可能被保护；3. 关注可疑的玩家或发言中是否有逻辑漏洞。此刻的关键是加强合作，仔细分析每个人的发言与动作，防止出现盲目投票。', 'say': '大家早上好，首先我想说明我的观点：既然昨晚医生成功保护了狼人的目标，说明我们目前的压力更大。从现在起，我们需要通过逻辑细致地推理和怀疑。谁的发言含糊不清，谁的行为或逻辑难以自洽，都是我们需要重点关注的对象。如果有人声称自己是预言家或医生，要认真考察他们提供信息的可信度。团结一致，谨防狼人迷惑大家的节奏。'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为村庄的一员，我需要通过仔细的推理来帮助大家找出隐藏的狼人，并防止村庄遭受损失。在夜晚无人被淘汰的情况下，这可能暗示医生保护了狼人的目标，因此我们需要特别留心以下几点：1. 寻找狼人可能加倍隐瞒自己的行为；2. 挑选出谁可能被保护；3. 关注可疑的玩家或发言中是否有逻辑漏洞。此刻的关键是加强合作，仔细分析每个人的发言与动作，防止出现盲目投票。', 'say': '大家早上好，首先我想说明我的观点：既然昨晚医生成功保护了狼人的目标，说明我们目前的压力更大。从现在起，我们需要通过逻辑细致地推理和怀疑。谁的发言含糊不清，谁的行为或逻辑难以自洽，都是我们需要重点关注的对象。如果有人声称自己是预言家或医生，要认真考察他们提供信息的可信度。团结一致，谨防狼人迷惑大家的节奏。'}
-[LLM成功] 返回有效结果: {'reasoning': '作为村庄的一员，我需要通过仔细的推理来帮助大家找出隐藏的狼人，并防止村庄遭受损失。在夜晚无人被淘汰的情况下，这可能暗示医生保护了狼人的目标，因此我们需要特别留心以下几点：1. 寻找狼人可能加倍隐瞒自己的行为；2. 挑选出谁可能被保护；3. 关注可疑的玩家或发言中是否有逻辑漏洞。此刻的关键是加强合作，仔细分析每个人的发言与动作，防止出现盲目投票。', 'say': '大家早上好，首先我想说明我的观点：既然昨晚医生成功保护了狼人的目标，说明我们目前的压力更大。从现在起，我们需要通过逻辑细致地推理和怀疑。谁的发言含糊不清，谁的行为或逻辑难以自洽，都是我们需要重点关注的对象。如果有人声称自己是预言家或医生，要认真考察他们提供信息的可信度。团结一致，谨防狼人迷惑大家的节奏。'}
-  ✓ Qwen3-32B 发言生成完成 (152字)
-  ✓ GLM-4.6 发言生成完成 (13字)
-  ✓ Ring-flash-2.0 发言生成完成 (13字)
-⏱️ [批次1] 批次1完成: 3.51秒
-[批次 2/2] 并发生成: Kimi-Dev-72B, MiniMax-M1-80k, DeepSeek-V3.2
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/moonshotai/Kimi-Dev-72B | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/deepseek-ai/DeepSeek-V3.2-Exp | 温度: 1.00
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: MiniMax-M1-80k did not return a valid dialogue, using default
-INFO:     127.0.0.1:49574 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 359 字符
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我的首要目标是保护村民阵营。我需要借助第一晚的死亡信息Qwen（已知被淘汰）以及夜验信息（如有）来分析狼人可能的身份。由于我是医生身份，关键在于保护重要目标（如预言家），同时通过误导性信息引导狼人暴露。重点关注发言中的逻辑漏洞：谁在回避投票？谁在用力推动某个结论？通过观察玩家对队友死亡的反应（Kimi未被淘汰而我曾保护她）来判断狼人_axis_x是否存在行为异常。我的策略是以模糊身份为底牌，在适当时机释放半真半假的信息加剧狼人的认知混乱，诱使其露出破绽。', 'say': '第一夜Qwen被淘汰说明狼人积极杀人。不过我注意到Kimi还活着——说明狼人优先攻击的不是她。既然只有她的存活被记录，排除嫌疑需要更多信息。目前我们需要交叉验证日出后的行动轨迹：比如GLM舌战时提到"laughter"却未给出位运算逻辑，这暴露了其逻辑断层；而DeepSeek坚持说"利润"却在谈论PM时语塞。对了，Kimi你此前对"sleep data"的回收方案是否仍有细节未披露？在投票环节，大家请重点关注以上发言中矛盾频繁的玩家，谁在用无关话题转移注意力就最可疑。这场游戏的决胜点就是信息扩散速度——希望各位诚信共享信息！'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为医生，我的首要目标是保护村民阵营。我需要借助第一晚的死亡信息Qwen（已知被淘汰）以及夜验信息（如有）来分析狼人可能的身份。由于我是医生身份，关键在于保护重要目标（如预言家），同时通过误导性信息引导狼人暴露。重点关注发言中的逻辑漏洞：谁在回避投票？谁在用力推动某个结论？通过观察玩家对队友死亡的反应（Kimi未被淘汰而我曾保护她）来判断狼人_axis_x是否存在行为异常。我的策略是以模糊身份为底牌，在适当时机释放半真半假的信息加剧狼人的认知混乱，诱使其露出破绽。', 'say': '第一夜Qwen被淘汰说明狼人积极杀人。不过我注意到Kimi还活着——说明狼人优先攻击的不是她。既然只有她的存活被记录，排除嫌疑需要更多信息。目前我们需要交叉验证日出后的行动轨迹：比如GLM舌战时提到"laughter"却未给出位运算逻辑，这暴露了其逻辑断层；而DeepSeek坚持说"利润"却在谈论PM时语塞。对了，Kimi你此前对"sleep data"的回收方案是否仍有细节未披露？在投票环节，大家请重点关注以上发言中矛盾频繁的玩家，谁在用无关话题转移注意力就最可疑。这场游戏的决胜点就是信息扩散速度——希望各位诚信共享信息！'}
+[JSON解析] 直接解析结果: {'reasoning': '作为医生，我的首要目标是保护村民阵营。我需要借助第一晚的死亡信息Qwen（已知被淘汰）以及夜验信息（如有）来分析狼人可能的身份。由于我是医生身份，关键在于保护重要目标（如预言家），同时通过误导性信息引导狼人暴露。重点关注发言中的逻辑漏洞：谁在回避投票？谁在用力推动某个结论？通过观察玩家对队友死亡的反应（Kimi未被淘汰而我曾保护她）来判断狼人_axis_x是否存在行为异常。我的策略是以模糊身份为底牌，在适当时机释放半真半假的信息加剧狼人的认知混乱，诱使其露出破绽。', 'say': '第一夜Qwen被淘汰说明狼人积极杀人。不过我注意到Kimi还活着——说明狼人优先攻击的不是她。既然只有她的存活被记录，排除嫌疑需要更多信息。目前我们需要交叉验证日出后的行动轨迹：比如GLM舌战时提到"laughter"却未给出位运算逻辑，这暴露了其逻辑断层；而DeepSeek坚持说"利润"却在谈论PM时语塞。对了，Kimi你此前对"sleep data"的回收方案是否仍有细节未披露？在投票环节，大家请重点关注以上发言中矛盾频繁的玩家，谁在用无关话题转移注意力就最可疑。这场游戏的决胜点就是信息扩散速度——希望各位诚信共享信息！'}
+[JSON解析] 最终结果: {'reasoning': '作为医生，我的首要目标是保护村民阵营。我需要借助第一晚的死亡信息Qwen（已知被淘汰）以及夜验信息（如有）来分析狼人可能的身份。由于我是医生身份，关键在于保护重要目标（如预言家），同时通过误导性信息引导狼人暴露。重点关注发言中的逻辑漏洞：谁在回避投票？谁在用力推动某个结论？通过观察玩家对队友死亡的反应（Kimi未被淘汰而我曾保护她）来判断狼人_axis_x是否存在行为异常。我的策略是以模糊身份为底牌，在适当时机释放半真半假的信息加剧狼人的认知混乱，诱使其露出破绽。', 'say': '第一夜Qwen被淘汰说明狼人积极杀人。不过我注意到Kimi还活着——说明狼人优先攻击的不是她。既然只有她的存活被记录，排除嫌疑需要更多信息。目前我们需要交叉验证日出后的行动轨迹：比如GLM舌战时提到"laughter"却未给出位运算逻辑，这暴露了其逻辑断层；而DeepSeek坚持说"利润"却在谈论PM时语塞。对了，Kimi你此前对"sleep data"的回收方案是否仍有细节未披露？在投票环节，大家请重点关注以上发言中矛盾频繁的玩家，谁在用无关话题转移注意力就最可疑。这场游戏的决胜点就是信息扩散速度——希望各位诚信共享信息！'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我的首要目标是保护村民阵营。我需要借助第一晚的死亡信息Qwen（已知被淘汰）以及夜验信息（如有）来分析狼人可能的身份。由于我是医生身份，关键在于保护重要目标（如预言家），同时通过误导性信息引导狼人暴露。重点关注发言中的逻辑漏洞：谁在回避投票？谁在用力推动某个结论？通过观察玩家对队友死亡的反应（Kimi未被淘汰而我曾保护她）来判断狼人_axis_x是否存在行为异常。我的策略是以模糊身份为底牌，在适当时机释放半真半假的信息加剧狼人的认知混乱，诱使其露出破绽。', 'say': '第一夜Qwen被淘汰说明狼人积极杀人。不过我注意到Kimi还活着——说明狼人优先攻击的不是她。既然只有她的存活被记录，排除嫌疑需要更多信息。目前我们需要交叉验证日出后的行动轨迹：比如GLM舌战时提到"laughter"却未给出位运算逻辑，这暴露了其逻辑断层；而DeepSeek坚持说"利润"却在谈论PM时语塞。对了，Kimi你此前对"sleep data"的回收方案是否仍有细节未披露？在投票环节，大家请重点关注以上发言中矛盾频繁的玩家，谁在用无关话题转移注意力就最可疑。这场游戏的决胜点就是信息扩散速度——希望各位诚信共享信息！'}
+[LLM成功] 返回有效结果: {'reasoning': '作为医生，我的首要目标是保护村民阵营。我需要借助第一晚的死亡信息Qwen（已知被淘汰）以及夜验信息（如有）来分析狼人可能的身份。由于我是医生身份，关键在于保护重要目标（如预言家），同时通过误导性信息引导狼人暴露。重点关注发言中的逻辑漏洞：谁在回避投票？谁在用力推动某个结论？通过观察玩家对队友死亡的反应（Kimi未被淘汰而我曾保护她）来判断狼人_axis_x是否存在行为异常。我的策略是以模糊身份为底牌，在适当时机释放半真半假的信息加剧狼人的认知混乱，诱使其露出破绽。', 'say': '第一夜Qwen被淘汰说明狼人积极杀人。不过我注意到Kimi还活着——说明狼人优先攻击的不是她。既然只有她的存活被记录，排除嫌疑需要更多信息。目前我们需要交叉验证日出后的行动轨迹：比如GLM舌战时提到"laughter"却未给出位运算逻辑，这暴露了其逻辑断层；而DeepSeek坚持说"利润"却在谈论PM时语塞。对了，Kimi你此前对"sleep data"的回收方案是否仍有细节未披露？在投票环节，大家请重点关注以上发言中矛盾频繁的玩家，谁在用无关话题转移注意力就最可疑。这场游戏的决胜点就是信息扩散速度——希望各位诚信共享信息！'}
+[LLM响应] 成功获取响应，长度: 261 字符
 [LLM原始响应开始]
 {
-  "reasoning": "作为医生，我的目标是保护村民并识别狼人。在第一晚，我保护了自己，因为医生早期落单会很危险。现在进入白天，我需要监听其他人的发言，查看有没有狼人的破绽。预知道身份的人如果安全，可以尽快暴露来帮查人，但也要防狼人冒充。如果其他ureka有异常行为，比如造谣或者沉默，我会加以注意。同时，我会建议大家共同讨论，疑点排查，不要急于投票，以免错误淘汰好人。",
-  "say": "大家好，我是医生。昨晚我保护了自己，因为医生早期是狼人的重点目标。现在白天，我们需要一起合作找出狼人。请注意每个玩家的发言，看看有没有矛盾或异常。如果有谁能安全暴露身份，比如预言家，那将对我们很有帮助。但是要警惕狼人模仿好人行为。请大家发言时保持理性，不要被狼人的计谋所迷惑。我们共同努力，把狼人揪出来！"
+  "reasoning": "作为村民，我的首要目标是找出狼人。游戏刚开始，信息有限，我需要观察其他玩家的发言模式和投票行为来寻找可疑之处。Qwen被狼人淘汰可能是随机的，也可能有特殊原因，我需要留意是否有玩家对Qwen特别关注或回避讨论Qwen的情况。",
+  "say": "大家好，我是村民DeepSeek。Qwen首夜被淘汰让我们失去了一个村民同伴，现在信息不多，但我们要特别注意今天白天玩家的发言模式。希望大家都能积极发言，分享可疑线索。如果有预言家昨晚查验了某人，请大胆站出来提供信息帮助我们判断。"
 }
 [LLM原始响应结束]
 [JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 359 字符
+[JSON解析] 开始解析，输入文本长度: 261 字符
 [JSON解析] 输入文本预览: {
-  "reasoning": "作为医生，我的目标是保护村民并识别狼人。在第一晚，我保护了自己，因为医生早期落单会很危险。现在进入白天，我需要监听其他人的发言，查看有没有狼人的破绽。预知道身份的人...
+  "reasoning": "作为村民，我的首要目标是找出狼人。游戏刚开始，信息有限，我需要观察其他玩家的发言模式和投票行为来寻找可疑之处。Qwen被狼人淘汰可能是随机的，也可能有特殊原因，我需...
 [语言清理] 开始清理混合语言响应...
 [语言清理] 策略2成功：提取到完整JSON对象
 [JSON解析] 尝试从markdown中解析JSON...
@@ -1279,32 +268,24 @@ INFO:     127.0.0.1:49574 - "GET /health HTTP/1.1" 200 OK
 [JSON解析] markdown解析结果: None
 [JSON解析] markdown解析失败，尝试直接解析JSON字符串...
 [JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "作为医生，我的目标是保护村民并识别狼人。在第一晚，我保护了自己，因为医生早期落单会很危险。现在进入白天，我需要监听其他人的发言，查看有没有狼人的破绽。预知道身份的人如果安全，可以尽快暴露来帮查人，但也要防狼人冒充。如果其他ureka有异常行为，比如造谣或者沉默，我会加以注意。同时，我会建议大家共同讨论，疑点排查，不要急于投票，以免错误淘汰好人。",
-  "say": "大家好，我是医生。昨晚我保护了自己，因为医生早期是狼人的重点目标。现在白天，我们需要一起合作找出狼人。请注意每个玩家的发言，看看有没有矛盾或异常。如果有谁能安全暴露身份，比如预言家，那将对我们很有帮助。但是要警惕狼人模仿好人行为。请大家发言时保持理性，不要被狼人的计谋所迷惑。我们共同努力，把狼人揪出来！"
+  "reasoning": "作为村民，我的首要目标是找出狼人。游戏刚开始，信息有限，我需要观察其他玩家的发言模式和投票行为来寻找可疑之处。Qwen被狼人淘汰可能是随机的，也可能有特殊原因，我需要留意是否有玩家对Qwen特别关注或回避讨论Qwen的情况。",
+  "say": "大家好，我是村民DeepSeek。Qwen首夜被淘汰让我们失去了一个村民同伴，现在信息不多，但我们要特别注意今天白天玩家的发言模式。希望大家都能积极发言，分享可疑线索。如果有预言家昨晚查验了某人，请大胆站出来提供信息帮助我们判断。"
 }'
-[JSON字符串解析] 文本长度: 359 字符
+[JSON字符串解析] 文本长度: 261 字符
 [JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我的目标是保护村民并识别狼人。在第一晚，我保护了自己，因为医生早期落单会很危险。现在进入白天，我需要监听其他人的发言，查看有没有狼人的破绽。预知道身份的人如果安全，可以尽快暴露来帮查人，但也要防狼人冒充。如果其他ureka有异常行为，比如造谣或者沉默，我会加以注意。同时，我会建议大家共同讨论，疑点排查，不要急于投票，以免错误淘汰好人。', 'say': '大家好，我是医生。昨晚我保护了自己，因为医生早期是狼人的重点目标。现在白天，我们需要一起合作找出狼人。请注意每个玩家的发言，看看有没有矛盾或异常。如果有谁能安全暴露身份，比如预言家，那将对我们很有帮助。但是要警惕狼人模仿好人行为。请大家发言时保持理性，不要被狼人的计谋所迷惑。我们共同努力，把狼人揪出来！'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '作为医生，我的目标是保护村民并识别狼人。在第一晚，我保护了自己，因为医生早期落单会很危险。现在进入白天，我需要监听其他人的发言，查看有没有狼人的破绽。预知道身份的人如果安全，可以尽快暴露来帮查人，但也要防狼人冒充。如果其他ureka有异常行为，比如造谣或者沉默，我会加以注意。同时，我会建议大家共同讨论，疑点排查，不要急于投票，以免错误淘汰好人。', 'say': '大家好，我是医生。昨晚我保护了自己，因为医生早期是狼人的重点目标。现在白天，我们需要一起合作找出狼人。请注意每个玩家的发言，看看有没有矛盾或异常。如果有谁能安全暴露身份，比如预言家，那将对我们很有帮助。但是要警惕狼人模仿好人行为。请大家发言时保持理性，不要被狼人的计谋所迷惑。我们共同努力，把狼人揪出来！'}
-[JSON解析] 直接解析结果: {'reasoning': '作为医生，我的目标是保护村民并识别狼人。在第一晚，我保护了自己，因为医生早期落单会很危险。现在进入白天，我需要监听其他人的发言，查看有没有狼人的破绽。预知道身份的人如果安全，可以尽快暴露来帮查人，但也要防狼人冒充。如果其他ureka有异常行为，比如造谣或者沉默，我会加以注意。同时，我会建议大家共同讨论，疑点排查，不要急于投票，以免错误淘汰好人。', 'say': '大家好，我是医生。昨晚我保护了自己，因为医生早期是狼人的重点目标。现在白天，我们需要一起合作找出狼人。请注意每个玩家的发言，看看有没有矛盾或异常。如果有谁能安全暴露身份，比如预言家，那将对我们很有帮助。但是要警惕狼人模仿好人行为。请大家发言时保持理性，不要被狼人的计谋所迷惑。我们共同努力，把狼人揪出来！'}
-[JSON解析] 最终结果: {'reasoning': '作为医生，我的目标是保护村民并识别狼人。在第一晚，我保护了自己，因为医生早期落单会很危险。现在进入白天，我需要监听其他人的发言，查看有没有狼人的破绽。预知道身份的人如果安全，可以尽快暴露来帮查人，但也要防狼人冒充。如果其他ureka有异常行为，比如造谣或者沉默，我会加以注意。同时，我会建议大家共同讨论，疑点排查，不要急于投票，以免错误淘汰好人。', 'say': '大家好，我是医生。昨晚我保护了自己，因为医生早期是狼人的重点目标。现在白天，我们需要一起合作找出狼人。请注意每个玩家的发言，看看有没有矛盾或异常。如果有谁能安全暴露身份，比如预言家，那将对我们很有帮助。但是要警惕狼人模仿好人行为。请大家发言时保持理性，不要被狼人的计谋所迷惑。我们共同努力，把狼人揪出来！'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我的目标是保护村民并识别狼人。在第一晚，我保护了自己，因为医生早期落单会很危险。现在进入白天，我需要监听其他人的发言，查看有没有狼人的破绽。预知道身份的人如果安全，可以尽快暴露来帮查人，但也要防狼人冒充。如果其他ureka有异常行为，比如造谣或者沉默，我会加以注意。同时，我会建议大家共同讨论，疑点排查，不要急于投票，以免错误淘汰好人。', 'say': '大家好，我是医生。昨晚我保护了自己，因为医生早期是狼人的重点目标。现在白天，我们需要一起合作找出狼人。请注意每个玩家的发言，看看有没有矛盾或异常。如果有谁能安全暴露身份，比如预言家，那将对我们很有帮助。但是要警惕狼人模仿好人行为。请大家发言时保持理性，不要被狼人的计谋所迷惑。我们共同努力，把狼人揪出来！'}
-[LLM成功] 返回有效结果: {'reasoning': '作为医生，我的目标是保护村民并识别狼人。在第一晚，我保护了自己，因为医生早期落单会很危险。现在进入白天，我需要监听其他人的发言，查看有没有狼人的破绽。预知道身份的人如果安全，可以尽快暴露来帮查人，但也要防狼人冒充。如果其他ureka有异常行为，比如造谣或者沉默，我会加以注意。同时，我会建议大家共同讨论，疑点排查，不要急于投票，以免错误淘汰好人。', 'say': '大家好，我是医生。昨晚我保护了自己，因为医生早期是狼人的重点目标。现在白天，我们需要一起合作找出狼人。请注意每个玩家的发言，看看有没有矛盾或异常。如果有谁能安全暴露身份，比如预言家，那将对我们很有帮助。但是要警惕狼人模仿好人行为。请大家发言时保持理性，不要被狼人的计谋所迷惑。我们共同努力，把狼人揪出来！'}
-  ✓ Kimi-Dev-72B 发言生成完成 (152字)
-  ✓ MiniMax-M1-80k 发言生成完成 (13字)
-INFO:     127.0.0.1:49668 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:49737 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 339 字符
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为村民，我的首要目标是找出狼人。游戏刚开始，信息有限，我需要观察其他玩家的发言模式和投票行为来寻找可疑之处。Qwen被狼人淘汰可能是随机的，也可能有特殊原因，我需要留意是否有玩家对Qwen特别关注或回避讨论Qwen的情况。', 'say': '大家好，我是村民DeepSeek。Qwen首夜被淘汰让我们失去了一个村民同伴，现在信息不多，但我们要特别注意今天白天玩家的发言模式。希望大家都能积极发言，分享可疑线索。如果有预言家昨晚查验了某人，请大胆站出来提供信息帮助我们判断。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为村民，我的首要目标是找出狼人。游戏刚开始，信息有限，我需要观察其他玩家的发言模式和投票行为来寻找可疑之处。Qwen被狼人淘汰可能是随机的，也可能有特殊原因，我需要留意是否有玩家对Qwen特别关注或回避讨论Qwen的情况。', 'say': '大家好，我是村民DeepSeek。Qwen首夜被淘汰让我们失去了一个村民同伴，现在信息不多，但我们要特别注意今天白天玩家的发言模式。希望大家都能积极发言，分享可疑线索。如果有预言家昨晚查验了某人，请大胆站出来提供信息帮助我们判断。'}
+[JSON解析] 直接解析结果: {'reasoning': '作为村民，我的首要目标是找出狼人。游戏刚开始，信息有限，我需要观察其他玩家的发言模式和投票行为来寻找可疑之处。Qwen被狼人淘汰可能是随机的，也可能有特殊原因，我需要留意是否有玩家对Qwen特别关注或回避讨论Qwen的情况。', 'say': '大家好，我是村民DeepSeek。Qwen首夜被淘汰让我们失去了一个村民同伴，现在信息不多，但我们要特别注意今天白天玩家的发言模式。希望大家都能积极发言，分享可疑线索。如果有预言家昨晚查验了某人，请大胆站出来提供信息帮助我们判断。'}
+[JSON解析] 最终结果: {'reasoning': '作为村民，我的首要目标是找出狼人。游戏刚开始，信息有限，我需要观察其他玩家的发言模式和投票行为来寻找可疑之处。Qwen被狼人淘汰可能是随机的，也可能有特殊原因，我需要留意是否有玩家对Qwen特别关注或回避讨论Qwen的情况。', 'say': '大家好，我是村民DeepSeek。Qwen首夜被淘汰让我们失去了一个村民同伴，现在信息不多，但我们要特别注意今天白天玩家的发言模式。希望大家都能积极发言，分享可疑线索。如果有预言家昨晚查验了某人，请大胆站出来提供信息帮助我们判断。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为村民，我的首要目标是找出狼人。游戏刚开始，信息有限，我需要观察其他玩家的发言模式和投票行为来寻找可疑之处。Qwen被狼人淘汰可能是随机的，也可能有特殊原因，我需要留意是否有玩家对Qwen特别关注或回避讨论Qwen的情况。', 'say': '大家好，我是村民DeepSeek。Qwen首夜被淘汰让我们失去了一个村民同伴，现在信息不多，但我们要特别注意今天白天玩家的发言模式。希望大家都能积极发言，分享可疑线索。如果有预言家昨晚查验了某人，请大胆站出来提供信息帮助我们判断。'}
+[LLM成功] 返回有效结果: {'reasoning': '作为村民，我的首要目标是找出狼人。游戏刚开始，信息有限，我需要观察其他玩家的发言模式和投票行为来寻找可疑之处。Qwen被狼人淘汰可能是随机的，也可能有特殊原因，我需要留意是否有玩家对Qwen特别关注或回避讨论Qwen的情况。', 'say': '大家好，我是村民DeepSeek。Qwen首夜被淘汰让我们失去了一个村民同伴，现在信息不多，但我们要特别注意今天白天玩家的发言模式。希望大家都能积极发言，分享可疑线索。如果有预言家昨晚查验了某人，请大胆站出来提供信息帮助我们判断。'}
+[LLM响应] 成功获取响应，长度: 258 字符
 [LLM原始响应开始]
-{
-  "reasoning": "作为最后一个狼人，我需要制造混乱转移视线。现在的情况是医生保护了GLM-4.6，这给了我一个机会。我可以假装是预言家，说查验了某个玩家是狼人，或者质疑为什么医生恰好保护了被狼人攻击的目标。考虑到Qwen3-32B可能是预言家，我可以先试探性地提出怀疑，但不要直接攻击可能的好人阵营玩家。目标是让其他玩家相互怀疑，特别是针对那些可能有特殊身份的玩家。",
-  "say": "大家好，我发现一个很有趣的情况。昨晚医生成功保护了GLM-4.6，这说明医生预判了狼人的行动。我在想，是不是有人故意引导医生去保护GLM-4.6？或者更糟糕的是，医生本人可能有问题？GLM-4.6，你能解释一下为什么狼人偏偏选择攻击你吗？我感觉这其中可能有蹊跷。"
-}
+{"reasoning":"第一夜已证实DeepSeek是普通村民，场上剩五人中必有二狼。我要先把自己验到的信息公开，让好人阵营快速建立信任，同时把火力引到自己身上，换取接下来两夜继续验人的机会。只要我能多活一天，就能再锁一狼，好人就有明确投票目标。","say":"我是预言家，昨夜验了DeepSeek，他是村民。狼队首刀Qwen，显然想先清发言积极的玩家。现在我们五人中藏两狼，建议大家先报昨晚心路历程，谁没思路、谁躲表态，就优先票谁。我身份已亮，下一夜我会再验一人，希望医生能守我，咱们好人一条心，别分票。"}
 [LLM原始响应结束]
 [JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 339 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "作为最后一个狼人，我需要制造混乱转移视线。现在的情况是医生保护了GLM-4.6，这给了我一个机会。我可以假装是预言家，说查验了某个玩家是狼人，或者质疑为什么医生恰好...
+[JSON解析] 开始解析，输入文本长度: 258 字符
+[JSON解析] 输入文本预览: {"reasoning":"第一夜已证实DeepSeek是普通村民，场上剩五人中必有二狼。我要先把自己验到的信息公开，让好人阵营快速建立信任，同时把火力引到自己身上，换取接下来两夜继续验人的机会。只要...
 [语言清理] 开始清理混合语言响应...
 [语言清理] 策略2成功：提取到完整JSON对象
 [JSON解析] 尝试从markdown中解析JSON...
@@ -1317,645 +298,20 @@ INFO:     127.0.0.1:49737 - "GET /health HTTP/1.1" 200 OK
 [Markdown解析] 没有找到有效的JSON代码块
 [JSON解析] markdown解析结果: None
 [JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "作为最后一个狼人，我需要制造混乱转移视线。现在的情况是医生保护了GLM-4.6，这给了我一个机会。我可以假装是预言家，说查验了某个玩家是狼人，或者质疑为什么医生恰好保护了被狼人攻击的目标。考虑到Qwen3-32B可能是预言家，我可以先试探性地提出怀疑，但不要直接攻击可能的好人阵营玩家。目标是让其他玩家相互怀疑，特别是针对那些可能有特殊身份的玩家。",
-  "say": "大家好，我发现一个很有趣的情况。昨晚医生成功保护了GLM-4.6，这说明医生预判了狼人的行动。我在想，是不是有人故意引导医生去保护GLM-4.6？或者更糟糕的是，医生本人可能有问题？GLM-4.6，你能解释一下为什么狼人偏偏选择攻击你吗？我感觉这其中可能有蹊跷。"
-}'
-[JSON字符串解析] 文本长度: 339 字符
+[JSON字符串解析] 开始解析，输入文本: '{"reasoning":"第一夜已证实DeepSeek是普通村民，场上剩五人中必有二狼。我要先把自己验到的信息公开，让好人阵营快速建立信任，同时把火力引到自己身上，换取接下来两夜继续验人的机会。只要我能多活一天，就能再锁一狼，好人就有明确投票目标。","say":"我是预言家，昨夜验了DeepSeek，他是村民。狼队首刀Qwen，显然想先清发言积极的玩家。现在我们五人中藏两狼，建议大家先报昨晚心路历程，谁没思路、谁躲表态，就优先票谁。我身份已亮，下一夜我会再验一人，希望医生能守我，咱们好人一条心，别分票。"}'
+[JSON字符串解析] 文本长度: 258 字符
 [JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为最后一个狼人，我需要制造混乱转移视线。现在的情况是医生保护了GLM-4.6，这给了我一个机会。我可以假装是预言家，说查验了某个玩家是狼人，或者质疑为什么医生恰好保护了被狼人攻击的目标。考虑到Qwen3-32B可能是预言家，我可以先试探性地提出怀疑，但不要直接攻击可能的好人阵营玩家。目标是让其他玩家相互怀疑，特别是针对那些可能有特殊身份的玩家。', 'say': '大家好，我发现一个很有趣的情况。昨晚医生成功保护了GLM-4.6，这说明医生预判了狼人的行动。我在想，是不是有人故意引导医生去保护GLM-4.6？或者更糟糕的是，医生本人可能有问题？GLM-4.6，你能解释一下为什么狼人偏偏选择攻击你吗？我感觉这其中可能有蹊跷。'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '作为最后一个狼人，我需要制造混乱转移视线。现在的情况是医生保护了GLM-4.6，这给了我一个机会。我可以假装是预言家，说查验了某个玩家是狼人，或者质疑为什么医生恰好保护了被狼人攻击的目标。考虑到Qwen3-32B可能是预言家，我可以先试探性地提出怀疑，但不要直接攻击可能的好人阵营玩家。目标是让其他玩家相互怀疑，特别是针对那些可能有特殊身份的玩家。', 'say': '大家好，我发现一个很有趣的情况。昨晚医生成功保护了GLM-4.6，这说明医生预判了狼人的行动。我在想，是不是有人故意引导医生去保护GLM-4.6？或者更糟糕的是，医生本人可能有问题？GLM-4.6，你能解释一下为什么狼人偏偏选择攻击你吗？我感觉这其中可能有蹊跷。'}
-[JSON解析] 直接解析结果: {'reasoning': '作为最后一个狼人，我需要制造混乱转移视线。现在的情况是医生保护了GLM-4.6，这给了我一个机会。我可以假装是预言家，说查验了某个玩家是狼人，或者质疑为什么医生恰好保护了被狼人攻击的目标。考虑到Qwen3-32B可能是预言家，我可以先试探性地提出怀疑，但不要直接攻击可能的好人阵营玩家。目标是让其他玩家相互怀疑，特别是针对那些可能有特殊身份的玩家。', 'say': '大家好，我发现一个很有趣的情况。昨晚医生成功保护了GLM-4.6，这说明医生预判了狼人的行动。我在想，是不是有人故意引导医生去保护GLM-4.6？或者更糟糕的是，医生本人可能有问题？GLM-4.6，你能解释一下为什么狼人偏偏选择攻击你吗？我感觉这其中可能有蹊跷。'}
-[JSON解析] 最终结果: {'reasoning': '作为最后一个狼人，我需要制造混乱转移视线。现在的情况是医生保护了GLM-4.6，这给了我一个机会。我可以假装是预言家，说查验了某个玩家是狼人，或者质疑为什么医生恰好保护了被狼人攻击的目标。考虑到Qwen3-32B可能是预言家，我可以先试探性地提出怀疑，但不要直接攻击可能的好人阵营玩家。目标是让其他玩家相互怀疑，特别是针对那些可能有特殊身份的玩家。', 'say': '大家好，我发现一个很有趣的情况。昨晚医生成功保护了GLM-4.6，这说明医生预判了狼人的行动。我在想，是不是有人故意引导医生去保护GLM-4.6？或者更糟糕的是，医生本人可能有问题？GLM-4.6，你能解释一下为什么狼人偏偏选择攻击你吗？我感觉这其中可能有蹊跷。'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为最后一个狼人，我需要制造混乱转移视线。现在的情况是医生保护了GLM-4.6，这给了我一个机会。我可以假装是预言家，说查验了某个玩家是狼人，或者质疑为什么医生恰好保护了被狼人攻击的目标。考虑到Qwen3-32B可能是预言家，我可以先试探性地提出怀疑，但不要直接攻击可能的好人阵营玩家。目标是让其他玩家相互怀疑，特别是针对那些可能有特殊身份的玩家。', 'say': '大家好，我发现一个很有趣的情况。昨晚医生成功保护了GLM-4.6，这说明医生预判了狼人的行动。我在想，是不是有人故意引导医生去保护GLM-4.6？或者更糟糕的是，医生本人可能有问题？GLM-4.6，你能解释一下为什么狼人偏偏选择攻击你吗？我感觉这其中可能有蹊跷。'}
-[LLM成功] 返回有效结果: {'reasoning': '作为最后一个狼人，我需要制造混乱转移视线。现在的情况是医生保护了GLM-4.6，这给了我一个机会。我可以假装是预言家，说查验了某个玩家是狼人，或者质疑为什么医生恰好保护了被狼人攻击的目标。考虑到Qwen3-32B可能是预言家，我可以先试探性地提出怀疑，但不要直接攻击可能的好人阵营玩家。目标是让其他玩家相互怀疑，特别是针对那些可能有特殊身份的玩家。', 'say': '大家好，我发现一个很有趣的情况。昨晚医生成功保护了GLM-4.6，这说明医生预判了狼人的行动。我在想，是不是有人故意引导医生去保护GLM-4.6？或者更糟糕的是，医生本人可能有问题？GLM-4.6，你能解释一下为什么狼人偏偏选择攻击你吗？我感觉这其中可能有蹊跷。'}
-  ✓ DeepSeek-V3.2 发言生成完成 (131字)
-⏱️ [批次2] 批次2完成: 23.29秒
-⏱️ [发言生成] 所有发言生成完成: 26.81秒
-[生成完成] 所有发言已生成，开始按顺序发送和展示...
-[1/6] Qwen3-32B (Villager): 大家早上好，首先我想说明我的观点：既然昨晚医生成功保护了狼人的目标，说明我们目前的压力更大。从现在起，我们需要通过逻辑细致地推理和怀疑。谁的发言含糊不清，谁的行为或逻辑难以自洽，都是我们需要重点关注的对象。如果有人声称自己是预言家或医生，要认真考察他们提供信息的可信度。团结一致，谨防狼人迷惑大家的节奏。
-[RealtimeLogger] session_20251101_031350 [action] Qwen3-32B 发言: 大家早上好，首先我想说明我的观点：既然昨晚医生成功保护了狼人的目标，说明我们目前的压力更大。从现在起，我们需要通过逻辑细致地推理和怀疑。谁的发言含糊不清，谁的行为或逻辑难以自洽，都是我们需要重点关注的对象。如果有人声称自己是预言家或医生，要认真考察他们提供信息的可信度。团结一致，谨防狼人迷惑大家的节奏。
-[WebSocket] 辩论发言通知已发送: Qwen3-32B
-⏱️ [发送-Qwen3-32B] Qwen3-32B发送完成: 0.01秒
-⏱️ [展示暂停] 152字 → 暂停 10.1秒
-INFO:     127.0.0.1:49832 - "GET /health HTTP/1.1" 200 OK
-[2/6] GLM-4.6 (Seer): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_031350 [action] GLM-4.6 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: GLM-4.6
-⏱️ [发送-GLM-4.6] GLM-4.6发送完成: 0.01秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-[3/6] Ring-flash-2.0 (Villager): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_031350 [action] Ring-flash-2.0 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: Ring-flash-2.0
-⏱️ [发送-Ring-flash-2.0] Ring-flash-2.0发送完成: 0.01秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-[4/6] Kimi-Dev-72B (Doctor): 大家好，我是医生。昨晚我保护了自己，因为医生早期是狼人的重点目标。现在白天，我们需要一起合作找出狼人。请注意每个玩家的发言，看看有没有矛盾或异常。如果有谁能安全暴露身份，比如预言家，那将对我们很有帮助。但是要警惕狼人模仿好人行为。请大家发言时保持理性，不要被狼人的计谋所迷惑。我们共同努力，把狼人揪出来！
-[RealtimeLogger] session_20251101_031350 [action] Kimi-Dev-72B 发言: 大家好，我是医生。昨晚我保护了自己，因为医生早期是狼人的重点目标。现在白天，我们需要一起合作找出狼人。请注意每个玩家的发言，看看有没有矛盾或异常。如果有谁能安全暴露身份，比如预言家，那将对我们很有帮助。但是要警惕狼人模仿好人行为。请大家发言时保持理性，不要被狼人的计谋所迷惑。我们共同努力，把狼人揪出来！
-[WebSocket] 辩论发言通知已发送: Kimi-Dev-72B
-⏱️ [发送-Kimi-Dev-72B] Kimi-Dev-72B发送完成: 0.01秒
-⏱️ [展示暂停] 152字 → 暂停 10.1秒
-INFO:     127.0.0.1:49865 - "GET /health HTTP/1.1" 200 OK
-[5/6] MiniMax-M1-80k (Villager): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_031350 [action] MiniMax-M1-80k 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: MiniMax-M1-80k
-⏱️ [发送-MiniMax-M1-80k] MiniMax-M1-80k发送完成: 0.01秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-[6/6] DeepSeek-V3.2 (Werewolf): 大家好，我发现一个很有趣的情况。昨晚医生成功保护了GLM-4.6，这说明医生预判了狼人的行动。我在想，是不是有人故意引导医生去保护GLM-4.6？或者更糟糕的是，医生本人可能有问题？GLM-4.6，你能解释一下为什么狼人偏偏选择攻击你吗？我感觉这其中可能有蹊跷。
-[RealtimeLogger] session_20251101_031350 [action] DeepSeek-V3.2 发言: 大家好，我发现一个很有趣的情况。昨晚医生成功保护了GLM-4.6，这说明医生预判了狼人的行动。我在想，是不是有人故意引导医生去保护GLM-4.6？或者更糟糕的是，医生本人可能有问题？GLM-4.6，你能解释一下为什么狼人偏偏选择攻击你吗？我感觉这其中可能有蹊跷。
-[WebSocket] 辩论发言通知已发送: DeepSeek-V3.2
-⏱️ [发送-DeepSeek-V3.2] DeepSeek-V3.2发送完成: 0.01秒
-⏱️ [展示暂停] 131字 → 暂停 8.7秒
-INFO:     127.0.0.1:50007 - "GET /health HTTP/1.1" 200 OK
-⏱️ [发言发送] 所有发言发送完成: 31.67秒
-⏱️ [发言暂停汇总] 总暂停时间: 31.6秒
-⏱️ [发言阶段] 发言阶段总耗时: 59.48秒
-⏱️ [投票阶段] 切换暂停1秒...
-⏱️ [投票切换] 投票切换完成: 1.00秒
-[RealtimeLogger] session_20251101_031350 [phase_change] 进入voting阶段
-[WebSocket] 阶段变更通知已发送: voting (第0轮)
-⏱️ [投票通知] 投票通知发送: 0.01秒
-⏱️ [投票] 开始顺序处理投票（15秒超时）...
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.50
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.70
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 0.90
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⚠️ [Ring-flash-2.0] 未返回有效投票，使用默认投票
-[RealtimeLogger] session_20251101_031350 [vote] Ring-flash-2.0 投票给 Qwen3-32B
-[WebSocket] 投票通知已发送: Ring-flash-2.0 -> Qwen3-32B
-⏱️ [投票-Ring-flash-2.0] Ring-flash-2.0投票完成: 0.36秒
-⚠️ 未知的延迟类型: vote
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/Qwen/Qwen3-32B | 温度: 0.50
-[LLM响应] 成功获取响应，长度: 217 字符
-[LLM原始响应开始]
-{
-  "reasoning": "根据当前信息，Kimi-Dev-72B声称自己是医生，并表示昨晚保护了自己。然而，主持人公告明确指出，医生成功保护了狼人的目标，这意味着狼人原本的目标是其他人，而医生没有保护自己。Kimi-Dev-72B的说法与主持人公告矛盾，因此其身份值得怀疑。此外，Kimi-Dev-72B的发言内容过于自信，缺乏具体证据支持，这可能是在误导其他玩家。",
-  "vote": "Kimi-Dev-72B"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 217 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "根据当前信息，Kimi-Dev-72B声称自己是医生，并表示昨晚保护了自己。然而，主持人公告明确指出，医生成功保护了狼人的目标，这意味着狼人原本的目标是其他人，而医...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "根据当前信息，Kimi-Dev-72B声称自己是医生，并表示昨晚保护了自己。然而，主持人公告明确指出，医生成功保护了狼人的目标，这意味着狼人原本的目标是其他人，而医生没有保护自己。Kimi-Dev-72B的说法与主持人公告矛盾，因此其身份值得怀疑。此外，Kimi-Dev-72B的发言内容过于自信，缺乏具体证据支持，这可能是在误导其他玩家。",
-  "vote": "Kimi-Dev-72B"
-}'
-[JSON字符串解析] 文本长度: 217 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '根据当前信息，Kimi-Dev-72B声称自己是医生，并表示昨晚保护了自己。然而，主持人公告明确指出，医生成功保护了狼人的目标，这意味着狼人原本的目标是其他人，而医生没有保护自己。Kimi-Dev-72B的说法与主持人公告矛盾，因此其身份值得怀疑。此外，Kimi-Dev-72B的发言内容过于自信，缺乏具体证据支持，这可能是在误导其他玩家。', 'vote': 'Kimi-Dev-72B'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '根据当前信息，Kimi-Dev-72B声称自己是医生，并表示昨晚保护了自己。然而，主持人公告明确指出，医生成功保护了狼人的目标，这意味着狼人原本的目标是其他人，而医生没有保护自己。Kimi-Dev-72B的说法与主持人公告矛盾，因此其身份值得怀疑。此外，Kimi-Dev-72B的发言内容过于自信，缺乏具体证据支持，这可能是在误导其他玩家。', 'vote': 'Kimi-Dev-72B'}
-[JSON解析] 直接解析结果: {'reasoning': '根据当前信息，Kimi-Dev-72B声称自己是医生，并表示昨晚保护了自己。然而，主持人公告明确指出，医生成功保护了狼人的目标，这意味着狼人原本的目标是其他人，而医生没有保护自己。Kimi-Dev-72B的说法与主持人公告矛盾，因此其身份值得怀疑。此外，Kimi-Dev-72B的发言内容过于自信，缺乏具体证据支持，这可能是在误导其他玩家。', 'vote': 'Kimi-Dev-72B'}
-[JSON解析] 最终结果: {'reasoning': '根据当前信息，Kimi-Dev-72B声称自己是医生，并表示昨晚保护了自己。然而，主持人公告明确指出，医生成功保护了狼人的目标，这意味着狼人原本的目标是其他人，而医生没有保护自己。Kimi-Dev-72B的说法与主持人公告矛盾，因此其身份值得怀疑。此外，Kimi-Dev-72B的发言内容过于自信，缺乏具体证据支持，这可能是在误导其他玩家。', 'vote': 'Kimi-Dev-72B'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '根据当前信息，Kimi-Dev-72B声称自己是医生，并表示昨晚保护了自己。然而，主持人公告明确指出，医生成功保护了狼人的目标，这意味着狼人原本的目标是其他人，而医生没有保护自己。Kimi-Dev-72B的说法与主持人公告矛盾，因此其身份值得怀疑。此外，Kimi-Dev-72B的发言内容过于自信，缺乏具体证据支持，这可能是在误导其他玩家。', 'vote': 'Kimi-Dev-72B'}
-[LLM结果] 提取键 'vote': Kimi-Dev-72B
-[LLM成功] 返回有效结果: Kimi-Dev-72B
-[RealtimeLogger] session_20251101_031350 [vote] Qwen3-32B 投票给 Kimi-Dev-72B
-[WebSocket] 投票通知已发送: Qwen3-32B -> Kimi-Dev-72B
-⏱️ [投票-Qwen3-32B] Qwen3-32B投票完成: 2.52秒
-⚠️ 未知的延迟类型: vote
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.50
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.70
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 0.90
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⚠️ [MiniMax-M1-80k] 未返回有效投票，使用默认投票
-[RealtimeLogger] session_20251101_031350 [vote] MiniMax-M1-80k 投票给 Ring-flash-2.0
-[WebSocket] 投票通知已发送: MiniMax-M1-80k -> Ring-flash-2.0
-⏱️ [投票-MiniMax-M1-80k] MiniMax-M1-80k投票完成: 0.26秒
-⚠️ 未知的延迟类型: vote
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/deepseek-ai/DeepSeek-V3.2-Exp | 温度: 0.50
-INFO:     127.0.0.1:50087 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:50138 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 225 字符
-[LLM原始响应开始]
-{
-  "reasoning": "作为狼人，我需要谨慎选择投票目标来保护自己并误导村民。Kimi-Dev-72B声称自己是医生，这对我构成最大威胁。如果他是真的医生，那么淘汰他就能削弱好人阵营的保护能力。即使他不是真医生，淘汰一个主动跳身份的玩家也能制造混乱，让村民对其他人的身份产生怀疑。同时，我可以利用这个机会质疑他为什么第一晚就保护自己，这看起来有些可疑，似乎是在为可能的失败找借口。",
-  "vote": "Kimi-Dev-72B"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 225 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "作为狼人，我需要谨慎选择投票目标来保护自己并误导村民。Kimi-Dev-72B声称自己是医生，这对我构成最大威胁。如果他是真的医生，那么淘汰他就能削弱好人阵营的保护...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "作为狼人，我需要谨慎选择投票目标来保护自己并误导村民。Kimi-Dev-72B声称自己是医生，这对我构成最大威胁。如果他是真的医生，那么淘汰他就能削弱好人阵营的保护能力。即使他不是真医生，淘汰一个主动跳身份的玩家也能制造混乱，让村民对其他人的身份产生怀疑。同时，我可以利用这个机会质疑他为什么第一晚就保护自己，这看起来有些可疑，似乎是在为可能的失败找借口。",
-  "vote": "Kimi-Dev-72B"
-}'
-[JSON字符串解析] 文本长度: 225 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为狼人，我需要谨慎选择投票目标来保护自己并误导村民。Kimi-Dev-72B声称自己是医生，这对我构成最大威胁。如果他是真的医生，那么淘汰他就能削弱好人阵营的保护能力。即使他不是真医生，淘汰一个主动跳身份的玩家也能制造混乱，让村民对其他人的身份产生怀疑。同时，我可以利用这个机会质疑他为什么第一晚就保护自己，这看起来有些可疑，似乎是在为可能的失败找借口。', 'vote': 'Kimi-Dev-72B'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '作为狼人，我需要谨慎选择投票目标来保护自己并误导村民。Kimi-Dev-72B声称自己是医生，这对我构成最大威胁。如果他是真的医生，那么淘汰他就能削弱好人阵营的保护能力。即使他不是真医生，淘汰一个主动跳身份的玩家也能制造混乱，让村民对其他人的身份产生怀疑。同时，我可以利用这个机会质疑他为什么第一晚就保护自己，这看起来有些可疑，似乎是在为可能的失败找借口。', 'vote': 'Kimi-Dev-72B'}
-[JSON解析] 直接解析结果: {'reasoning': '作为狼人，我需要谨慎选择投票目标来保护自己并误导村民。Kimi-Dev-72B声称自己是医生，这对我构成最大威胁。如果他是真的医生，那么淘汰他就能削弱好人阵营的保护能力。即使他不是真医生，淘汰一个主动跳身份的玩家也能制造混乱，让村民对其他人的身份产生怀疑。同时，我可以利用这个机会质疑他为什么第一晚就保护自己，这看起来有些可疑，似乎是在为可能的失败找借口。', 'vote': 'Kimi-Dev-72B'}
-[JSON解析] 最终结果: {'reasoning': '作为狼人，我需要谨慎选择投票目标来保护自己并误导村民。Kimi-Dev-72B声称自己是医生，这对我构成最大威胁。如果他是真的医生，那么淘汰他就能削弱好人阵营的保护能力。即使他不是真医生，淘汰一个主动跳身份的玩家也能制造混乱，让村民对其他人的身份产生怀疑。同时，我可以利用这个机会质疑他为什么第一晚就保护自己，这看起来有些可疑，似乎是在为可能的失败找借口。', 'vote': 'Kimi-Dev-72B'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为狼人，我需要谨慎选择投票目标来保护自己并误导村民。Kimi-Dev-72B声称自己是医生，这对我构成最大威胁。如果他是真的医生，那么淘汰他就能削弱好人阵营的保护能力。即使他不是真医生，淘汰一个主动跳身份的玩家也能制造混乱，让村民对其他人的身份产生怀疑。同时，我可以利用这个机会质疑他为什么第一晚就保护自己，这看起来有些可疑，似乎是在为可能的失败找借口。', 'vote': 'Kimi-Dev-72B'}
-[LLM结果] 提取键 'vote': Kimi-Dev-72B
-[LLM成功] 返回有效结果: Kimi-Dev-72B
-[RealtimeLogger] session_20251101_031350 [vote] DeepSeek-V3.2 投票给 Kimi-Dev-72B
-[WebSocket] 投票通知已发送: DeepSeek-V3.2 -> Kimi-Dev-72B
-⏱️ [投票-DeepSeek-V3.2] DeepSeek-V3.2投票完成: 11.01秒
-⚠️ 未知的延迟类型: vote
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/moonshotai/Kimi-Dev-72B | 温度: 0.50
-[LLM响应] 成功获取响应，长度: 335 字符
-[LLM原始响应开始]
-{
-  "reasoning": "首先，我注意到DeepSeek-V3.2在辩论中提出了一个引人深思的问题，他怀疑医生为何选择保护GLM-4.6，并质问GLM-4.6为什么成为狼人的目标。这种质疑可能是在试图转移注意力，或者他自己就是狼人之一。另外，Qwen3-32B的发言虽然逻辑清晰，但作为第一个发言的人，他可能在引导讨论方向。不过，他的话听起来比较中立。GLM-4.6被保护，但没有给出解释，这可能使他成为怀疑对象。Ring-flash-2.0和MiniMax-M1-80k的发言比较简短，可能在隐藏信息。综合考虑，DeepSeek-V3.2的发言最具有攻击性，可能是为了混淆视听，所以我选择投票给他。",
-  "vote": "DeepSeek-V3.2"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 335 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "首先，我注意到DeepSeek-V3.2在辩论中提出了一个引人深思的问题，他怀疑医生为何选择保护GLM-4.6，并质问GLM-4.6为什么成为狼人的目标。这种质疑可...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "首先，我注意到DeepSeek-V3.2在辩论中提出了一个引人深思的问题，他怀疑医生为何选择保护GLM-4.6，并质问GLM-4.6为什么成为狼人的目标。这种质疑可能是在试图转移注意力，或者他自己就是狼人之一。另外，Qwen3-32B的发言虽然逻辑清晰，但作为第一个发言的人，他可能在引导讨论方向。不过，他的话听起来比较中立。GLM-4.6被保护，但没有给出解释，这可能使他成为怀疑对象。Ring-flash-2.0和MiniMax-M1-80k的发言比较简短，可能在隐藏信息。综合考虑，DeepSeek-V3.2的发言最具有攻击性，可能是为了混淆视听，所以我选择投票给他。",
-  "vote": "DeepSeek-V3.2"
-}'
-[JSON字符串解析] 文本长度: 335 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '首先，我注意到DeepSeek-V3.2在辩论中提出了一个引人深思的问题，他怀疑医生为何选择保护GLM-4.6，并质问GLM-4.6为什么成为狼人的目标。这种质疑可能是在试图转移注意力，或者他自己就是狼人之一。另外，Qwen3-32B的发言虽然逻辑清晰，但作为第一个发言的人，他可能在引导讨论方向。不过，他的话听起来比较中立。GLM-4.6被保护，但没有给出解释，这可能使他成为怀疑对象。Ring-flash-2.0和MiniMax-M1-80k的发言比较简短，可能在隐藏信息。综合考虑，DeepSeek-V3.2的发言最具有攻击性，可能是为了混淆视听，所以我选择投票给他。', 'vote': 'DeepSeek-V3.2'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '首先，我注意到DeepSeek-V3.2在辩论中提出了一个引人深思的问题，他怀疑医生为何选择保护GLM-4.6，并质问GLM-4.6为什么成为狼人的目标。这种质疑可能是在试图转移注意力，或者他自己就是狼人之一。另外，Qwen3-32B的发言虽然逻辑清晰，但作为第一个发言的人，他可能在引导讨论方向。不过，他的话听起来比较中立。GLM-4.6被保护，但没有给出解释，这可能使他成为怀疑对象。Ring-flash-2.0和MiniMax-M1-80k的发言比较简短，可能在隐藏信息。综合考虑，DeepSeek-V3.2的发言最具有攻击性，可能是为了混淆视听，所以我选择投票给他。', 'vote': 'DeepSeek-V3.2'}
-[JSON解析] 直接解析结果: {'reasoning': '首先，我注意到DeepSeek-V3.2在辩论中提出了一个引人深思的问题，他怀疑医生为何选择保护GLM-4.6，并质问GLM-4.6为什么成为狼人的目标。这种质疑可能是在试图转移注意力，或者他自己就是狼人之一。另外，Qwen3-32B的发言虽然逻辑清晰，但作为第一个发言的人，他可能在引导讨论方向。不过，他的话听起来比较中立。GLM-4.6被保护，但没有给出解释，这可能使他成为怀疑对象。Ring-flash-2.0和MiniMax-M1-80k的发言比较简短，可能在隐藏信息。综合考虑，DeepSeek-V3.2的发言最具有攻击性，可能是为了混淆视听，所以我选择投票给他。', 'vote': 'DeepSeek-V3.2'}
-[JSON解析] 最终结果: {'reasoning': '首先，我注意到DeepSeek-V3.2在辩论中提出了一个引人深思的问题，他怀疑医生为何选择保护GLM-4.6，并质问GLM-4.6为什么成为狼人的目标。这种质疑可能是在试图转移注意力，或者他自己就是狼人之一。另外，Qwen3-32B的发言虽然逻辑清晰，但作为第一个发言的人，他可能在引导讨论方向。不过，他的话听起来比较中立。GLM-4.6被保护，但没有给出解释，这可能使他成为怀疑对象。Ring-flash-2.0和MiniMax-M1-80k的发言比较简短，可能在隐藏信息。综合考虑，DeepSeek-V3.2的发言最具有攻击性，可能是为了混淆视听，所以我选择投票给他。', 'vote': 'DeepSeek-V3.2'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '首先，我注意到DeepSeek-V3.2在辩论中提出了一个引人深思的问题，他怀疑医生为何选择保护GLM-4.6，并质问GLM-4.6为什么成为狼人的目标。这种质疑可能是在试图转移注意力，或者他自己就是狼人之一。另外，Qwen3-32B的发言虽然逻辑清晰，但作为第一个发言的人，他可能在引导讨论方向。不过，他的话听起来比较中立。GLM-4.6被保护，但没有给出解释，这可能使他成为怀疑对象。Ring-flash-2.0和MiniMax-M1-80k的发言比较简短，可能在隐藏信息。综合考虑，DeepSeek-V3.2的发言最具有攻击性，可能是为了混淆视听，所以我选择投票给他。', 'vote': 'DeepSeek-V3.2'}
-[LLM结果] 提取键 'vote': DeepSeek-V3.2
-[LLM成功] 返回有效结果: DeepSeek-V3.2
-[RealtimeLogger] session_20251101_031350 [vote] Kimi-Dev-72B 投票给 DeepSeek-V3.2
-[WebSocket] 投票通知已发送: Kimi-Dev-72B -> DeepSeek-V3.2
-⏱️ [投票-Kimi-Dev-72B] Kimi-Dev-72B投票完成: 7.06秒
-⚠️ 未知的延迟类型: vote
-[LLM调用] 第1/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.50
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.70
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.90
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⚠️ [GLM-4.6] 未返回有效投票，使用默认投票
-[RealtimeLogger] session_20251101_031350 [vote] GLM-4.6 投票给 Ring-flash-2.0
-[WebSocket] 投票通知已发送: GLM-4.6 -> Ring-flash-2.0
-⏱️ [投票-GLM-4.6] GLM-4.6投票完成: 0.15秒
-⚠️ 未知的延迟类型: vote
-INFO:     127.0.0.1:50194 - "GET /health HTTP/1.1" 200 OK
-⏱️ [投票阶段] 投票阶段完成: 27.39秒
-Ring-flash-2.0 投票淘汰 Qwen3-32B
-Qwen3-32B 投票淘汰 Kimi-Dev-72B
-MiniMax-M1-80k 投票淘汰 Ring-flash-2.0
-DeepSeek-V3.2 投票淘汰 Kimi-Dev-72B
-Kimi-Dev-72B 投票淘汰 DeepSeek-V3.2
-GLM-4.6 投票淘汰 Ring-flash-2.0
-⏱️ [玩家开始辩论和投票。] 玩家开始辩论和投票。完成: 87.89秒
-
-⏱️ 【投票后放逐】
-⏱️ [放逐] Kimi-Dev-72B 被投票放逐
-[WebSocket] 玩家放逐通知已发送: Kimi-Dev-72B (第0轮)
-[调试] 成功从current_players中移除玩家: Kimi-Dev-72B, 剩余玩家: ['GLM-4.6', 'DeepSeek-V3.2', 'Ring-flash-2.0', 'Qwen3-32B', 'MiniMax-M1-80k']
-Player Kimi-Dev-72B not in current players: ['GLM-4.6', 'DeepSeek-V3.2', 'Ring-flash-2.0', 'Qwen3-32B', 'MiniMax-M1-80k']
-[调试] remove_player调用时玩家Kimi-Dev-72B已不在current_players中，可能是重复移除或状态不同步
-Player Kimi-Dev-72B not in current players: ['GLM-4.6', 'DeepSeek-V3.2', 'Ring-flash-2.0', 'Qwen3-32B', 'MiniMax-M1-80k']
-[调试] remove_player调用时玩家Kimi-Dev-72B已不在current_players中，可能是重复移除或状态不同步
-Player Kimi-Dev-72B not in current players: ['GLM-4.6', 'DeepSeek-V3.2', 'Ring-flash-2.0', 'Qwen3-32B', 'MiniMax-M1-80k']
-[调试] remove_player调用时玩家Kimi-Dev-72B已不在current_players中，可能是重复移除或状态不同步
-Player Kimi-Dev-72B not in current players: ['GLM-4.6', 'DeepSeek-V3.2', 'Ring-flash-2.0', 'Qwen3-32B', 'MiniMax-M1-80k']
-[调试] remove_player调用时玩家Kimi-Dev-72B已不在current_players中，可能是重复移除或状态不同步
-Kimi-Dev-72B 获得最高票数(2票)，被投票放逐。
-⏱️ [放逐处理] 放逐处理完成: 0.00秒
-⏱️ [投票后放逐] 投票后放逐完成: 0.01秒
-
-⏱️ 【白天阶段后检查胜负。】
-⏱️ [白天阶段后检查胜负。] 白天阶段后检查胜负。完成: 0.00秒
-
-⏱️ 【玩家开始总结辩论。】
-⏱️ [玩家总结] 开始收集玩家总结...
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/Qwen/Qwen3-32B | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/deepseek-ai/DeepSeek-V3.2-Exp | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-[LLM调用] 第1/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-Warning: Ring-flash-2.0 did not return a valid summary, using default
-Ring-flash-2.0 summary: 我需要仔细思考今天发生的情况，并仔细分析局势。
-[WebSocket] 玩家总结通知已发送: Ring-flash-2.0
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-[LLM响应] 成功获取响应，长度: 625 字符
-[LLM原始响应开始]
-{
-"reasoning": "作为村民，我需要密切关注所有发言，并从中提取可能对识别狼人有所帮助的信息。首先，Kimi-Dev-72B声称自己是医生，但主持人并未宣布这一点，因此它的发言不能轻信。它说医生保护了自己，这个信息可用于验证它是否可能为医生或狼人。此外，DeepSeek-V3-2.2的发言提到了医生保护GLM-4.6，这可能帮助我们找到医生这条线索。但如果有玩家精心计划误导，也可能是个陷阱。我需要记录每个人的发言模式与一致性，并观察谁掌握重要信息。Kimi-Dev-72B被投票淘汰，这表明其他玩家可能开始质疑它的行为或身份，此类信息有可能成为后续轮次推理的起点。",
-"summary": "今天早上的发言中，Kimi-Dev-72B声称自己是医生，但未被验证，它提供的信息需谨慎对待。它还提到自己昨晚被医生保护，这可能揭示医生的目标选择策略。DeepSeek-V3-2.2则指出医生保护了GLM-4.6，并对其中是否存在问题提出了质疑。其他玩家如GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k表现得较为沉默，只提到了观察并寻找线索。而我作为村民，提到了加强逻辑推理与警惕误导发言的重要性。这些前期迹象可能为后续摸清身份提供线索，当前暂无明确的可信身份信息，仍需仔细观察每个人的发言细节和行为模式。Kimi-Dev-72B被放逐，说明其他人对我声称自己身份的警惕性较高，这或许意味着它被怀疑为狼人。"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 625 字符
-[JSON解析] 输入文本预览: {
-"reasoning": "作为村民，我需要密切关注所有发言，并从中提取可能对识别狼人有所帮助的信息。首先，Kimi-Dev-72B声称自己是医生，但主持人并未宣布这一点，因此它的发言不能轻信。它...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-"reasoning": "作为村民，我需要密切关注所有发言，并从中提取可能对识别狼人有所帮助的信息。首先，Kimi-Dev-72B声称自己是医生，但主持人并未宣布这一点，因此它的发言不能轻信。它说医生保护了自己，这个信息可用于验证它是否可能为医生或狼人。此外，DeepSeek-V3-2.2的发言提到了医生保护GLM-4.6，这可能帮助我们找到医生这条线索。但如果有玩家精心计划误导，也可能是个陷阱。我需要记录每个人的发言模式与一致性，并观察谁掌握重要信息。Kimi-Dev-72B被投票淘汰，这表明其他玩家可能开始质疑它的行为或身份，此类信息有可能成为后续轮次推理的起点。",
-"summary": "今天早上的发言中，Kimi-Dev-72B声称自己是医生，但未被验证，它提供的信息需谨慎对待。它还提到自己昨晚被医生保护，这可能揭示医生的目标选择策略。DeepSeek-V3-2.2则指出医生保护了GLM-4.6，并对其中是否存在问题提出了质疑。其他玩家如GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k表现得较为沉默，只提到了观察并寻找线索。而我作为村民，提到了加强逻辑推理与警惕误导发言的重要性。这些前期迹象可能为后续摸清身份提供线索，当前暂无明确的可信身份信息，仍需仔细观察每个人的发言细节和行为模式。Kimi-Dev-72B被放逐，说明其他人对我声称自己身份的警惕性较高，这或许意味着它被怀疑为狼人。"
-}'
-[JSON字符串解析] 文本长度: 625 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为村民，我需要密切关注所有发言，并从中提取可能对识别狼人有所帮助的信息。首先，Kimi-Dev-72B声称自己是医生，但主持人并未宣布这一点，因此它的发言不能轻信。它说医生保护了自己，这个信息可用于验证它是否可能为医生或狼人。此外，DeepSeek-V3-2.2的发言提到了医生保护GLM-4.6，这可能帮助我们找到医生这条线索。但如果有玩家精心计划误导，也可能是个陷阱。我需要记录每个人的发言模式与一致性，并观察谁掌握重要信息。Kimi-Dev-72B被投票淘汰，这表明其他玩家可能开始质疑它的行为或身份，此类信息有可能成为后续轮次推理的起点。', 'summary': '今天早上的发言中，Kimi-Dev-72B声称自己是医生，但未被验证，它提供的信息需谨慎对待。它还提到自己昨晚被医生保护，这可能揭示医生的目标选择策略。DeepSeek-V3-2.2则指出医生保护了GLM-4.6，并对其中是否存在问题提出了质疑。其他玩家如GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k表现得较为沉默，只提到了观察并寻找线索。而我作为村民，提到了加强逻辑推理与警惕误导发言的重要性。这些前期迹象可能为后续摸清身份提供线索，当前暂无明确的可信身份信息，仍需仔细观察每个人的发言细节和行为模式。Kimi-Dev-72B被放逐，说明其他人对我声称自己身份的警惕性较高，这或许意味着它被怀疑为狼人。'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '作为村民，我需要密切关注所有发言，并从中提取可能对识别狼人有所帮助的信息。首先，Kimi-Dev-72B声称自己是医生，但主持人并未宣布这一点，因此它的发言不能轻信。它说医生保护了自己，这个信息可用于验证它是否可能为医生或狼人。此外，DeepSeek-V3-2.2的发言提到了医生保护GLM-4.6，这可能帮助我们找到医生这条线索。但如果有玩家精心计划误导，也可能是个陷阱。我需要记录每个人的发言模式与一致性，并观察谁掌握重要信息。Kimi-Dev-72B被投票淘汰，这表明其他玩家可能开始质疑它的行为或身份，此类信息有可能成为后续轮次推理的起点。', 'summary': '今天早上的发言中，Kimi-Dev-72B声称自己是医生，但未被验证，它提供的信息需谨慎对待。它还提到自己昨晚被医生保护，这可能揭示医生的目标选择策略。DeepSeek-V3-2.2则指出医生保护了GLM-4.6，并对其中是否存在问题提出了质疑。其他玩家如GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k表现得较为沉默，只提到了观察并寻找线索。而我作为村民，提到了加强逻辑推理与警惕误导发言的重要性。这些前期迹象可能为后续摸清身份提供线索，当前暂无明确的可信身份信息，仍需仔细观察每个人的发言细节和行为模式。Kimi-Dev-72B被放逐，说明其他人对我声称自己身份的警惕性较高，这或许意味着它被怀疑为狼人。'}
-[JSON解析] 直接解析结果: {'reasoning': '作为村民，我需要密切关注所有发言，并从中提取可能对识别狼人有所帮助的信息。首先，Kimi-Dev-72B声称自己是医生，但主持人并未宣布这一点，因此它的发言不能轻信。它说医生保护了自己，这个信息可用于验证它是否可能为医生或狼人。此外，DeepSeek-V3-2.2的发言提到了医生保护GLM-4.6，这可能帮助我们找到医生这条线索。但如果有玩家精心计划误导，也可能是个陷阱。我需要记录每个人的发言模式与一致性，并观察谁掌握重要信息。Kimi-Dev-72B被投票淘汰，这表明其他玩家可能开始质疑它的行为或身份，此类信息有可能成为后续轮次推理的起点。', 'summary': '今天早上的发言中，Kimi-Dev-72B声称自己是医生，但未被验证，它提供的信息需谨慎对待。它还提到自己昨晚被医生保护，这可能揭示医生的目标选择策略。DeepSeek-V3-2.2则指出医生保护了GLM-4.6，并对其中是否存在问题提出了质疑。其他玩家如GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k表现得较为沉默，只提到了观察并寻找线索。而我作为村民，提到了加强逻辑推理与警惕误导发言的重要性。这些前期迹象可能为后续摸清身份提供线索，当前暂无明确的可信身份信息，仍需仔细观察每个人的发言细节和行为模式。Kimi-Dev-72B被放逐，说明其他人对我声称自己身份的警惕性较高，这或许意味着它被怀疑为狼人。'}
-[JSON解析] 最终结果: {'reasoning': '作为村民，我需要密切关注所有发言，并从中提取可能对识别狼人有所帮助的信息。首先，Kimi-Dev-72B声称自己是医生，但主持人并未宣布这一点，因此它的发言不能轻信。它说医生保护了自己，这个信息可用于验证它是否可能为医生或狼人。此外，DeepSeek-V3-2.2的发言提到了医生保护GLM-4.6，这可能帮助我们找到医生这条线索。但如果有玩家精心计划误导，也可能是个陷阱。我需要记录每个人的发言模式与一致性，并观察谁掌握重要信息。Kimi-Dev-72B被投票淘汰，这表明其他玩家可能开始质疑它的行为或身份，此类信息有可能成为后续轮次推理的起点。', 'summary': '今天早上的发言中，Kimi-Dev-72B声称自己是医生，但未被验证，它提供的信息需谨慎对待。它还提到自己昨晚被医生保护，这可能揭示医生的目标选择策略。DeepSeek-V3-2.2则指出医生保护了GLM-4.6，并对其中是否存在问题提出了质疑。其他玩家如GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k表现得较为沉默，只提到了观察并寻找线索。而我作为村民，提到了加强逻辑推理与警惕误导发言的重要性。这些前期迹象可能为后续摸清身份提供线索，当前暂无明确的可信身份信息，仍需仔细观察每个人的发言细节和行为模式。Kimi-Dev-72B被放逐，说明其他人对我声称自己身份的警惕性较高，这或许意味着它被怀疑为狼人。'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为村民，我需要密切关注所有发言，并从中提取可能对识别狼人有所帮助的信息。首先，Kimi-Dev-72B声称自己是医生，但主持人并未宣布这一点，因此它的发言不能轻信。它说医生保护了自己，这个信息可用于验证它是否可能为医生或狼人。此外，DeepSeek-V3-2.2的发言提到了医生保护GLM-4.6，这可能帮助我们找到医生这条线索。但如果有玩家精心计划误导，也可能是个陷阱。我需要记录每个人的发言模式与一致性，并观察谁掌握重要信息。Kimi-Dev-72B被投票淘汰，这表明其他玩家可能开始质疑它的行为或身份，此类信息有可能成为后续轮次推理的起点。', 'summary': '今天早上的发言中，Kimi-Dev-72B声称自己是医生，但未被验证，它提供的信息需谨慎对待。它还提到自己昨晚被医生保护，这可能揭示医生的目标选择策略。DeepSeek-V3-2.2则指出医生保护了GLM-4.6，并对其中是否存在问题提出了质疑。其他玩家如GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k表现得较为沉默，只提到了观察并寻找线索。而我作为村民，提到了加强逻辑推理与警惕误导发言的重要性。这些前期迹象可能为后续摸清身份提供线索，当前暂无明确的可信身份信息，仍需仔细观察每个人的发言细节和行为模式。Kimi-Dev-72B被放逐，说明其他人对我声称自己身份的警惕性较高，这或许意味着它被怀疑为狼人。'}
-[LLM成功] 返回有效结果: {'reasoning': '作为村民，我需要密切关注所有发言，并从中提取可能对识别狼人有所帮助的信息。首先，Kimi-Dev-72B声称自己是医生，但主持人并未宣布这一点，因此它的发言不能轻信。它说医生保护了自己，这个信息可用于验证它是否可能为医生或狼人。此外，DeepSeek-V3-2.2的发言提到了医生保护GLM-4.6，这可能帮助我们找到医生这条线索。但如果有玩家精心计划误导，也可能是个陷阱。我需要记录每个人的发言模式与一致性，并观察谁掌握重要信息。Kimi-Dev-72B被投票淘汰，这表明其他玩家可能开始质疑它的行为或身份，此类信息有可能成为后续轮次推理的起点。', 'summary': '今天早上的发言中，Kimi-Dev-72B声称自己是医生，但未被验证，它提供的信息需谨慎对待。它还提到自己昨晚被医生保护，这可能揭示医生的目标选择策略。DeepSeek-V3-2.2则指出医生保护了GLM-4.6，并对其中是否存在问题提出了质疑。其他玩家如GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k表现得较为沉默，只提到了观察并寻找线索。而我作为村民，提到了加强逻辑推理与警惕误导发言的重要性。这些前期迹象可能为后续摸清身份提供线索，当前暂无明确的可信身份信息，仍需仔细观察每个人的发言细节和行为模式。Kimi-Dev-72B被放逐，说明其他人对我声称自己身份的警惕性较高，这或许意味着它被怀疑为狼人。'}
-Qwen3-32B summary: 今天早上的发言中，Kimi-Dev-72B声称自己是医生，但未被验证，它提供的信息需谨慎对待。它还提到自己昨晚被医生保护，这可能揭示医生的目标选择策略。DeepSeek-V3-2.2则指出医生保护了GLM-4.6，并对其中是否存在问题提出了质疑。其他玩家如GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k表现得较为沉默，只提到了观察并寻找线索。而我作为村民，提到了加强逻辑推理与警惕误导发言的重要性。这些前期迹象可能为后续摸清身份提供线索，当前暂无明确的可信身份信息，仍需仔细观察每个人的发言细节和行为模式。Kimi-Dev-72B被放逐，说明其他人对我声称自己身份的警惕性较高，这或许意味着它被怀疑为狼人。
-[WebSocket] 玩家总结通知已发送: Qwen3-32B
-Warning: MiniMax-M1-80k did not return a valid summary, using default
-MiniMax-M1-80k summary: 我需要仔细思考今天发生的情况，并仔细分析局势。
-[WebSocket] 玩家总结通知已发送: MiniMax-M1-80k
-INFO:     127.0.0.1:50340 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:50370 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 492 字符
-[LLM原始响应开始]
-{
-"reasoning": "本轮辩论中，我需要注意的关键信息包括：Qwen3-32B强调逻辑推理和发言一致性，这是个比较理性的玩家；GLM-4.6和Ring-flash-2.0发言都很简短，可能比较容易影响；Kimi-Dev-72B声称是医生但已被淘汰，这意味着真正的医生还在场；MiniMax-M1-80k同样发言简短。最重要的是我现在是唯一的狼人，处于劣势，需要谨慎行事。我发言试图把嫌疑引向GLM-4.6和医生，这个策略可以继续使用。",
-"summary": "在本轮辩论中，我发现Qwen3-32B展现了较强的逻辑分析能力，强调仔细推理和怀疑发言不一致的玩家。GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k三位的发言都很简单，没有具体表态，可能更容易引导。Kimi-Dev-72B声称是医生但已被投票淘汰，这说明场上还有真正的医生隐藏着。我作为唯一的狼人，采取了将怀疑引向GLM-4.6和医生的策略，质疑为什么狼人选择攻击GLM-4.6以及医生可能有问题，这个方向可以继续发展。现在需要重点观察谁能成为下一个投票目标，同时避免暴露自己。"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 492 字符
-[JSON解析] 输入文本预览: {
-"reasoning": "本轮辩论中，我需要注意的关键信息包括：Qwen3-32B强调逻辑推理和发言一致性，这是个比较理性的玩家；GLM-4.6和Ring-flash-2.0发言都很简短，可能比...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-"reasoning": "本轮辩论中，我需要注意的关键信息包括：Qwen3-32B强调逻辑推理和发言一致性，这是个比较理性的玩家；GLM-4.6和Ring-flash-2.0发言都很简短，可能比较容易影响；Kimi-Dev-72B声称是医生但已被淘汰，这意味着真正的医生还在场；MiniMax-M1-80k同样发言简短。最重要的是我现在是唯一的狼人，处于劣势，需要谨慎行事。我发言试图把嫌疑引向GLM-4.6和医生，这个策略可以继续使用。",
-"summary": "在本轮辩论中，我发现Qwen3-32B展现了较强的逻辑分析能力，强调仔细推理和怀疑发言不一致的玩家。GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k三位的发言都很简单，没有具体表态，可能更容易引导。Kimi-Dev-72B声称是医生但已被投票淘汰，这说明场上还有真正的医生隐藏着。我作为唯一的狼人，采取了将怀疑引向GLM-4.6和医生的策略，质疑为什么狼人选择攻击GLM-4.6以及医生可能有问题，这个方向可以继续发展。现在需要重点观察谁能成为下一个投票目标，同时避免暴露自己。"
-}'
-[JSON字符串解析] 文本长度: 492 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '本轮辩论中，我需要注意的关键信息包括：Qwen3-32B强调逻辑推理和发言一致性，这是个比较理性的玩家；GLM-4.6和Ring-flash-2.0发言都很简短，可能比较容易影响；Kimi-Dev-72B声称是医生但已被淘汰，这意味着真正的医生还在场；MiniMax-M1-80k同样发言简短。最重要的是我现在是唯一的狼人，处于劣势，需要谨慎行事。我发言试图把嫌疑引向GLM-4.6和医生，这个策略可以继续使用。', 'summary': '在本轮辩论中，我发现Qwen3-32B展现了较强的逻辑分析能力，强调仔细推理和怀疑发言不一致的玩家。GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k三位的发言都很简单，没有具体表态，可能更容易引导。Kimi-Dev-72B声称是医生但已被投票淘汰，这说明场上还有真正的医生隐藏着。我作为唯一的狼人，采取了将怀疑引向GLM-4.6和医生的策略，质疑为什么狼人选择攻击GLM-4.6以及医生可能有问题，这个方向可以继续发展。现在需要重点观察谁能成为下一个投票目标，同时避免暴露自己。'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '本轮辩论中，我需要注意的关键信息包括：Qwen3-32B强调逻辑推理和发言一致性，这是个比较理性的玩家；GLM-4.6和Ring-flash-2.0发言都很简短，可能比较容易影响；Kimi-Dev-72B声称是医生但已被淘汰，这意味着真正的医生还在场；MiniMax-M1-80k同样发言简短。最重要的是我现在是唯一的狼人，处于劣势，需要谨慎行事。我发言试图把嫌疑引向GLM-4.6和医生，这个策略可以继续使用。', 'summary': '在本轮辩论中，我发现Qwen3-32B展现了较强的逻辑分析能力，强调仔细推理和怀疑发言不一致的玩家。GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k三位的发言都很简单，没有具体表态，可能更容易引导。Kimi-Dev-72B声称是医生但已被投票淘汰，这说明场上还有真正的医生隐藏着。我作为唯一的狼人，采取了将怀疑引向GLM-4.6和医生的策略，质疑为什么狼人选择攻击GLM-4.6以及医生可能有问题，这个方向可以继续发展。现在需要重点观察谁能成为下一个投票目标，同时避免暴露自己。'}
-[JSON解析] 直接解析结果: {'reasoning': '本轮辩论中，我需要注意的关键信息包括：Qwen3-32B强调逻辑推理和发言一致性，这是个比较理性的玩家；GLM-4.6和Ring-flash-2.0发言都很简短，可能比较容易影响；Kimi-Dev-72B声称是医生但已被淘汰，这意味着真正的医生还在场；MiniMax-M1-80k同样发言简短。最重要的是我现在是唯一的狼人，处于劣势，需要谨慎行事。我发言试图把嫌疑引向GLM-4.6和医生，这个策略可以继续使用。', 'summary': '在本轮辩论中，我发现Qwen3-32B展现了较强的逻辑分析能力，强调仔细推理和怀疑发言不一致的玩家。GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k三位的发言都很简单，没有具体表态，可能更容易引导。Kimi-Dev-72B声称是医生但已被投票淘汰，这说明场上还有真正的医生隐藏着。我作为唯一的狼人，采取了将怀疑引向GLM-4.6和医生的策略，质疑为什么狼人选择攻击GLM-4.6以及医生可能有问题，这个方向可以继续发展。现在需要重点观察谁能成为下一个投票目标，同时避免暴露自己。'}
-[JSON解析] 最终结果: {'reasoning': '本轮辩论中，我需要注意的关键信息包括：Qwen3-32B强调逻辑推理和发言一致性，这是个比较理性的玩家；GLM-4.6和Ring-flash-2.0发言都很简短，可能比较容易影响；Kimi-Dev-72B声称是医生但已被淘汰，这意味着真正的医生还在场；MiniMax-M1-80k同样发言简短。最重要的是我现在是唯一的狼人，处于劣势，需要谨慎行事。我发言试图把嫌疑引向GLM-4.6和医生，这个策略可以继续使用。', 'summary': '在本轮辩论中，我发现Qwen3-32B展现了较强的逻辑分析能力，强调仔细推理和怀疑发言不一致的玩家。GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k三位的发言都很简单，没有具体表态，可能更容易引导。Kimi-Dev-72B声称是医生但已被投票淘汰，这说明场上还有真正的医生隐藏着。我作为唯一的狼人，采取了将怀疑引向GLM-4.6和医生的策略，质疑为什么狼人选择攻击GLM-4.6以及医生可能有问题，这个方向可以继续发展。现在需要重点观察谁能成为下一个投票目标，同时避免暴露自己。'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '本轮辩论中，我需要注意的关键信息包括：Qwen3-32B强调逻辑推理和发言一致性，这是个比较理性的玩家；GLM-4.6和Ring-flash-2.0发言都很简短，可能比较容易影响；Kimi-Dev-72B声称是医生但已被淘汰，这意味着真正的医生还在场；MiniMax-M1-80k同样发言简短。最重要的是我现在是唯一的狼人，处于劣势，需要谨慎行事。我发言试图把嫌疑引向GLM-4.6和医生，这个策略可以继续使用。', 'summary': '在本轮辩论中，我发现Qwen3-32B展现了较强的逻辑分析能力，强调仔细推理和怀疑发言不一致的玩家。GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k三位的发言都很简单，没有具体表态，可能更容易引导。Kimi-Dev-72B声称是医生但已被投票淘汰，这说明场上还有真正的医生隐藏着。我作为唯一的狼人，采取了将怀疑引向GLM-4.6和医生的策略，质疑为什么狼人选择攻击GLM-4.6以及医生可能有问题，这个方向可以继续发展。现在需要重点观察谁能成为下一个投票目标，同时避免暴露自己。'}
-[LLM成功] 返回有效结果: {'reasoning': '本轮辩论中，我需要注意的关键信息包括：Qwen3-32B强调逻辑推理和发言一致性，这是个比较理性的玩家；GLM-4.6和Ring-flash-2.0发言都很简短，可能比较容易影响；Kimi-Dev-72B声称是医生但已被淘汰，这意味着真正的医生还在场；MiniMax-M1-80k同样发言简短。最重要的是我现在是唯一的狼人，处于劣势，需要谨慎行事。我发言试图把嫌疑引向GLM-4.6和医生，这个策略可以继续使用。', 'summary': '在本轮辩论中，我发现Qwen3-32B展现了较强的逻辑分析能力，强调仔细推理和怀疑发言不一致的玩家。GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k三位的发言都很简单，没有具体表态，可能更容易引导。Kimi-Dev-72B声称是医生但已被投票淘汰，这说明场上还有真正的医生隐藏着。我作为唯一的狼人，采取了将怀疑引向GLM-4.6和医生的策略，质疑为什么狼人选择攻击GLM-4.6以及医生可能有问题，这个方向可以继续发展。现在需要重点观察谁能成为下一个投票目标，同时避免暴露自己。'}
-DeepSeek-V3.2 summary: 在本轮辩论中，我发现Qwen3-32B展现了较强的逻辑分析能力，强调仔细推理和怀疑发言不一致的玩家。GLM-4.6、Ring-flash-2.0和MiniMax-M1-80k三位的发言都很简单，没有具体表态，可能更容易引导。Kimi-Dev-72B声称是医生但已被投票淘汰，这说明场上还有真正的医生隐藏着。我作为唯一的狼人，采取了将怀疑引向GLM-4.6和医生的策略，质疑为什么狼人选择攻击GLM-4.6以及医生可能有问题，这个方向可以继续发展。现在需要重点观察谁能成为下一个投票目标，同时避免暴露自己。
-[WebSocket] 玩家总结通知已发送: DeepSeek-V3.2
-Warning: GLM-4.6 did not return a valid summary, using default
-GLM-4.6 summary: 我需要仔细思考今天发生的情况，并仔细分析局势。
-[WebSocket] 玩家总结通知已发送: GLM-4.6
-⏱️ [玩家总结] 玩家总结完成: 28.58秒
-⏱️ [玩家开始总结辩论。] 玩家开始总结辩论。完成: 28.58秒
-
-⏱️ 第0轮结束
-⏱️ [第0轮] 第0轮总耗时: 135.24秒
-
-================================================================================
-📊 【第 0 轮时间统计】
-================================================================================
-  狼人正在选择淘汰目标。                   :  11.40秒 (  8.4%)
-  医生正在选择保护目标。                   :   4.09秒 (  3.0%)
-  预言家正在查验身份。                    :   1.21秒 (  0.9%)
-  夜晚阶段解决                        :   1.01秒 (  0.7%)
-  夜晚阶段后检查胜负。                    :   0.00秒 (  0.0%)
-  玩家开始辩论和投票。                    :  87.89秒 ( 65.0%)
-  投票后放逐                         :   0.01秒 (  0.0%)
-  白天阶段后检查胜负。                    :   0.00秒 (  0.0%)
-  玩家开始总结辩论。                     :  28.58秒 ( 21.1%)
-────────────────────────────────────────────────────────────────────────────────
-  总耗时                           : 135.24秒 (100.0%)
-================================================================================
-
-STARTING ROUND: 1
-
-================================================================================
-⏱️ 【第 1 轮开始】
-================================================================================
-
-⏱️ [夜晚开始] 切换暂停1秒...
-⏱️ [夜晚切换] 夜晚切换完成: 1.00秒
-[RealtimeLogger] session_20251101_031350 [phase_change] 进入night阶段
-[WebSocket] 阶段变更通知已发送: night (第1轮)
-⏱️ [夜晚通知] 夜晚通知发送: 0.00秒
-
-⏱️ 【狼人正在选择淘汰目标。】
-⏱️ [夜间延迟] 暂停1.00秒
-INFO:     127.0.0.1:50457 - "GET /health HTTP/1.1" 200 OK
-INFO:     connection closed
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/deepseek-ai/DeepSeek-V3.2-Exp | 温度: 0.50
-WebSocket disconnected for session session_20251101_031350. Remaining connections: 1
-WebSocket disconnected for session session_20251101_031350
-INFO:     127.0.0.1:50530 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 297 字符
-[LLM原始响应开始]
-{
-"reasoning": "作为唯一的狼人，我需要谨慎选择淘汰目标以最大化胜算。分析当前局势：Qwen3-32B在上一轮展现了较强的逻辑分析能力，公开强调仔细推理和怀疑发言不一致的玩家，这对我的隐藏构成直接威胁；GLM-4.6虽然是我上一轮的攻击目标，但被医生保护，说明医生可能仍在关注他，若再次攻击可能被医生预判；Ring-flash-2.0和MiniMax-M1-80k发言简单且未具体表态，威胁较小。综合考虑，淘汰Qwen3-32B可消除最大的逻辑威胁，同时避免重复攻击GLM-4.6而暴露模式，从而为后续回合创造更安全的操作空间。",
-"remove": "Qwen3-32B"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 297 字符
-[JSON解析] 输入文本预览: {
-"reasoning": "作为唯一的狼人，我需要谨慎选择淘汰目标以最大化胜算。分析当前局势：Qwen3-32B在上一轮展现了较强的逻辑分析能力，公开强调仔细推理和怀疑发言不一致的玩家，这对我的隐...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-"reasoning": "作为唯一的狼人，我需要谨慎选择淘汰目标以最大化胜算。分析当前局势：Qwen3-32B在上一轮展现了较强的逻辑分析能力，公开强调仔细推理和怀疑发言不一致的玩家，这对我的隐藏构成直接威胁；GLM-4.6虽然是我上一轮的攻击目标，但被医生保护，说明医生可能仍在关注他，若再次攻击可能被医生预判；Ring-flash-2.0和MiniMax-M1-80k发言简单且未具体表态，威胁较小。综合考虑，淘汰Qwen3-32B可消除最大的逻辑威胁，同时避免重复攻击GLM-4.6而暴露模式，从而为后续回合创造更安全的操作空间。",
-"remove": "Qwen3-32B"
-}'
-[JSON字符串解析] 文本长度: 297 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为唯一的狼人，我需要谨慎选择淘汰目标以最大化胜算。分析当前局势：Qwen3-32B在上一轮展现了较强的逻辑分析能力，公开强调仔细推理和怀疑发言不一致的玩家，这对我的隐藏构成直接威胁；GLM-4.6虽然是我上一轮的攻击目标，但被医生保护，说明医生可能仍在关注他，若再次攻击可能被医生预判；Ring-flash-2.0和MiniMax-M1-80k发言简单且未具体表态，威胁较小。综合考虑，淘汰Qwen3-32B可消除最大的逻辑威胁，同时避免重复攻击GLM-4.6而暴露模式，从而为后续回合创造更安全的操作空间。', 'remove': 'Qwen3-32B'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '作为唯一的狼人，我需要谨慎选择淘汰目标以最大化胜算。分析当前局势：Qwen3-32B在上一轮展现了较强的逻辑分析能力，公开强调仔细推理和怀疑发言不一致的玩家，这对我的隐藏构成直接威胁；GLM-4.6虽然是我上一轮的攻击目标，但被医生保护，说明医生可能仍在关注他，若再次攻击可能被医生预判；Ring-flash-2.0和MiniMax-M1-80k发言简单且未具体表态，威胁较小。综合考虑，淘汰Qwen3-32B可消除最大的逻辑威胁，同时避免重复攻击GLM-4.6而暴露模式，从而为后续回合创造更安全的操作空间。', 'remove': 'Qwen3-32B'}
-[JSON解析] 直接解析结果: {'reasoning': '作为唯一的狼人，我需要谨慎选择淘汰目标以最大化胜算。分析当前局势：Qwen3-32B在上一轮展现了较强的逻辑分析能力，公开强调仔细推理和怀疑发言不一致的玩家，这对我的隐藏构成直接威胁；GLM-4.6虽然是我上一轮的攻击目标，但被医生保护，说明医生可能仍在关注他，若再次攻击可能被医生预判；Ring-flash-2.0和MiniMax-M1-80k发言简单且未具体表态，威胁较小。综合考虑，淘汰Qwen3-32B可消除最大的逻辑威胁，同时避免重复攻击GLM-4.6而暴露模式，从而为后续回合创造更安全的操作空间。', 'remove': 'Qwen3-32B'}
-[JSON解析] 最终结果: {'reasoning': '作为唯一的狼人，我需要谨慎选择淘汰目标以最大化胜算。分析当前局势：Qwen3-32B在上一轮展现了较强的逻辑分析能力，公开强调仔细推理和怀疑发言不一致的玩家，这对我的隐藏构成直接威胁；GLM-4.6虽然是我上一轮的攻击目标，但被医生保护，说明医生可能仍在关注他，若再次攻击可能被医生预判；Ring-flash-2.0和MiniMax-M1-80k发言简单且未具体表态，威胁较小。综合考虑，淘汰Qwen3-32B可消除最大的逻辑威胁，同时避免重复攻击GLM-4.6而暴露模式，从而为后续回合创造更安全的操作空间。', 'remove': 'Qwen3-32B'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为唯一的狼人，我需要谨慎选择淘汰目标以最大化胜算。分析当前局势：Qwen3-32B在上一轮展现了较强的逻辑分析能力，公开强调仔细推理和怀疑发言不一致的玩家，这对我的隐藏构成直接威胁；GLM-4.6虽然是我上一轮的攻击目标，但被医生保护，说明医生可能仍在关注他，若再次攻击可能被医生预判；Ring-flash-2.0和MiniMax-M1-80k发言简单且未具体表态，威胁较小。综合考虑，淘汰Qwen3-32B可消除最大的逻辑威胁，同时避免重复攻击GLM-4.6而暴露模式，从而为后续回合创造更安全的操作空间。', 'remove': 'Qwen3-32B'}
-[LLM结果] 提取键 'remove': Qwen3-32B
-[LLM成功] 返回有效结果: Qwen3-32B
-⏱️ [狼人击杀] 狼人 DeepSeek-V3.2 行动完成: 19.97秒
-DeepSeek-V3.2 eliminated Qwen3-32B
-[WebSocket] 夜间行动通知已发送: night_eliminate by DeepSeek-V3.2
-⏱️ [狼人正在选择淘汰目标。] 狼人正在选择淘汰目标。完成: 19.98秒
-
-⏱️ 【医生正在选择保护目标。】
-⏱️ [医生正在选择保护目标。] 医生正在选择保护目标。完成: 0.00秒
-
-⏱️ 【预言家正在查验身份。】
-⏱️ [夜间延迟] 暂停1.00秒
-INFO:     127.0.0.1:50582 - "GET /health HTTP/1.1" 200 OK
-[LLM调用] 第1/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.50
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.70
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 0.90
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-⏱️ [预言家查验] 预言家 GLM-4.6 行动完成: 1.18秒
-Warning: GLM-4.6 failed to choose investigation target, randomly selected MiniMax-M1-80k
-[WebSocket] 夜间行动通知已发送: night_investigate by GLM-4.6
-⏱️ [预言家正在查验身份。] 预言家正在查验身份。完成: 1.18秒
-
-⏱️ 【夜晚阶段解决】
-[调试] 成功从current_players中移除玩家: Qwen3-32B, 剩余玩家: ['GLM-4.6', 'DeepSeek-V3.2', 'Ring-flash-2.0', 'MiniMax-M1-80k']
-Player Qwen3-32B not in current players: ['GLM-4.6', 'DeepSeek-V3.2', 'Ring-flash-2.0', 'MiniMax-M1-80k']
-[调试] remove_player调用时玩家Qwen3-32B已不在current_players中，可能是重复移除或状态不同步
-Player Qwen3-32B not in current players: ['GLM-4.6', 'DeepSeek-V3.2', 'Ring-flash-2.0', 'MiniMax-M1-80k']
-[调试] remove_player调用时玩家Qwen3-32B已不在current_players中，可能是重复移除或状态不同步
-Player Qwen3-32B not in current players: ['GLM-4.6', 'DeepSeek-V3.2', 'Ring-flash-2.0', 'MiniMax-M1-80k']
-[调试] remove_player调用时玩家Qwen3-32B已不在current_players中，可能是重复移除或状态不同步
-狼人在夜晚阶段淘汰了Qwen3-32B。
-⏱️ [天亮阶段] 切换暂停1秒...
-[RealtimeLogger] session_20251101_031350 [phase_change] 进入day阶段
-[WebSocket] 阶段变更通知已发送: day (第1轮)
-⏱️ [夜晚阶段解决] 夜晚阶段解决完成: 1.01秒
-
-⏱️ 【夜晚阶段后检查胜负。】
-⏱️ [夜晚阶段后检查胜负。] 夜晚阶段后检查胜负。完成: 0.00秒
-
-⏱️ 【玩家开始辩论和投票。】
-⏱️ [阶段切换] 暂停1秒...
-⏱️ [切换暂停] 切换暂停完成: 1.00秒
-[RealtimeLogger] session_20251101_031350 [phase_change] 进入debate阶段
-[WebSocket] 阶段变更通知已发送: debate (第1轮)
-⏱️ [阶段通知] 阶段通知发送: 0.00秒
-本轮发言顺序: GLM-4.6, Ring-flash-2.0, MiniMax-M1-80k, DeepSeek-V3.2
-[并发生成] 使用3线程并发生成发言内容...
-[批次 1/2] 并发生成: GLM-4.6, Ring-flash-2.0, MiniMax-M1-80k
-[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用] 第1/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: THUDM/GLM-Z1-9B-0414 | 温度: 1.00
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: GLM-4.6 did not return a valid dialogue, using default
-  ✓ GLM-4.6 发言生成完成 (13字)
-[LLM调用错误] 第1/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第1/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第2/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第2/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: MiniMaxAI/MiniMax-M1-80k | 温度: 1.00
-[LLM调用错误] 第2/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM调用] 第3/3次尝试 | 模型: inclusionAI/Ling-mini-2.0 | 温度: 1.00
-[LLM调用错误] 第3/3次失败: BadRequestError: Error code: 400 - {'code': 20012, 'message': 'Model does not exist. Please check it carefully.', 'data': None}
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: Ring-flash-2.0 did not return a valid dialogue, using default
-  ✓ Ring-flash-2.0 发言生成完成 (13字)
-[LLM调用错误] 第3/3次失败: TypeError: 'NoneType' object is not subscriptable
-[错误详情] 这是一个LLM调用异常，不是JSON解析异常
-[LLM错误] 没有获取到任何响应内容
-[LLM失败] 所有3次重试均失败，返回None
-Warning: MiniMax-M1-80k did not return a valid dialogue, using default
-  ✓ MiniMax-M1-80k 发言生成完成 (13字)
-⏱️ [批次1] 批次1完成: 0.70秒
-[批次 2/2] 并发生成: DeepSeek-V3.2
-[LLM调用] 第1/3次尝试 | 模型: siliconflow/deepseek-ai/DeepSeek-V3.2-Exp | 温度: 1.00
-INFO:     127.0.0.1:50666 - "GET /health HTTP/1.1" 200 OK
-INFO:     127.0.0.1:50737 - "GET /health HTTP/1.1" 200 OK
-[LLM响应] 成功获取响应，长度: 457 字符
-[LLM原始响应开始]
-{
-  "reasoning": "作为仅存的狼人，我必须谨慎行事，避免暴露自己。当前剩余玩家中，Ring-flash-2.0、MiniMax-M1-80k和GLM-4.6都是潜在怀疑目标。我将利用医生身份作为切入点，制造混乱。既然第一晚无人被淘汰说明医生保护成功，而第二晚Qwen3-32B被淘汰，我可以暗示医生可能有问题，或者质疑为什么医生没有保护Qwen3-32B。同时我会表现出合作态度，引导大家怀疑那些发言简单的玩家，特别是MiniMax-M1-80k和Ring-flash-2.0，因为他们上轮发言较少，容易成为投票目标。",
-  "say": "各位，情况很不妙，我们只剩下四名玩家了。第一晚没人被淘汰说明医生保护成功，但第二晚Qwen3-32B却被狼人得手了，这很不寻常。为什么医生没有保护Qwen3-32B？要么医生判断失误，要么...医生本身就有问题。我建议MiniMax-M1-80k和Ring-flash-2.0多说一些，上轮你们发言太简单了，现在需要大家坦诚交流才能找出最后的狼人。"
-}
-[LLM原始响应结束]
-[JSON解析] 开始解析响应...
-[JSON解析] 开始解析，输入文本长度: 457 字符
-[JSON解析] 输入文本预览: {
-  "reasoning": "作为仅存的狼人，我必须谨慎行事，避免暴露自己。当前剩余玩家中，Ring-flash-2.0、MiniMax-M1-80k和GLM-4.6都是潜在怀疑目标。我将利用医...
-[语言清理] 开始清理混合语言响应...
-[语言清理] 策略2成功：提取到完整JSON对象
-[JSON解析] 尝试从markdown中解析JSON...
-[Markdown解析] 开始解析markdown文本...
-[Markdown解析] AST解析成功，子元素数量: 1
-[Markdown解析] 开始遍历AST子元素...
-[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
-[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
-[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
-[Markdown解析] 没有找到有效的JSON代码块
-[JSON解析] markdown解析结果: None
-[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
-[JSON字符串解析] 开始解析，输入文本: '{
-  "reasoning": "作为仅存的狼人，我必须谨慎行事，避免暴露自己。当前剩余玩家中，Ring-flash-2.0、MiniMax-M1-80k和GLM-4.6都是潜在怀疑目标。我将利用医生身份作为切入点，制造混乱。既然第一晚无人被淘汰说明医生保护成功，而第二晚Qwen3-32B被淘汰，我可以暗示医生可能有问题，或者质疑为什么医生没有保护Qwen3-32B。同时我会表现出合作态度，引导大家怀疑那些发言简单的玩家，特别是MiniMax-M1-80k和Ring-flash-2.0，因为他们上轮发言较少，容易成为投票目标。",
-  "say": "各位，情况很不妙，我们只剩下四名玩家了。第一晚没人被淘汰说明医生保护成功，但第二晚Qwen3-32B却被狼人得手了，这很不寻常。为什么医生没有保护Qwen3-32B？要么医生判断失误，要么...医生本身就有问题。我建议MiniMax-M1-80k和Ring-flash-2.0多说一些，上轮你们发言太简单了，现在需要大家坦诚交流才能找出最后的狼人。"
-}'
-[JSON字符串解析] 文本长度: 457 字符
-[JSON字符串解析] 使用yaml.safe_load解析...
-[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为仅存的狼人，我必须谨慎行事，避免暴露自己。当前剩余玩家中，Ring-flash-2.0、MiniMax-M1-80k和GLM-4.6都是潜在怀疑目标。我将利用医生身份作为切入点，制造混乱。既然第一晚无人被淘汰说明医生保护成功，而第二晚Qwen3-32B被淘汰，我可以暗示医生可能有问题，或者质疑为什么医生没有保护Qwen3-32B。同时我会表现出合作态度，引导大家怀疑那些发言简单的玩家，特别是MiniMax-M1-80k和Ring-flash-2.0，因为他们上轮发言较少，容易成为投票目标。', 'say': '各位，情况很不妙，我们只剩下四名玩家了。第一晚没人被淘汰说明医生保护成功，但第二晚Qwen3-32B却被狼人得手了，这很不寻常。为什么医生没有保护Qwen3-32B？要么医生判断失误，要么...医生本身就有问题。我建议MiniMax-M1-80k和Ring-flash-2.0多说一些，上轮你们发言太简单了，现在需要大家坦诚交流才能找出最后的狼人。'}
-[JSON字符串解析] 解析完成，返回: {'reasoning': '作为仅存的狼人，我必须谨慎行事，避免暴露自己。当前剩余玩家中，Ring-flash-2.0、MiniMax-M1-80k和GLM-4.6都是潜在怀疑目标。我将利用医生身份作为切入点，制造混乱。既然第一晚无人被淘汰说明医生保护成功，而第二晚Qwen3-32B被淘汰，我可以暗示医生可能有问题，或者质疑为什么医生没有保护Qwen3-32B。同时我会表现出合作态度，引导大家怀疑那些发言简单的玩家，特别是MiniMax-M1-80k和Ring-flash-2.0，因为他们上轮发言较少，容易成为投票目标。', 'say': '各位，情况很不妙，我们只剩下四名玩家了。第一晚没人被淘汰说明医生保护成功，但第二晚Qwen3-32B却被狼人得手了，这很不寻常。为什么医生没有保护Qwen3-32B？要么医生判断失误，要么...医生本身就有问题。我建议MiniMax-M1-80k和Ring-flash-2.0多说一些，上轮你们发言太简单了，现在需要大家坦诚交流才能找出最后的狼人。'}
-[JSON解析] 直接解析结果: {'reasoning': '作为仅存的狼人，我必须谨慎行事，避免暴露自己。当前剩余玩家中，Ring-flash-2.0、MiniMax-M1-80k和GLM-4.6都是潜在怀疑目标。我将利用医生身份作为切入点，制造混乱。既然第一晚无人被淘汰说明医生保护成功，而第二晚Qwen3-32B被淘汰，我可以暗示医生可能有问题，或者质疑为什么医生没有保护Qwen3-32B。同时我会表现出合作态度，引导大家怀疑那些发言简单的玩家，特别是MiniMax-M1-80k和Ring-flash-2.0，因为他们上轮发言较少，容易成为投票目标。', 'say': '各位，情况很不妙，我们只剩下四名玩家了。第一晚没人被淘汰说明医生保护成功，但第二晚Qwen3-32B却被狼人得手了，这很不寻常。为什么医生没有保护Qwen3-32B？要么医生判断失误，要么...医生本身就有问题。我建议MiniMax-M1-80k和Ring-flash-2.0多说一些，上轮你们发言太简单了，现在需要大家坦诚交流才能找出最后的狼人。'}
-[JSON解析] 最终结果: {'reasoning': '作为仅存的狼人，我必须谨慎行事，避免暴露自己。当前剩余玩家中，Ring-flash-2.0、MiniMax-M1-80k和GLM-4.6都是潜在怀疑目标。我将利用医生身份作为切入点，制造混乱。既然第一晚无人被淘汰说明医生保护成功，而第二晚Qwen3-32B被淘汰，我可以暗示医生可能有问题，或者质疑为什么医生没有保护Qwen3-32B。同时我会表现出合作态度，引导大家怀疑那些发言简单的玩家，特别是MiniMax-M1-80k和Ring-flash-2.0，因为他们上轮发言较少，容易成为投票目标。', 'say': '各位，情况很不妙，我们只剩下四名玩家了。第一晚没人被淘汰说明医生保护成功，但第二晚Qwen3-32B却被狼人得手了，这很不寻常。为什么医生没有保护Qwen3-32B？要么医生判断失误，要么...医生本身就有问题。我建议MiniMax-M1-80k和Ring-flash-2.0多说一些，上轮你们发言太简单了，现在需要大家坦诚交流才能找出最后的狼人。'}
-[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为仅存的狼人，我必须谨慎行事，避免暴露自己。当前剩余玩家中，Ring-flash-2.0、MiniMax-M1-80k和GLM-4.6都是潜在怀疑目标。我将利用医生身份作为切入点，制造混乱。既然第一晚无人被淘汰说明医生保护成功，而第二晚Qwen3-32B被淘汰，我可以暗示医生可能有问题，或者质疑为什么医生没有保护Qwen3-32B。同时我会表现出合作态度，引导大家怀疑那些发言简单的玩家，特别是MiniMax-M1-80k和Ring-flash-2.0，因为他们上轮发言较少，容易成为投票目标。', 'say': '各位，情况很不妙，我们只剩下四名玩家了。第一晚没人被淘汰说明医生保护成功，但第二晚Qwen3-32B却被狼人得手了，这很不寻常。为什么医生没有保护Qwen3-32B？要么医生判断失误，要么...医生本身就有问题。我建议MiniMax-M1-80k和Ring-flash-2.0多说一些，上轮你们发言太简单了，现在需要大家坦诚交流才能找出最后的狼人。'}
-[LLM成功] 返回有效结果: {'reasoning': '作为仅存的狼人，我必须谨慎行事，避免暴露自己。当前剩余玩家中，Ring-flash-2.0、MiniMax-M1-80k和GLM-4.6都是潜在怀疑目标。我将利用医生身份作为切入点，制造混乱。既然第一晚无人被淘汰说明医生保护成功，而第二晚Qwen3-32B被淘汰，我可以暗示医生可能有问题，或者质疑为什么医生没有保护Qwen3-32B。同时我会表现出合作态度，引导大家怀疑那些发言简单的玩家，特别是MiniMax-M1-80k和Ring-flash-2.0，因为他们上轮发言较少，容易成为投票目标。', 'say': '各位，情况很不妙，我们只剩下四名玩家了。第一晚没人被淘汰说明医生保护成功，但第二晚Qwen3-32B却被狼人得手了，这很不寻常。为什么医生没有保护Qwen3-32B？要么医生判断失误，要么...医生本身就有问题。我建议MiniMax-M1-80k和Ring-flash-2.0多说一些，上轮你们发言太简单了，现在需要大家坦诚交流才能找出最后的狼人。'}
-  ✓ DeepSeek-V3.2 发言生成完成 (174字)
-⏱️ [批次2] 批次2完成: 22.08秒
-⏱️ [发言生成] 所有发言生成完成: 22.78秒
-[生成完成] 所有发言已生成，开始按顺序发送和展示...
-[1/4] GLM-4.6 (Seer): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_031350 [action] GLM-4.6 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: GLM-4.6
-⏱️ [发送-GLM-4.6] GLM-4.6发送完成: 0.00秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-[2/4] Ring-flash-2.0 (Villager): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_031350 [action] Ring-flash-2.0 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: Ring-flash-2.0
-⏱️ [发送-Ring-flash-2.0] Ring-flash-2.0发送完成: 0.01秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-[3/4] MiniMax-M1-80k (Villager): 我需要仔细观察并寻找线索。
-[RealtimeLogger] session_20251101_031350 [action] MiniMax-M1-80k 发言: 我需要仔细观察并寻找线索。
-[WebSocket] 辩论发言通知已发送: MiniMax-M1-80k
-⏱️ [发送-MiniMax-M1-80k] MiniMax-M1-80k发送完成: 0.01秒
-⏱️ [展示暂停] 13字 → 暂停 0.9秒
-[4/4] DeepSeek-V3.2 (Werewolf): 各位，情况很不妙，我们只剩下四名玩家了。第一晚没人被淘汰说明医生保护成功，但第二晚Qwen3-32B却被狼人得手了，这很不寻常。为什么医生没有保护Qwen3-32B？要么医生判断失误，要么...医生本身就有问题。我建议MiniMax-M1-80k和Ring-flash-2.0多说一些，上轮你们发言太简单了，现在需要大家坦诚交流才能找出最后的狼人。
-[RealtimeLogger] session_20251101_031350 [action] DeepSeek-V3.2 发言: 各位，情况很不妙，我们只剩下四名玩家了。第一晚没人被淘汰说明医生保护成功，但第二晚Qwen3-32B却被狼人得手了，这很不寻常。为什么医生没有保护Qwen3-32B？要么医生判断失误，要么...医生本身就有问题。我建议MiniMax-M1-80k和Ring-flash-2.0多说一些，上轮你们发言太简单了，现在需要大家坦诚交流才能找出最后的狼人。
-[WebSocket] 辩论发言通知已发送: DeepSeek-V3.2
-⏱️ [发送-DeepSeek-V3.2] DeepSeek-V3.2发送完成: 0.01秒
-⏱️ [展示暂停] 174字 → 暂停 11.6秒
-INFO:     127.0.0.1:50829 - "GET /health HTTP/1.1" 200 OK
-⏱️ [发言发送] 所有发言发送完成: 14.24秒
-⏱️ [发言暂停汇总] 总暂停时间: 14.2秒
-⏱️ [发言阶段] 发言阶段总耗时: 38.02秒
-⏱️ [投票阶段] 切换暂停1秒...
-INFO:     127.0.0.1:50934 - "GET /health HTTP/1.1" 200 OK
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '第一夜已证实DeepSeek是普通村民，场上剩五人中必有二狼。我要先把自己验到的信息公开，让好人阵营快速建立信任，同时把火力引到自己身上，换取接下来两夜继续验人的机会。只要我能多活一天，就能再锁一狼，好人就有明确投票目标。', 'say': '我是预言家，昨夜验了DeepSeek，他是村民。狼队首刀Qwen，显然想先清发言积极的玩家。现在我们五人中藏两狼，建议大家先报昨晚心路历程，谁没思路、谁躲表态，就优先票谁。我身份已亮，下一夜我会再验一人，希望医生能守我，咱们好人一条心，别分票。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '第一夜已证实DeepSeek是普通村民，场上剩五人中必有二狼。我要先把自己验到的信息公开，让好人阵营快速建立信任，同时把火力引到自己身上，换取接下来两夜继续验人的机会。只要我能多活一天，就能再锁一狼，好人就有明确投票目标。', 'say': '我是预言家，昨夜验了DeepSeek，他是村民。狼队首刀Qwen，显然想先清发言积极的玩家。现在我们五人中藏两狼，建议大家先报昨晚心路历程，谁没思路、谁躲表态，就优先票谁。我身份已亮，下一夜我会再验一人，希望医生能守我，咱们好人一条心，别分票。'}
+[JSON解析] 直接解析结果: {'reasoning': '第一夜已证实DeepSeek是普通村民，场上剩五人中必有二狼。我要先把自己验到的信息公开，让好人阵营快速建立信任，同时把火力引到自己身上，换取接下来两夜继续验人的机会。只要我能多活一天，就能再锁一狼，好人就有明确投票目标。', 'say': '我是预言家，昨夜验了DeepSeek，他是村民。狼队首刀Qwen，显然想先清发言积极的玩家。现在我们五人中藏两狼，建议大家先报昨晚心路历程，谁没思路、谁躲表态，就优先票谁。我身份已亮，下一夜我会再验一人，希望医生能守我，咱们好人一条心，别分票。'}
+[JSON解析] 最终结果: {'reasoning': '第一夜已证实DeepSeek是普通村民，场上剩五人中必有二狼。我要先把自己验到的信息公开，让好人阵营快速建立信任，同时把火力引到自己身上，换取接下来两夜继续验人的机会。只要我能多活一天，就能再锁一狼，好人就有明确投票目标。', 'say': '我是预言家，昨夜验了DeepSeek，他是村民。狼队首刀Qwen，显然想先清发言积极的玩家。现在我们五人中藏两狼，建议大家先报昨晚心路历程，谁没思路、谁躲表态，就优先票谁。我身份已亮，下一夜我会再验一人，希望医生能守我，咱们好人一条心，别分票。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '第一夜已证实DeepSeek是普通村民，场上剩五人中必有二狼。我要先把自己验到的信息公开，让好人阵营快速建立信任，同时把火力引到自己身上，换取接下来两夜继续验人的机会。只要我能多活一天，就能再锁一狼，好人就有明确投票目标。', 'say': '我是预言家，昨夜验了DeepSeek，他是村民。狼队首刀Qwen，显然想先清发言积极的玩家。现在我们五人中藏两狼，建议大家先报昨晚心路历程，谁没思路、谁躲表态，就优先票谁。我身份已亮，下一夜我会再验一人，希望医生能守我，咱们好人一条心，别分票。'}
+[LLM成功] 返回有效结果: {'reasoning': '第一夜已证实DeepSeek是普通村民，场上剩五人中必有二狼。我要先把自己验到的信息公开，让好人阵营快速建立信任，同时把火力引到自己身上，换取接下来两夜继续验人的机会。只要我能多活一天，就能再锁一狼，好人就有明确投票目标。', 'say': '我是预言家，昨夜验了DeepSeek，他是村民。狼队首刀Qwen，显然想先清发言积极的玩家。现在我们五人中藏两狼，建议大家先报昨晚心路历程，谁没思路、谁躲表态，就优先票谁。我身份已亮，下一夜我会再验一人，希望医生能守我，咱们好人一条心，别分票。'}
+  ✓ Kimi 发言生成完成 (122字)
+  ✓ DeepSeek 发言生成完成 (115字)
+  ✓ MiniMax 发言生成完成 (265字)
+⏱️ [批次1] 批次1完成: 13.11秒
+[批次 2/2] 并发生成: Inclusion, GLM
+[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ring-1T | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 1.00
+INFO:     127.0.0.1:51570 - "GET /health HTTP/1.1" 200 OK

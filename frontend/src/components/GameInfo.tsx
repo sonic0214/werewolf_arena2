@@ -47,7 +47,7 @@ const GameInfo = ({
               </div>
               <div className="flex flex-wrap gap-1">
                 {eliminatedPlayers.map((player, index) => (
-                  <Badge key={index} variant="default" className="text-xs text-red-400 border-red-400/30">
+                  <Badge key={index} variant="outline" className="text-xs text-red-400 border-red-400/30">
                     {player}
                   </Badge>
                 ))}
@@ -90,7 +90,7 @@ const GameInfo = ({
                 {historySpeeches.map((speech, index) => (
                   <Card key={index} className="p-3 bg-slate-800/50 border-slate-700">
                     <div className="mb-2">
-                      <Badge variant="default" className="text-xs text-blue-400 border-blue-400/30">
+                      <Badge variant="outline" className="text-xs text-blue-400 border-blue-400/30">
                         {speech.name}
                       </Badge>
                     </div>
@@ -111,15 +111,15 @@ const GameInfo = ({
           <div className="space-y-1">
             <div className="flex items-center justify-between text-sm">
               <span className="text-slate-400">LLaMA</span>
-              <Badge variant="default" className="text-slate-300 border-slate-600">3票</Badge>
+              <Badge variant="outline" className="text-slate-300 border-slate-600">3票</Badge>
             </div>
             <div className="flex items-center justify-between text-sm">
               <span className="text-slate-400">GPT-4</span>
-              <Badge variant="default" className="text-slate-300 border-slate-600">2票</Badge>
+              <Badge variant="outline" className="text-slate-300 border-slate-600">2票</Badge>
             </div>
             <div className="flex items-center justify-between text-sm">
               <span className="text-slate-400">Claude</span>
-              <Badge variant="default" className="text-slate-300 border-slate-600">1票</Badge>
+              <Badge variant="outline" className="text-slate-300 border-slate-600">1票</Badge>
             </div>
           </div>
         </div>

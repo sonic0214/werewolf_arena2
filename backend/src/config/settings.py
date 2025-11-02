@@ -48,33 +48,11 @@ class GameSettings(BaseSettings):
 
 class LLMSettings(BaseSettings):
     """LLM API配置"""
-    # GLM (智谱AI)
-    glm_api_key: Optional[str] = None
-    glm_base_url: str = "https://open.bigmodel.cn/api/paas/v4"
-
-    # OpenAI
-    openai_api_key: Optional[str] = None
-    openai_base_url: str = "https://api.openai.com/v1"
-
-    # OpenRouter
-    openrouter_api_key: Optional[str] = None
-    openrouter_base_url: str = "https://openrouter.ai/api/v1"
-    openrouter_referrer: Optional[str] = None
-    openrouter_app_title: str = "Werewolf Arena"
-
-    # Anthropic
-    anthropic_api_key: Optional[str] = None
-
-    # MiniMax
-    minimax_api_key: Optional[str] = None
-    minimax_base_url: str = "https://api.minimaxi.com/anthropic"
-    minimax_model: str = "MiniMax-M2"
-
-    # SiliconFlow
+    # SiliconFlow (硅基流动)
     siliconflow_api_key: Optional[str] = None
     siliconflow_base_url: str = "https://api.siliconflow.cn/v1"
 
-    # 默认使用的模型 - 改为硅基流动的模型
+    # 默认使用的模型
     default_model: str = "siliconflow/deepseek-ai/DeepSeek-V3"
 
 
@@ -89,13 +67,7 @@ class ServerSettings(BaseSettings):
 
 class CORSSettings(BaseSettings):
     """CORS配置"""
-    allow_origins: List[str] = [
-        "http://localhost:3000",
-        "http://localhost:8080",
-        "https://*.fly.dev",  # fly.io域名
-        "https://*.fly.io",   # fly.io备用域名
-        "*",                 # 生产环境允许所有来源（可根据需要调整）
-    ]
+    allow_origins: List[str] = ["http://localhost:3000", "http://localhost:8080"]
     allow_credentials: bool = True
     allow_methods: List[str] = ["*"]
     allow_headers: List[str] = ["*"]
@@ -165,12 +137,12 @@ RUN_SYNTHETIC_VOTES = settings.game.run_synthetic_votes
 
 # 玩家名字列表 - 使用模型名作为玩家名
 PLAYER_MODEL_NAMES = [
-    "MiniMax-M1-80k",      # 使用 MiniMaxAI/MiniMax-M1-80k (替换Hunyuan-A13B)
-    "GLM-4.6",             # 使用 zai-org/GLM-4.6 (保留)
-    "Qwen3-32B",           # 使用 Qwen/Qwen3-32B (保留)
-    "DeepSeek-V3.2",       # 使用 deepseek-ai/DeepSeek-V3.2-Exp (保留)
-    "Kimi-Dev-72B",        # 使用 moonshotai/Kimi-Dev-72B (保留)
-    "Ring-flash-2.0"       # 使用 inclusionAI/Ring-flash-2.0 (替换Hunyuan-MT-7B)
+    "MiniMax",      # 使用 MiniMaxAI/MiniMax-M1-80k (替换Hunyuan-A13B)
+    "GLM",             # 使用 zai-org/GLM-4.6 (保留)
+    "Qwen",           # 使用 Qwen/Qwen3-32B (保留)
+    "DeepSeek",       # 使用 deepseek-ai/DeepSeek-V3.2-Exp (保留)
+    "Kimi",        # 使用 moonshotai/Kimi-Dev-72B (保留)
+    "Inclusion"       # 使用 inclusionAI/Ring-flash-2.0 (替换Hunyuan-MT-7B)
 ]
 
 

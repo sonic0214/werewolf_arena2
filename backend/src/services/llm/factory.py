@@ -6,7 +6,7 @@ LLM Provider Factory
 from typing import Dict, Type
 
 from .base import LLMProvider
-from .providers import OpenAIProvider, GLMProvider, OpenRouterProvider, MiniMaxProvider, SiliconFlowProvider
+from .providers import SiliconFlowProvider
 
 
 class LLMFactory:
@@ -17,10 +17,6 @@ class LLMFactory:
 
     # 注册的提供商映射
     _providers: Dict[str, Type[LLMProvider]] = {
-        "openai": OpenAIProvider,
-        "glm": GLMProvider,
-        "openrouter": OpenRouterProvider,
-        "minimax": MiniMaxProvider,
         "siliconflow": SiliconFlowProvider,
     }
 

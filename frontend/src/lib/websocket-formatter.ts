@@ -338,7 +338,7 @@ export class WebSocketMessageFormatter {
       const totalCount = players.length;
 
       // 统计各角色数量
-      const roleStats: Record<string, number> = players.reduce((acc: Record<string, number>, player: any) => {
+      const roleStats = players.reduce((acc: any, player: any) => {
         acc[player.role] = (acc[player.role] || 0) + 1;
         return acc;
       }, {});

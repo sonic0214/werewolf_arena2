@@ -21,7 +21,7 @@ export default function LiveGamePage() {
   const params = useParams();
   const router = useRouter();
   // Handle params.sessionId which could be string | string[] | undefined
-  const rawSessionId = params?.sessionId;
+  const rawSessionId = params.sessionId;
   const sessionId = Array.isArray(rawSessionId) ? rawSessionId[0] : rawSessionId;
 
   console.log('[LiveGamePage] sessionId from params:', sessionId, 'type:', typeof sessionId);

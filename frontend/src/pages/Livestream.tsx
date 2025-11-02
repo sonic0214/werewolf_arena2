@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
-import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import ModelAvatar from "@/components/ModelAvatar";
 import GameInfo from "@/components/GameInfo";
 import { ArrowLeft } from "lucide-react";
@@ -66,14 +66,14 @@ const Livestream = () => {
             <span className="text-xl font-bold text-primary">
               AI狼人杀直播
             </span>
-            <Badge variant="default" className="bg-destructive/20 border-destructive">
+            <Badge variant="outline" className="bg-destructive/20 border-destructive">
               <div className="w-2 h-2 rounded-full bg-destructive mr-2 animate-pulse" />
               直播中
             </Badge>
           </div>
 
           <div className="flex items-center gap-3">
-            <Badge variant="default" className="text-sm">
+            <Badge variant="outline" className="text-sm">
               {godMode === "outside" ? "🔍 场外上帝" : "👁️ 场内上帝"}
             </Badge>
             <span className="text-xs text-muted-foreground">

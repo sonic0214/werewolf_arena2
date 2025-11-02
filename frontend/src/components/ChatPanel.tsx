@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Card } from "@/components/ui/Card";
-import { Input } from "@/components/ui/Input";
-import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
+import { Card } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Send, X } from "lucide-react";
 
@@ -48,7 +48,7 @@ const ChatPanel = ({ onClose }: ChatPanelProps) => {
     if (bet === "villager") {
       return <Badge className="text-xs bg-green-600 hover:bg-green-700">平民</Badge>;
     }
-    return <Badge variant="default" className="text-xs border-slate-600">观望</Badge>;
+    return <Badge variant="outline" className="text-xs border-slate-600">观望</Badge>;
   };
 
   return (

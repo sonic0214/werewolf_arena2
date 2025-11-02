@@ -96,7 +96,7 @@ export default function Leaderboard() {
                     </div>
 
                     <Badge
-                      variant={user.trend.startsWith("+") ? "default" : "danger"}
+                      variant={user.trend.startsWith("+") ? "default" : "destructive"}
                       className="text-sm px-2 py-1"
                     >
                       {user.trend}

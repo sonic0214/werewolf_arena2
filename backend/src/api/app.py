@@ -5,10 +5,7 @@ FastAPI Main Application
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
-from fastapi.responses import FileResponse
 from contextlib import asynccontextmanager
-from pathlib import Path
 
 from src.config import settings
 from src.services.llm.client import LLMClient
@@ -83,33 +80,6 @@ async def health_check():
         "version": settings.version
     }
 
-
-# 静态文件服务
-static_dir = Path("/app/static")
-if static_dir.exists():
-    # 挂载Next.js构建的静态文件
-    app.mount("/_next", StaticFiles(directory=static_dir / ".next" / "_next"), name="_next")
-    app.mount("/static", StaticFiles(directory=static_dir / "public"), name="static")
-
-    @app.get("/{full_path:path}")
-    async def serve_frontend(full_path: str):
-        """提供前端页面服务"""
-        # 检查是否是API请求
-        if full_path.startswith("api/") or full_path.startswith("docs") or full_path.startswith("redoc") or full_path.startswith("openapi.json"):
-            return None  # 让FastAPI处理API路由
-
-        # 返回Next.js的主页面
-        index_file = static_dir / ".next" / "server.js"  # Next.js standalone模式
-        if index_file.exists():
-            return FileResponse(static_dir / ".next" / "server.js")
-        else:
-            # 如果没有server.js，尝试返回HTML文件
-            html_file = static_dir / ".next" / "index.html"
-            if html_file.exists():
-                return FileResponse(html_file)
-            else:
-                # 最后的备选方案
-                return FileResponse(static_dir / "public" / "index.html")
 
 # 注册API路由
 from src.api.v1.routes import games, status, models, timing, websocket, logs

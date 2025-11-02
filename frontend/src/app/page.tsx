@@ -105,7 +105,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex items-center gap-2">
-              <Badge variant="default" className="bg-red-500/20 border-red-500 text-red-400">
+              <Badge variant="outline" className="bg-red-500/20 border-red-500 text-red-400">
                 <div className="w-2 h-2 rounded-full bg-red-500 mr-2 animate-pulse" />
                 直播中
               </Badge>
@@ -272,7 +272,7 @@ export default function Home() {
                             ¥{user.winnings.toLocaleString()}
                           </span>
                           <Badge
-                            variant={user.trend.startsWith("+") ? "default" : "danger"}
+                            variant={user.trend.startsWith("+") ? "default" : "destructive"}
                             className="text-xs px-1 py-0"
                           >
                             {user.trend}
@@ -306,7 +306,7 @@ export default function Home() {
                   胜率 {85 - index * 3}%
                 </div>
                 <Badge
-                  variant="default"
+                  variant="outline"
                   className="text-xs mt-2 border-amber-500 text-amber-400"
                 >
                   +{120 - index * 15}

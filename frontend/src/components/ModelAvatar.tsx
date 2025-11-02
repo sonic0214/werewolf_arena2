@@ -126,7 +126,7 @@ const ModelAvatar = ({ model, isActive, godMode, votes, showRole = false, classN
           {/* 票数 */}
           {votes > 0 && model.status === "alive" && (
             <div className="absolute -bottom-2">
-              <Badge variant="default" className="text-[10px] px-1.5 py-0.5 bg-card/90 backdrop-blur-sm">
+              <Badge variant="outline" className="text-[10px] px-1.5 py-0.5 bg-card/90 backdrop-blur-sm">
                 {votes}票
               </Badge>
             </div>

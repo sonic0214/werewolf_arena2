@@ -20,7 +20,7 @@ interface Player {
 
 const LiveGamePage = () => {
   const params = useParams();
-  const sessionId = params?.sessionId as string;
+  const sessionId = params.sessionId as string;
   const router = useRouter();
 
   const [godMode] = useState<"inside" | "outside">("outside");
@@ -503,7 +503,7 @@ const LiveGamePage = () => {
           const backendPlayer = game_state.players[prevPlayer.name];
           
           if (backendPlayer) {
-            const newStatus: "alive" | "eliminated" = backendPlayer.alive !== false ? "alive" : "eliminated";
+            const newStatus = backendPlayer.alive !== false ? "alive" : "eliminated";
             
             // 如果状态发生变化，输出日志
             if (prevPlayer.status !== newStatus) {
@@ -715,6 +715,9 @@ const LiveGamePage = () => {
 
                 {/* 发言内容区域 */}
                 <div className="flex-1 flex items-center justify-center p-8 overflow-y-auto">
+                  {/* 调试信息 */}
+                  {console.log(`[渲染] gameEnded=${gameEnded}, gamePhaseType="${gamePhaseType}", currentSpeech=${!!currentSpeech}, currentSpeaker=${currentSpeaker}, voteRecords=${voteRecords.length}, nightActions=${nightActions.length}`)}
+                  
                   {gameEnded ? (
                     // 游戏结束 - 简化显示获胜信息
                     <div className="w-full max-w-3xl text-center space-y-6 animate-in fade-in duration-700">
@@ -782,14 +785,22 @@ const LiveGamePage = () => {
                             players.find(p => p.name === currentSpeakerName) : null;
 
                           if (speakingPlayer) {
-                            // 找到了玩家，显示头像
+                            // 找到了玩家，显示原始照片头像
                             return (
                               <div className="relative">
-                                {/* 头像容器 - 圆形边框 */}
+                                {/* 头像容器 - 原始照片加圆边框 */}
                                 <div className="w-20 h-20 rounded-full border-4 border-amber-400 shadow-lg overflow-hidden bg-white speaking-border-animate">
-                                  <div className="w-full h-full rounded-full bg-gray-100 flex items-center justify-center text-2xl font-bold text-gray-600">
-                                    {speakingPlayer.name.charAt(0).toUpperCase()}
-                                  </div>
+                                  {speakingPlayer.avatar ? (
+                                    <img
+                                      src={speakingPlayer.avatar}
+                                      alt={speakingPlayer.name}
+                                      className="w-full h-full rounded-full object-cover"
+                                    />
+                                  ) : (
+                                    <div className="w-full h-full rounded-full bg-gray-100 flex items-center justify-center text-2xl font-bold text-gray-600">
+                                      {speakingPlayer.name.charAt(0).toUpperCase()}
+                                    </div>
+                                  )}
 
                                   {/* 发言状态指示器 */}
                                   <div className="absolute bottom-0 right-0 w-5 h-5 bg-amber-400 rounded-full border-2 border-white animate-pulse" />
@@ -875,7 +886,7 @@ const LiveGamePage = () => {
                                           <span className="text-red-400 font-bold text-sm w-4">#{index + 1}</span>
                                           <span className="text-slate-200 font-medium text-sm">{player.name}</span>
                                         </div>
-                                        <Badge variant="danger" className="font-bold text-xs px-2 py-0">
+                                        <Badge variant="destructive" className="font-bold text-xs px-2 py-0">
                                           {player.votes} 票
                                         </Badge>
                                       </div>
@@ -1071,7 +1082,7 @@ const LiveGamePage = () => {
                 <MessageCircle className="w-4 h-4 text-amber-400" />
                 <h3 className="font-bold text-slate-100">游戏消息记录</h3>
               </div>
-              <Badge variant="default" className="text-xs text-amber-400 border-amber-400/30">
+              <Badge variant="outline" className="text-xs text-amber-400 border-amber-400/30">
                 {WebSocketMessageFormatter.filterGameMessages(wsMessages).length} 条消息
               </Badge>
             </div>
@@ -1095,14 +1106,14 @@ const LiveGamePage = () => {
         <Button
           onClick={() => setShowChat(!showChat)}
           className="rounded-full w-14 h-14 shadow-2xl shadow-amber-500/40 bg-gradient-to-br from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-amber-950 transition-all duration-300 hover:scale-110"
-          size="sm"
+          size="icon"
         >
           <MessageCircle className="w-6 h-6" />
         </Button>
         <Button
           onClick={() => setShowBetting(!showBetting)}
           className="rounded-full w-14 h-14 shadow-2xl shadow-green-500/40 bg-gradient-to-br from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-green-950 transition-all duration-300 hover:scale-110"
-          size="sm"
+          size="icon"
         >
           <DollarSign className="w-6 h-6" />
         </Button>

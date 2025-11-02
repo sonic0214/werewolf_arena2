@@ -136,7 +136,7 @@ export default function Models() {
                     <Trophy className="w-4 h-4 text-amber-400" />
                     <span className="text-sm text-slate-300">评分: {model.avgScore}</span>
                   </div>
-                  <Badge variant="default" className="border-amber-500 text-amber-400">
+                  <Badge variant="outline" className="border-amber-500 text-amber-400">
                     {model.trend}
                   </Badge>
                 </div>

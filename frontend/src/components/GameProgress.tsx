@@ -25,7 +25,7 @@ const GameProgress = ({
         {/* 左侧：局数和阶段 */}
         <div className="flex items-center gap-3">
           <Badge 
-            variant="default" 
+            variant="outline" 
             className="px-4 py-1.5 bg-slate-800/80 border-amber-600/50 text-amber-400 font-medium whitespace-nowrap"
           >
             第{currentRound}局 · {gamePhase}

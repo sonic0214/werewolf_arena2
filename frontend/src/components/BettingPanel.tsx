@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Card } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
-import { Input } from "@/components/ui/Input";
-import { Badge } from "@/components/ui/Badge";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Badge } from "@/components/ui/badge";
 import { X, TrendingUp } from "lucide-react";
 
 interface BettingPanelProps {
@@ -56,9 +56,9 @@ const BettingPanel = ({
 
         <div className="p-4 space-y-4">
           <div className="grid grid-cols-2 gap-3">
-            <div
+            <Card
               className={`
-                p-4 cursor-pointer transition-all border-2 rounded-lg
+                p-4 cursor-pointer transition-all border-2
                 ${selected === "wolf"
                   ? "border-red-500 bg-red-500/20 shadow-lg shadow-red-500/30"
                   : "border-slate-600 hover:border-red-500/50 bg-slate-800/50"
@@ -73,11 +73,11 @@ const BettingPanel = ({
                   {wolvesOdds}x赔率
                 </Badge>
               </div>
-            </div>
+            </Card>
 
-            <div
+            <Card
               className={`
-                p-4 cursor-pointer transition-all border-2 rounded-lg
+                p-4 cursor-pointer transition-all border-2
                 ${selected === "villager"
                   ? "border-green-500 bg-green-500/20 shadow-lg shadow-green-500/30"
                   : "border-slate-600 hover:border-green-500/50 bg-slate-800/50"
@@ -92,7 +92,7 @@ const BettingPanel = ({
                   {villagersOdds}x赔率
                 </Badge>
               </div>
-            </div>
+            </Card>
           </div>
 
           <div>

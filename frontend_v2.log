@@ -7,201 +7,14 @@
   - Environments: .env.local
 
  ✓ Starting...
- ✓ Ready in 3.1s
+ ✓ Ready in 2.5s
  ○ Compiling / ...
- ✓ Compiled / in 2.2s (1963 modules)
+ ✓ Compiled / in 12.7s (1986 modules)
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
- GET / 200 in 2646ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 27ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 32ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 31ms
- ○ Compiling /favicon.ico ...
- ✓ Compiled /favicon.ico in 1165ms (1065 modules)
- GET /favicon.ico 200 in 1834ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 1611ms
- ○ Compiling /live-game/[sessionId] ...
- ⚠ ./src/components/ui/Badge.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/Badge.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/app/page.tsx|app-pages-browser
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/badge.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
-
-Import trace for requested module:
-./src/components/ui/Badge.tsx
-./src/app/page.tsx
-
-./src/components/ui/Button.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/Button.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/app/page.tsx|app-pages-browser
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/button.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
-
-Import trace for requested module:
-./src/components/ui/Button.tsx
-./src/app/page.tsx
-
-./src/components/ui/Card.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/Card.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/app/page.tsx|app-pages-browser
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/card.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
-
-Import trace for requested module:
-./src/components/ui/Card.tsx
-./src/app/page.tsx
-
-./src/components/ui/Input.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/Input.tsx|app-pages-browser
-    Used by 1 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/index.ts|app-pages-browser
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/input.tsx|app-pages-browser
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
-
-Import trace for requested module:
-./src/components/ui/Input.tsx
-./src/components/ui/index.ts
-./src/pages/LiveGamePage.tsx
-./src/app/live-game/[sessionId]/page.tsx
-
-./src/components/ui/Badge.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/Badge.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/app/page.tsx|ssr
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/badge.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
-
-Import trace for requested module:
-./src/components/ui/Badge.tsx
-./src/app/page.tsx
-
-./src/components/ui/Button.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/Button.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/app/page.tsx|ssr
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/button.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
-
-Import trace for requested module:
-./src/components/ui/Button.tsx
-./src/app/page.tsx
-
-./src/components/ui/Card.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/Card.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/app/page.tsx|ssr
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/card.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
-
-Import trace for requested module:
-./src/components/ui/Card.tsx
-./src/app/page.tsx
-
-./src/components/ui/Input.tsx
-There are multiple modules with names that only differ in casing.
-This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
-Use equal casing. Compare these module identifiers:
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/Input.tsx|ssr
-    Used by 1 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/index.ts|ssr
-* javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ui/input.tsx|ssr
-    Used by 2 module(s), i. e.
-    javascript/auto|/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/HauntedHackathon/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
-
-Import trace for requested module:
-./src/components/ui/Input.tsx
-./src/components/ui/index.ts
-./src/pages/LiveGamePage.tsx
-./src/app/live-game/[sessionId]/page.tsx
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 1064ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 26ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 29ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 47ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 82ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 44ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 36ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 47ms
+ GET / 200 in 13336ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
@@ -211,457 +24,7 @@ The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
- GET / 200 in 35ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 35ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 32ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 28ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 17ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 22ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 48ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
  GET / 200 in 19ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 14ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 19ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 18ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 19ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 20ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 24ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 21ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 24ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 30ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 28ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 29ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 28ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 24ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 26ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 24ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 23ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 17ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 13ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 12ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 13ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 17ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 14ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 12ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 13ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 13ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 14ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 13ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 11ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 14ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 14ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 12ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 17ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 17ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 14ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 12ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 13ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 14ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 12ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 38ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 17ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 11ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 18ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 18ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 18ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 23ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 22ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 20ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 30ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 22ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 39ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 30ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 19ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 15ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 19ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 17ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 33ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 17ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
@@ -671,19 +34,171 @@ The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
+ GET / 200 in 52ms
+ ○ Compiling /favicon.ico ...
+ ✓ Compiled /favicon.ico in 1453ms (1065 modules)
+ GET /favicon.ico 200 in 1642ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 215ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 22ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 18ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 30ms
+ ○ Compiling /live-game/[sessionId] ...
+ ⚠ ./src/components/ui/Badge.tsx
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Badge.tsx|app-pages-browser
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|app-pages-browser
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/badge.tsx|app-pages-browser
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
+
+Import trace for requested module:
+./src/components/ui/Badge.tsx
+./src/app/page.tsx
+
+./src/components/ui/Button.tsx
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Button.tsx|app-pages-browser
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|app-pages-browser
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/button.tsx|app-pages-browser
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
+
+Import trace for requested module:
+./src/components/ui/Button.tsx
+./src/app/page.tsx
+
+./src/components/ui/Card.tsx
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Card.tsx|app-pages-browser
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|app-pages-browser
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/card.tsx|app-pages-browser
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
+
+Import trace for requested module:
+./src/components/ui/Card.tsx
+./src/app/page.tsx
+
+./src/components/ui/Input.tsx
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Input.tsx|app-pages-browser
+    Used by 1 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/index.ts|app-pages-browser
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/input.tsx|app-pages-browser
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/compiled/@next/react-refresh-utils/dist/loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[17].oneOf[5].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|app-pages-browser
+
+Import trace for requested module:
+./src/components/ui/Input.tsx
+./src/components/ui/index.ts
+./src/pages/LiveGamePage.tsx
+./src/app/live-game/[sessionId]/page.tsx
+
+./src/components/ui/Badge.tsx
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Badge.tsx|ssr
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|ssr
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/badge.tsx|ssr
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
+
+Import trace for requested module:
+./src/components/ui/Badge.tsx
+./src/app/page.tsx
+
+./src/components/ui/Button.tsx
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Button.tsx|ssr
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|ssr
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/button.tsx|ssr
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
+
+Import trace for requested module:
+./src/components/ui/Button.tsx
+./src/app/page.tsx
+
+./src/components/ui/Card.tsx
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Card.tsx|ssr
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/app/page.tsx|ssr
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/card.tsx|ssr
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
+
+Import trace for requested module:
+./src/components/ui/Card.tsx
+./src/app/page.tsx
+
+./src/components/ui/Input.tsx
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/Input.tsx|ssr
+    Used by 1 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/index.ts|ssr
+* javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ui/input.tsx|ssr
+    Used by 2 module(s), i. e.
+    javascript/auto|/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-flight-client-module-loader.js!/Users/admin/Project/werewolf_arena/frontend/node_modules/next/dist/build/webpack/loaders/next-swc-loader.js??ruleSet[1].rules[16].oneOf[6].use[1]!/Users/admin/Project/werewolf_arena/frontend/src/components/ChatPanel.tsx|ssr
+
+Import trace for requested module:
+./src/components/ui/Input.tsx
+./src/components/ui/index.ts
+./src/pages/LiveGamePage.tsx
+./src/app/live-game/[sessionId]/page.tsx
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+ GET / 200 in 110ms
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
  GET / 200 in 16ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
- GET / 200 in 17ms
+ GET / 200 in 32ms
 The width(-1) and height(-1) of chart should be greater than 0,
        please check the style of container, or the props width(100%) and height(100%),
        or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
        height and width.
- GET / 200 in 16ms
-The width(-1) and height(-1) of chart should be greater than 0,
-       please check the style of container, or the props width(100%) and height(100%),
-       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
-       height and width.
- GET / 200 in 21ms
+ GET / 200 in 24ms
