@@ -61,7 +61,7 @@ const LiveGamePage = () => {
   useEffect(() => {
     if (!sessionId) return;
 
-    const wsUrl = `ws://localhost:8000/ws/${sessionId}`;
+    const wsUrl = `${process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev'}/ws/${sessionId}`;
     const ws = new WebSocket(wsUrl);
 
     ws.onopen = () => {
