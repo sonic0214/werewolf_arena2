@@ -1,0 +1,56 @@
+services:
+  # 统一的Web服务 - 包含前端和后端 (Render单端口模式)
+  - type: web
+    name: werewolf-arena
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile.render
+    dockerContext: .
+    healthCheck:
+      path: /health
+    envVars:
+      # 基础配置
+      - key: NODE_ENV
+        value: production
+      - key: PYTHONUNBUFFERED
+        value: "1"
+      - key: PYTHONDONTWRITEBYTECODE
+        value: "1"
+
+      # 端口配置 (Render自动设置PORT环境变量)
+      - key: BACKEND_PORT
+        value: 8000
+      - key: FRONTEND_PORT
+        value: 3000
+
+      # URL配置 (Render会提供自动生成的URL)
+      - key: BACKEND_URL
+        value: https://werewolf-arena.onrender.com
+      - key: NEXT_PUBLIC_API_URL
+        value: /api
+      - key: NEXT_PUBLIC_WS_URL
+        value: wss://werewolf-arena.onrender.com
+
+      # LLM配置 (需要在Render控制台中设置)
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: DEFAULT_LLM_PROVIDER
+        value: openai
+
+      # 游戏配置
+      - key: GAME_TIMEOUT_SECONDS
+        value: 300
+      - key: MAX_PLAYERS
+        value: 20
+      - key: MIN_PLAYERS
+        value: 4
+      - key: DEBUG
+        value: "false"
+
+databases:
+  # 如果需要数据库，可以添加PostgreSQL
+  # - name: werewolf-arena-db
+  #   databaseName: werewolf_arena
+  #   user: werewolf_user

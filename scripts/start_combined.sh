@@ -15,9 +15,10 @@ cleanup() {
 }
 trap cleanup EXIT
 
-# Defaults for ports inside the container; Fly.io will map them externally.
+# Port configuration for Render deployment
+# Render automatically sets PORT environment variable for the main service
 export BACKEND_PORT="${BACKEND_PORT:-8000}"
-export FRONTEND_PORT="${FRONTEND_PORT:-3000}"
+export FRONTEND_PORT="${PORT:-3000}"
 
 # Launch FastAPI backend.
 cd /app/backend

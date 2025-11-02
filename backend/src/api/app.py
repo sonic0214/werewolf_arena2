@@ -5,7 +5,10 @@ FastAPI Main Application
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
 from contextlib import asynccontextmanager
+import os
 
 from src.config import settings
 from src.services.llm.client import LLMClient
@@ -90,3 +93,41 @@ app.include_router(models.router, prefix="/api/v1/models", tags=["Models"])
 app.include_router(timing.router, prefix="/api/v1/config", tags=["Timing Configuration"])
 app.include_router(logs.router, prefix="/api/v1/games", tags=["Logs"])
 app.include_router(websocket.router, tags=["WebSocket"])
+
+# 添加静态文件服务 (用于Render部署)
+frontend_build_path = os.getenv("FRONTEND_BUILD_PATH", "/app/frontend/.next/standalone")
+frontend_static_path = os.getenv("FRONTEND_STATIC_PATH", "/app/frontend/.next/static")
+
+if os.path.exists(frontend_build_path):
+    # 静态文件
+    if os.path.exists(frontend_static_path):
+        app.mount("/_next/static", StaticFiles(directory=frontend_static_path), name="static")
+
+    # 静态资源
+    public_path = os.path.join(frontend_build_path, "public")
+    if os.path.exists(public_path):
+        app.mount("/public", StaticFiles(directory=public_path), name="public")
+
+    # 静态文件
+    static_path = os.path.join(frontend_build_path, "static")
+    if os.path.exists(static_path):
+        app.mount("/static", StaticFiles(directory=static_path), name="static")
+
+    @app.get("/{path:path}")
+    async def catch_all(path: str):
+        """Catch all route for SPA - serve frontend index.html"""
+        # 如果是API请求，返回404
+        if path.startswith("api/") or path.startswith("docs") or path.startswith("openapi.json"):
+            return {"error": "Not found"}, 404
+
+        # 尝试提供静态文件
+        file_path = os.path.join(frontend_build_path, path)
+        if os.path.isfile(file_path):
+            return FileResponse(file_path)
+
+        # 默认返回index.html
+        index_path = os.path.join(frontend_build_path, "index.html")
+        if os.path.isfile(index_path):
+            return FileResponse(index_path)
+
+        return {"error": "Frontend not found"}, 404
