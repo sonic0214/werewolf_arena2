@@ -41,10 +41,8 @@ const nextConfig = {
   },
   // Environment variables with production fallbacks
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL ||
-      (process.env.NODE_ENV === 'production' ? 'https://werewolf-arena-backend.fly.dev' : 'http://localhost:8000'),
-    NEXT_PUBLIC_WS_URL: process.env.NEXT_PUBLIC_WS_URL ||
-      (process.env.NODE_ENV === 'production' ? 'wss://werewolf-arena-backend.fly.dev' : 'ws://localhost:8000'),
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || '/api',
+    NEXT_PUBLIC_WS_URL: process.env.NEXT_PUBLIC_WS_URL || 'ws://localhost:8000',
   },
   // Security headers
   async headers() {
