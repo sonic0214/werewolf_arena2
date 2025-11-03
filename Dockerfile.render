@@ -33,7 +33,9 @@ WORKDIR /app
 ENV PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     FRONTEND_BUILD_PATH=/app/frontend/.next/standalone \
-    FRONTEND_STATIC_PATH=/app/frontend/.next/static
+    FRONTEND_STATIC_PATH=/app/frontend/.next/static \
+    NEXT_PUBLIC_API_URL=/api \
+    NEXT_PUBLIC_WS_URL=wss://werewolf-arena.onrender.com
 
 # Install backend dependencies from cached wheels
 COPY --from=backend-builder /tmp/wheels /tmp/wheels
