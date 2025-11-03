@@ -6,6 +6,7 @@ services:
     plan: free
     dockerfilePath: ./Dockerfile.render
     dockerContext: .
+    startCommand: /app/start.sh
     healthCheck:
       path: /health
     envVars:
