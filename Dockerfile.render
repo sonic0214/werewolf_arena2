@@ -55,7 +55,7 @@ COPY scripts/start_combined.sh /app/start.sh
 
 RUN chmod +x /app/start.sh
 
-# Expose the single port that Render will use
-EXPOSE 3000
+# Expose the single port that Render will use (10000)
+EXPOSE 10000
 
 ENTRYPOINT ["/app/start.sh"]
