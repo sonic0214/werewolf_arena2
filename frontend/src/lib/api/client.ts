@@ -3,10 +3,18 @@ import { APIResponse, HTTP_STATUS } from '@/types/api';
 
 class APIClient {
   private client: AxiosInstance;
+  private readonly baseURL: string;
+  private readonly isAbsoluteBase: boolean;
 
   constructor(baseURL: string = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000') {
+    const normalizedBase = baseURL.trim();
+    const strippedTrailingSlash =
+      normalizedBase.endsWith('/') && normalizedBase !== '/' ? normalizedBase.slice(0, -1) : normalizedBase;
+
+    this.baseURL = strippedTrailingSlash;
+    this.isAbsoluteBase = /^https?:\/\//i.test(strippedTrailingSlash);
+
     this.client = axios.create({
-      baseURL,
       timeout: 30000,
       headers: {
         'Content-Type': 'application/json',
@@ -51,10 +59,44 @@ class APIClient {
     );
   }
 
+  private resolveUrl(path: string): string {
+    if (!path) {
+      return this.baseURL || '';
+    }
+
+    if (/^https?:\/\//i.test(path)) {
+      return path;
+    }
+
+    const normalizedPath = path.startsWith('/') ? path : `/${path}`;
+
+    if (this.isAbsoluteBase && this.baseURL) {
+      return `${this.baseURL}${normalizedPath}`;
+    }
+
+    if (!this.baseURL || this.baseURL === '/' || this.baseURL === '.') {
+      return normalizedPath;
+    }
+
+    const trimmedBase = this.baseURL.endsWith('/') ? this.baseURL.slice(0, -1) : this.baseURL;
+    const baseWithSlash = `${trimmedBase}/`;
+
+    if (normalizedPath === trimmedBase || normalizedPath.startsWith(baseWithSlash)) {
+      return normalizedPath;
+    }
+
+    if (trimmedBase.startsWith('/')) {
+      return `${trimmedBase}${normalizedPath}`;
+    }
+
+    return `/${trimmedBase}${normalizedPath}`;
+  }
+
   // Generic GET request
   async get<T>(url: string, params?: Record<string, any>): Promise<APIResponse<T>> {
     try {
-      const response = await this.client.get<any>(url, { params });
+      const resolvedUrl = this.resolveUrl(url);
+      const response = await this.client.get<any>(resolvedUrl, { params });
       const data = response.data;
 
       // Check if response is already in APIResponse format
@@ -75,7 +117,8 @@ class APIClient {
   // Generic POST request
   async post<T>(url: string, data?: any): Promise<APIResponse<T>> {
     try {
-      const response = await this.client.post<any>(url, data);
+      const resolvedUrl = this.resolveUrl(url);
+      const response = await this.client.post<any>(resolvedUrl, data);
       const responseData = response.data;
 
       // Check if response is already in APIResponse format
@@ -96,7 +139,8 @@ class APIClient {
   // Generic PUT request
   async put<T>(url: string, data?: any): Promise<APIResponse<T>> {
     try {
-      const response = await this.client.put<any>(url, data);
+      const resolvedUrl = this.resolveUrl(url);
+      const response = await this.client.put<any>(resolvedUrl, data);
       const responseData = response.data;
 
       // Check if response is already in APIResponse format
@@ -117,7 +161,8 @@ class APIClient {
   // Generic DELETE request
   async delete<T>(url: string): Promise<APIResponse<T>> {
     try {
-      const response = await this.client.delete<any>(url);
+      const resolvedUrl = this.resolveUrl(url);
+      const response = await this.client.delete<any>(resolvedUrl);
       const responseData = response.data;
 
       // Check if response is already in APIResponse format
@@ -141,7 +186,8 @@ class APIClient {
     formData.append('file', file);
 
     try {
-      const response = await this.client.post<any>(url, formData, {
+      const resolvedUrl = this.resolveUrl(url);
+      const response = await this.client.post<any>(resolvedUrl, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
