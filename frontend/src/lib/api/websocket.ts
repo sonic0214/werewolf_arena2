@@ -24,6 +24,32 @@ class WebSocketClient {
     this.url = url || '';
   }
 
+  private resolveBaseUrl(): string {
+    const explicitUrl = this.url?.trim();
+    if (explicitUrl) {
+      return explicitUrl.replace(/\/$/, '');
+    }
+
+    const envUrl = (process.env.NEXT_PUBLIC_WS_URL || '').trim();
+    if (envUrl) {
+      if (envUrl.startsWith('/')) {
+        if (typeof window !== 'undefined') {
+          const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+          return `${protocol}//${window.location.host}${envUrl}`.replace(/\/$/, '');
+        }
+      } else if (!/(localhost|127\.0\.0\.1)/i.test(envUrl)) {
+        return envUrl.replace(/\/$/, '');
+      }
+    }
+
+    if (typeof window !== 'undefined') {
+      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+      return `${protocol}//${window.location.host}`;
+    }
+
+    return 'ws://localhost:8000';
+  }
+
   // Connect to WebSocket server
   connect(sessionId: string): Promise<void> {
     return new Promise((resolve, reject) => {
@@ -65,7 +91,7 @@ class WebSocketClient {
       this.currentSessionId = sessionId;
 
       // 每次连接时都重新获取环境变量
-      const currentUrl = this.url || process.env.NEXT_PUBLIC_WS_URL || 'wss://werewolf-arena-backend.fly.dev';
+      const currentUrl = this.resolveBaseUrl();
       const wsUrl = `${currentUrl}/ws/${sessionId}`;
 
       // 添加连接日志
