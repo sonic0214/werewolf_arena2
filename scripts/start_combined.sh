@@ -23,39 +23,63 @@ cleanup() {
 trap cleanup EXIT
 
 # Launch Next.js standalone server on internal port.
-STANDALONE_ROOT="/app/frontend/.next/standalone"
-NEXT_SERVER_ENTRY="${NEXT_SERVER_ENTRY:-}"
+DEFAULT_FRONTEND_ROOT="/app/frontend/.next/standalone"
+declare -a FRONTEND_CANDIDATES=()
+if [[ -n "${FRONTEND_BUILD_PATH:-}" ]]; then
+  FRONTEND_CANDIDATES+=("${FRONTEND_BUILD_PATH}")
+fi
+FRONTEND_CANDIDATES+=("${DEFAULT_FRONTEND_ROOT}" "/app/frontend")
 
-if [[ -z "${NEXT_SERVER_ENTRY}" ]]; then
-  for candidate in server.js server.mjs server.cjs index.js; do
-    if [[ -f "${STANDALONE_ROOT}/${candidate}" ]]; then
-      NEXT_SERVER_ENTRY="${candidate}"
+STANDALONE_ROOT=""
+NEXT_SERVER_ENTRY_VALUE="${NEXT_SERVER_ENTRY:-}"
+FOUND_ENTRY=""
+
+for candidate_root in "${FRONTEND_CANDIDATES[@]}"; do
+  if [[ ! -d "${candidate_root}" ]]; then
+    continue
+  fi
+
+  STANDALONE_ROOT="${candidate_root}"
+  candidate_entry="${NEXT_SERVER_ENTRY_VALUE}"
+
+  if [[ -n "${candidate_entry}" ]]; then
+    if [[ -f "${STANDALONE_ROOT}/${candidate_entry}" ]]; then
+      FOUND_ENTRY="${candidate_entry}"
+      break
+    fi
+  fi
+
+  for entry in server.js server.mjs server.cjs index.js; do
+    if [[ -f "${STANDALONE_ROOT}/${entry}" ]]; then
+      FOUND_ENTRY="${entry}"
       break
     fi
   done
-fi
-
-if [[ -z "${NEXT_SERVER_ENTRY}" && -d "${STANDALONE_ROOT}" ]]; then
-  NEXT_SERVER_ENTRY="$(find "${STANDALONE_ROOT}" -maxdepth 2 -type f \( -name 'server.js' -o -name 'server.mjs' -o -name 'server.cjs' -o -name 'index.js' \) | head -n1 || true)"
-  if [[ -n "${NEXT_SERVER_ENTRY}" ]]; then
-    NEXT_SERVER_ENTRY="${NEXT_SERVER_ENTRY#${STANDALONE_ROOT}/}"
+  if [[ -n "${FOUND_ENTRY}" ]]; then
+    break
   fi
-fi
 
-if [[ -z "${NEXT_SERVER_ENTRY}" ]]; then
-  echo "❌ Next.js standalone build entrypoint missing in ${STANDALONE_ROOT}"
-  if [[ -d "${STANDALONE_ROOT}" ]]; then
-    echo "📂 Contents of ${STANDALONE_ROOT}:"
-    ls -al "${STANDALONE_ROOT}" || true
-  else
-    echo "📂 Standalone directory not found at ${STANDALONE_ROOT}"
-    if [[ -d "/app/frontend" ]]; then
-      echo "📁 Frontend build contents:"
-      ls -al /app/frontend || true
+  found_path="$(find "${STANDALONE_ROOT}" -maxdepth 2 -type f \( -name 'server.js' -o -name 'server.mjs' -o -name 'server.cjs' -o -name 'index.js' \) | head -n1 || true)"
+  if [[ -n "${found_path}" ]]; then
+    FOUND_ENTRY="${found_path#${STANDALONE_ROOT}/}"
+    break
+  fi
+done
+
+if [[ -z "${FOUND_ENTRY}" || -z "${STANDALONE_ROOT}" ]]; then
+  echo "❌ Next.js standalone build entrypoint missing."
+  for candidate_root in "${FRONTEND_CANDIDATES[@]}"; do
+    if [[ -d "${candidate_root}" ]]; then
+      echo "📂 Contents of ${candidate_root}:"
+      ls -al "${candidate_root}" || true
+    else
+      echo "📂 Directory not found: ${candidate_root}"
     fi
-  fi
+  done
   exit 1
 fi
+
+NEXT_SERVER_ENTRY="${FOUND_ENTRY}"
 
 cd "${STANDALONE_ROOT}"
 echo "▶️ Using Next.js entrypoint: ${NEXT_SERVER_ENTRY}"
@@ -66,8 +90,16 @@ echo "✅ Next.js frontend started (PID: ${FRONTEND_PID})"
 # Launch FastAPI backend on Render-provided port.
 cd /app/backend
 export PYTHONPATH=/app/backend:${PYTHONPATH:-}
-export FRONTEND_BUILD_PATH=/app/frontend/.next/standalone
-export FRONTEND_STATIC_PATH=/app/frontend/.next/static
+export FRONTEND_BUILD_PATH="${STANDALONE_ROOT}"
+
+DEFAULT_STATIC_PATH="/app/frontend/.next/static"
+if [[ -n "${FRONTEND_STATIC_PATH:-}" && -d "${FRONTEND_STATIC_PATH}" ]]; then
+  export FRONTEND_STATIC_PATH="${FRONTEND_STATIC_PATH}"
+elif [[ -d "${DEFAULT_STATIC_PATH}" ]]; then
+  export FRONTEND_STATIC_PATH="${DEFAULT_STATIC_PATH}"
+elif [[ -d "${STANDALONE_ROOT}/.next/static" ]]; then
+  export FRONTEND_STATIC_PATH="${STANDALONE_ROOT}/.next/static"
+fi
 export NEXT_SERVER_URL="http://127.0.0.1:${NEXT_INTERNAL_PORT}"
 
 uvicorn src.api.app:app \
