@@ -1,56 +1,55 @@
-# Fly.io configuration for Werewolf Arena Backend
+# Fly.io configuration for Werewolf Arena Backend (Apps V1)
 
 app = "werewolf-arena-backend"
-primary_region = "sin"
 
-[build]
-  dockerfile = "Dockerfile"
+kill_signal = "SIGINT"
+kill_timeout = 5
+processes = []
 
-[http_service]
-  internal_port = 8000
-  force_https = true
-  auto_stop_machines = true
-  auto_start_machines = true
-  min_machines_running = 0
-  processes = ["app"]
-
-[[http_service.checks]]
-  interval = "15s"
-  timeout = "10s"
-  grace_period = "5s"
-  method = "GET"
-  path = "/health"
-
-[http_service.checks.match]
-  status = [200]
-
-[http_service.concurrency]
-  type = "requests"
-  soft_limit = 100
-  hard_limit = 120
-
-[[vm]]
-  memory = "512mb"
-  cpu_kind = "shared"
-  cpus = 1
-
-# Environment variables
 [env]
   PYTHONPATH = "/app"
   PYTHONUNBUFFERED = "1"
   PORT = "8000"
   ENVIRONMENT = "production"
-  CORS__ALLOW_ORIGINS = "[\"https://werewolf-arena-frontend.fly.dev\",\"https://werewolf-arena-backend.fly.dev\"]"
 
-# Secrets (set via flyctl secrets set)
-# SILICONFLOW_API_KEY = "your_siliconflow_key" (推荐)
-# OPENAI_API_KEY = "your_openai_key"
-# ANTHROPIC_API_KEY = "your_anthropic_key"
+[experimental]
+  allowed_public_ports = []
+  auto_rollback = true
 
-# Mount for logs
-[mounts]
-  source = "werewolf_logs"
-  destination = "/app/logs"
+[[services]]
+  http_checks = []
+  internal_port = 8000
+  processes = ["app"]
+  protocol = "tcp"
+  script_checks = []
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20
+    type = "connections"
+
+  [[services.ports]]
+    force_https = true
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+  [[services.tcp_checks]]
+    grace_period = "1s"
+    interval = "15s"
+    restart_limit = 0
+    timeout = "2s"
+
+  [[services.http_checks]]
+    grace_period = "10s"
+    interval = "30s"
+    method = "get"
+    path = "/health"
+    protocol = "http"
+    restart_limit = 0
+    timeout = "5s"
 
 [deploy]
-  strategy = "rolling"
+  strategy = "canary"
