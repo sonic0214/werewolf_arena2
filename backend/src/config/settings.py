@@ -4,9 +4,12 @@ Unified Configuration System using Pydantic Settings
 """
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from typing import Optional, List
+from pydantic import field_validator
+from typing import Optional, List, Union
 from pathlib import Path
 import random
+import os
+import json
 from .timing_loader import get_timing_config, TimingConfig
 
 
@@ -67,10 +70,25 @@ class ServerSettings(BaseSettings):
 
 class CORSSettings(BaseSettings):
     """CORS配置"""
-    allow_origins: List[str] = ["http://localhost:3000", "http://localhost:8080"]
+    allow_origins: List[str] = [
+        "http://localhost:3000",
+        "http://localhost:8080",
+        "https://werewolf-arena.vercel.app"
+    ]
     allow_credentials: bool = True
     allow_methods: List[str] = ["*"]
     allow_headers: List[str] = ["*"]
+
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        # 支持通过环境变量 CORS_ORIGINS 来设置允许的源（避免与Pydantic自动解析冲突）
+        # 用逗号分隔多个源，例如：https://domain1.com,https://domain2.com
+        cors_origins_env = os.getenv("CORS_ORIGINS")
+        if cors_origins_env:
+            # 分割逗号分隔的源列表，并去除空白字符
+            env_origins = [origin.strip() for origin in cors_origins_env.split(",") if origin.strip()]
+            if env_origins:
+                self.allow_origins = env_origins
 
 
 class PathSettings(BaseSettings):

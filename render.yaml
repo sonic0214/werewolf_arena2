@@ -38,6 +38,10 @@ services:
       - key: ANTHROPIC_API_KEY
         sync: false
 
+      # CORS配置 - 允许Vercel前端访问
+      - key: CORS_ORIGINS
+        value: "https://werewolf-arena.vercel.app,https://werewolf-arena.onrender.com"
+
       # 游戏配置
       - key: GAME_TIMEOUT_SECONDS
         value: 300
