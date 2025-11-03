@@ -42,7 +42,7 @@ COPY --from=backend-builder /tmp/wheels /tmp/wheels
 COPY backend/requirements.txt /app/backend/requirements.txt
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-index --find-links=/tmp/wheels -r /app/backend/requirements.txt \
-    && apk add --no-cache bash
+    && apk add --no-cache bash nodejs
 
 # Copy application code
 COPY --from=backend-builder /app/backend /app/backend
@@ -51,7 +51,7 @@ COPY --from=frontend-builder /app/frontend/.next/static /app/frontend/.next/stat
 COPY --from=frontend-builder /app/frontend/public /app/frontend/.next/standalone/public
 
 # Copy Render-specific startup script
-COPY scripts/start_render.sh /app/start.sh
+COPY scripts/start_combined.sh /app/start.sh
 
 RUN chmod +x /app/start.sh
 
