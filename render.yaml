@@ -17,12 +17,6 @@ services:
       - key: PYTHONDONTWRITEBYTECODE
         value: "1"
 
-      # 端口配置 (Render自动设置PORT环境变量为3000)
-      - key: PORT
-        value: 3000
-      # 覆盖服务器默认端口配置
-      - key: SERVER__PORT
-        value: 3000
       - key: SERVER__HOST
         value: 0.0.0.0
 
