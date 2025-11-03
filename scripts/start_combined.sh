@@ -2,6 +2,23 @@
 
 set -euo pipefail
 
+# Detect Render single-port deployment
+if [[ -n "${PORT:-}" ]]; then
+  MAIN_PORT="${PORT}"
+  echo "🚀 Detected Render single-port environment"
+  echo "📡 Main port: ${MAIN_PORT}"
+
+  cd /app/backend
+  export PYTHONPATH=/app/backend:${PYTHONPATH:-}
+  export FRONTEND_BUILD_PATH=/app/frontend/.next/standalone
+  export FRONTEND_STATIC_PATH=/app/frontend/.next/static
+
+  exec uvicorn src.api.app:app \
+    --host 0.0.0.0 \
+    --port "${MAIN_PORT}" \
+    --workers 1
+fi
+
 cleanup() {
   local exit_code=$?
   if [[ -n "${FRONTEND_PID:-}" ]] && kill -0 "${FRONTEND_PID}" 2>/dev/null; then
