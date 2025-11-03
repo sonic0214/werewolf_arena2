@@ -1,4 +1,14 @@
 /** @type {import('next').NextConfig} */
+const ContentSecurityPolicy = `
+  default-src 'self';
+  script-src 'self' 'unsafe-eval';
+  style-src 'self' 'unsafe-inline';
+  img-src 'self' data: https:;
+  font-src 'self' data:;
+  connect-src 'self' https://werewolf-arena-backend.fly.dev https://werewolf-arena.onrender.com http://localhost:8000 http://localhost:3000 ws://localhost:8000 ws://localhost:3000 wss://werewolf-arena-backend.fly.dev wss://werewolf-arena.onrender.com;
+  frame-ancestors 'none';
+`.replace(/\s{2,}/g, ' ').trim();
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -53,6 +63,10 @@ const nextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin',
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: ContentSecurityPolicy,
           },
         ],
       },
