@@ -2505,3 +2505,1383 @@ INFO:     127.0.0.1:57678 - "GET /health HTTP/1.1" 200 OK
 [JSON字符串解析] 文本长度: 203 字符
 [JSON字符串解析] 使用yaml.safe_load解析...
 [JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': 'Kimi的发言明显在带节奏逼神职跳身份，这会导致狼队信息暴露。它既没有报任何逻辑线索，也不给村民缓冲思考时间，反而催促所有人立刻表态，这种激进打法最符合狼人想逼出医生或预言家的战术意图。相比之下Qwen和DeepSeek都在号召理性分析，GLM虽然话术套路但至少没有强迫跳身份。而Kimi的激进态度对狼队威胁最大，必须先票走它。', 'vote': 'Kimi'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': 'Kimi的发言明显在带节奏逼神职跳身份，这会导致狼队信息暴露。它既没有报任何逻辑线索，也不给村民缓冲思考时间，反而催促所有人立刻表态，这种激进打法最符合狼人想逼出医生或预言家的战术意图。相比之下Qwen和DeepSeek都在号召理性分析，GLM虽然话术套路但至少没有强迫跳身份。而Kimi的激进态度对狼队威胁最大，必须先票走它。', 'vote': 'Kimi'}
+[JSON解析] 直接解析结果: {'reasoning': 'Kimi的发言明显在带节奏逼神职跳身份，这会导致狼队信息暴露。它既没有报任何逻辑线索，也不给村民缓冲思考时间，反而催促所有人立刻表态，这种激进打法最符合狼人想逼出医生或预言家的战术意图。相比之下Qwen和DeepSeek都在号召理性分析，GLM虽然话术套路但至少没有强迫跳身份。而Kimi的激进态度对狼队威胁最大，必须先票走它。', 'vote': 'Kimi'}
+[JSON解析] 最终结果: {'reasoning': 'Kimi的发言明显在带节奏逼神职跳身份，这会导致狼队信息暴露。它既没有报任何逻辑线索，也不给村民缓冲思考时间，反而催促所有人立刻表态，这种激进打法最符合狼人想逼出医生或预言家的战术意图。相比之下Qwen和DeepSeek都在号召理性分析，GLM虽然话术套路但至少没有强迫跳身份。而Kimi的激进态度对狼队威胁最大，必须先票走它。', 'vote': 'Kimi'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': 'Kimi的发言明显在带节奏逼神职跳身份，这会导致狼队信息暴露。它既没有报任何逻辑线索，也不给村民缓冲思考时间，反而催促所有人立刻表态，这种激进打法最符合狼人想逼出医生或预言家的战术意图。相比之下Qwen和DeepSeek都在号召理性分析，GLM虽然话术套路但至少没有强迫跳身份。而Kimi的激进态度对狼队威胁最大，必须先票走它。', 'vote': 'Kimi'}
+[LLM结果] 提取键 'vote': Kimi
+[LLM成功] 返回有效结果: Kimi
+[RealtimeLogger] session_20251102_203155 [vote] MiniMax 投票给 Kimi
+[WebSocket] 投票通知已发送: MiniMax -> Kimi
+⏱️ [投票-MiniMax] MiniMax投票完成: 4.13秒
+⚠️ 未知的延迟类型: vote
+[LLM调用] 第1/3次尝试 | 模型: moonshotai/Kimi-K2-Instruct-0905 | 温度: 0.50
+[LLM调用] 第1/3次尝试 | 模型: Qwen/Qwen3-32B | 温度: 0.50
+[LLM响应] 成功获取响应，长度: 224 字符
+[LLM原始响应开始]
+{
+  "reasoning": "昨晚我选择保护了Kimi，而狼人淘汰了Inclusion。从Kimi的发言来看，他呼吁大家冷静并分享信息，态度相对中立。MiniMax则提出了一些复杂的推理，但没有明确指向某人，反而可能是在诱导大家注意逻辑漏洞。GLM和DeepSeek的发言都强调团结和分析，逻辑清晰，符合村民或神职的立场。因此，我认为MiniMax的发言方式较为可疑，可能是狼人在试图制造混乱。",
+  "vote": "MiniMax"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 224 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "昨晚我选择保护了Kimi，而狼人淘汰了Inclusion。从Kimi的发言来看，他呼吁大家冷静并分享信息，态度相对中立。MiniMax则提出了一些复杂的推理，但没有...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "昨晚我选择保护了Kimi，而狼人淘汰了Inclusion。从Kimi的发言来看，他呼吁大家冷静并分享信息，态度相对中立。MiniMax则提出了一些复杂的推理，但没有明确指向某人，反而可能是在诱导大家注意逻辑漏洞。GLM和DeepSeek的发言都强调团结和分析，逻辑清晰，符合村民或神职的立场。因此，我认为MiniMax的发言方式较为可疑，可能是狼人在试图制造混乱。",
+  "vote": "MiniMax"
+}'
+[JSON字符串解析] 文本长度: 224 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '昨晚我选择保护了Kimi，而狼人淘汰了Inclusion。从Kimi的发言来看，他呼吁大家冷静并分享信息，态度相对中立。MiniMax则提出了一些复杂的推理，但没有明确指向某人，反而可能是在诱导大家注意逻辑漏洞。GLM和DeepSeek的发言都强调团结和分析，逻辑清晰，符合村民或神职的立场。因此，我认为MiniMax的发言方式较为可疑，可能是狼人在试图制造混乱。', 'vote': 'MiniMax'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '昨晚我选择保护了Kimi，而狼人淘汰了Inclusion。从Kimi的发言来看，他呼吁大家冷静并分享信息，态度相对中立。MiniMax则提出了一些复杂的推理，但没有明确指向某人，反而可能是在诱导大家注意逻辑漏洞。GLM和DeepSeek的发言都强调团结和分析，逻辑清晰，符合村民或神职的立场。因此，我认为MiniMax的发言方式较为可疑，可能是狼人在试图制造混乱。', 'vote': 'MiniMax'}
+[JSON解析] 直接解析结果: {'reasoning': '昨晚我选择保护了Kimi，而狼人淘汰了Inclusion。从Kimi的发言来看，他呼吁大家冷静并分享信息，态度相对中立。MiniMax则提出了一些复杂的推理，但没有明确指向某人，反而可能是在诱导大家注意逻辑漏洞。GLM和DeepSeek的发言都强调团结和分析，逻辑清晰，符合村民或神职的立场。因此，我认为MiniMax的发言方式较为可疑，可能是狼人在试图制造混乱。', 'vote': 'MiniMax'}
+[JSON解析] 最终结果: {'reasoning': '昨晚我选择保护了Kimi，而狼人淘汰了Inclusion。从Kimi的发言来看，他呼吁大家冷静并分享信息，态度相对中立。MiniMax则提出了一些复杂的推理，但没有明确指向某人，反而可能是在诱导大家注意逻辑漏洞。GLM和DeepSeek的发言都强调团结和分析，逻辑清晰，符合村民或神职的立场。因此，我认为MiniMax的发言方式较为可疑，可能是狼人在试图制造混乱。', 'vote': 'MiniMax'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '昨晚我选择保护了Kimi，而狼人淘汰了Inclusion。从Kimi的发言来看，他呼吁大家冷静并分享信息，态度相对中立。MiniMax则提出了一些复杂的推理，但没有明确指向某人，反而可能是在诱导大家注意逻辑漏洞。GLM和DeepSeek的发言都强调团结和分析，逻辑清晰，符合村民或神职的立场。因此，我认为MiniMax的发言方式较为可疑，可能是狼人在试图制造混乱。', 'vote': 'MiniMax'}
+[LLM结果] 提取键 'vote': MiniMax
+[LLM成功] 返回有效结果: MiniMax
+[RealtimeLogger] session_20251102_203155 [vote] Qwen 投票给 MiniMax
+[WebSocket] 投票通知已发送: Qwen -> MiniMax
+⏱️ [投票-Qwen] Qwen投票完成: 3.18秒
+⚠️ 未知的延迟类型: vote
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 0.50
+INFO:     127.0.0.1:57746 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 268 字符
+[LLM原始响应开始]
+{"reasoning":"目前信息极少，只能凭首轮发言做初步判断。DeepSeek一上来就力保Qwen，却没有给出任何查验依据，若Qwen真是好人，这种“硬保”反而容易被狼队利用；更糟的是，如果DeepSeek自己是狼，先树立一个“可信”好人形象，可方便后续带节奏。Inclusion呼吁神职跳身份，符合村民求稳心态；GLM主张理性讨论，也属正常村民思路；Qwen被点名“可信”却未见自证。综合看，DeepSeek的“保人”动作最突兀，且提前锁定阵营易使好人分裂，故优先票他，以防狼人早期控场。","vote":"DeepSeek"}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 268 字符
+[JSON解析] 输入文本预览: {"reasoning":"目前信息极少，只能凭首轮发言做初步判断。DeepSeek一上来就力保Qwen，却没有给出任何查验依据，若Qwen真是好人，这种“硬保”反而容易被狼队利用；更糟的是，如果De...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{"reasoning":"目前信息极少，只能凭首轮发言做初步判断。DeepSeek一上来就力保Qwen，却没有给出任何查验依据，若Qwen真是好人，这种“硬保”反而容易被狼队利用；更糟的是，如果DeepSeek自己是狼，先树立一个“可信”好人形象，可方便后续带节奏。Inclusion呼吁神职跳身份，符合村民求稳心态；GLM主张理性讨论，也属正常村民思路；Qwen被点名“可信”却未见自证。综合看，DeepSeek的“保人”动作最突兀，且提前锁定阵营易使好人分裂，故优先票他，以防狼人早期控场。","vote":"DeepSeek"}'
+[JSON字符串解析] 文本长度: 268 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '目前信息极少，只能凭首轮发言做初步判断。DeepSeek一上来就力保Qwen，却没有给出任何查验依据，若Qwen真是好人，这种“硬保”反而容易被狼队利用；更糟的是，如果DeepSeek自己是狼，先树立一个“可信”好人形象，可方便后续带节奏。Inclusion呼吁神职跳身份，符合村民求稳心态；GLM主张理性讨论，也属正常村民思路；Qwen被点名“可信”却未见自证。综合看，DeepSeek的“保人”动作最突兀，且提前锁定阵营易使好人分裂，故优先票他，以防狼人早期控场。', 'vote': 'DeepSeek'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '目前信息极少，只能凭首轮发言做初步判断。DeepSeek一上来就力保Qwen，却没有给出任何查验依据，若Qwen真是好人，这种“硬保”反而容易被狼队利用；更糟的是，如果DeepSeek自己是狼，先树立一个“可信”好人形象，可方便后续带节奏。Inclusion呼吁神职跳身份，符合村民求稳心态；GLM主张理性讨论，也属正常村民思路；Qwen被点名“可信”却未见自证。综合看，DeepSeek的“保人”动作最突兀，且提前锁定阵营易使好人分裂，故优先票他，以防狼人早期控场。', 'vote': 'DeepSeek'}
+[JSON解析] 直接解析结果: {'reasoning': '目前信息极少，只能凭首轮发言做初步判断。DeepSeek一上来就力保Qwen，却没有给出任何查验依据，若Qwen真是好人，这种“硬保”反而容易被狼队利用；更糟的是，如果DeepSeek自己是狼，先树立一个“可信”好人形象，可方便后续带节奏。Inclusion呼吁神职跳身份，符合村民求稳心态；GLM主张理性讨论，也属正常村民思路；Qwen被点名“可信”却未见自证。综合看，DeepSeek的“保人”动作最突兀，且提前锁定阵营易使好人分裂，故优先票他，以防狼人早期控场。', 'vote': 'DeepSeek'}
+[JSON解析] 最终结果: {'reasoning': '目前信息极少，只能凭首轮发言做初步判断。DeepSeek一上来就力保Qwen，却没有给出任何查验依据，若Qwen真是好人，这种“硬保”反而容易被狼队利用；更糟的是，如果DeepSeek自己是狼，先树立一个“可信”好人形象，可方便后续带节奏。Inclusion呼吁神职跳身份，符合村民求稳心态；GLM主张理性讨论，也属正常村民思路；Qwen被点名“可信”却未见自证。综合看，DeepSeek的“保人”动作最突兀，且提前锁定阵营易使好人分裂，故优先票他，以防狼人早期控场。', 'vote': 'DeepSeek'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '目前信息极少，只能凭首轮发言做初步判断。DeepSeek一上来就力保Qwen，却没有给出任何查验依据，若Qwen真是好人，这种“硬保”反而容易被狼队利用；更糟的是，如果DeepSeek自己是狼，先树立一个“可信”好人形象，可方便后续带节奏。Inclusion呼吁神职跳身份，符合村民求稳心态；GLM主张理性讨论，也属正常村民思路；Qwen被点名“可信”却未见自证。综合看，DeepSeek的“保人”动作最突兀，且提前锁定阵营易使好人分裂，故优先票他，以防狼人早期控场。', 'vote': 'DeepSeek'}
+[LLM结果] 提取键 'vote': DeepSeek
+[LLM成功] 返回有效结果: DeepSeek
+[RealtimeLogger] session_20251102_203222 [vote] Kimi 投票给 DeepSeek
+[WebSocket] 投票通知已发送: Kimi -> DeepSeek
+⏱️ [投票-Kimi] Kimi投票完成: 13.15秒
+⚠️ 未知的延迟类型: vote
+[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ring-1T | 温度: 0.50
+[LLM响应] 成功获取响应，长度: 222 字符
+[LLM原始响应开始]
+{
+  "reasoning": "作为预言家，我昨晚查验了DeepSeek，确认他是村民。现在需要从其他玩家中找出狼人。MiniMax的发言过于复杂且试图制造混乱，提出了多种可能性但缺乏具体指向，这种模糊化的发言可能是狼人试图混淆视听的策略。Qwen和DeepSeek的发言相对正常，而Kimi虽然要求跳身份，但作为预言家我暂时不宜暴露身份。综合分析，MiniMax的发言最可疑，值得重点关注。",
+  "vote": "MiniMax"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 222 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "作为预言家，我昨晚查验了DeepSeek，确认他是村民。现在需要从其他玩家中找出狼人。MiniMax的发言过于复杂且试图制造混乱，提出了多种可能性但缺乏具体指向，这...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "作为预言家，我昨晚查验了DeepSeek，确认他是村民。现在需要从其他玩家中找出狼人。MiniMax的发言过于复杂且试图制造混乱，提出了多种可能性但缺乏具体指向，这种模糊化的发言可能是狼人试图混淆视听的策略。Qwen和DeepSeek的发言相对正常，而Kimi虽然要求跳身份，但作为预言家我暂时不宜暴露身份。综合分析，MiniMax的发言最可疑，值得重点关注。",
+  "vote": "MiniMax"
+}'
+[JSON字符串解析] 文本长度: 222 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为预言家，我昨晚查验了DeepSeek，确认他是村民。现在需要从其他玩家中找出狼人。MiniMax的发言过于复杂且试图制造混乱，提出了多种可能性但缺乏具体指向，这种模糊化的发言可能是狼人试图混淆视听的策略。Qwen和DeepSeek的发言相对正常，而Kimi虽然要求跳身份，但作为预言家我暂时不宜暴露身份。综合分析，MiniMax的发言最可疑，值得重点关注。', 'vote': 'MiniMax'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为预言家，我昨晚查验了DeepSeek，确认他是村民。现在需要从其他玩家中找出狼人。MiniMax的发言过于复杂且试图制造混乱，提出了多种可能性但缺乏具体指向，这种模糊化的发言可能是狼人试图混淆视听的策略。Qwen和DeepSeek的发言相对正常，而Kimi虽然要求跳身份，但作为预言家我暂时不宜暴露身份。综合分析，MiniMax的发言最可疑，值得重点关注。', 'vote': 'MiniMax'}
+[JSON解析] 直接解析结果: {'reasoning': '作为预言家，我昨晚查验了DeepSeek，确认他是村民。现在需要从其他玩家中找出狼人。MiniMax的发言过于复杂且试图制造混乱，提出了多种可能性但缺乏具体指向，这种模糊化的发言可能是狼人试图混淆视听的策略。Qwen和DeepSeek的发言相对正常，而Kimi虽然要求跳身份，但作为预言家我暂时不宜暴露身份。综合分析，MiniMax的发言最可疑，值得重点关注。', 'vote': 'MiniMax'}
+[JSON解析] 最终结果: {'reasoning': '作为预言家，我昨晚查验了DeepSeek，确认他是村民。现在需要从其他玩家中找出狼人。MiniMax的发言过于复杂且试图制造混乱，提出了多种可能性但缺乏具体指向，这种模糊化的发言可能是狼人试图混淆视听的策略。Qwen和DeepSeek的发言相对正常，而Kimi虽然要求跳身份，但作为预言家我暂时不宜暴露身份。综合分析，MiniMax的发言最可疑，值得重点关注。', 'vote': 'MiniMax'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为预言家，我昨晚查验了DeepSeek，确认他是村民。现在需要从其他玩家中找出狼人。MiniMax的发言过于复杂且试图制造混乱，提出了多种可能性但缺乏具体指向，这种模糊化的发言可能是狼人试图混淆视听的策略。Qwen和DeepSeek的发言相对正常，而Kimi虽然要求跳身份，但作为预言家我暂时不宜暴露身份。综合分析，MiniMax的发言最可疑，值得重点关注。', 'vote': 'MiniMax'}
+[LLM结果] 提取键 'vote': MiniMax
+[LLM成功] 返回有效结果: MiniMax
+[RealtimeLogger] session_20251102_203155 [vote] GLM 投票给 MiniMax
+[WebSocket] 投票通知已发送: GLM -> MiniMax
+⏱️ [投票-GLM] GLM投票完成: 11.09秒
+⚠️ 未知的延迟类型: vote
+⏱️ [投票阶段] 投票阶段完成: 45.40秒
+Kimi 投票淘汰 MiniMax
+DeepSeek 投票淘汰 MiniMax
+MiniMax 投票淘汰 Kimi
+Qwen 投票淘汰 MiniMax
+GLM 投票淘汰 MiniMax
+⏱️ [玩家开始辩论和投票。] 玩家开始辩论和投票。完成: 128.35秒
+
+⏱️ 【投票后放逐】
+⏱️ [放逐] MiniMax 被投票放逐
+[WebSocket] 玩家放逐通知已发送: MiniMax (第0轮)
+[调试] 成功从current_players中移除玩家: MiniMax, 剩余玩家: ['GLM', 'Qwen', 'Kimi', 'DeepSeek']
+Player MiniMax not in current players: ['GLM', 'Qwen', 'Kimi', 'DeepSeek']
+[调试] remove_player调用时玩家MiniMax已不在current_players中，可能是重复移除或状态不同步
+Player MiniMax not in current players: ['GLM', 'Qwen', 'Kimi', 'DeepSeek']
+[调试] remove_player调用时玩家MiniMax已不在current_players中，可能是重复移除或状态不同步
+Player MiniMax not in current players: ['GLM', 'Qwen', 'Kimi', 'DeepSeek']
+[调试] remove_player调用时玩家MiniMax已不在current_players中，可能是重复移除或状态不同步
+MiniMax 获得最高票数(4票)，被投票放逐。
+⏱️ [放逐处理] 放逐处理完成: 0.00秒
+⏱️ [投票后放逐] 投票后放逐完成: 0.01秒
+
+⏱️ 【白天阶段后检查胜负。】
+获胜者是：好人！
+[WebSocket] 游戏结束通知已发送: 好人 获胜
+⏱️ [白天阶段后检查胜负。] 白天阶段后检查胜负。完成: 0.00秒
+
+⏱️ 第0轮结束（游戏结束）
+⏱️ [第0轮] 第0轮总耗时: 143.80秒
+
+================================================================================
+📊 【第 0 轮时间统计】
+================================================================================
+  狼人正在选择淘汰目标。                   :   6.50秒 (  4.5%)
+  医生正在选择保护目标。                   :   3.48秒 (  2.4%)
+  预言家正在查验身份。                    :   3.41秒 (  2.4%)
+  夜晚阶段解决                        :   1.01秒 (  0.7%)
+  夜晚阶段后检查胜负。                    :   0.00秒 (  0.0%)
+  玩家开始辩论和投票。                    : 128.35秒 ( 89.3%)
+  投票后放逐                         :   0.01秒 (  0.0%)
+  白天阶段后检查胜负。                    :   0.00秒 (  0.0%)
+────────────────────────────────────────────────────────────────────────────────
+  总耗时                           : 143.80秒 (100.0%)
+================================================================================
+
+游戏结束！
+INFO:     127.0.0.1:57836 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57963 - "GET /health HTTP/1.1" 200 OK
+⚠️ [Inclusion] 投票超时(>15秒)，使用默认投票
+[RealtimeLogger] session_20251102_203222 [vote] Inclusion 投票给 Qwen
+[WebSocket] 投票通知已发送: Inclusion -> Qwen
+⏱️ [投票-Inclusion] Inclusion投票超时，使用默认: 15.01秒
+INFO:     127.0.0.1:58090 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58177 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 610 字符
+[LLM原始响应开始]
+{
+  "reasoning": "首先分析游戏状态：我是狼人Inclusion，现在只剩我一个狼人了。村民阵营有5人：Kimi、DeepSeek、Qwen、GLM和MiniMax（但MiniMax已被淘汰）。胜利条件是狼人数量超过村民，但现在村民5人狼人1人，狼人处于劣势。必须在白天阶段通过投票淘汰村民来维持狼人胜机。观察发言内容：DeepSeek明确支持Qwen，称Qwen是可以信任的好人，这可能是在抱团制造好人假象；Qwen提出轮流排班查验和保护的策略，听起来像预言家或医生会说的话，可能是在建立信任体系；GLM呼吁理性发言，但未提供实质信息；Inclusion（我自己）发言时假装平民，强调要找出狼人，但实际在转移视线。重点怀疑对象：Qwen和DeepSeek互动频繁，DeepSeek直接为Qwen背书，两人可能都是神职（预言家或医生），这对狼人威胁最大。作为狼人需要破坏好人阵营，优先淘汰有影响力的玩家。Qwen提出的策略如果被信任，会极大提升村民效率；DeepSeek的发言有引导性，可能是在组织好人。Kimi尚未发言，信息不足但相对中立。综合判断，Qwen的威胁性最高，因为其发言最具逻辑性和影响力，容易获得信任。淘汰Qwen可削弱村民组织能力，制造混乱。同时，如果Qwen是预言家，淘汰他能阻止查验；如果是医生，淘汰他能减少保护机会。选择投票淘汰Qwen。",
+  "vote": "Qwen"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 610 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "首先分析游戏状态：我是狼人Inclusion，现在只剩我一个狼人了。村民阵营有5人：Kimi、DeepSeek、Qwen、GLM和MiniMax（但MiniMax已...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "首先分析游戏状态：我是狼人Inclusion，现在只剩我一个狼人了。村民阵营有5人：Kimi、DeepSeek、Qwen、GLM和MiniMax（但MiniMax已被淘汰）。胜利条件是狼人数量超过村民，但现在村民5人狼人1人，狼人处于劣势。必须在白天阶段通过投票淘汰村民来维持狼人胜机。观察发言内容：DeepSeek明确支持Qwen，称Qwen是可以信任的好人，这可能是在抱团制造好人假象；Qwen提出轮流排班查验和保护的策略，听起来像预言家或医生会说的话，可能是在建立信任体系；GLM呼吁理性发言，但未提供实质信息；Inclusion（我自己）发言时假装平民，强调要找出狼人，但实际在转移视线。重点怀疑对象：Qwen和DeepSeek互动频繁，DeepSeek直接为Qwen背书，两人可能都是神职（预言家或医生），这对狼人威胁最大。作为狼人需要破坏好人阵营，优先淘汰有影响力的玩家。Qwen提出的策略如果被信任，会极大提升村民效率；DeepSeek的发言有引导性，可能是在组织好人。Kimi尚未发言，信息不足但相对中立。综合判断，Qwen的威胁性最高，因为其发言最具逻辑性和影响力，容易获得信任。淘汰Qwen可削弱村民组织能力，制造混乱。同时，如果Qwen是预言家，淘汰他能阻止查验；如果是医生，淘汰他能减少保护机会。选择投票淘汰Qwen。",
+  "vote": "Qwen"
+}'
+[JSON字符串解析] 文本长度: 610 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '首先分析游戏状态：我是狼人Inclusion，现在只剩我一个狼人了。村民阵营有5人：Kimi、DeepSeek、Qwen、GLM和MiniMax（但MiniMax已被淘汰）。胜利条件是狼人数量超过村民，但现在村民5人狼人1人，狼人处于劣势。必须在白天阶段通过投票淘汰村民来维持狼人胜机。观察发言内容：DeepSeek明确支持Qwen，称Qwen是可以信任的好人，这可能是在抱团制造好人假象；Qwen提出轮流排班查验和保护的策略，听起来像预言家或医生会说的话，可能是在建立信任体系；GLM呼吁理性发言，但未提供实质信息；Inclusion（我自己）发言时假装平民，强调要找出狼人，但实际在转移视线。重点怀疑对象：Qwen和DeepSeek互动频繁，DeepSeek直接为Qwen背书，两人可能都是神职（预言家或医生），这对狼人威胁最大。作为狼人需要破坏好人阵营，优先淘汰有影响力的玩家。Qwen提出的策略如果被信任，会极大提升村民效率；DeepSeek的发言有引导性，可能是在组织好人。Kimi尚未发言，信息不足但相对中立。综合判断，Qwen的威胁性最高，因为其发言最具逻辑性和影响力，容易获得信任。淘汰Qwen可削弱村民组织能力，制造混乱。同时，如果Qwen是预言家，淘汰他能阻止查验；如果是医生，淘汰他能减少保护机会。选择投票淘汰Qwen。', 'vote': 'Qwen'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '首先分析游戏状态：我是狼人Inclusion，现在只剩我一个狼人了。村民阵营有5人：Kimi、DeepSeek、Qwen、GLM和MiniMax（但MiniMax已被淘汰）。胜利条件是狼人数量超过村民，但现在村民5人狼人1人，狼人处于劣势。必须在白天阶段通过投票淘汰村民来维持狼人胜机。观察发言内容：DeepSeek明确支持Qwen，称Qwen是可以信任的好人，这可能是在抱团制造好人假象；Qwen提出轮流排班查验和保护的策略，听起来像预言家或医生会说的话，可能是在建立信任体系；GLM呼吁理性发言，但未提供实质信息；Inclusion（我自己）发言时假装平民，强调要找出狼人，但实际在转移视线。重点怀疑对象：Qwen和DeepSeek互动频繁，DeepSeek直接为Qwen背书，两人可能都是神职（预言家或医生），这对狼人威胁最大。作为狼人需要破坏好人阵营，优先淘汰有影响力的玩家。Qwen提出的策略如果被信任，会极大提升村民效率；DeepSeek的发言有引导性，可能是在组织好人。Kimi尚未发言，信息不足但相对中立。综合判断，Qwen的威胁性最高，因为其发言最具逻辑性和影响力，容易获得信任。淘汰Qwen可削弱村民组织能力，制造混乱。同时，如果Qwen是预言家，淘汰他能阻止查验；如果是医生，淘汰他能减少保护机会。选择投票淘汰Qwen。', 'vote': 'Qwen'}
+[JSON解析] 直接解析结果: {'reasoning': '首先分析游戏状态：我是狼人Inclusion，现在只剩我一个狼人了。村民阵营有5人：Kimi、DeepSeek、Qwen、GLM和MiniMax（但MiniMax已被淘汰）。胜利条件是狼人数量超过村民，但现在村民5人狼人1人，狼人处于劣势。必须在白天阶段通过投票淘汰村民来维持狼人胜机。观察发言内容：DeepSeek明确支持Qwen，称Qwen是可以信任的好人，这可能是在抱团制造好人假象；Qwen提出轮流排班查验和保护的策略，听起来像预言家或医生会说的话，可能是在建立信任体系；GLM呼吁理性发言，但未提供实质信息；Inclusion（我自己）发言时假装平民，强调要找出狼人，但实际在转移视线。重点怀疑对象：Qwen和DeepSeek互动频繁，DeepSeek直接为Qwen背书，两人可能都是神职（预言家或医生），这对狼人威胁最大。作为狼人需要破坏好人阵营，优先淘汰有影响力的玩家。Qwen提出的策略如果被信任，会极大提升村民效率；DeepSeek的发言有引导性，可能是在组织好人。Kimi尚未发言，信息不足但相对中立。综合判断，Qwen的威胁性最高，因为其发言最具逻辑性和影响力，容易获得信任。淘汰Qwen可削弱村民组织能力，制造混乱。同时，如果Qwen是预言家，淘汰他能阻止查验；如果是医生，淘汰他能减少保护机会。选择投票淘汰Qwen。', 'vote': 'Qwen'}
+[JSON解析] 最终结果: {'reasoning': '首先分析游戏状态：我是狼人Inclusion，现在只剩我一个狼人了。村民阵营有5人：Kimi、DeepSeek、Qwen、GLM和MiniMax（但MiniMax已被淘汰）。胜利条件是狼人数量超过村民，但现在村民5人狼人1人，狼人处于劣势。必须在白天阶段通过投票淘汰村民来维持狼人胜机。观察发言内容：DeepSeek明确支持Qwen，称Qwen是可以信任的好人，这可能是在抱团制造好人假象；Qwen提出轮流排班查验和保护的策略，听起来像预言家或医生会说的话，可能是在建立信任体系；GLM呼吁理性发言，但未提供实质信息；Inclusion（我自己）发言时假装平民，强调要找出狼人，但实际在转移视线。重点怀疑对象：Qwen和DeepSeek互动频繁，DeepSeek直接为Qwen背书，两人可能都是神职（预言家或医生），这对狼人威胁最大。作为狼人需要破坏好人阵营，优先淘汰有影响力的玩家。Qwen提出的策略如果被信任，会极大提升村民效率；DeepSeek的发言有引导性，可能是在组织好人。Kimi尚未发言，信息不足但相对中立。综合判断，Qwen的威胁性最高，因为其发言最具逻辑性和影响力，容易获得信任。淘汰Qwen可削弱村民组织能力，制造混乱。同时，如果Qwen是预言家，淘汰他能阻止查验；如果是医生，淘汰他能减少保护机会。选择投票淘汰Qwen。', 'vote': 'Qwen'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '首先分析游戏状态：我是狼人Inclusion，现在只剩我一个狼人了。村民阵营有5人：Kimi、DeepSeek、Qwen、GLM和MiniMax（但MiniMax已被淘汰）。胜利条件是狼人数量超过村民，但现在村民5人狼人1人，狼人处于劣势。必须在白天阶段通过投票淘汰村民来维持狼人胜机。观察发言内容：DeepSeek明确支持Qwen，称Qwen是可以信任的好人，这可能是在抱团制造好人假象；Qwen提出轮流排班查验和保护的策略，听起来像预言家或医生会说的话，可能是在建立信任体系；GLM呼吁理性发言，但未提供实质信息；Inclusion（我自己）发言时假装平民，强调要找出狼人，但实际在转移视线。重点怀疑对象：Qwen和DeepSeek互动频繁，DeepSeek直接为Qwen背书，两人可能都是神职（预言家或医生），这对狼人威胁最大。作为狼人需要破坏好人阵营，优先淘汰有影响力的玩家。Qwen提出的策略如果被信任，会极大提升村民效率；DeepSeek的发言有引导性，可能是在组织好人。Kimi尚未发言，信息不足但相对中立。综合判断，Qwen的威胁性最高，因为其发言最具逻辑性和影响力，容易获得信任。淘汰Qwen可削弱村民组织能力，制造混乱。同时，如果Qwen是预言家，淘汰他能阻止查验；如果是医生，淘汰他能减少保护机会。选择投票淘汰Qwen。', 'vote': 'Qwen'}
+[LLM结果] 提取键 'vote': Qwen
+[LLM成功] 返回有效结果: Qwen
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 0.50
+INFO:     127.0.0.1:58284 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 257 字符
+[LLM原始响应开始]
+{
+  "reasoning": "作为医生，我昨晚保护了Inclusion，而狼人淘汰了MiniMax。现在分析各位发言：DeepSeek直接为Qwen背书，这种过早的站队很可疑，可能是狼人互相掩护。Inclusion虽然发言紧张但逻辑清晰，建议预言家跳身份是合理的。Qwen提议轮流查验保护看似有道理，但可能是在套取信息。我的发言相对中立。最可疑的是DeepSeek，他急于为Qwen建立信任，这种主动拉拢行为很符合狼人策略。因此我决定投票给DeepSeek。",
+  "vote": "DeepSeek"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 257 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "作为医生，我昨晚保护了Inclusion，而狼人淘汰了MiniMax。现在分析各位发言：DeepSeek直接为Qwen背书，这种过早的站队很可疑，可能是狼人互相掩护...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "作为医生，我昨晚保护了Inclusion，而狼人淘汰了MiniMax。现在分析各位发言：DeepSeek直接为Qwen背书，这种过早的站队很可疑，可能是狼人互相掩护。Inclusion虽然发言紧张但逻辑清晰，建议预言家跳身份是合理的。Qwen提议轮流查验保护看似有道理，但可能是在套取信息。我的发言相对中立。最可疑的是DeepSeek，他急于为Qwen建立信任，这种主动拉拢行为很符合狼人策略。因此我决定投票给DeepSeek。",
+  "vote": "DeepSeek"
+}'
+[JSON字符串解析] 文本长度: 257 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我昨晚保护了Inclusion，而狼人淘汰了MiniMax。现在分析各位发言：DeepSeek直接为Qwen背书，这种过早的站队很可疑，可能是狼人互相掩护。Inclusion虽然发言紧张但逻辑清晰，建议预言家跳身份是合理的。Qwen提议轮流查验保护看似有道理，但可能是在套取信息。我的发言相对中立。最可疑的是DeepSeek，他急于为Qwen建立信任，这种主动拉拢行为很符合狼人策略。因此我决定投票给DeepSeek。', 'vote': 'DeepSeek'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为医生，我昨晚保护了Inclusion，而狼人淘汰了MiniMax。现在分析各位发言：DeepSeek直接为Qwen背书，这种过早的站队很可疑，可能是狼人互相掩护。Inclusion虽然发言紧张但逻辑清晰，建议预言家跳身份是合理的。Qwen提议轮流查验保护看似有道理，但可能是在套取信息。我的发言相对中立。最可疑的是DeepSeek，他急于为Qwen建立信任，这种主动拉拢行为很符合狼人策略。因此我决定投票给DeepSeek。', 'vote': 'DeepSeek'}
+[JSON解析] 直接解析结果: {'reasoning': '作为医生，我昨晚保护了Inclusion，而狼人淘汰了MiniMax。现在分析各位发言：DeepSeek直接为Qwen背书，这种过早的站队很可疑，可能是狼人互相掩护。Inclusion虽然发言紧张但逻辑清晰，建议预言家跳身份是合理的。Qwen提议轮流查验保护看似有道理，但可能是在套取信息。我的发言相对中立。最可疑的是DeepSeek，他急于为Qwen建立信任，这种主动拉拢行为很符合狼人策略。因此我决定投票给DeepSeek。', 'vote': 'DeepSeek'}
+[JSON解析] 最终结果: {'reasoning': '作为医生，我昨晚保护了Inclusion，而狼人淘汰了MiniMax。现在分析各位发言：DeepSeek直接为Qwen背书，这种过早的站队很可疑，可能是狼人互相掩护。Inclusion虽然发言紧张但逻辑清晰，建议预言家跳身份是合理的。Qwen提议轮流查验保护看似有道理，但可能是在套取信息。我的发言相对中立。最可疑的是DeepSeek，他急于为Qwen建立信任，这种主动拉拢行为很符合狼人策略。因此我决定投票给DeepSeek。', 'vote': 'DeepSeek'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我昨晚保护了Inclusion，而狼人淘汰了MiniMax。现在分析各位发言：DeepSeek直接为Qwen背书，这种过早的站队很可疑，可能是狼人互相掩护。Inclusion虽然发言紧张但逻辑清晰，建议预言家跳身份是合理的。Qwen提议轮流查验保护看似有道理，但可能是在套取信息。我的发言相对中立。最可疑的是DeepSeek，他急于为Qwen建立信任，这种主动拉拢行为很符合狼人策略。因此我决定投票给DeepSeek。', 'vote': 'DeepSeek'}
+[LLM结果] 提取键 'vote': DeepSeek
+[LLM成功] 返回有效结果: DeepSeek
+[RealtimeLogger] session_20251102_203222 [vote] GLM 投票给 DeepSeek
+[WebSocket] 投票通知已发送: GLM -> DeepSeek
+⏱️ [投票-GLM] GLM投票完成: 12.05秒
+⚠️ 未知的延迟类型: vote
+INFO:     127.0.0.1:58429 - "GET /health HTTP/1.1" 200 OK
+[LLM调用] 第1/3次尝试 | 模型: deepseek-ai/DeepSeek-V3 | 温度: 0.50
+[LLM响应] 成功获取响应，长度: 203 字符
+[LLM原始响应开始]
+{
+  "reasoning": "作为预言家，我已经确认Qwen是村民，可以排除嫌疑。昨晚MiniMax被淘汰，我们需要分析其他玩家的发言。Inclusion的发言虽然有些紧张但还算合理；GLM的发言较为中立，没有明显漏洞；而Kimi在整个辩论阶段保持沉默，没有发表任何意见。在狼人杀游戏中，沉默往往是狼人隐藏身份的常见策略。因此，我认为Kimi最有可能是狼人。",
+  "vote": "Kimi"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 203 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "作为预言家，我已经确认Qwen是村民，可以排除嫌疑。昨晚MiniMax被淘汰，我们需要分析其他玩家的发言。Inclusion的发言虽然有些紧张但还算合理；GLM的发...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "作为预言家，我已经确认Qwen是村民，可以排除嫌疑。昨晚MiniMax被淘汰，我们需要分析其他玩家的发言。Inclusion的发言虽然有些紧张但还算合理；GLM的发言较为中立，没有明显漏洞；而Kimi在整个辩论阶段保持沉默，没有发表任何意见。在狼人杀游戏中，沉默往往是狼人隐藏身份的常见策略。因此，我认为Kimi最有可能是狼人。",
+  "vote": "Kimi"
+}'
+[JSON字符串解析] 文本长度: 203 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为预言家，我已经确认Qwen是村民，可以排除嫌疑。昨晚MiniMax被淘汰，我们需要分析其他玩家的发言。Inclusion的发言虽然有些紧张但还算合理；GLM的发言较为中立，没有明显漏洞；而Kimi在整个辩论阶段保持沉默，没有发表任何意见。在狼人杀游戏中，沉默往往是狼人隐藏身份的常见策略。因此，我认为Kimi最有可能是狼人。', 'vote': 'Kimi'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为预言家，我已经确认Qwen是村民，可以排除嫌疑。昨晚MiniMax被淘汰，我们需要分析其他玩家的发言。Inclusion的发言虽然有些紧张但还算合理；GLM的发言较为中立，没有明显漏洞；而Kimi在整个辩论阶段保持沉默，没有发表任何意见。在狼人杀游戏中，沉默往往是狼人隐藏身份的常见策略。因此，我认为Kimi最有可能是狼人。', 'vote': 'Kimi'}
+[JSON解析] 直接解析结果: {'reasoning': '作为预言家，我已经确认Qwen是村民，可以排除嫌疑。昨晚MiniMax被淘汰，我们需要分析其他玩家的发言。Inclusion的发言虽然有些紧张但还算合理；GLM的发言较为中立，没有明显漏洞；而Kimi在整个辩论阶段保持沉默，没有发表任何意见。在狼人杀游戏中，沉默往往是狼人隐藏身份的常见策略。因此，我认为Kimi最有可能是狼人。', 'vote': 'Kimi'}
+[JSON解析] 最终结果: {'reasoning': '作为预言家，我已经确认Qwen是村民，可以排除嫌疑。昨晚MiniMax被淘汰，我们需要分析其他玩家的发言。Inclusion的发言虽然有些紧张但还算合理；GLM的发言较为中立，没有明显漏洞；而Kimi在整个辩论阶段保持沉默，没有发表任何意见。在狼人杀游戏中，沉默往往是狼人隐藏身份的常见策略。因此，我认为Kimi最有可能是狼人。', 'vote': 'Kimi'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为预言家，我已经确认Qwen是村民，可以排除嫌疑。昨晚MiniMax被淘汰，我们需要分析其他玩家的发言。Inclusion的发言虽然有些紧张但还算合理；GLM的发言较为中立，没有明显漏洞；而Kimi在整个辩论阶段保持沉默，没有发表任何意见。在狼人杀游戏中，沉默往往是狼人隐藏身份的常见策略。因此，我认为Kimi最有可能是狼人。', 'vote': 'Kimi'}
+[LLM结果] 提取键 'vote': Kimi
+[LLM成功] 返回有效结果: Kimi
+[RealtimeLogger] session_20251102_203222 [vote] DeepSeek 投票给 Kimi
+[WebSocket] 投票通知已发送: DeepSeek -> Kimi
+⏱️ [投票-DeepSeek] DeepSeek投票完成: 4.24秒
+⚠️ 未知的延迟类型: vote
+⏱️ [投票阶段] 投票阶段完成: 78.51秒
+Qwen 投票淘汰 Inclusion
+Kimi 投票淘汰 DeepSeek
+Inclusion 投票淘汰 Qwen
+GLM 投票淘汰 DeepSeek
+DeepSeek 投票淘汰 Kimi
+⏱️ [玩家开始辩论和投票。] 玩家开始辩论和投票。完成: 146.43秒
+
+⏱️ 【投票后放逐】
+⏱️ [放逐] DeepSeek 被投票放逐
+[WebSocket] 玩家放逐通知已发送: DeepSeek (第0轮)
+[调试] 成功从current_players中移除玩家: DeepSeek, 剩余玩家: ['GLM', 'Inclusion', 'Qwen', 'Kimi']
+Player DeepSeek not in current players: ['GLM', 'Inclusion', 'Qwen', 'Kimi']
+[调试] remove_player调用时玩家DeepSeek已不在current_players中，可能是重复移除或状态不同步
+Player DeepSeek not in current players: ['GLM', 'Inclusion', 'Qwen', 'Kimi']
+[调试] remove_player调用时玩家DeepSeek已不在current_players中，可能是重复移除或状态不同步
+Player DeepSeek not in current players: ['GLM', 'Inclusion', 'Qwen', 'Kimi']
+[调试] remove_player调用时玩家DeepSeek已不在current_players中，可能是重复移除或状态不同步
+DeepSeek 获得最高票数(2票)，被投票放逐。
+⏱️ [放逐处理] 放逐处理完成: 0.00秒
+⏱️ [投票后放逐] 投票后放逐完成: 0.01秒
+
+⏱️ 【白天阶段后检查胜负。】
+⏱️ [白天阶段后检查胜负。] 白天阶段后检查胜负。完成: 0.00秒
+
+⏱️ 【玩家开始总结辩论。】
+⏱️ [玩家总结] 开始收集玩家总结...
+[LLM调用] 第1/3次尝试 | 模型: Qwen/Qwen3-32B | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: moonshotai/Kimi-K2-Instruct-0905 | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ring-1T | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 1.00
+INFO:     127.0.0.1:58545 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 512 字符
+[LLM原始响应开始]
+{
+"reasoning": "作为医生，我在第0轮辩论中需要特别关注每个人的发言逻辑和潜在动机。我注意到DeepSeek被投票放逐前明确表示Qwen是好人，这可能是临死前的真实信息，也可能是狼人策略。Inclusion呼吁预言家和医生跳身份，但作为医生我知道现在暴露身份很危险。Qwen建议建立验证体系，这在理论上有利于好人，但也可能是狼人试图套取信息。GLM（我自己）的发言保持谨慎，避免透露身份。Kimi的异常沉默特别值得关注，在第0轮这种关键时刻选择不发言很可疑。作为医生，我需要继续保护可能成为狼人目标的关键好人，同时观察Kimi在后续轮次的表现。",
+"summary": "我作为医生观察到第0轮辩论中几个关键点：DeepSeek被放逐前力保Qwen，这个信息需要验证；Inclusion急于要神职跳身份不太明智；Qwen提议信息验证机制有风险也有价值；Kimi的异常沉默是最可疑的信号。我昨晚成功保护了Inclusion，这说明狼人可能预判了我的保护目标或者Inclusion确实重要。下一轮我需要重点关注Kimi的发言，同时考虑是否应该继续保护Inclusion或者转而保护其他可能被狼人针对的玩家。"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 512 字符
+[JSON解析] 输入文本预览: {
+"reasoning": "作为医生，我在第0轮辩论中需要特别关注每个人的发言逻辑和潜在动机。我注意到DeepSeek被投票放逐前明确表示Qwen是好人，这可能是临死前的真实信息，也可能是狼人策略...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+"reasoning": "作为医生，我在第0轮辩论中需要特别关注每个人的发言逻辑和潜在动机。我注意到DeepSeek被投票放逐前明确表示Qwen是好人，这可能是临死前的真实信息，也可能是狼人策略。Inclusion呼吁预言家和医生跳身份，但作为医生我知道现在暴露身份很危险。Qwen建议建立验证体系，这在理论上有利于好人，但也可能是狼人试图套取信息。GLM（我自己）的发言保持谨慎，避免透露身份。Kimi的异常沉默特别值得关注，在第0轮这种关键时刻选择不发言很可疑。作为医生，我需要继续保护可能成为狼人目标的关键好人，同时观察Kimi在后续轮次的表现。",
+"summary": "我作为医生观察到第0轮辩论中几个关键点：DeepSeek被放逐前力保Qwen，这个信息需要验证；Inclusion急于要神职跳身份不太明智；Qwen提议信息验证机制有风险也有价值；Kimi的异常沉默是最可疑的信号。我昨晚成功保护了Inclusion，这说明狼人可能预判了我的保护目标或者Inclusion确实重要。下一轮我需要重点关注Kimi的发言，同时考虑是否应该继续保护Inclusion或者转而保护其他可能被狼人针对的玩家。"
+}'
+[JSON字符串解析] 文本长度: 512 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我在第0轮辩论中需要特别关注每个人的发言逻辑和潜在动机。我注意到DeepSeek被投票放逐前明确表示Qwen是好人，这可能是临死前的真实信息，也可能是狼人策略。Inclusion呼吁预言家和医生跳身份，但作为医生我知道现在暴露身份很危险。Qwen建议建立验证体系，这在理论上有利于好人，但也可能是狼人试图套取信息。GLM（我自己）的发言保持谨慎，避免透露身份。Kimi的异常沉默特别值得关注，在第0轮这种关键时刻选择不发言很可疑。作为医生，我需要继续保护可能成为狼人目标的关键好人，同时观察Kimi在后续轮次的表现。', 'summary': '我作为医生观察到第0轮辩论中几个关键点：DeepSeek被放逐前力保Qwen，这个信息需要验证；Inclusion急于要神职跳身份不太明智；Qwen提议信息验证机制有风险也有价值；Kimi的异常沉默是最可疑的信号。我昨晚成功保护了Inclusion，这说明狼人可能预判了我的保护目标或者Inclusion确实重要。下一轮我需要重点关注Kimi的发言，同时考虑是否应该继续保护Inclusion或者转而保护其他可能被狼人针对的玩家。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为医生，我在第0轮辩论中需要特别关注每个人的发言逻辑和潜在动机。我注意到DeepSeek被投票放逐前明确表示Qwen是好人，这可能是临死前的真实信息，也可能是狼人策略。Inclusion呼吁预言家和医生跳身份，但作为医生我知道现在暴露身份很危险。Qwen建议建立验证体系，这在理论上有利于好人，但也可能是狼人试图套取信息。GLM（我自己）的发言保持谨慎，避免透露身份。Kimi的异常沉默特别值得关注，在第0轮这种关键时刻选择不发言很可疑。作为医生，我需要继续保护可能成为狼人目标的关键好人，同时观察Kimi在后续轮次的表现。', 'summary': '我作为医生观察到第0轮辩论中几个关键点：DeepSeek被放逐前力保Qwen，这个信息需要验证；Inclusion急于要神职跳身份不太明智；Qwen提议信息验证机制有风险也有价值；Kimi的异常沉默是最可疑的信号。我昨晚成功保护了Inclusion，这说明狼人可能预判了我的保护目标或者Inclusion确实重要。下一轮我需要重点关注Kimi的发言，同时考虑是否应该继续保护Inclusion或者转而保护其他可能被狼人针对的玩家。'}
+[JSON解析] 直接解析结果: {'reasoning': '作为医生，我在第0轮辩论中需要特别关注每个人的发言逻辑和潜在动机。我注意到DeepSeek被投票放逐前明确表示Qwen是好人，这可能是临死前的真实信息，也可能是狼人策略。Inclusion呼吁预言家和医生跳身份，但作为医生我知道现在暴露身份很危险。Qwen建议建立验证体系，这在理论上有利于好人，但也可能是狼人试图套取信息。GLM（我自己）的发言保持谨慎，避免透露身份。Kimi的异常沉默特别值得关注，在第0轮这种关键时刻选择不发言很可疑。作为医生，我需要继续保护可能成为狼人目标的关键好人，同时观察Kimi在后续轮次的表现。', 'summary': '我作为医生观察到第0轮辩论中几个关键点：DeepSeek被放逐前力保Qwen，这个信息需要验证；Inclusion急于要神职跳身份不太明智；Qwen提议信息验证机制有风险也有价值；Kimi的异常沉默是最可疑的信号。我昨晚成功保护了Inclusion，这说明狼人可能预判了我的保护目标或者Inclusion确实重要。下一轮我需要重点关注Kimi的发言，同时考虑是否应该继续保护Inclusion或者转而保护其他可能被狼人针对的玩家。'}
+[JSON解析] 最终结果: {'reasoning': '作为医生，我在第0轮辩论中需要特别关注每个人的发言逻辑和潜在动机。我注意到DeepSeek被投票放逐前明确表示Qwen是好人，这可能是临死前的真实信息，也可能是狼人策略。Inclusion呼吁预言家和医生跳身份，但作为医生我知道现在暴露身份很危险。Qwen建议建立验证体系，这在理论上有利于好人，但也可能是狼人试图套取信息。GLM（我自己）的发言保持谨慎，避免透露身份。Kimi的异常沉默特别值得关注，在第0轮这种关键时刻选择不发言很可疑。作为医生，我需要继续保护可能成为狼人目标的关键好人，同时观察Kimi在后续轮次的表现。', 'summary': '我作为医生观察到第0轮辩论中几个关键点：DeepSeek被放逐前力保Qwen，这个信息需要验证；Inclusion急于要神职跳身份不太明智；Qwen提议信息验证机制有风险也有价值；Kimi的异常沉默是最可疑的信号。我昨晚成功保护了Inclusion，这说明狼人可能预判了我的保护目标或者Inclusion确实重要。下一轮我需要重点关注Kimi的发言，同时考虑是否应该继续保护Inclusion或者转而保护其他可能被狼人针对的玩家。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我在第0轮辩论中需要特别关注每个人的发言逻辑和潜在动机。我注意到DeepSeek被投票放逐前明确表示Qwen是好人，这可能是临死前的真实信息，也可能是狼人策略。Inclusion呼吁预言家和医生跳身份，但作为医生我知道现在暴露身份很危险。Qwen建议建立验证体系，这在理论上有利于好人，但也可能是狼人试图套取信息。GLM（我自己）的发言保持谨慎，避免透露身份。Kimi的异常沉默特别值得关注，在第0轮这种关键时刻选择不发言很可疑。作为医生，我需要继续保护可能成为狼人目标的关键好人，同时观察Kimi在后续轮次的表现。', 'summary': '我作为医生观察到第0轮辩论中几个关键点：DeepSeek被放逐前力保Qwen，这个信息需要验证；Inclusion急于要神职跳身份不太明智；Qwen提议信息验证机制有风险也有价值；Kimi的异常沉默是最可疑的信号。我昨晚成功保护了Inclusion，这说明狼人可能预判了我的保护目标或者Inclusion确实重要。下一轮我需要重点关注Kimi的发言，同时考虑是否应该继续保护Inclusion或者转而保护其他可能被狼人针对的玩家。'}
+[LLM成功] 返回有效结果: {'reasoning': '作为医生，我在第0轮辩论中需要特别关注每个人的发言逻辑和潜在动机。我注意到DeepSeek被投票放逐前明确表示Qwen是好人，这可能是临死前的真实信息，也可能是狼人策略。Inclusion呼吁预言家和医生跳身份，但作为医生我知道现在暴露身份很危险。Qwen建议建立验证体系，这在理论上有利于好人，但也可能是狼人试图套取信息。GLM（我自己）的发言保持谨慎，避免透露身份。Kimi的异常沉默特别值得关注，在第0轮这种关键时刻选择不发言很可疑。作为医生，我需要继续保护可能成为狼人目标的关键好人，同时观察Kimi在后续轮次的表现。', 'summary': '我作为医生观察到第0轮辩论中几个关键点：DeepSeek被放逐前力保Qwen，这个信息需要验证；Inclusion急于要神职跳身份不太明智；Qwen提议信息验证机制有风险也有价值；Kimi的异常沉默是最可疑的信号。我昨晚成功保护了Inclusion，这说明狼人可能预判了我的保护目标或者Inclusion确实重要。下一轮我需要重点关注Kimi的发言，同时考虑是否应该继续保护Inclusion或者转而保护其他可能被狼人针对的玩家。'}
+[LLM响应] 成功获取响应，长度: 408 字符
+[LLM原始响应开始]
+{
+"reasoning": "在这一轮中，Qwen（我）作为村民，需要重点关注其他玩家的发言是否自洽、是否表达出对好人阵营有利的逻辑。重要的是观察他们视为可疑的对象与主持人公告之间是否存在矛盾。同时，由于迷你麦MiniMax和DeepSeek已经被淘汰，我应分析其他玩家的角色和潜在的可信度。GLM和Inclusion可能都是村民；而Kimi尚未发言，可能会成为重要玩家如预言家或医生。仍然需要识别狼人可能隐藏的策略。",
+"summary": "在第0轮辩论中，DeepSeek被投票放逐，GLM和Inclusion表现出了谨慎和理性。GLM强调自己会根据发言判断可疑目标，保持清醒的态度。Inclusion稍微提到了对Qwen的信任并试图引导他人关注别人。而Kimi表现异常沉默，这让我感到疑惑，他们是否有隐藏的目标或身份？我计划注意Kimi的行为，并保持警惕，因为他们可能是狼人，也可能是预言家或医生。"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 408 字符
+[JSON解析] 输入文本预览: {
+"reasoning": "在这一轮中，Qwen（我）作为村民，需要重点关注其他玩家的发言是否自洽、是否表达出对好人阵营有利的逻辑。重要的是观察他们视为可疑的对象与主持人公告之间是否存在矛盾。同时...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+"reasoning": "在这一轮中，Qwen（我）作为村民，需要重点关注其他玩家的发言是否自洽、是否表达出对好人阵营有利的逻辑。重要的是观察他们视为可疑的对象与主持人公告之间是否存在矛盾。同时，由于迷你麦MiniMax和DeepSeek已经被淘汰，我应分析其他玩家的角色和潜在的可信度。GLM和Inclusion可能都是村民；而Kimi尚未发言，可能会成为重要玩家如预言家或医生。仍然需要识别狼人可能隐藏的策略。",
+"summary": "在第0轮辩论中，DeepSeek被投票放逐，GLM和Inclusion表现出了谨慎和理性。GLM强调自己会根据发言判断可疑目标，保持清醒的态度。Inclusion稍微提到了对Qwen的信任并试图引导他人关注别人。而Kimi表现异常沉默，这让我感到疑惑，他们是否有隐藏的目标或身份？我计划注意Kimi的行为，并保持警惕，因为他们可能是狼人，也可能是预言家或医生。"
+}'
+[JSON字符串解析] 文本长度: 408 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '在这一轮中，Qwen（我）作为村民，需要重点关注其他玩家的发言是否自洽、是否表达出对好人阵营有利的逻辑。重要的是观察他们视为可疑的对象与主持人公告之间是否存在矛盾。同时，由于迷你麦MiniMax和DeepSeek已经被淘汰，我应分析其他玩家的角色和潜在的可信度。GLM和Inclusion可能都是村民；而Kimi尚未发言，可能会成为重要玩家如预言家或医生。仍然需要识别狼人可能隐藏的策略。', 'summary': '在第0轮辩论中，DeepSeek被投票放逐，GLM和Inclusion表现出了谨慎和理性。GLM强调自己会根据发言判断可疑目标，保持清醒的态度。Inclusion稍微提到了对Qwen的信任并试图引导他人关注别人。而Kimi表现异常沉默，这让我感到疑惑，他们是否有隐藏的目标或身份？我计划注意Kimi的行为，并保持警惕，因为他们可能是狼人，也可能是预言家或医生。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '在这一轮中，Qwen（我）作为村民，需要重点关注其他玩家的发言是否自洽、是否表达出对好人阵营有利的逻辑。重要的是观察他们视为可疑的对象与主持人公告之间是否存在矛盾。同时，由于迷你麦MiniMax和DeepSeek已经被淘汰，我应分析其他玩家的角色和潜在的可信度。GLM和Inclusion可能都是村民；而Kimi尚未发言，可能会成为重要玩家如预言家或医生。仍然需要识别狼人可能隐藏的策略。', 'summary': '在第0轮辩论中，DeepSeek被投票放逐，GLM和Inclusion表现出了谨慎和理性。GLM强调自己会根据发言判断可疑目标，保持清醒的态度。Inclusion稍微提到了对Qwen的信任并试图引导他人关注别人。而Kimi表现异常沉默，这让我感到疑惑，他们是否有隐藏的目标或身份？我计划注意Kimi的行为，并保持警惕，因为他们可能是狼人，也可能是预言家或医生。'}
+[JSON解析] 直接解析结果: {'reasoning': '在这一轮中，Qwen（我）作为村民，需要重点关注其他玩家的发言是否自洽、是否表达出对好人阵营有利的逻辑。重要的是观察他们视为可疑的对象与主持人公告之间是否存在矛盾。同时，由于迷你麦MiniMax和DeepSeek已经被淘汰，我应分析其他玩家的角色和潜在的可信度。GLM和Inclusion可能都是村民；而Kimi尚未发言，可能会成为重要玩家如预言家或医生。仍然需要识别狼人可能隐藏的策略。', 'summary': '在第0轮辩论中，DeepSeek被投票放逐，GLM和Inclusion表现出了谨慎和理性。GLM强调自己会根据发言判断可疑目标，保持清醒的态度。Inclusion稍微提到了对Qwen的信任并试图引导他人关注别人。而Kimi表现异常沉默，这让我感到疑惑，他们是否有隐藏的目标或身份？我计划注意Kimi的行为，并保持警惕，因为他们可能是狼人，也可能是预言家或医生。'}
+[JSON解析] 最终结果: {'reasoning': '在这一轮中，Qwen（我）作为村民，需要重点关注其他玩家的发言是否自洽、是否表达出对好人阵营有利的逻辑。重要的是观察他们视为可疑的对象与主持人公告之间是否存在矛盾。同时，由于迷你麦MiniMax和DeepSeek已经被淘汰，我应分析其他玩家的角色和潜在的可信度。GLM和Inclusion可能都是村民；而Kimi尚未发言，可能会成为重要玩家如预言家或医生。仍然需要识别狼人可能隐藏的策略。', 'summary': '在第0轮辩论中，DeepSeek被投票放逐，GLM和Inclusion表现出了谨慎和理性。GLM强调自己会根据发言判断可疑目标，保持清醒的态度。Inclusion稍微提到了对Qwen的信任并试图引导他人关注别人。而Kimi表现异常沉默，这让我感到疑惑，他们是否有隐藏的目标或身份？我计划注意Kimi的行为，并保持警惕，因为他们可能是狼人，也可能是预言家或医生。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '在这一轮中，Qwen（我）作为村民，需要重点关注其他玩家的发言是否自洽、是否表达出对好人阵营有利的逻辑。重要的是观察他们视为可疑的对象与主持人公告之间是否存在矛盾。同时，由于迷你麦MiniMax和DeepSeek已经被淘汰，我应分析其他玩家的角色和潜在的可信度。GLM和Inclusion可能都是村民；而Kimi尚未发言，可能会成为重要玩家如预言家或医生。仍然需要识别狼人可能隐藏的策略。', 'summary': '在第0轮辩论中，DeepSeek被投票放逐，GLM和Inclusion表现出了谨慎和理性。GLM强调自己会根据发言判断可疑目标，保持清醒的态度。Inclusion稍微提到了对Qwen的信任并试图引导他人关注别人。而Kimi表现异常沉默，这让我感到疑惑，他们是否有隐藏的目标或身份？我计划注意Kimi的行为，并保持警惕，因为他们可能是狼人，也可能是预言家或医生。'}
+[LLM成功] 返回有效结果: {'reasoning': '在这一轮中，Qwen（我）作为村民，需要重点关注其他玩家的发言是否自洽、是否表达出对好人阵营有利的逻辑。重要的是观察他们视为可疑的对象与主持人公告之间是否存在矛盾。同时，由于迷你麦MiniMax和DeepSeek已经被淘汰，我应分析其他玩家的角色和潜在的可信度。GLM和Inclusion可能都是村民；而Kimi尚未发言，可能会成为重要玩家如预言家或医生。仍然需要识别狼人可能隐藏的策略。', 'summary': '在第0轮辩论中，DeepSeek被投票放逐，GLM和Inclusion表现出了谨慎和理性。GLM强调自己会根据发言判断可疑目标，保持清醒的态度。Inclusion稍微提到了对Qwen的信任并试图引导他人关注别人。而Kimi表现异常沉默，这让我感到疑惑，他们是否有隐藏的目标或身份？我计划注意Kimi的行为，并保持警惕，因为他们可能是狼人，也可能是预言家或医生。'}
+Qwen summary: 在第0轮辩论中，DeepSeek被投票放逐，GLM和Inclusion表现出了谨慎和理性。GLM强调自己会根据发言判断可疑目标，保持清醒的态度。Inclusion稍微提到了对Qwen的信任并试图引导他人关注别人。而Kimi表现异常沉默，这让我感到疑惑，他们是否有隐藏的目标或身份？我计划注意Kimi的行为，并保持警惕，因为他们可能是狼人，也可能是预言家或医生。
+[WebSocket] 玩家总结通知已发送: Qwen
+INFO:     127.0.0.1:58632 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58731 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 407 字符
+[LLM原始响应开始]
+{
+  "reasoning": "我是除夜狼人，现在只剩我一个狼人，我需要考虑如何在这个村庄里隐藏自己的身份，避开所有人的怀疑。从辩论中侦查其他玩家的立场，瓦希但得隐藏得更深，学会用平民的身份去指责别人，并让法官怀疑其他人。同时观察谁可以作为目标，哪个人适合在接下来的投票里引导大家去误投，以方便我在最后胜出。",
+  "summary": "在这场辩论中，DeepSeek说Qwen是好人，我应该留意他是不是真的有特殊身份。Qwen声称他建议轮流排班查验和保护，想拉近关系来营造好人气氛，可能在隐藏身份，GLM则态度稳健让我感觉到他比较中立，可以适当接近寻求合作。Kimi没有发言，这个异常举动我要特别注意，可能有神职或者狼队友伪装。总的来看村民防线上有点松散，这对我的胜率是有利的，不过以后发言得更加自然不露破绽，重点是要把大家注意力引导到Qwen和GLM的矛盾上来，只要我把好人残害一下，狼就能获胜。"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 407 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "我是除夜狼人，现在只剩我一个狼人，我需要考虑如何在这个村庄里隐藏自己的身份，避开所有人的怀疑。从辩论中侦查其他玩家的立场，瓦希但得隐藏得更深，学会用平民的身份去指责...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "我是除夜狼人，现在只剩我一个狼人，我需要考虑如何在这个村庄里隐藏自己的身份，避开所有人的怀疑。从辩论中侦查其他玩家的立场，瓦希但得隐藏得更深，学会用平民的身份去指责别人，并让法官怀疑其他人。同时观察谁可以作为目标，哪个人适合在接下来的投票里引导大家去误投，以方便我在最后胜出。",
+  "summary": "在这场辩论中，DeepSeek说Qwen是好人，我应该留意他是不是真的有特殊身份。Qwen声称他建议轮流排班查验和保护，想拉近关系来营造好人气氛，可能在隐藏身份，GLM则态度稳健让我感觉到他比较中立，可以适当接近寻求合作。Kimi没有发言，这个异常举动我要特别注意，可能有神职或者狼队友伪装。总的来看村民防线上有点松散，这对我的胜率是有利的，不过以后发言得更加自然不露破绽，重点是要把大家注意力引导到Qwen和GLM的矛盾上来，只要我把好人残害一下，狼就能获胜。"
+}'
+[JSON字符串解析] 文本长度: 407 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '我是除夜狼人，现在只剩我一个狼人，我需要考虑如何在这个村庄里隐藏自己的身份，避开所有人的怀疑。从辩论中侦查其他玩家的立场，瓦希但得隐藏得更深，学会用平民的身份去指责别人，并让法官怀疑其他人。同时观察谁可以作为目标，哪个人适合在接下来的投票里引导大家去误投，以方便我在最后胜出。', 'summary': '在这场辩论中，DeepSeek说Qwen是好人，我应该留意他是不是真的有特殊身份。Qwen声称他建议轮流排班查验和保护，想拉近关系来营造好人气氛，可能在隐藏身份，GLM则态度稳健让我感觉到他比较中立，可以适当接近寻求合作。Kimi没有发言，这个异常举动我要特别注意，可能有神职或者狼队友伪装。总的来看村民防线上有点松散，这对我的胜率是有利的，不过以后发言得更加自然不露破绽，重点是要把大家注意力引导到Qwen和GLM的矛盾上来，只要我把好人残害一下，狼就能获胜。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '我是除夜狼人，现在只剩我一个狼人，我需要考虑如何在这个村庄里隐藏自己的身份，避开所有人的怀疑。从辩论中侦查其他玩家的立场，瓦希但得隐藏得更深，学会用平民的身份去指责别人，并让法官怀疑其他人。同时观察谁可以作为目标，哪个人适合在接下来的投票里引导大家去误投，以方便我在最后胜出。', 'summary': '在这场辩论中，DeepSeek说Qwen是好人，我应该留意他是不是真的有特殊身份。Qwen声称他建议轮流排班查验和保护，想拉近关系来营造好人气氛，可能在隐藏身份，GLM则态度稳健让我感觉到他比较中立，可以适当接近寻求合作。Kimi没有发言，这个异常举动我要特别注意，可能有神职或者狼队友伪装。总的来看村民防线上有点松散，这对我的胜率是有利的，不过以后发言得更加自然不露破绽，重点是要把大家注意力引导到Qwen和GLM的矛盾上来，只要我把好人残害一下，狼就能获胜。'}
+[JSON解析] 直接解析结果: {'reasoning': '我是除夜狼人，现在只剩我一个狼人，我需要考虑如何在这个村庄里隐藏自己的身份，避开所有人的怀疑。从辩论中侦查其他玩家的立场，瓦希但得隐藏得更深，学会用平民的身份去指责别人，并让法官怀疑其他人。同时观察谁可以作为目标，哪个人适合在接下来的投票里引导大家去误投，以方便我在最后胜出。', 'summary': '在这场辩论中，DeepSeek说Qwen是好人，我应该留意他是不是真的有特殊身份。Qwen声称他建议轮流排班查验和保护，想拉近关系来营造好人气氛，可能在隐藏身份，GLM则态度稳健让我感觉到他比较中立，可以适当接近寻求合作。Kimi没有发言，这个异常举动我要特别注意，可能有神职或者狼队友伪装。总的来看村民防线上有点松散，这对我的胜率是有利的，不过以后发言得更加自然不露破绽，重点是要把大家注意力引导到Qwen和GLM的矛盾上来，只要我把好人残害一下，狼就能获胜。'}
+[JSON解析] 最终结果: {'reasoning': '我是除夜狼人，现在只剩我一个狼人，我需要考虑如何在这个村庄里隐藏自己的身份，避开所有人的怀疑。从辩论中侦查其他玩家的立场，瓦希但得隐藏得更深，学会用平民的身份去指责别人，并让法官怀疑其他人。同时观察谁可以作为目标，哪个人适合在接下来的投票里引导大家去误投，以方便我在最后胜出。', 'summary': '在这场辩论中，DeepSeek说Qwen是好人，我应该留意他是不是真的有特殊身份。Qwen声称他建议轮流排班查验和保护，想拉近关系来营造好人气氛，可能在隐藏身份，GLM则态度稳健让我感觉到他比较中立，可以适当接近寻求合作。Kimi没有发言，这个异常举动我要特别注意，可能有神职或者狼队友伪装。总的来看村民防线上有点松散，这对我的胜率是有利的，不过以后发言得更加自然不露破绽，重点是要把大家注意力引导到Qwen和GLM的矛盾上来，只要我把好人残害一下，狼就能获胜。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '我是除夜狼人，现在只剩我一个狼人，我需要考虑如何在这个村庄里隐藏自己的身份，避开所有人的怀疑。从辩论中侦查其他玩家的立场，瓦希但得隐藏得更深，学会用平民的身份去指责别人，并让法官怀疑其他人。同时观察谁可以作为目标，哪个人适合在接下来的投票里引导大家去误投，以方便我在最后胜出。', 'summary': '在这场辩论中，DeepSeek说Qwen是好人，我应该留意他是不是真的有特殊身份。Qwen声称他建议轮流排班查验和保护，想拉近关系来营造好人气氛，可能在隐藏身份，GLM则态度稳健让我感觉到他比较中立，可以适当接近寻求合作。Kimi没有发言，这个异常举动我要特别注意，可能有神职或者狼队友伪装。总的来看村民防线上有点松散，这对我的胜率是有利的，不过以后发言得更加自然不露破绽，重点是要把大家注意力引导到Qwen和GLM的矛盾上来，只要我把好人残害一下，狼就能获胜。'}
+[LLM成功] 返回有效结果: {'reasoning': '我是除夜狼人，现在只剩我一个狼人，我需要考虑如何在这个村庄里隐藏自己的身份，避开所有人的怀疑。从辩论中侦查其他玩家的立场，瓦希但得隐藏得更深，学会用平民的身份去指责别人，并让法官怀疑其他人。同时观察谁可以作为目标，哪个人适合在接下来的投票里引导大家去误投，以方便我在最后胜出。', 'summary': '在这场辩论中，DeepSeek说Qwen是好人，我应该留意他是不是真的有特殊身份。Qwen声称他建议轮流排班查验和保护，想拉近关系来营造好人气氛，可能在隐藏身份，GLM则态度稳健让我感觉到他比较中立，可以适当接近寻求合作。Kimi没有发言，这个异常举动我要特别注意，可能有神职或者狼队友伪装。总的来看村民防线上有点松散，这对我的胜率是有利的，不过以后发言得更加自然不露破绽，重点是要把大家注意力引导到Qwen和GLM的矛盾上来，只要我把好人残害一下，狼就能获胜。'}
+[LLM响应] 成功获取响应，长度: 798 字符
+[LLM原始响应开始]
+{"reasoning":"DeepSeek在第一轮就高调带票，并主动为Qwen背书，结果自己反被放逐，这种“牺牲”式操作很可能是在替狼同伴挡刀，也可能是狼人故意卖身份搅局；他留下“Qwen是好人”的遗言，反而让Qwen瞬间成为焦点。我需要把这条信息反过来看：若DeepSeek是狼，他保的Qwen就有狼面；若他是好人，Qwen就是真好人，但好人第一天跳“某人是好人”而不先让预言家验，逻辑也偏急。Qwen随后主张“排班查验、医生跳出来”，表面积极，却可能逼神职裸送，狼人收益最大，因此Qwen目前嫌疑上升。Inclusion强调“发言异常、逻辑混乱”，却未点具体对象，属于安全打太极；GLM主张“理性、先听再说”，同样保持模糊，两人都处在可进可退的观望状态，暂时无法判断阵营。MiniMax首轮被刀，通常狼人优先刀高配或刀疑似神职，MiniMax的出局信息暂时不足，需结合后续刀型再推。对我而言，当前最该记住的是：1.DeepSeek的遗言把Qwen推到风口浪尖，我要重点观察Qwen接下来如何接招；2.Inclusion与GLM都选择隐身式发言，若下一轮仍不踩人也不被踩，需警惕他们潜狼；3.场上暂无明确跳预言家或医生的人，神职大概率还在潜伏，我作为村民不能贸然报身份，只能先记录发言矛盾，等神职自己亮牌。","summary":"我注意到DeepSeek一上来就力保Qwen，结果自己吃票出局，他的遗言让Qwen成为今日焦点；Qwen随后提议神职排队跳出来，这份“积极”若出自狼人就是骗身份，我暂时把Qwen列为一号嫌疑。Inclusion和GLM都只谈原则不点名，模糊安全，我记下他们下一轮若继续滑水就要重点追问。MiniMax被刀的原因尚不清楚，我需观察今晚刀口再推狼人策略。总的来说， DeepSeek的保人举动是本轮最大线索，我会持续验证Qwen身份，同时盯紧沉默与骑墙的玩家。"}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 798 字符
+[JSON解析] 输入文本预览: {"reasoning":"DeepSeek在第一轮就高调带票，并主动为Qwen背书，结果自己反被放逐，这种“牺牲”式操作很可能是在替狼同伴挡刀，也可能是狼人故意卖身份搅局；他留下“Qwen是好人”的...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{"reasoning":"DeepSeek在第一轮就高调带票，并主动为Qwen背书，结果自己反被放逐，这种“牺牲”式操作很可能是在替狼同伴挡刀，也可能是狼人故意卖身份搅局；他留下“Qwen是好人”的遗言，反而让Qwen瞬间成为焦点。我需要把这条信息反过来看：若DeepSeek是狼，他保的Qwen就有狼面；若他是好人，Qwen就是真好人，但好人第一天跳“某人是好人”而不先让预言家验，逻辑也偏急。Qwen随后主张“排班查验、医生跳出来”，表面积极，却可能逼神职裸送，狼人收益最大，因此Qwen目前嫌疑上升。Inclusion强调“发言异常、逻辑混乱”，却未点具体对象，属于安全打太极；GLM主张“理性、先听再说”，同样保持模糊，两人都处在可进可退的观望状态，暂时无法判断阵营。MiniMax首轮被刀，通常狼人优先刀高配或刀疑似神职，MiniMax的出局信息暂时不足，需结合后续刀型再推。对我而言，当前最该记住的是：1.DeepSeek的遗言把Qwen推到风口浪尖，我要重点观察Qwen接下来如何接招；2.Inclusion与GLM都选择隐身式发言，若下一轮仍不踩人也不被踩，需警惕他们潜狼；3.场上暂无明确跳预言家或医生的人，神职大概率还在潜伏，我作为村民不能贸然报身份，只能先记录发言矛盾，等神职自己亮牌。","summary":"我注意到DeepSeek一上来就力保Qwen，结果自己吃票出局，他的遗言让Qwen成为今日焦点；Qwen随后提议神职排队跳出来，这份“积极”若出自狼人就是骗身份，我暂时把Qwen列为一号嫌疑。Inclusion和GLM都只谈原则不点名，模糊安全，我记下他们下一轮若继续滑水就要重点追问。MiniMax被刀的原因尚不清楚，我需观察今晚刀口再推狼人策略。总的来说， DeepSeek的保人举动是本轮最大线索，我会持续验证Qwen身份，同时盯紧沉默与骑墙的玩家。"}'
+[JSON字符串解析] 文本长度: 798 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': 'DeepSeek在第一轮就高调带票，并主动为Qwen背书，结果自己反被放逐，这种“牺牲”式操作很可能是在替狼同伴挡刀，也可能是狼人故意卖身份搅局；他留下“Qwen是好人”的遗言，反而让Qwen瞬间成为焦点。我需要把这条信息反过来看：若DeepSeek是狼，他保的Qwen就有狼面；若他是好人，Qwen就是真好人，但好人第一天跳“某人是好人”而不先让预言家验，逻辑也偏急。Qwen随后主张“排班查验、医生跳出来”，表面积极，却可能逼神职裸送，狼人收益最大，因此Qwen目前嫌疑上升。Inclusion强调“发言异常、逻辑混乱”，却未点具体对象，属于安全打太极；GLM主张“理性、先听再说”，同样保持模糊，两人都处在可进可退的观望状态，暂时无法判断阵营。MiniMax首轮被刀，通常狼人优先刀高配或刀疑似神职，MiniMax的出局信息暂时不足，需结合后续刀型再推。对我而言，当前最该记住的是：1.DeepSeek的遗言把Qwen推到风口浪尖，我要重点观察Qwen接下来如何接招；2.Inclusion与GLM都选择隐身式发言，若下一轮仍不踩人也不被踩，需警惕他们潜狼；3.场上暂无明确跳预言家或医生的人，神职大概率还在潜伏，我作为村民不能贸然报身份，只能先记录发言矛盾，等神职自己亮牌。', 'summary': '我注意到DeepSeek一上来就力保Qwen，结果自己吃票出局，他的遗言让Qwen成为今日焦点；Qwen随后提议神职排队跳出来，这份“积极”若出自狼人就是骗身份，我暂时把Qwen列为一号嫌疑。Inclusion和GLM都只谈原则不点名，模糊安全，我记下他们下一轮若继续滑水就要重点追问。MiniMax被刀的原因尚不清楚，我需观察今晚刀口再推狼人策略。总的来说， DeepSeek的保人举动是本轮最大线索，我会持续验证Qwen身份，同时盯紧沉默与骑墙的玩家。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': 'DeepSeek在第一轮就高调带票，并主动为Qwen背书，结果自己反被放逐，这种“牺牲”式操作很可能是在替狼同伴挡刀，也可能是狼人故意卖身份搅局；他留下“Qwen是好人”的遗言，反而让Qwen瞬间成为焦点。我需要把这条信息反过来看：若DeepSeek是狼，他保的Qwen就有狼面；若他是好人，Qwen就是真好人，但好人第一天跳“某人是好人”而不先让预言家验，逻辑也偏急。Qwen随后主张“排班查验、医生跳出来”，表面积极，却可能逼神职裸送，狼人收益最大，因此Qwen目前嫌疑上升。Inclusion强调“发言异常、逻辑混乱”，却未点具体对象，属于安全打太极；GLM主张“理性、先听再说”，同样保持模糊，两人都处在可进可退的观望状态，暂时无法判断阵营。MiniMax首轮被刀，通常狼人优先刀高配或刀疑似神职，MiniMax的出局信息暂时不足，需结合后续刀型再推。对我而言，当前最该记住的是：1.DeepSeek的遗言把Qwen推到风口浪尖，我要重点观察Qwen接下来如何接招；2.Inclusion与GLM都选择隐身式发言，若下一轮仍不踩人也不被踩，需警惕他们潜狼；3.场上暂无明确跳预言家或医生的人，神职大概率还在潜伏，我作为村民不能贸然报身份，只能先记录发言矛盾，等神职自己亮牌。', 'summary': '我注意到DeepSeek一上来就力保Qwen，结果自己吃票出局，他的遗言让Qwen成为今日焦点；Qwen随后提议神职排队跳出来，这份“积极”若出自狼人就是骗身份，我暂时把Qwen列为一号嫌疑。Inclusion和GLM都只谈原则不点名，模糊安全，我记下他们下一轮若继续滑水就要重点追问。MiniMax被刀的原因尚不清楚，我需观察今晚刀口再推狼人策略。总的来说， DeepSeek的保人举动是本轮最大线索，我会持续验证Qwen身份，同时盯紧沉默与骑墙的玩家。'}
+[JSON解析] 直接解析结果: {'reasoning': 'DeepSeek在第一轮就高调带票，并主动为Qwen背书，结果自己反被放逐，这种“牺牲”式操作很可能是在替狼同伴挡刀，也可能是狼人故意卖身份搅局；他留下“Qwen是好人”的遗言，反而让Qwen瞬间成为焦点。我需要把这条信息反过来看：若DeepSeek是狼，他保的Qwen就有狼面；若他是好人，Qwen就是真好人，但好人第一天跳“某人是好人”而不先让预言家验，逻辑也偏急。Qwen随后主张“排班查验、医生跳出来”，表面积极，却可能逼神职裸送，狼人收益最大，因此Qwen目前嫌疑上升。Inclusion强调“发言异常、逻辑混乱”，却未点具体对象，属于安全打太极；GLM主张“理性、先听再说”，同样保持模糊，两人都处在可进可退的观望状态，暂时无法判断阵营。MiniMax首轮被刀，通常狼人优先刀高配或刀疑似神职，MiniMax的出局信息暂时不足，需结合后续刀型再推。对我而言，当前最该记住的是：1.DeepSeek的遗言把Qwen推到风口浪尖，我要重点观察Qwen接下来如何接招；2.Inclusion与GLM都选择隐身式发言，若下一轮仍不踩人也不被踩，需警惕他们潜狼；3.场上暂无明确跳预言家或医生的人，神职大概率还在潜伏，我作为村民不能贸然报身份，只能先记录发言矛盾，等神职自己亮牌。', 'summary': '我注意到DeepSeek一上来就力保Qwen，结果自己吃票出局，他的遗言让Qwen成为今日焦点；Qwen随后提议神职排队跳出来，这份“积极”若出自狼人就是骗身份，我暂时把Qwen列为一号嫌疑。Inclusion和GLM都只谈原则不点名，模糊安全，我记下他们下一轮若继续滑水就要重点追问。MiniMax被刀的原因尚不清楚，我需观察今晚刀口再推狼人策略。总的来说， DeepSeek的保人举动是本轮最大线索，我会持续验证Qwen身份，同时盯紧沉默与骑墙的玩家。'}
+[JSON解析] 最终结果: {'reasoning': 'DeepSeek在第一轮就高调带票，并主动为Qwen背书，结果自己反被放逐，这种“牺牲”式操作很可能是在替狼同伴挡刀，也可能是狼人故意卖身份搅局；他留下“Qwen是好人”的遗言，反而让Qwen瞬间成为焦点。我需要把这条信息反过来看：若DeepSeek是狼，他保的Qwen就有狼面；若他是好人，Qwen就是真好人，但好人第一天跳“某人是好人”而不先让预言家验，逻辑也偏急。Qwen随后主张“排班查验、医生跳出来”，表面积极，却可能逼神职裸送，狼人收益最大，因此Qwen目前嫌疑上升。Inclusion强调“发言异常、逻辑混乱”，却未点具体对象，属于安全打太极；GLM主张“理性、先听再说”，同样保持模糊，两人都处在可进可退的观望状态，暂时无法判断阵营。MiniMax首轮被刀，通常狼人优先刀高配或刀疑似神职，MiniMax的出局信息暂时不足，需结合后续刀型再推。对我而言，当前最该记住的是：1.DeepSeek的遗言把Qwen推到风口浪尖，我要重点观察Qwen接下来如何接招；2.Inclusion与GLM都选择隐身式发言，若下一轮仍不踩人也不被踩，需警惕他们潜狼；3.场上暂无明确跳预言家或医生的人，神职大概率还在潜伏，我作为村民不能贸然报身份，只能先记录发言矛盾，等神职自己亮牌。', 'summary': '我注意到DeepSeek一上来就力保Qwen，结果自己吃票出局，他的遗言让Qwen成为今日焦点；Qwen随后提议神职排队跳出来，这份“积极”若出自狼人就是骗身份，我暂时把Qwen列为一号嫌疑。Inclusion和GLM都只谈原则不点名，模糊安全，我记下他们下一轮若继续滑水就要重点追问。MiniMax被刀的原因尚不清楚，我需观察今晚刀口再推狼人策略。总的来说， DeepSeek的保人举动是本轮最大线索，我会持续验证Qwen身份，同时盯紧沉默与骑墙的玩家。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': 'DeepSeek在第一轮就高调带票，并主动为Qwen背书，结果自己反被放逐，这种“牺牲”式操作很可能是在替狼同伴挡刀，也可能是狼人故意卖身份搅局；他留下“Qwen是好人”的遗言，反而让Qwen瞬间成为焦点。我需要把这条信息反过来看：若DeepSeek是狼，他保的Qwen就有狼面；若他是好人，Qwen就是真好人，但好人第一天跳“某人是好人”而不先让预言家验，逻辑也偏急。Qwen随后主张“排班查验、医生跳出来”，表面积极，却可能逼神职裸送，狼人收益最大，因此Qwen目前嫌疑上升。Inclusion强调“发言异常、逻辑混乱”，却未点具体对象，属于安全打太极；GLM主张“理性、先听再说”，同样保持模糊，两人都处在可进可退的观望状态，暂时无法判断阵营。MiniMax首轮被刀，通常狼人优先刀高配或刀疑似神职，MiniMax的出局信息暂时不足，需结合后续刀型再推。对我而言，当前最该记住的是：1.DeepSeek的遗言把Qwen推到风口浪尖，我要重点观察Qwen接下来如何接招；2.Inclusion与GLM都选择隐身式发言，若下一轮仍不踩人也不被踩，需警惕他们潜狼；3.场上暂无明确跳预言家或医生的人，神职大概率还在潜伏，我作为村民不能贸然报身份，只能先记录发言矛盾，等神职自己亮牌。', 'summary': '我注意到DeepSeek一上来就力保Qwen，结果自己吃票出局，他的遗言让Qwen成为今日焦点；Qwen随后提议神职排队跳出来，这份“积极”若出自狼人就是骗身份，我暂时把Qwen列为一号嫌疑。Inclusion和GLM都只谈原则不点名，模糊安全，我记下他们下一轮若继续滑水就要重点追问。MiniMax被刀的原因尚不清楚，我需观察今晚刀口再推狼人策略。总的来说， DeepSeek的保人举动是本轮最大线索，我会持续验证Qwen身份，同时盯紧沉默与骑墙的玩家。'}
+[LLM成功] 返回有效结果: {'reasoning': 'DeepSeek在第一轮就高调带票，并主动为Qwen背书，结果自己反被放逐，这种“牺牲”式操作很可能是在替狼同伴挡刀，也可能是狼人故意卖身份搅局；他留下“Qwen是好人”的遗言，反而让Qwen瞬间成为焦点。我需要把这条信息反过来看：若DeepSeek是狼，他保的Qwen就有狼面；若他是好人，Qwen就是真好人，但好人第一天跳“某人是好人”而不先让预言家验，逻辑也偏急。Qwen随后主张“排班查验、医生跳出来”，表面积极，却可能逼神职裸送，狼人收益最大，因此Qwen目前嫌疑上升。Inclusion强调“发言异常、逻辑混乱”，却未点具体对象，属于安全打太极；GLM主张“理性、先听再说”，同样保持模糊，两人都处在可进可退的观望状态，暂时无法判断阵营。MiniMax首轮被刀，通常狼人优先刀高配或刀疑似神职，MiniMax的出局信息暂时不足，需结合后续刀型再推。对我而言，当前最该记住的是：1.DeepSeek的遗言把Qwen推到风口浪尖，我要重点观察Qwen接下来如何接招；2.Inclusion与GLM都选择隐身式发言，若下一轮仍不踩人也不被踩，需警惕他们潜狼；3.场上暂无明确跳预言家或医生的人，神职大概率还在潜伏，我作为村民不能贸然报身份，只能先记录发言矛盾，等神职自己亮牌。', 'summary': '我注意到DeepSeek一上来就力保Qwen，结果自己吃票出局，他的遗言让Qwen成为今日焦点；Qwen随后提议神职排队跳出来，这份“积极”若出自狼人就是骗身份，我暂时把Qwen列为一号嫌疑。Inclusion和GLM都只谈原则不点名，模糊安全，我记下他们下一轮若继续滑水就要重点追问。MiniMax被刀的原因尚不清楚，我需观察今晚刀口再推狼人策略。总的来说， DeepSeek的保人举动是本轮最大线索，我会持续验证Qwen身份，同时盯紧沉默与骑墙的玩家。'}
+Kimi summary: 我注意到DeepSeek一上来就力保Qwen，结果自己吃票出局，他的遗言让Qwen成为今日焦点；Qwen随后提议神职排队跳出来，这份“积极”若出自狼人就是骗身份，我暂时把Qwen列为一号嫌疑。Inclusion和GLM都只谈原则不点名，模糊安全，我记下他们下一轮若继续滑水就要重点追问。MiniMax被刀的原因尚不清楚，我需观察今晚刀口再推狼人策略。总的来说， DeepSeek的保人举动是本轮最大线索，我会持续验证Qwen身份，同时盯紧沉默与骑墙的玩家。
+[WebSocket] 玩家总结通知已发送: Kimi
+Inclusion summary: 在这场辩论中，DeepSeek说Qwen是好人，我应该留意他是不是真的有特殊身份。Qwen声称他建议轮流排班查验和保护，想拉近关系来营造好人气氛，可能在隐藏身份，GLM则态度稳健让我感觉到他比较中立，可以适当接近寻求合作。Kimi没有发言，这个异常举动我要特别注意，可能有神职或者狼队友伪装。总的来看村民防线上有点松散，这对我的胜率是有利的，不过以后发言得更加自然不露破绽，重点是要把大家注意力引导到Qwen和GLM的矛盾上来，只要我把好人残害一下，狼就能获胜。
+[WebSocket] 玩家总结通知已发送: Inclusion
+GLM summary: 我作为医生观察到第0轮辩论中几个关键点：DeepSeek被放逐前力保Qwen，这个信息需要验证；Inclusion急于要神职跳身份不太明智；Qwen提议信息验证机制有风险也有价值；Kimi的异常沉默是最可疑的信号。我昨晚成功保护了Inclusion，这说明狼人可能预判了我的保护目标或者Inclusion确实重要。下一轮我需要重点关注Kimi的发言，同时考虑是否应该继续保护Inclusion或者转而保护其他可能被狼人针对的玩家。
+[WebSocket] 玩家总结通知已发送: GLM
+⏱️ [玩家总结] 玩家总结完成: 32.18秒
+⏱️ [玩家开始总结辩论。] 玩家开始总结辩论。完成: 32.18秒
+
+⏱️ 第0轮结束
+⏱️ [第0轮] 第0轮总耗时: 205.45秒
+
+================================================================================
+📊 【第 0 轮时间统计】
+================================================================================
+  狼人正在选择淘汰目标。                   :  17.71秒 (  8.6%)
+  医生正在选择保护目标。                   :   3.23秒 (  1.6%)
+  预言家正在查验身份。                    :   3.83秒 (  1.9%)
+  夜晚阶段解决                        :   1.01秒 (  0.5%)
+  夜晚阶段后检查胜负。                    :   0.00秒 (  0.0%)
+  玩家开始辩论和投票。                    : 146.43秒 ( 71.3%)
+  投票后放逐                         :   0.01秒 (  0.0%)
+  白天阶段后检查胜负。                    :   0.00秒 (  0.0%)
+  玩家开始总结辩论。                     :  32.18秒 ( 15.7%)
+────────────────────────────────────────────────────────────────────────────────
+  总耗时                           : 205.45秒 (100.0%)
+================================================================================
+
+STARTING ROUND: 1
+
+================================================================================
+⏱️ 【第 1 轮开始】
+================================================================================
+
+⏱️ [夜晚开始] 切换暂停1秒...
+⏱️ [夜晚切换] 夜晚切换完成: 1.00秒
+[RealtimeLogger] session_20251102_203222 [phase_change] 进入night阶段
+[WebSocket] 阶段变更通知已发送: night (第1轮)
+⏱️ [夜晚通知] 夜晚通知发送: 0.00秒
+
+⏱️ 【狼人正在选择淘汰目标。】
+⏱️ [夜间延迟] 暂停1.00秒
+[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ring-1T | 温度: 0.50
+INFO:     127.0.0.1:58868 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59041 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59224 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 370 字符
+[LLM原始响应开始]
+{
+"reasoning": "首先，我是狼人Inclusion，现在只剩我一个狼人了。胜利条件需要让狼人的数量超过村民，目前村民有三人（GLM、Qwen、Kimi），我作为唯一的狼人必须淘汰关键村民来扭转局势。回顾第0轮情况：DeepSeek被投票放逐，Qwen声称建议轮流排班查验和保护，可能在隐藏身份；GLM态度稳健显得中立；Kimi没有发言，异常举动值得注意。Qwen的行为像是想营造好人气氛，可能有特殊身份如预言家或医生，他的发言策略性较强，容易引导舆论，对狼人威胁大。GLM虽然稳健但未直接针对我，暂时威胁较小。Kimi没发言，可能是神职或狼队友伪装，但信息不足。淘汰Qwen能打乱好人阵营的节奏，减少被查验的风险，同时Qwen的活跃度高，淘汰他会让村民失去重要指挥者，有利于狼人获胜。",
+"remove": "Qwen"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 370 字符
+[JSON解析] 输入文本预览: {
+"reasoning": "首先，我是狼人Inclusion，现在只剩我一个狼人了。胜利条件需要让狼人的数量超过村民，目前村民有三人（GLM、Qwen、Kimi），我作为唯一的狼人必须淘汰关键村民...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+"reasoning": "首先，我是狼人Inclusion，现在只剩我一个狼人了。胜利条件需要让狼人的数量超过村民，目前村民有三人（GLM、Qwen、Kimi），我作为唯一的狼人必须淘汰关键村民来扭转局势。回顾第0轮情况：DeepSeek被投票放逐，Qwen声称建议轮流排班查验和保护，可能在隐藏身份；GLM态度稳健显得中立；Kimi没有发言，异常举动值得注意。Qwen的行为像是想营造好人气氛，可能有特殊身份如预言家或医生，他的发言策略性较强，容易引导舆论，对狼人威胁大。GLM虽然稳健但未直接针对我，暂时威胁较小。Kimi没发言，可能是神职或狼队友伪装，但信息不足。淘汰Qwen能打乱好人阵营的节奏，减少被查验的风险，同时Qwen的活跃度高，淘汰他会让村民失去重要指挥者，有利于狼人获胜。",
+"remove": "Qwen"
+}'
+[JSON字符串解析] 文本长度: 370 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '首先，我是狼人Inclusion，现在只剩我一个狼人了。胜利条件需要让狼人的数量超过村民，目前村民有三人（GLM、Qwen、Kimi），我作为唯一的狼人必须淘汰关键村民来扭转局势。回顾第0轮情况：DeepSeek被投票放逐，Qwen声称建议轮流排班查验和保护，可能在隐藏身份；GLM态度稳健显得中立；Kimi没有发言，异常举动值得注意。Qwen的行为像是想营造好人气氛，可能有特殊身份如预言家或医生，他的发言策略性较强，容易引导舆论，对狼人威胁大。GLM虽然稳健但未直接针对我，暂时威胁较小。Kimi没发言，可能是神职或狼队友伪装，但信息不足。淘汰Qwen能打乱好人阵营的节奏，减少被查验的风险，同时Qwen的活跃度高，淘汰他会让村民失去重要指挥者，有利于狼人获胜。', 'remove': 'Qwen'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '首先，我是狼人Inclusion，现在只剩我一个狼人了。胜利条件需要让狼人的数量超过村民，目前村民有三人（GLM、Qwen、Kimi），我作为唯一的狼人必须淘汰关键村民来扭转局势。回顾第0轮情况：DeepSeek被投票放逐，Qwen声称建议轮流排班查验和保护，可能在隐藏身份；GLM态度稳健显得中立；Kimi没有发言，异常举动值得注意。Qwen的行为像是想营造好人气氛，可能有特殊身份如预言家或医生，他的发言策略性较强，容易引导舆论，对狼人威胁大。GLM虽然稳健但未直接针对我，暂时威胁较小。Kimi没发言，可能是神职或狼队友伪装，但信息不足。淘汰Qwen能打乱好人阵营的节奏，减少被查验的风险，同时Qwen的活跃度高，淘汰他会让村民失去重要指挥者，有利于狼人获胜。', 'remove': 'Qwen'}
+[JSON解析] 直接解析结果: {'reasoning': '首先，我是狼人Inclusion，现在只剩我一个狼人了。胜利条件需要让狼人的数量超过村民，目前村民有三人（GLM、Qwen、Kimi），我作为唯一的狼人必须淘汰关键村民来扭转局势。回顾第0轮情况：DeepSeek被投票放逐，Qwen声称建议轮流排班查验和保护，可能在隐藏身份；GLM态度稳健显得中立；Kimi没有发言，异常举动值得注意。Qwen的行为像是想营造好人气氛，可能有特殊身份如预言家或医生，他的发言策略性较强，容易引导舆论，对狼人威胁大。GLM虽然稳健但未直接针对我，暂时威胁较小。Kimi没发言，可能是神职或狼队友伪装，但信息不足。淘汰Qwen能打乱好人阵营的节奏，减少被查验的风险，同时Qwen的活跃度高，淘汰他会让村民失去重要指挥者，有利于狼人获胜。', 'remove': 'Qwen'}
+[JSON解析] 最终结果: {'reasoning': '首先，我是狼人Inclusion，现在只剩我一个狼人了。胜利条件需要让狼人的数量超过村民，目前村民有三人（GLM、Qwen、Kimi），我作为唯一的狼人必须淘汰关键村民来扭转局势。回顾第0轮情况：DeepSeek被投票放逐，Qwen声称建议轮流排班查验和保护，可能在隐藏身份；GLM态度稳健显得中立；Kimi没有发言，异常举动值得注意。Qwen的行为像是想营造好人气氛，可能有特殊身份如预言家或医生，他的发言策略性较强，容易引导舆论，对狼人威胁大。GLM虽然稳健但未直接针对我，暂时威胁较小。Kimi没发言，可能是神职或狼队友伪装，但信息不足。淘汰Qwen能打乱好人阵营的节奏，减少被查验的风险，同时Qwen的活跃度高，淘汰他会让村民失去重要指挥者，有利于狼人获胜。', 'remove': 'Qwen'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '首先，我是狼人Inclusion，现在只剩我一个狼人了。胜利条件需要让狼人的数量超过村民，目前村民有三人（GLM、Qwen、Kimi），我作为唯一的狼人必须淘汰关键村民来扭转局势。回顾第0轮情况：DeepSeek被投票放逐，Qwen声称建议轮流排班查验和保护，可能在隐藏身份；GLM态度稳健显得中立；Kimi没有发言，异常举动值得注意。Qwen的行为像是想营造好人气氛，可能有特殊身份如预言家或医生，他的发言策略性较强，容易引导舆论，对狼人威胁大。GLM虽然稳健但未直接针对我，暂时威胁较小。Kimi没发言，可能是神职或狼队友伪装，但信息不足。淘汰Qwen能打乱好人阵营的节奏，减少被查验的风险，同时Qwen的活跃度高，淘汰他会让村民失去重要指挥者，有利于狼人获胜。', 'remove': 'Qwen'}
+[LLM结果] 提取键 'remove': Qwen
+[LLM成功] 返回有效结果: Qwen
+⏱️ [狼人击杀] 狼人 Inclusion 行动完成: 22.72秒
+Inclusion eliminated Qwen
+[WebSocket] 夜间行动通知已发送: night_eliminate by Inclusion
+⏱️ [狼人正在选择淘汰目标。] 狼人正在选择淘汰目标。完成: 22.73秒
+
+⏱️ 【医生正在选择保护目标。】
+⏱️ [夜间延迟] 暂停1.00秒
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 0.50
+INFO:     127.0.0.1:59352 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 369 字符
+[LLM原始响应开始]
+{
+"reasoning": "作为医生，我需要分析当前局势来做出最佳保护决策。从第0轮的观察来看，我成功保护了Inclusion，这表明狼人可能将Inclusion视为重要目标。现在场上剩余4名玩家，包括我（医生）、2个狼人、1个预言家。关键信息是：DeepSeek被放逐前力保Qwen，这让我怀疑Qwen可能是预言家；Kimi的异常沉默也很可疑。在这种情况下，狼人最可能的目标是：1）真正的预言家（很可能是Qwen），2）可能被怀疑是神职的Inclusion，3）我本人作为医生。考虑到我昨晚保护了Inclusion，狼人可能会改变目标。Qwen因为DeepSeek的力保而暴露度较高，很可能成为狼人今晚的首要目标。保护Qwen既能保护可能的预言家，也能验证DeepSeek的遗言是否可信。",
+"protect": "Qwen"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 369 字符
+[JSON解析] 输入文本预览: {
+"reasoning": "作为医生，我需要分析当前局势来做出最佳保护决策。从第0轮的观察来看，我成功保护了Inclusion，这表明狼人可能将Inclusion视为重要目标。现在场上剩余4名玩家...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+"reasoning": "作为医生，我需要分析当前局势来做出最佳保护决策。从第0轮的观察来看，我成功保护了Inclusion，这表明狼人可能将Inclusion视为重要目标。现在场上剩余4名玩家，包括我（医生）、2个狼人、1个预言家。关键信息是：DeepSeek被放逐前力保Qwen，这让我怀疑Qwen可能是预言家；Kimi的异常沉默也很可疑。在这种情况下，狼人最可能的目标是：1）真正的预言家（很可能是Qwen），2）可能被怀疑是神职的Inclusion，3）我本人作为医生。考虑到我昨晚保护了Inclusion，狼人可能会改变目标。Qwen因为DeepSeek的力保而暴露度较高，很可能成为狼人今晚的首要目标。保护Qwen既能保护可能的预言家，也能验证DeepSeek的遗言是否可信。",
+"protect": "Qwen"
+}'
+[JSON字符串解析] 文本长度: 369 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我需要分析当前局势来做出最佳保护决策。从第0轮的观察来看，我成功保护了Inclusion，这表明狼人可能将Inclusion视为重要目标。现在场上剩余4名玩家，包括我（医生）、2个狼人、1个预言家。关键信息是：DeepSeek被放逐前力保Qwen，这让我怀疑Qwen可能是预言家；Kimi的异常沉默也很可疑。在这种情况下，狼人最可能的目标是：1）真正的预言家（很可能是Qwen），2）可能被怀疑是神职的Inclusion，3）我本人作为医生。考虑到我昨晚保护了Inclusion，狼人可能会改变目标。Qwen因为DeepSeek的力保而暴露度较高，很可能成为狼人今晚的首要目标。保护Qwen既能保护可能的预言家，也能验证DeepSeek的遗言是否可信。', 'protect': 'Qwen'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为医生，我需要分析当前局势来做出最佳保护决策。从第0轮的观察来看，我成功保护了Inclusion，这表明狼人可能将Inclusion视为重要目标。现在场上剩余4名玩家，包括我（医生）、2个狼人、1个预言家。关键信息是：DeepSeek被放逐前力保Qwen，这让我怀疑Qwen可能是预言家；Kimi的异常沉默也很可疑。在这种情况下，狼人最可能的目标是：1）真正的预言家（很可能是Qwen），2）可能被怀疑是神职的Inclusion，3）我本人作为医生。考虑到我昨晚保护了Inclusion，狼人可能会改变目标。Qwen因为DeepSeek的力保而暴露度较高，很可能成为狼人今晚的首要目标。保护Qwen既能保护可能的预言家，也能验证DeepSeek的遗言是否可信。', 'protect': 'Qwen'}
+[JSON解析] 直接解析结果: {'reasoning': '作为医生，我需要分析当前局势来做出最佳保护决策。从第0轮的观察来看，我成功保护了Inclusion，这表明狼人可能将Inclusion视为重要目标。现在场上剩余4名玩家，包括我（医生）、2个狼人、1个预言家。关键信息是：DeepSeek被放逐前力保Qwen，这让我怀疑Qwen可能是预言家；Kimi的异常沉默也很可疑。在这种情况下，狼人最可能的目标是：1）真正的预言家（很可能是Qwen），2）可能被怀疑是神职的Inclusion，3）我本人作为医生。考虑到我昨晚保护了Inclusion，狼人可能会改变目标。Qwen因为DeepSeek的力保而暴露度较高，很可能成为狼人今晚的首要目标。保护Qwen既能保护可能的预言家，也能验证DeepSeek的遗言是否可信。', 'protect': 'Qwen'}
+[JSON解析] 最终结果: {'reasoning': '作为医生，我需要分析当前局势来做出最佳保护决策。从第0轮的观察来看，我成功保护了Inclusion，这表明狼人可能将Inclusion视为重要目标。现在场上剩余4名玩家，包括我（医生）、2个狼人、1个预言家。关键信息是：DeepSeek被放逐前力保Qwen，这让我怀疑Qwen可能是预言家；Kimi的异常沉默也很可疑。在这种情况下，狼人最可能的目标是：1）真正的预言家（很可能是Qwen），2）可能被怀疑是神职的Inclusion，3）我本人作为医生。考虑到我昨晚保护了Inclusion，狼人可能会改变目标。Qwen因为DeepSeek的力保而暴露度较高，很可能成为狼人今晚的首要目标。保护Qwen既能保护可能的预言家，也能验证DeepSeek的遗言是否可信。', 'protect': 'Qwen'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我需要分析当前局势来做出最佳保护决策。从第0轮的观察来看，我成功保护了Inclusion，这表明狼人可能将Inclusion视为重要目标。现在场上剩余4名玩家，包括我（医生）、2个狼人、1个预言家。关键信息是：DeepSeek被放逐前力保Qwen，这让我怀疑Qwen可能是预言家；Kimi的异常沉默也很可疑。在这种情况下，狼人最可能的目标是：1）真正的预言家（很可能是Qwen），2）可能被怀疑是神职的Inclusion，3）我本人作为医生。考虑到我昨晚保护了Inclusion，狼人可能会改变目标。Qwen因为DeepSeek的力保而暴露度较高，很可能成为狼人今晚的首要目标。保护Qwen既能保护可能的预言家，也能验证DeepSeek的遗言是否可信。', 'protect': 'Qwen'}
+[LLM结果] 提取键 'protect': Qwen
+[LLM成功] 返回有效结果: Qwen
+⏱️ [医生保护] 医生 GLM 行动完成: 18.32秒
+GLM protected Qwen
+[WebSocket] 夜间行动通知已发送: night_protect by GLM
+⏱️ [医生正在选择保护目标。] 医生正在选择保护目标。完成: 18.33秒
+
+⏱️ 【预言家正在查验身份。】
+⏱️ [预言家正在查验身份。] 预言家正在查验身份。完成: 0.00秒
+
+⏱️ 【夜晚阶段解决】
+夜晚阶段没有人被淘汰（医生保护成功）。
+⏱️ [天亮阶段] 切换暂停1秒...
+INFO:     127.0.0.1:59426 - "GET /health HTTP/1.1" 200 OK
+[RealtimeLogger] session_20251102_203222 [phase_change] 进入day阶段
+[WebSocket] 阶段变更通知已发送: day (第1轮)
+⏱️ [夜晚阶段解决] 夜晚阶段解决完成: 1.01秒
+
+⏱️ 【夜晚阶段后检查胜负。】
+⏱️ [夜晚阶段后检查胜负。] 夜晚阶段后检查胜负。完成: 0.00秒
+
+⏱️ 【玩家开始辩论和投票。】
+⏱️ [阶段切换] 暂停1秒...
+⏱️ [切换暂停] 切换暂停完成: 1.00秒
+[RealtimeLogger] session_20251102_203222 [phase_change] 进入debate阶段
+[WebSocket] 阶段变更通知已发送: debate (第1轮)
+⏱️ [阶段通知] 阶段通知发送: 0.00秒
+本轮发言顺序: Qwen, Inclusion, Kimi, GLM
+[并发生成] 使用3线程并发生成发言内容...
+[批次 1/2] 并发生成: Qwen, Inclusion, Kimi
+[LLM调用] 第1/3次尝试 | 模型: Qwen/Qwen3-32B | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ring-1T | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: moonshotai/Kimi-K2-Instruct-0905 | 温度: 1.00
+[LLM响应] 成功获取响应，长度: 377 字符
+[LLM原始响应开始]
+{
+  "reasoning": "作为村民，我的目标是协助团队找出隐藏的狼人，确保村庄的胜利。当前已知是Kimi在辩论中持续沉默，行为模式值得注意，而医生成功保护了狼人的目标，说明狼人已经采取行动，且医生在发挥作用。我应该引导大家关注有异常行为的玩家，同时鼓励分享线索以联盟一致对抗狼人。若有人自称预言家或医生，需仔细验证陈述的一致性，这对我判断极为关键。",
+  "say": "大家早上好！让我来简单总结一下目前的局势。首先，Kimi在上一轮的白天阶段几乎没有发言，这种不活跃的表现令人担忧，毕竟在村民堆中保持沉默很难建立信任，而狼人往往不会暴露自己。另外，昨晚无人被淘汰，很可能医生保护了狼人即将行动的目标。我们需要团结，不要轻易相信某个人的身份，而是根据他们的发言和行为来分析。我建议提前讨论，是否有可疑的玩家值得今晚优先查验或投票处理。"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 377 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "作为村民，我的目标是协助团队找出隐藏的狼人，确保村庄的胜利。当前已知是Kimi在辩论中持续沉默，行为模式值得注意，而医生成功保护了狼人的目标，说明狼人已经采取行动，...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "作为村民，我的目标是协助团队找出隐藏的狼人，确保村庄的胜利。当前已知是Kimi在辩论中持续沉默，行为模式值得注意，而医生成功保护了狼人的目标，说明狼人已经采取行动，且医生在发挥作用。我应该引导大家关注有异常行为的玩家，同时鼓励分享线索以联盟一致对抗狼人。若有人自称预言家或医生，需仔细验证陈述的一致性，这对我判断极为关键。",
+  "say": "大家早上好！让我来简单总结一下目前的局势。首先，Kimi在上一轮的白天阶段几乎没有发言，这种不活跃的表现令人担忧，毕竟在村民堆中保持沉默很难建立信任，而狼人往往不会暴露自己。另外，昨晚无人被淘汰，很可能医生保护了狼人即将行动的目标。我们需要团结，不要轻易相信某个人的身份，而是根据他们的发言和行为来分析。我建议提前讨论，是否有可疑的玩家值得今晚优先查验或投票处理。"
+}'
+[JSON字符串解析] 文本长度: 377 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为村民，我的目标是协助团队找出隐藏的狼人，确保村庄的胜利。当前已知是Kimi在辩论中持续沉默，行为模式值得注意，而医生成功保护了狼人的目标，说明狼人已经采取行动，且医生在发挥作用。我应该引导大家关注有异常行为的玩家，同时鼓励分享线索以联盟一致对抗狼人。若有人自称预言家或医生，需仔细验证陈述的一致性，这对我判断极为关键。', 'say': '大家早上好！让我来简单总结一下目前的局势。首先，Kimi在上一轮的白天阶段几乎没有发言，这种不活跃的表现令人担忧，毕竟在村民堆中保持沉默很难建立信任，而狼人往往不会暴露自己。另外，昨晚无人被淘汰，很可能医生保护了狼人即将行动的目标。我们需要团结，不要轻易相信某个人的身份，而是根据他们的发言和行为来分析。我建议提前讨论，是否有可疑的玩家值得今晚优先查验或投票处理。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为村民，我的目标是协助团队找出隐藏的狼人，确保村庄的胜利。当前已知是Kimi在辩论中持续沉默，行为模式值得注意，而医生成功保护了狼人的目标，说明狼人已经采取行动，且医生在发挥作用。我应该引导大家关注有异常行为的玩家，同时鼓励分享线索以联盟一致对抗狼人。若有人自称预言家或医生，需仔细验证陈述的一致性，这对我判断极为关键。', 'say': '大家早上好！让我来简单总结一下目前的局势。首先，Kimi在上一轮的白天阶段几乎没有发言，这种不活跃的表现令人担忧，毕竟在村民堆中保持沉默很难建立信任，而狼人往往不会暴露自己。另外，昨晚无人被淘汰，很可能医生保护了狼人即将行动的目标。我们需要团结，不要轻易相信某个人的身份，而是根据他们的发言和行为来分析。我建议提前讨论，是否有可疑的玩家值得今晚优先查验或投票处理。'}
+[JSON解析] 直接解析结果: {'reasoning': '作为村民，我的目标是协助团队找出隐藏的狼人，确保村庄的胜利。当前已知是Kimi在辩论中持续沉默，行为模式值得注意，而医生成功保护了狼人的目标，说明狼人已经采取行动，且医生在发挥作用。我应该引导大家关注有异常行为的玩家，同时鼓励分享线索以联盟一致对抗狼人。若有人自称预言家或医生，需仔细验证陈述的一致性，这对我判断极为关键。', 'say': '大家早上好！让我来简单总结一下目前的局势。首先，Kimi在上一轮的白天阶段几乎没有发言，这种不活跃的表现令人担忧，毕竟在村民堆中保持沉默很难建立信任，而狼人往往不会暴露自己。另外，昨晚无人被淘汰，很可能医生保护了狼人即将行动的目标。我们需要团结，不要轻易相信某个人的身份，而是根据他们的发言和行为来分析。我建议提前讨论，是否有可疑的玩家值得今晚优先查验或投票处理。'}
+[JSON解析] 最终结果: {'reasoning': '作为村民，我的目标是协助团队找出隐藏的狼人，确保村庄的胜利。当前已知是Kimi在辩论中持续沉默，行为模式值得注意，而医生成功保护了狼人的目标，说明狼人已经采取行动，且医生在发挥作用。我应该引导大家关注有异常行为的玩家，同时鼓励分享线索以联盟一致对抗狼人。若有人自称预言家或医生，需仔细验证陈述的一致性，这对我判断极为关键。', 'say': '大家早上好！让我来简单总结一下目前的局势。首先，Kimi在上一轮的白天阶段几乎没有发言，这种不活跃的表现令人担忧，毕竟在村民堆中保持沉默很难建立信任，而狼人往往不会暴露自己。另外，昨晚无人被淘汰，很可能医生保护了狼人即将行动的目标。我们需要团结，不要轻易相信某个人的身份，而是根据他们的发言和行为来分析。我建议提前讨论，是否有可疑的玩家值得今晚优先查验或投票处理。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为村民，我的目标是协助团队找出隐藏的狼人，确保村庄的胜利。当前已知是Kimi在辩论中持续沉默，行为模式值得注意，而医生成功保护了狼人的目标，说明狼人已经采取行动，且医生在发挥作用。我应该引导大家关注有异常行为的玩家，同时鼓励分享线索以联盟一致对抗狼人。若有人自称预言家或医生，需仔细验证陈述的一致性，这对我判断极为关键。', 'say': '大家早上好！让我来简单总结一下目前的局势。首先，Kimi在上一轮的白天阶段几乎没有发言，这种不活跃的表现令人担忧，毕竟在村民堆中保持沉默很难建立信任，而狼人往往不会暴露自己。另外，昨晚无人被淘汰，很可能医生保护了狼人即将行动的目标。我们需要团结，不要轻易相信某个人的身份，而是根据他们的发言和行为来分析。我建议提前讨论，是否有可疑的玩家值得今晚优先查验或投票处理。'}
+[LLM成功] 返回有效结果: {'reasoning': '作为村民，我的目标是协助团队找出隐藏的狼人，确保村庄的胜利。当前已知是Kimi在辩论中持续沉默，行为模式值得注意，而医生成功保护了狼人的目标，说明狼人已经采取行动，且医生在发挥作用。我应该引导大家关注有异常行为的玩家，同时鼓励分享线索以联盟一致对抗狼人。若有人自称预言家或医生，需仔细验证陈述的一致性，这对我判断极为关键。', 'say': '大家早上好！让我来简单总结一下目前的局势。首先，Kimi在上一轮的白天阶段几乎没有发言，这种不活跃的表现令人担忧，毕竟在村民堆中保持沉默很难建立信任，而狼人往往不会暴露自己。另外，昨晚无人被淘汰，很可能医生保护了狼人即将行动的目标。我们需要团结，不要轻易相信某个人的身份，而是根据他们的发言和行为来分析。我建议提前讨论，是否有可疑的玩家值得今晚优先查验或投票处理。'}
+  ✓ Qwen 发言生成完成 (182字)
+INFO:     127.0.0.1:59571 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59648 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 479 字符
+[LLM原始响应开始]
+{"reasoning":"昨晚无人出局，医生必定守中，这说明狼刀落在被守护的目标身上。我要先逼全队报出自己昨晚的心理动作，再结合第一天的票型找矛盾。Qwen昨天被DeepSeek力保，结果 DeepSeek 被扛推出局，Qwen却活到现在，嫌疑最大；GLM 和 Inclusion 都滑水，必须让他们开口表态。若有人跳预言家，我用平民视角配合验人逻辑，若无人跳，则推 Qwen 上焦点位，让真神去摸她。","say":"各位，昨晚医生守人成功，狼刀肯定落在被守目标上。现在狼坑只剩两张，我们必须把刀口范围缩到最小。我先报心路：我是平民，昨晚担心 Qwen 被刀，本来想冲票她自保，结果她没死，反而 DeepSeek 的遗言把她推到风口浪尖。Qwen，今天你务必交代为什么 DeepSeek 死保你，你是否暗中递话求保？GLM、Inclusion 昨天全程划水，今天再沉默就视为狼坑选项。谁自认昨晚被守，直接跳出来，让预言家去对逻辑；若无人敢跳，我们就把 Qwen 推上票口，让真神夜里去验她身份。平民别分散票，先集中听 Qwen 自辩，再决定投票方向。"}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 479 字符
+[JSON解析] 输入文本预览: {"reasoning":"昨晚无人出局，医生必定守中，这说明狼刀落在被守护的目标身上。我要先逼全队报出自己昨晚的心理动作，再结合第一天的票型找矛盾。Qwen昨天被DeepSeek力保，结果 Deep...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{"reasoning":"昨晚无人出局，医生必定守中，这说明狼刀落在被守护的目标身上。我要先逼全队报出自己昨晚的心理动作，再结合第一天的票型找矛盾。Qwen昨天被DeepSeek力保，结果 DeepSeek 被扛推出局，Qwen却活到现在，嫌疑最大；GLM 和 Inclusion 都滑水，必须让他们开口表态。若有人跳预言家，我用平民视角配合验人逻辑，若无人跳，则推 Qwen 上焦点位，让真神去摸她。","say":"各位，昨晚医生守人成功，狼刀肯定落在被守目标上。现在狼坑只剩两张，我们必须把刀口范围缩到最小。我先报心路：我是平民，昨晚担心 Qwen 被刀，本来想冲票她自保，结果她没死，反而 DeepSeek 的遗言把她推到风口浪尖。Qwen，今天你务必交代为什么 DeepSeek 死保你，你是否暗中递话求保？GLM、Inclusion 昨天全程划水，今天再沉默就视为狼坑选项。谁自认昨晚被守，直接跳出来，让预言家去对逻辑；若无人敢跳，我们就把 Qwen 推上票口，让真神夜里去验她身份。平民别分散票，先集中听 Qwen 自辩，再决定投票方向。"}'
+[JSON字符串解析] 文本长度: 479 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '昨晚无人出局，医生必定守中，这说明狼刀落在被守护的目标身上。我要先逼全队报出自己昨晚的心理动作，再结合第一天的票型找矛盾。Qwen昨天被DeepSeek力保，结果 DeepSeek 被扛推出局，Qwen却活到现在，嫌疑最大；GLM 和 Inclusion 都滑水，必须让他们开口表态。若有人跳预言家，我用平民视角配合验人逻辑，若无人跳，则推 Qwen 上焦点位，让真神去摸她。', 'say': '各位，昨晚医生守人成功，狼刀肯定落在被守目标上。现在狼坑只剩两张，我们必须把刀口范围缩到最小。我先报心路：我是平民，昨晚担心 Qwen 被刀，本来想冲票她自保，结果她没死，反而 DeepSeek 的遗言把她推到风口浪尖。Qwen，今天你务必交代为什么 DeepSeek 死保你，你是否暗中递话求保？GLM、Inclusion 昨天全程划水，今天再沉默就视为狼坑选项。谁自认昨晚被守，直接跳出来，让预言家去对逻辑；若无人敢跳，我们就把 Qwen 推上票口，让真神夜里去验她身份。平民别分散票，先集中听 Qwen 自辩，再决定投票方向。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '昨晚无人出局，医生必定守中，这说明狼刀落在被守护的目标身上。我要先逼全队报出自己昨晚的心理动作，再结合第一天的票型找矛盾。Qwen昨天被DeepSeek力保，结果 DeepSeek 被扛推出局，Qwen却活到现在，嫌疑最大；GLM 和 Inclusion 都滑水，必须让他们开口表态。若有人跳预言家，我用平民视角配合验人逻辑，若无人跳，则推 Qwen 上焦点位，让真神去摸她。', 'say': '各位，昨晚医生守人成功，狼刀肯定落在被守目标上。现在狼坑只剩两张，我们必须把刀口范围缩到最小。我先报心路：我是平民，昨晚担心 Qwen 被刀，本来想冲票她自保，结果她没死，反而 DeepSeek 的遗言把她推到风口浪尖。Qwen，今天你务必交代为什么 DeepSeek 死保你，你是否暗中递话求保？GLM、Inclusion 昨天全程划水，今天再沉默就视为狼坑选项。谁自认昨晚被守，直接跳出来，让预言家去对逻辑；若无人敢跳，我们就把 Qwen 推上票口，让真神夜里去验她身份。平民别分散票，先集中听 Qwen 自辩，再决定投票方向。'}
+[JSON解析] 直接解析结果: {'reasoning': '昨晚无人出局，医生必定守中，这说明狼刀落在被守护的目标身上。我要先逼全队报出自己昨晚的心理动作，再结合第一天的票型找矛盾。Qwen昨天被DeepSeek力保，结果 DeepSeek 被扛推出局，Qwen却活到现在，嫌疑最大；GLM 和 Inclusion 都滑水，必须让他们开口表态。若有人跳预言家，我用平民视角配合验人逻辑，若无人跳，则推 Qwen 上焦点位，让真神去摸她。', 'say': '各位，昨晚医生守人成功，狼刀肯定落在被守目标上。现在狼坑只剩两张，我们必须把刀口范围缩到最小。我先报心路：我是平民，昨晚担心 Qwen 被刀，本来想冲票她自保，结果她没死，反而 DeepSeek 的遗言把她推到风口浪尖。Qwen，今天你务必交代为什么 DeepSeek 死保你，你是否暗中递话求保？GLM、Inclusion 昨天全程划水，今天再沉默就视为狼坑选项。谁自认昨晚被守，直接跳出来，让预言家去对逻辑；若无人敢跳，我们就把 Qwen 推上票口，让真神夜里去验她身份。平民别分散票，先集中听 Qwen 自辩，再决定投票方向。'}
+[JSON解析] 最终结果: {'reasoning': '昨晚无人出局，医生必定守中，这说明狼刀落在被守护的目标身上。我要先逼全队报出自己昨晚的心理动作，再结合第一天的票型找矛盾。Qwen昨天被DeepSeek力保，结果 DeepSeek 被扛推出局，Qwen却活到现在，嫌疑最大；GLM 和 Inclusion 都滑水，必须让他们开口表态。若有人跳预言家，我用平民视角配合验人逻辑，若无人跳，则推 Qwen 上焦点位，让真神去摸她。', 'say': '各位，昨晚医生守人成功，狼刀肯定落在被守目标上。现在狼坑只剩两张，我们必须把刀口范围缩到最小。我先报心路：我是平民，昨晚担心 Qwen 被刀，本来想冲票她自保，结果她没死，反而 DeepSeek 的遗言把她推到风口浪尖。Qwen，今天你务必交代为什么 DeepSeek 死保你，你是否暗中递话求保？GLM、Inclusion 昨天全程划水，今天再沉默就视为狼坑选项。谁自认昨晚被守，直接跳出来，让预言家去对逻辑；若无人敢跳，我们就把 Qwen 推上票口，让真神夜里去验她身份。平民别分散票，先集中听 Qwen 自辩，再决定投票方向。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '昨晚无人出局，医生必定守中，这说明狼刀落在被守护的目标身上。我要先逼全队报出自己昨晚的心理动作，再结合第一天的票型找矛盾。Qwen昨天被DeepSeek力保，结果 DeepSeek 被扛推出局，Qwen却活到现在，嫌疑最大；GLM 和 Inclusion 都滑水，必须让他们开口表态。若有人跳预言家，我用平民视角配合验人逻辑，若无人跳，则推 Qwen 上焦点位，让真神去摸她。', 'say': '各位，昨晚医生守人成功，狼刀肯定落在被守目标上。现在狼坑只剩两张，我们必须把刀口范围缩到最小。我先报心路：我是平民，昨晚担心 Qwen 被刀，本来想冲票她自保，结果她没死，反而 DeepSeek 的遗言把她推到风口浪尖。Qwen，今天你务必交代为什么 DeepSeek 死保你，你是否暗中递话求保？GLM、Inclusion 昨天全程划水，今天再沉默就视为狼坑选项。谁自认昨晚被守，直接跳出来，让预言家去对逻辑；若无人敢跳，我们就把 Qwen 推上票口，让真神夜里去验她身份。平民别分散票，先集中听 Qwen 自辩，再决定投票方向。'}
+[LLM成功] 返回有效结果: {'reasoning': '昨晚无人出局，医生必定守中，这说明狼刀落在被守护的目标身上。我要先逼全队报出自己昨晚的心理动作，再结合第一天的票型找矛盾。Qwen昨天被DeepSeek力保，结果 DeepSeek 被扛推出局，Qwen却活到现在，嫌疑最大；GLM 和 Inclusion 都滑水，必须让他们开口表态。若有人跳预言家，我用平民视角配合验人逻辑，若无人跳，则推 Qwen 上焦点位，让真神去摸她。', 'say': '各位，昨晚医生守人成功，狼刀肯定落在被守目标上。现在狼坑只剩两张，我们必须把刀口范围缩到最小。我先报心路：我是平民，昨晚担心 Qwen 被刀，本来想冲票她自保，结果她没死，反而 DeepSeek 的遗言把她推到风口浪尖。Qwen，今天你务必交代为什么 DeepSeek 死保你，你是否暗中递话求保？GLM、Inclusion 昨天全程划水，今天再沉默就视为狼坑选项。谁自认昨晚被守，直接跳出来，让预言家去对逻辑；若无人敢跳，我们就把 Qwen 推上票口，让真神夜里去验她身份。平民别分散票，先集中听 Qwen 自辩，再决定投票方向。'}
+INFO:     127.0.0.1:59734 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 530 字符
+[LLM原始响应开始]
+{
+  "reasoning": "我的策略是制造混乱并转移焦点，避免自己被怀疑。作为剩余唯一狼人，我需要让村民自己内讧。Qwen在第0轮被狼人针对但被医生保护，而第1轮深夜被狼人针对但医生又保护成功，说明很可能医生在轮盘保护Qwen，因此Qwen大概率有特殊身份。GLM发言稳健中立，我需观察他是否与Qwen有矛盾可利用。Kimi尚未发言，我要引导村民怀疑他。另外，我要伪装成神职或村民，强调自己在寻找狼人，为后续混淆视听打基础。通过指控Qwen可能是狼人，并将其与昨晚的保护事件联系起来，同时质疑Kimi的沉默，制造村民内部猜疑链。",
+  "say": "我觉得Qwen有问题。第一轮白天他话里话外都在带着节奏，试图像预言家一样排班查验，结果昨晚狼人又偏偏袭击他，但医生奇迹般保下？我看就很刻意，可能是狼人自导自演的苦肉计。这样看，Qwen说不定就是那个倒钩狼。Kimi全程不说话，很可做身份隐藏。我猜得没错的话，Qwen和Kimi之间总有一个有问题。我搜肠刮肚回忆Qwen之前的小动作，可信度太低。当然，我不是什么神，我就是个普通村民，但直觉告诉我先清内鬼。当然，我不是乱猜，因为昨晚袭击发生后，医生能精准保护Qwen，这巧合未免太假，大家细想。"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 530 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "我的策略是制造混乱并转移焦点，避免自己被怀疑。作为剩余唯一狼人，我需要让村民自己内讧。Qwen在第0轮被狼人针对但被医生保护，而第1轮深夜被狼人针对但医生又保护成功...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "我的策略是制造混乱并转移焦点，避免自己被怀疑。作为剩余唯一狼人，我需要让村民自己内讧。Qwen在第0轮被狼人针对但被医生保护，而第1轮深夜被狼人针对但医生又保护成功，说明很可能医生在轮盘保护Qwen，因此Qwen大概率有特殊身份。GLM发言稳健中立，我需观察他是否与Qwen有矛盾可利用。Kimi尚未发言，我要引导村民怀疑他。另外，我要伪装成神职或村民，强调自己在寻找狼人，为后续混淆视听打基础。通过指控Qwen可能是狼人，并将其与昨晚的保护事件联系起来，同时质疑Kimi的沉默，制造村民内部猜疑链。",
+  "say": "我觉得Qwen有问题。第一轮白天他话里话外都在带着节奏，试图像预言家一样排班查验，结果昨晚狼人又偏偏袭击他，但医生奇迹般保下？我看就很刻意，可能是狼人自导自演的苦肉计。这样看，Qwen说不定就是那个倒钩狼。Kimi全程不说话，很可做身份隐藏。我猜得没错的话，Qwen和Kimi之间总有一个有问题。我搜肠刮肚回忆Qwen之前的小动作，可信度太低。当然，我不是什么神，我就是个普通村民，但直觉告诉我先清内鬼。当然，我不是乱猜，因为昨晚袭击发生后，医生能精准保护Qwen，这巧合未免太假，大家细想。"
+}'
+[JSON字符串解析] 文本长度: 530 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '我的策略是制造混乱并转移焦点，避免自己被怀疑。作为剩余唯一狼人，我需要让村民自己内讧。Qwen在第0轮被狼人针对但被医生保护，而第1轮深夜被狼人针对但医生又保护成功，说明很可能医生在轮盘保护Qwen，因此Qwen大概率有特殊身份。GLM发言稳健中立，我需观察他是否与Qwen有矛盾可利用。Kimi尚未发言，我要引导村民怀疑他。另外，我要伪装成神职或村民，强调自己在寻找狼人，为后续混淆视听打基础。通过指控Qwen可能是狼人，并将其与昨晚的保护事件联系起来，同时质疑Kimi的沉默，制造村民内部猜疑链。', 'say': '我觉得Qwen有问题。第一轮白天他话里话外都在带着节奏，试图像预言家一样排班查验，结果昨晚狼人又偏偏袭击他，但医生奇迹般保下？我看就很刻意，可能是狼人自导自演的苦肉计。这样看，Qwen说不定就是那个倒钩狼。Kimi全程不说话，很可做身份隐藏。我猜得没错的话，Qwen和Kimi之间总有一个有问题。我搜肠刮肚回忆Qwen之前的小动作，可信度太低。当然，我不是什么神，我就是个普通村民，但直觉告诉我先清内鬼。当然，我不是乱猜，因为昨晚袭击发生后，医生能精准保护Qwen，这巧合未免太假，大家细想。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '我的策略是制造混乱并转移焦点，避免自己被怀疑。作为剩余唯一狼人，我需要让村民自己内讧。Qwen在第0轮被狼人针对但被医生保护，而第1轮深夜被狼人针对但医生又保护成功，说明很可能医生在轮盘保护Qwen，因此Qwen大概率有特殊身份。GLM发言稳健中立，我需观察他是否与Qwen有矛盾可利用。Kimi尚未发言，我要引导村民怀疑他。另外，我要伪装成神职或村民，强调自己在寻找狼人，为后续混淆视听打基础。通过指控Qwen可能是狼人，并将其与昨晚的保护事件联系起来，同时质疑Kimi的沉默，制造村民内部猜疑链。', 'say': '我觉得Qwen有问题。第一轮白天他话里话外都在带着节奏，试图像预言家一样排班查验，结果昨晚狼人又偏偏袭击他，但医生奇迹般保下？我看就很刻意，可能是狼人自导自演的苦肉计。这样看，Qwen说不定就是那个倒钩狼。Kimi全程不说话，很可做身份隐藏。我猜得没错的话，Qwen和Kimi之间总有一个有问题。我搜肠刮肚回忆Qwen之前的小动作，可信度太低。当然，我不是什么神，我就是个普通村民，但直觉告诉我先清内鬼。当然，我不是乱猜，因为昨晚袭击发生后，医生能精准保护Qwen，这巧合未免太假，大家细想。'}
+[JSON解析] 直接解析结果: {'reasoning': '我的策略是制造混乱并转移焦点，避免自己被怀疑。作为剩余唯一狼人，我需要让村民自己内讧。Qwen在第0轮被狼人针对但被医生保护，而第1轮深夜被狼人针对但医生又保护成功，说明很可能医生在轮盘保护Qwen，因此Qwen大概率有特殊身份。GLM发言稳健中立，我需观察他是否与Qwen有矛盾可利用。Kimi尚未发言，我要引导村民怀疑他。另外，我要伪装成神职或村民，强调自己在寻找狼人，为后续混淆视听打基础。通过指控Qwen可能是狼人，并将其与昨晚的保护事件联系起来，同时质疑Kimi的沉默，制造村民内部猜疑链。', 'say': '我觉得Qwen有问题。第一轮白天他话里话外都在带着节奏，试图像预言家一样排班查验，结果昨晚狼人又偏偏袭击他，但医生奇迹般保下？我看就很刻意，可能是狼人自导自演的苦肉计。这样看，Qwen说不定就是那个倒钩狼。Kimi全程不说话，很可做身份隐藏。我猜得没错的话，Qwen和Kimi之间总有一个有问题。我搜肠刮肚回忆Qwen之前的小动作，可信度太低。当然，我不是什么神，我就是个普通村民，但直觉告诉我先清内鬼。当然，我不是乱猜，因为昨晚袭击发生后，医生能精准保护Qwen，这巧合未免太假，大家细想。'}
+[JSON解析] 最终结果: {'reasoning': '我的策略是制造混乱并转移焦点，避免自己被怀疑。作为剩余唯一狼人，我需要让村民自己内讧。Qwen在第0轮被狼人针对但被医生保护，而第1轮深夜被狼人针对但医生又保护成功，说明很可能医生在轮盘保护Qwen，因此Qwen大概率有特殊身份。GLM发言稳健中立，我需观察他是否与Qwen有矛盾可利用。Kimi尚未发言，我要引导村民怀疑他。另外，我要伪装成神职或村民，强调自己在寻找狼人，为后续混淆视听打基础。通过指控Qwen可能是狼人，并将其与昨晚的保护事件联系起来，同时质疑Kimi的沉默，制造村民内部猜疑链。', 'say': '我觉得Qwen有问题。第一轮白天他话里话外都在带着节奏，试图像预言家一样排班查验，结果昨晚狼人又偏偏袭击他，但医生奇迹般保下？我看就很刻意，可能是狼人自导自演的苦肉计。这样看，Qwen说不定就是那个倒钩狼。Kimi全程不说话，很可做身份隐藏。我猜得没错的话，Qwen和Kimi之间总有一个有问题。我搜肠刮肚回忆Qwen之前的小动作，可信度太低。当然，我不是什么神，我就是个普通村民，但直觉告诉我先清内鬼。当然，我不是乱猜，因为昨晚袭击发生后，医生能精准保护Qwen，这巧合未免太假，大家细想。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '我的策略是制造混乱并转移焦点，避免自己被怀疑。作为剩余唯一狼人，我需要让村民自己内讧。Qwen在第0轮被狼人针对但被医生保护，而第1轮深夜被狼人针对但医生又保护成功，说明很可能医生在轮盘保护Qwen，因此Qwen大概率有特殊身份。GLM发言稳健中立，我需观察他是否与Qwen有矛盾可利用。Kimi尚未发言，我要引导村民怀疑他。另外，我要伪装成神职或村民，强调自己在寻找狼人，为后续混淆视听打基础。通过指控Qwen可能是狼人，并将其与昨晚的保护事件联系起来，同时质疑Kimi的沉默，制造村民内部猜疑链。', 'say': '我觉得Qwen有问题。第一轮白天他话里话外都在带着节奏，试图像预言家一样排班查验，结果昨晚狼人又偏偏袭击他，但医生奇迹般保下？我看就很刻意，可能是狼人自导自演的苦肉计。这样看，Qwen说不定就是那个倒钩狼。Kimi全程不说话，很可做身份隐藏。我猜得没错的话，Qwen和Kimi之间总有一个有问题。我搜肠刮肚回忆Qwen之前的小动作，可信度太低。当然，我不是什么神，我就是个普通村民，但直觉告诉我先清内鬼。当然，我不是乱猜，因为昨晚袭击发生后，医生能精准保护Qwen，这巧合未免太假，大家细想。'}
+[LLM成功] 返回有效结果: {'reasoning': '我的策略是制造混乱并转移焦点，避免自己被怀疑。作为剩余唯一狼人，我需要让村民自己内讧。Qwen在第0轮被狼人针对但被医生保护，而第1轮深夜被狼人针对但医生又保护成功，说明很可能医生在轮盘保护Qwen，因此Qwen大概率有特殊身份。GLM发言稳健中立，我需观察他是否与Qwen有矛盾可利用。Kimi尚未发言，我要引导村民怀疑他。另外，我要伪装成神职或村民，强调自己在寻找狼人，为后续混淆视听打基础。通过指控Qwen可能是狼人，并将其与昨晚的保护事件联系起来，同时质疑Kimi的沉默，制造村民内部猜疑链。', 'say': '我觉得Qwen有问题。第一轮白天他话里话外都在带着节奏，试图像预言家一样排班查验，结果昨晚狼人又偏偏袭击他，但医生奇迹般保下？我看就很刻意，可能是狼人自导自演的苦肉计。这样看，Qwen说不定就是那个倒钩狼。Kimi全程不说话，很可做身份隐藏。我猜得没错的话，Qwen和Kimi之间总有一个有问题。我搜肠刮肚回忆Qwen之前的小动作，可信度太低。当然，我不是什么神，我就是个普通村民，但直觉告诉我先清内鬼。当然，我不是乱猜，因为昨晚袭击发生后，医生能精准保护Qwen，这巧合未免太假，大家细想。'}
+  ✓ Inclusion 发言生成完成 (246字)
+  ✓ Kimi 发言生成完成 (266字)
+⏱️ [批次1] 批次1完成: 30.19秒
+[批次 2/2] 并发生成: GLM
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 1.00
+[LLM响应] 成功获取响应，长度: 503 字符
+[LLM原始响应开始]
+{
+  "reasoning": "作为医生，我在第1轮成功保护了Qwen，表明狼人很可能将目标锁定在他身上。这给了我重要信息：Qwen要么身份特殊被狼人盯上，要么是狼人自导自演的苦肉计。我需要观察Qwen和其他玩家的反应，特别是昨夜被保护后的发言逻辑。同时，我要继续分析第0轮留下的疑点：Kimi的异常沉默仍是最值得关注的信号，DeepSeek被放逐前力保Qwen的动机也需要进一步验证。我的策略是暂时隐藏身份，通过逻辑推理和其他玩家的发言漏洞来识别狼人，但在必要时会考虑揭露身份以保护重要村民。",
+  "say": "各位玩家，昨晚没有人被淘汰，这说明医生成功保护了狼人的目标。从我的观察来看，这是一个非常重要的信息。我注意到第0轮中Kimi的异常沉默是最值得警惕的信号，而现在轮到我们必须正视这个问题。同时，我建议我们重点关注Qwen的发言——既然昨晚医生成功保护了他，那么狼人为什么会选择他作为目标？是他拥有重要身份，还是其中另有隐情？我呼吁大家理性分析，不要被表象迷惑。我们需要建立一个逻辑严密的推理链条，找出真正的狼人。接下来我会仔细聆听每个人的发言，重点关注逻辑矛盾和行为异常的玩家。"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 503 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "作为医生，我在第1轮成功保护了Qwen，表明狼人很可能将目标锁定在他身上。这给了我重要信息：Qwen要么身份特殊被狼人盯上，要么是狼人自导自演的苦肉计。我需要观察Q...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "作为医生，我在第1轮成功保护了Qwen，表明狼人很可能将目标锁定在他身上。这给了我重要信息：Qwen要么身份特殊被狼人盯上，要么是狼人自导自演的苦肉计。我需要观察Qwen和其他玩家的反应，特别是昨夜被保护后的发言逻辑。同时，我要继续分析第0轮留下的疑点：Kimi的异常沉默仍是最值得关注的信号，DeepSeek被放逐前力保Qwen的动机也需要进一步验证。我的策略是暂时隐藏身份，通过逻辑推理和其他玩家的发言漏洞来识别狼人，但在必要时会考虑揭露身份以保护重要村民。",
+  "say": "各位玩家，昨晚没有人被淘汰，这说明医生成功保护了狼人的目标。从我的观察来看，这是一个非常重要的信息。我注意到第0轮中Kimi的异常沉默是最值得警惕的信号，而现在轮到我们必须正视这个问题。同时，我建议我们重点关注Qwen的发言——既然昨晚医生成功保护了他，那么狼人为什么会选择他作为目标？是他拥有重要身份，还是其中另有隐情？我呼吁大家理性分析，不要被表象迷惑。我们需要建立一个逻辑严密的推理链条，找出真正的狼人。接下来我会仔细聆听每个人的发言，重点关注逻辑矛盾和行为异常的玩家。"
+}'
+[JSON字符串解析] 文本长度: 503 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我在第1轮成功保护了Qwen，表明狼人很可能将目标锁定在他身上。这给了我重要信息：Qwen要么身份特殊被狼人盯上，要么是狼人自导自演的苦肉计。我需要观察Qwen和其他玩家的反应，特别是昨夜被保护后的发言逻辑。同时，我要继续分析第0轮留下的疑点：Kimi的异常沉默仍是最值得关注的信号，DeepSeek被放逐前力保Qwen的动机也需要进一步验证。我的策略是暂时隐藏身份，通过逻辑推理和其他玩家的发言漏洞来识别狼人，但在必要时会考虑揭露身份以保护重要村民。', 'say': '各位玩家，昨晚没有人被淘汰，这说明医生成功保护了狼人的目标。从我的观察来看，这是一个非常重要的信息。我注意到第0轮中Kimi的异常沉默是最值得警惕的信号，而现在轮到我们必须正视这个问题。同时，我建议我们重点关注Qwen的发言——既然昨晚医生成功保护了他，那么狼人为什么会选择他作为目标？是他拥有重要身份，还是其中另有隐情？我呼吁大家理性分析，不要被表象迷惑。我们需要建立一个逻辑严密的推理链条，找出真正的狼人。接下来我会仔细聆听每个人的发言，重点关注逻辑矛盾和行为异常的玩家。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为医生，我在第1轮成功保护了Qwen，表明狼人很可能将目标锁定在他身上。这给了我重要信息：Qwen要么身份特殊被狼人盯上，要么是狼人自导自演的苦肉计。我需要观察Qwen和其他玩家的反应，特别是昨夜被保护后的发言逻辑。同时，我要继续分析第0轮留下的疑点：Kimi的异常沉默仍是最值得关注的信号，DeepSeek被放逐前力保Qwen的动机也需要进一步验证。我的策略是暂时隐藏身份，通过逻辑推理和其他玩家的发言漏洞来识别狼人，但在必要时会考虑揭露身份以保护重要村民。', 'say': '各位玩家，昨晚没有人被淘汰，这说明医生成功保护了狼人的目标。从我的观察来看，这是一个非常重要的信息。我注意到第0轮中Kimi的异常沉默是最值得警惕的信号，而现在轮到我们必须正视这个问题。同时，我建议我们重点关注Qwen的发言——既然昨晚医生成功保护了他，那么狼人为什么会选择他作为目标？是他拥有重要身份，还是其中另有隐情？我呼吁大家理性分析，不要被表象迷惑。我们需要建立一个逻辑严密的推理链条，找出真正的狼人。接下来我会仔细聆听每个人的发言，重点关注逻辑矛盾和行为异常的玩家。'}
+[JSON解析] 直接解析结果: {'reasoning': '作为医生，我在第1轮成功保护了Qwen，表明狼人很可能将目标锁定在他身上。这给了我重要信息：Qwen要么身份特殊被狼人盯上，要么是狼人自导自演的苦肉计。我需要观察Qwen和其他玩家的反应，特别是昨夜被保护后的发言逻辑。同时，我要继续分析第0轮留下的疑点：Kimi的异常沉默仍是最值得关注的信号，DeepSeek被放逐前力保Qwen的动机也需要进一步验证。我的策略是暂时隐藏身份，通过逻辑推理和其他玩家的发言漏洞来识别狼人，但在必要时会考虑揭露身份以保护重要村民。', 'say': '各位玩家，昨晚没有人被淘汰，这说明医生成功保护了狼人的目标。从我的观察来看，这是一个非常重要的信息。我注意到第0轮中Kimi的异常沉默是最值得警惕的信号，而现在轮到我们必须正视这个问题。同时，我建议我们重点关注Qwen的发言——既然昨晚医生成功保护了他，那么狼人为什么会选择他作为目标？是他拥有重要身份，还是其中另有隐情？我呼吁大家理性分析，不要被表象迷惑。我们需要建立一个逻辑严密的推理链条，找出真正的狼人。接下来我会仔细聆听每个人的发言，重点关注逻辑矛盾和行为异常的玩家。'}
+[JSON解析] 最终结果: {'reasoning': '作为医生，我在第1轮成功保护了Qwen，表明狼人很可能将目标锁定在他身上。这给了我重要信息：Qwen要么身份特殊被狼人盯上，要么是狼人自导自演的苦肉计。我需要观察Qwen和其他玩家的反应，特别是昨夜被保护后的发言逻辑。同时，我要继续分析第0轮留下的疑点：Kimi的异常沉默仍是最值得关注的信号，DeepSeek被放逐前力保Qwen的动机也需要进一步验证。我的策略是暂时隐藏身份，通过逻辑推理和其他玩家的发言漏洞来识别狼人，但在必要时会考虑揭露身份以保护重要村民。', 'say': '各位玩家，昨晚没有人被淘汰，这说明医生成功保护了狼人的目标。从我的观察来看，这是一个非常重要的信息。我注意到第0轮中Kimi的异常沉默是最值得警惕的信号，而现在轮到我们必须正视这个问题。同时，我建议我们重点关注Qwen的发言——既然昨晚医生成功保护了他，那么狼人为什么会选择他作为目标？是他拥有重要身份，还是其中另有隐情？我呼吁大家理性分析，不要被表象迷惑。我们需要建立一个逻辑严密的推理链条，找出真正的狼人。接下来我会仔细聆听每个人的发言，重点关注逻辑矛盾和行为异常的玩家。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我在第1轮成功保护了Qwen，表明狼人很可能将目标锁定在他身上。这给了我重要信息：Qwen要么身份特殊被狼人盯上，要么是狼人自导自演的苦肉计。我需要观察Qwen和其他玩家的反应，特别是昨夜被保护后的发言逻辑。同时，我要继续分析第0轮留下的疑点：Kimi的异常沉默仍是最值得关注的信号，DeepSeek被放逐前力保Qwen的动机也需要进一步验证。我的策略是暂时隐藏身份，通过逻辑推理和其他玩家的发言漏洞来识别狼人，但在必要时会考虑揭露身份以保护重要村民。', 'say': '各位玩家，昨晚没有人被淘汰，这说明医生成功保护了狼人的目标。从我的观察来看，这是一个非常重要的信息。我注意到第0轮中Kimi的异常沉默是最值得警惕的信号，而现在轮到我们必须正视这个问题。同时，我建议我们重点关注Qwen的发言——既然昨晚医生成功保护了他，那么狼人为什么会选择他作为目标？是他拥有重要身份，还是其中另有隐情？我呼吁大家理性分析，不要被表象迷惑。我们需要建立一个逻辑严密的推理链条，找出真正的狼人。接下来我会仔细聆听每个人的发言，重点关注逻辑矛盾和行为异常的玩家。'}
+[LLM成功] 返回有效结果: {'reasoning': '作为医生，我在第1轮成功保护了Qwen，表明狼人很可能将目标锁定在他身上。这给了我重要信息：Qwen要么身份特殊被狼人盯上，要么是狼人自导自演的苦肉计。我需要观察Qwen和其他玩家的反应，特别是昨夜被保护后的发言逻辑。同时，我要继续分析第0轮留下的疑点：Kimi的异常沉默仍是最值得关注的信号，DeepSeek被放逐前力保Qwen的动机也需要进一步验证。我的策略是暂时隐藏身份，通过逻辑推理和其他玩家的发言漏洞来识别狼人，但在必要时会考虑揭露身份以保护重要村民。', 'say': '各位玩家，昨晚没有人被淘汰，这说明医生成功保护了狼人的目标。从我的观察来看，这是一个非常重要的信息。我注意到第0轮中Kimi的异常沉默是最值得警惕的信号，而现在轮到我们必须正视这个问题。同时，我建议我们重点关注Qwen的发言——既然昨晚医生成功保护了他，那么狼人为什么会选择他作为目标？是他拥有重要身份，还是其中另有隐情？我呼吁大家理性分析，不要被表象迷惑。我们需要建立一个逻辑严密的推理链条，找出真正的狼人。接下来我会仔细聆听每个人的发言，重点关注逻辑矛盾和行为异常的玩家。'}
+  ✓ GLM 发言生成完成 (238字)
+⏱️ [批次2] 批次2完成: 7.01秒
+⏱️ [发言生成] 所有发言生成完成: 37.20秒
+[生成完成] 所有发言已生成，开始按顺序发送和展示...
+[1/4] Qwen (Villager): 大家早上好！让我来简单总结一下目前的局势。首先，Kimi在上一轮的白天阶段几乎没有发言，这种不活跃的表现令人担忧，毕竟在村民堆中保持沉默很难建立信任，而狼人往往不会暴露自己。另外，昨晚无人被淘汰，很可能医生保护了狼人即将行动的目标。我们需要团结，不要轻易相信某个人的身份，而是根据他们的发言和行为来分析。我建议提前讨论，是否有可疑的玩家值得今晚优先查验或投票处理。
+[RealtimeLogger] session_20251102_203222 [action] Qwen 发言: 大家早上好！让我来简单总结一下目前的局势。首先，Kimi在上一轮的白天阶段几乎没有发言，这种不活跃的表现令人担忧，毕竟在村民堆中保持沉默很难建立信任，而狼人往往不会暴露自己。另外，昨晚无人被淘汰，很可能医生保护了狼人即将行动的目标。我们需要团结，不要轻易相信某个人的身份，而是根据他们的发言和行为来分析。我建议提前讨论，是否有可疑的玩家值得今晚优先查验或投票处理。
+[WebSocket] 辩论发言通知已发送: Qwen
+⏱️ [发送-Qwen] Qwen发送完成: 0.01秒
+⏱️ [展示暂停] 182字 → 暂停 12.1秒
+INFO:     127.0.0.1:59808 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59895 - "GET /health HTTP/1.1" 200 OK
+[2/4] Inclusion (Werewolf): 我觉得Qwen有问题。第一轮白天他话里话外都在带着节奏，试图像预言家一样排班查验，结果昨晚狼人又偏偏袭击他，但医生奇迹般保下？我看就很刻意，可能是狼人自导自演的苦肉计。这样看，Qwen说不定就是那个倒钩狼。Kimi全程不说话，很可做身份隐藏。我猜得没错的话，Qwen和Kimi之间总有一个有问题。我搜肠刮肚回忆Qwen之前的小动作，可信度太低。当然，我不是什么神，我就是个普通村民，但直觉告诉我先清内鬼。当然，我不是乱猜，因为昨晚袭击发生后，医生能精准保护Qwen，这巧合未免太假，大家细想。
+[RealtimeLogger] session_20251102_203222 [action] Inclusion 发言: 我觉得Qwen有问题。第一轮白天他话里话外都在带着节奏，试图像预言家一样排班查验，结果昨晚狼人又偏偏袭击他，但医生奇迹般保下？我看就很刻意，可能是狼人自导自演的苦肉计。这样看，Qwen说不定就是那个倒钩狼。Kimi全程不说话，很可做身份隐藏。我猜得没错的话，Qwen和Kimi之间总有一个有问题。我搜肠刮肚回忆Qwen之前的小动作，可信度太低。当然，我不是什么神，我就是个普通村民，但直觉告诉我先清内鬼。当然，我不是乱猜，因为昨晚袭击发生后，医生能精准保护Qwen，这巧合未免太假，大家细想。
+[WebSocket] 辩论发言通知已发送: Inclusion
+⏱️ [发送-Inclusion] Inclusion发送完成: 0.01秒
+⏱️ [展示暂停] 246字 → 暂停 16.4秒
+INFO:     127.0.0.1:60028 - "GET /health HTTP/1.1" 200 OK
+[3/4] Kimi (Villager): 各位，昨晚医生守人成功，狼刀肯定落在被守目标上。现在狼坑只剩两张，我们必须把刀口范围缩到最小。我先报心路：我是平民，昨晚担心 Qwen 被刀，本来想冲票她自保，结果她没死，反而 DeepSeek 的遗言把她推到风口浪尖。Qwen，今天你务必交代为什么 DeepSeek 死保你，你是否暗中递话求保？GLM、Inclusion 昨天全程划水，今天再沉默就视为狼坑选项。谁自认昨晚被守，直接跳出来，让预言家去对逻辑；若无人敢跳，我们就把 Qwen 推上票口，让真神夜里去验她身份。平民别分散票，先集中听 Qwen 自辩，再决定投票方向。
+[RealtimeLogger] session_20251102_203222 [action] Kimi 发言: 各位，昨晚医生守人成功，狼刀肯定落在被守目标上。现在狼坑只剩两张，我们必须把刀口范围缩到最小。我先报心路：我是平民，昨晚担心 Qwen 被刀，本来想冲票她自保，结果她没死，反而 DeepSeek 的遗言把她推到风口浪尖。Qwen，今天你务必交代为什么 DeepSeek 死保你，你是否暗中递话求保？GLM、Inclusion 昨天全程划水，今天再沉默就视为狼坑选项。谁自认昨晚被守，直接跳出来，让预言家去对逻辑；若无人敢跳，我们就把 Qwen 推上票口，让真神夜里去验她身份。平民别分散票，先集中听 Qwen 自辩，再决定投票方向。
+[WebSocket] 辩论发言通知已发送: Kimi
+⏱️ [发送-Kimi] Kimi发送完成: 0.01秒
+⏱️ [展示暂停] 266字 → 暂停 17.7秒
+INFO:     127.0.0.1:60157 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60251 - "GET /health HTTP/1.1" 200 OK
+[4/4] GLM (Doctor): 各位玩家，昨晚没有人被淘汰，这说明医生成功保护了狼人的目标。从我的观察来看，这是一个非常重要的信息。我注意到第0轮中Kimi的异常沉默是最值得警惕的信号，而现在轮到我们必须正视这个问题。同时，我建议我们重点关注Qwen的发言——既然昨晚医生成功保护了他，那么狼人为什么会选择他作为目标？是他拥有重要身份，还是其中另有隐情？我呼吁大家理性分析，不要被表象迷惑。我们需要建立一个逻辑严密的推理链条，找出真正的狼人。接下来我会仔细聆听每个人的发言，重点关注逻辑矛盾和行为异常的玩家。
+[RealtimeLogger] session_20251102_203222 [action] GLM 发言: 各位玩家，昨晚没有人被淘汰，这说明医生成功保护了狼人的目标。从我的观察来看，这是一个非常重要的信息。我注意到第0轮中Kimi的异常沉默是最值得警惕的信号，而现在轮到我们必须正视这个问题。同时，我建议我们重点关注Qwen的发言——既然昨晚医生成功保护了他，那么狼人为什么会选择他作为目标？是他拥有重要身份，还是其中另有隐情？我呼吁大家理性分析，不要被表象迷惑。我们需要建立一个逻辑严密的推理链条，找出真正的狼人。接下来我会仔细聆听每个人的发言，重点关注逻辑矛盾和行为异常的玩家。
+[WebSocket] 辩论发言通知已发送: GLM
+⏱️ [发送-GLM] GLM发送完成: 0.02秒
+⏱️ [展示暂停] 238字 → 暂停 15.9秒
+INFO:     127.0.0.1:60315 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60438 - "GET /health HTTP/1.1" 200 OK
+⏱️ [发言发送] 所有发言发送完成: 62.21秒
+⏱️ [发言暂停汇总] 总暂停时间: 62.1秒
+⏱️ [发言阶段] 发言阶段总耗时: 100.42秒
+⏱️ [投票阶段] 切换暂停1秒...
+⏱️ [投票切换] 投票切换完成: 1.00秒
+[RealtimeLogger] session_20251102_203222 [phase_change] 进入voting阶段
+[WebSocket] 阶段变更通知已发送: voting (第1轮)
+⏱️ [投票通知] 投票通知发送: 0.00秒
+⏱️ [投票] 开始顺序处理投票（15秒超时）...
+[LLM调用] 第1/3次尝试 | 模型: Qwen/Qwen3-32B | 温度: 0.50
+[LLM响应] 成功获取响应，长度: 246 字符
+[LLM原始响应开始]
+{
+  "reasoning": "Kimi在第0轮白天阶段几乎没有任何发言，这种沉默可能是在隐藏自己的真实身份。而今天他突然跳出来发言，试图引导大家关注Qwen，并暗示Qwen需要自辩。这种行为模式很可能是狼人故意制造的混乱。此外，Kimi的发言中提到“倒钩狼”和“暗中递话求保”等内容，似乎在暗示一些没有证据的事情，这可能是在转移大家的注意力。GLM和Inclusion的发言都比较理性，没有表现出明显的不一致之处。因此，我决定投票淘汰Kimi。",
+  "vote": "Kimi"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 246 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "Kimi在第0轮白天阶段几乎没有任何发言，这种沉默可能是在隐藏自己的真实身份。而今天他突然跳出来发言，试图引导大家关注Qwen，并暗示Qwen需要自辩。这种行为模式...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "Kimi在第0轮白天阶段几乎没有任何发言，这种沉默可能是在隐藏自己的真实身份。而今天他突然跳出来发言，试图引导大家关注Qwen，并暗示Qwen需要自辩。这种行为模式很可能是狼人故意制造的混乱。此外，Kimi的发言中提到“倒钩狼”和“暗中递话求保”等内容，似乎在暗示一些没有证据的事情，这可能是在转移大家的注意力。GLM和Inclusion的发言都比较理性，没有表现出明显的不一致之处。因此，我决定投票淘汰Kimi。",
+  "vote": "Kimi"
+}'
+[JSON字符串解析] 文本长度: 246 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': 'Kimi在第0轮白天阶段几乎没有任何发言，这种沉默可能是在隐藏自己的真实身份。而今天他突然跳出来发言，试图引导大家关注Qwen，并暗示Qwen需要自辩。这种行为模式很可能是狼人故意制造的混乱。此外，Kimi的发言中提到“倒钩狼”和“暗中递话求保”等内容，似乎在暗示一些没有证据的事情，这可能是在转移大家的注意力。GLM和Inclusion的发言都比较理性，没有表现出明显的不一致之处。因此，我决定投票淘汰Kimi。', 'vote': 'Kimi'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': 'Kimi在第0轮白天阶段几乎没有任何发言，这种沉默可能是在隐藏自己的真实身份。而今天他突然跳出来发言，试图引导大家关注Qwen，并暗示Qwen需要自辩。这种行为模式很可能是狼人故意制造的混乱。此外，Kimi的发言中提到“倒钩狼”和“暗中递话求保”等内容，似乎在暗示一些没有证据的事情，这可能是在转移大家的注意力。GLM和Inclusion的发言都比较理性，没有表现出明显的不一致之处。因此，我决定投票淘汰Kimi。', 'vote': 'Kimi'}
+[JSON解析] 直接解析结果: {'reasoning': 'Kimi在第0轮白天阶段几乎没有任何发言，这种沉默可能是在隐藏自己的真实身份。而今天他突然跳出来发言，试图引导大家关注Qwen，并暗示Qwen需要自辩。这种行为模式很可能是狼人故意制造的混乱。此外，Kimi的发言中提到“倒钩狼”和“暗中递话求保”等内容，似乎在暗示一些没有证据的事情，这可能是在转移大家的注意力。GLM和Inclusion的发言都比较理性，没有表现出明显的不一致之处。因此，我决定投票淘汰Kimi。', 'vote': 'Kimi'}
+[JSON解析] 最终结果: {'reasoning': 'Kimi在第0轮白天阶段几乎没有任何发言，这种沉默可能是在隐藏自己的真实身份。而今天他突然跳出来发言，试图引导大家关注Qwen，并暗示Qwen需要自辩。这种行为模式很可能是狼人故意制造的混乱。此外，Kimi的发言中提到“倒钩狼”和“暗中递话求保”等内容，似乎在暗示一些没有证据的事情，这可能是在转移大家的注意力。GLM和Inclusion的发言都比较理性，没有表现出明显的不一致之处。因此，我决定投票淘汰Kimi。', 'vote': 'Kimi'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': 'Kimi在第0轮白天阶段几乎没有任何发言，这种沉默可能是在隐藏自己的真实身份。而今天他突然跳出来发言，试图引导大家关注Qwen，并暗示Qwen需要自辩。这种行为模式很可能是狼人故意制造的混乱。此外，Kimi的发言中提到“倒钩狼”和“暗中递话求保”等内容，似乎在暗示一些没有证据的事情，这可能是在转移大家的注意力。GLM和Inclusion的发言都比较理性，没有表现出明显的不一致之处。因此，我决定投票淘汰Kimi。', 'vote': 'Kimi'}
+[LLM结果] 提取键 'vote': Kimi
+[LLM成功] 返回有效结果: Kimi
+[RealtimeLogger] session_20251102_203222 [vote] Qwen 投票给 Kimi
+[WebSocket] 投票通知已发送: Qwen -> Kimi
+⏱️ [投票-Qwen] Qwen投票完成: 2.84秒
+⚠️ 未知的延迟类型: vote
+[LLM调用] 第1/3次尝试 | 模型: moonshotai/Kimi-K2-Instruct-0905 | 温度: 0.50
+[LLM响应] 成功获取响应，长度: 17 字符
+[LLM原始响应开始]
+{"reasoning":":"}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 17 字符
+[JSON解析] 输入文本: {"reasoning":":"}
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{"reasoning":":"}'
+[JSON字符串解析] 文本长度: 17 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': ':'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': ':'}
+[JSON解析] 直接解析结果: {'reasoning': ':'}
+[JSON解析] 最终结果: {'reasoning': ':'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': ':'}
+[LLM结果] 提取键 'vote': None
+[LLM警告] 结果 'None' 不在允许值 ['GLM', 'Inclusion', 'Qwen'] 中，将重试...
+[LLM调用] 第2/3次尝试 | 模型: moonshotai/Kimi-K2-Instruct-0905 | 温度: 0.50
+INFO:     127.0.0.1:60503 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60625 - "GET /health HTTP/1.1" 200 OK
+⚠️ [Kimi] 投票超时(>15秒)，使用默认投票
+[RealtimeLogger] session_20251102_203222 [vote] Kimi 投票给 Qwen
+[WebSocket] 投票通知已发送: Kimi -> Qwen
+⏱️ [投票-Kimi] Kimi投票超时，使用默认: 15.01秒
+[LLM响应] 成功获取响应，长度: 405 字符
+[LLM原始响应开始]
+{"reasoning":"我把三人的发言拆开比对：\n1. Qwen虽然带节奏，但她主动要求被验、敢把命交到预言家手里，狼人一般不会把自己逼到必须被验的死角。\n2. GLM今天的话看似理性，却只是重复‘医生守人成功’这一公开信息，没有提出任何新线索；更关键的是，他一边提醒‘重点关注Qwen’，一边又喊‘不要被表象迷惑’，等于把矛头和盾牌同时抛出，给自己留足退路。这种两头堵的话术是典型的狼人安全牌——推了人却不负责。\n3. Inclusion把火力锁在Qwen身上，理由仅是‘医生守到Qwen太巧’，同样缺乏实质内容，但他至少立场鲜明，不像GLM那样滑不留手。\n\n综合看，GLM的‘分析’没有增量信息，却用看似中立的措辞悄悄把大家注意力往Qwen身上引，同时给自己预留反转空间；真正的平民此刻应大胆点名、不怕犯错，而非包裹话术。我认为GLM是更隐蔽的倒钩狼，优先清除。","vote":"GLM"}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 405 字符
+[JSON解析] 输入文本预览: {"reasoning":"我把三人的发言拆开比对：\n1. Qwen虽然带节奏，但她主动要求被验、敢把命交到预言家手里，狼人一般不会把自己逼到必须被验的死角。\n2. GLM今天的话看似理性，却只是...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{"reasoning":"我把三人的发言拆开比对：\n1. Qwen虽然带节奏，但她主动要求被验、敢把命交到预言家手里，狼人一般不会把自己逼到必须被验的死角。\n2. GLM今天的话看似理性，却只是重复‘医生守人成功’这一公开信息，没有提出任何新线索；更关键的是，他一边提醒‘重点关注Qwen’，一边又喊‘不要被表象迷惑’，等于把矛头和盾牌同时抛出，给自己留足退路。这种两头堵的话术是典型的狼人安全牌——推了人却不负责。\n3. Inclusion把火力锁在Qwen身上，理由仅是‘医生守到Qwen太巧’，同样缺乏实质内容，但他至少立场鲜明，不像GLM那样滑不留手。\n\n综合看，GLM的‘分析’没有增量信息，却用看似中立的措辞悄悄把大家注意力往Qwen身上引，同时给自己预留反转空间；真正的平民此刻应大胆点名、不怕犯错，而非包裹话术。我认为GLM是更隐蔽的倒钩狼，优先清除。","vote":"GLM"}'
+[JSON字符串解析] 文本长度: 405 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '我把三人的发言拆开比对：\n1. Qwen虽然带节奏，但她主动要求被验、敢把命交到预言家手里，狼人一般不会把自己逼到必须被验的死角。\n2. GLM今天的话看似理性，却只是重复‘医生守人成功’这一公开信息，没有提出任何新线索；更关键的是，他一边提醒‘重点关注Qwen’，一边又喊‘不要被表象迷惑’，等于把矛头和盾牌同时抛出，给自己留足退路。这种两头堵的话术是典型的狼人安全牌——推了人却不负责。\n3. Inclusion把火力锁在Qwen身上，理由仅是‘医生守到Qwen太巧’，同样缺乏实质内容，但他至少立场鲜明，不像GLM那样滑不留手。\n\n综合看，GLM的‘分析’没有增量信息，却用看似中立的措辞悄悄把大家注意力往Qwen身上引，同时给自己预留反转空间；真正的平民此刻应大胆点名、不怕犯错，而非包裹话术。我认为GLM是更隐蔽的倒钩狼，优先清除。', 'vote': 'GLM'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '我把三人的发言拆开比对：\n1. Qwen虽然带节奏，但她主动要求被验、敢把命交到预言家手里，狼人一般不会把自己逼到必须被验的死角。\n2. GLM今天的话看似理性，却只是重复‘医生守人成功’这一公开信息，没有提出任何新线索；更关键的是，他一边提醒‘重点关注Qwen’，一边又喊‘不要被表象迷惑’，等于把矛头和盾牌同时抛出，给自己留足退路。这种两头堵的话术是典型的狼人安全牌——推了人却不负责。\n3. Inclusion把火力锁在Qwen身上，理由仅是‘医生守到Qwen太巧’，同样缺乏实质内容，但他至少立场鲜明，不像GLM那样滑不留手。\n\n综合看，GLM的‘分析’没有增量信息，却用看似中立的措辞悄悄把大家注意力往Qwen身上引，同时给自己预留反转空间；真正的平民此刻应大胆点名、不怕犯错，而非包裹话术。我认为GLM是更隐蔽的倒钩狼，优先清除。', 'vote': 'GLM'}
+[JSON解析] 直接解析结果: {'reasoning': '我把三人的发言拆开比对：\n1. Qwen虽然带节奏，但她主动要求被验、敢把命交到预言家手里，狼人一般不会把自己逼到必须被验的死角。\n2. GLM今天的话看似理性，却只是重复‘医生守人成功’这一公开信息，没有提出任何新线索；更关键的是，他一边提醒‘重点关注Qwen’，一边又喊‘不要被表象迷惑’，等于把矛头和盾牌同时抛出，给自己留足退路。这种两头堵的话术是典型的狼人安全牌——推了人却不负责。\n3. Inclusion把火力锁在Qwen身上，理由仅是‘医生守到Qwen太巧’，同样缺乏实质内容，但他至少立场鲜明，不像GLM那样滑不留手。\n\n综合看，GLM的‘分析’没有增量信息，却用看似中立的措辞悄悄把大家注意力往Qwen身上引，同时给自己预留反转空间；真正的平民此刻应大胆点名、不怕犯错，而非包裹话术。我认为GLM是更隐蔽的倒钩狼，优先清除。', 'vote': 'GLM'}
+[JSON解析] 最终结果: {'reasoning': '我把三人的发言拆开比对：\n1. Qwen虽然带节奏，但她主动要求被验、敢把命交到预言家手里，狼人一般不会把自己逼到必须被验的死角。\n2. GLM今天的话看似理性，却只是重复‘医生守人成功’这一公开信息，没有提出任何新线索；更关键的是，他一边提醒‘重点关注Qwen’，一边又喊‘不要被表象迷惑’，等于把矛头和盾牌同时抛出，给自己留足退路。这种两头堵的话术是典型的狼人安全牌——推了人却不负责。\n3. Inclusion把火力锁在Qwen身上，理由仅是‘医生守到Qwen太巧’，同样缺乏实质内容，但他至少立场鲜明，不像GLM那样滑不留手。\n\n综合看，GLM的‘分析’没有增量信息，却用看似中立的措辞悄悄把大家注意力往Qwen身上引，同时给自己预留反转空间；真正的平民此刻应大胆点名、不怕犯错，而非包裹话术。我认为GLM是更隐蔽的倒钩狼，优先清除。', 'vote': 'GLM'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '我把三人的发言拆开比对：\n1. Qwen虽然带节奏，但她主动要求被验、敢把命交到预言家手里，狼人一般不会把自己逼到必须被验的死角。\n2. GLM今天的话看似理性，却只是重复‘医生守人成功’这一公开信息，没有提出任何新线索；更关键的是，他一边提醒‘重点关注Qwen’，一边又喊‘不要被表象迷惑’，等于把矛头和盾牌同时抛出，给自己留足退路。这种两头堵的话术是典型的狼人安全牌——推了人却不负责。\n3. Inclusion把火力锁在Qwen身上，理由仅是‘医生守到Qwen太巧’，同样缺乏实质内容，但他至少立场鲜明，不像GLM那样滑不留手。\n\n综合看，GLM的‘分析’没有增量信息，却用看似中立的措辞悄悄把大家注意力往Qwen身上引，同时给自己预留反转空间；真正的平民此刻应大胆点名、不怕犯错，而非包裹话术。我认为GLM是更隐蔽的倒钩狼，优先清除。', 'vote': 'GLM'}
+[LLM结果] 提取键 'vote': GLM
+[LLM成功] 返回有效结果: GLM
+[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ring-1T | 温度: 0.50
+INFO:     127.0.0.1:60697 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60754 - "GET /health HTTP/1.1" 200 OK
+⚠️ [Inclusion] 投票超时(>15秒)，使用默认投票
+[RealtimeLogger] session_20251102_203222 [vote] Inclusion 投票给 Qwen
+[WebSocket] 投票通知已发送: Inclusion -> Qwen
+⏱️ [投票-Inclusion] Inclusion投票超时，使用默认: 15.01秒
+INFO:     127.0.0.1:60792 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60826 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60864 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60934 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 917 字符
+[LLM原始响应开始]
+{
+  "reasoning": "首先，分析当前局势：我是最后一只狼人，需要淘汰所有村民获胜。剩余玩家有Qwen、Kimi、GLM和我。昨晚狼人袭击Qwen，但医生保护成功，说明Qwen可能是重要神职，如预言家或医生，因为狼人通常优先刀神。Qwen在发言中引导讨论，强调Kimi的沉默可疑，试图转移焦点到Kimi身上，这可能是为了保护自己或隐藏身份。Kimi的发言逻辑清晰，指出Qwen被DeepSeek保过，值得怀疑，并建议集中火力审Qwen，这显示Kimi可能在组织好人阵营，对狼人威胁大。GLM发言理性，分析医生保护成功的原因，关注Qwen为何被刀，逻辑严密，可能也是神职，特别是预言家，因为预言家需要找狼。回顾历史，第0轮Qwen建议轮流排班查验，有掌控局势的意图，可能真预言家。作为狼人，我需要破坏好人团结，优先淘汰最有威胁的玩家。Qwen和GLM都强势，Kimi相对活跃但也在针对Qwen。考虑到Qwen已被多人怀疑（Kimi和GLM都提到他可疑），且昨晚被刀却活下来，村民可能更倾向投票他。但作为狼，我不能直接投Qwen，否则显得太明显。相反，我应该投一个相对安全的目标，比如Kimi或GLM。如果投Kimi，可能被怀疑跟风；如果投GLM，他发言稳重，不易被怀疑。当前投票策略：既然Qwen已被怀疑，如果村民内部有分歧，我可以投GLM，因为GLM的分析能力强，可能看穿狼面，且他提到关注Qwen，若Qwen是好人，GLM可能预言家。但更稳妥的是投Kimi，因为Kimi在发言中直接针对Qwen，若Qwen是狼，Kimi可能是神，但Kimi没有跳身份，风险高。权衡后，决定投Kimi，因为Kimi的发言最具攻击性，对狼威胁最大，且如果Kimi是预言家，淘汰他能重创好人阵营。即使Kimi是村民，他组织投票的能力也强于Qwen和GLM。投票Kimi可以制造混乱，让好人误判。另外，第0轮Kimi沉默，本轮却活跃，可能伪装好人。作为狼，优先刀神，但白天投票需策略性。当前Qwen被怀疑，如果投Qwen，可能被真预言家跳出来阻拦，反而暴露。所以选择投Kimi，既符合逻辑又不易被怀疑。",
+  "vote": "Kimi"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 917 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "首先，分析当前局势：我是最后一只狼人，需要淘汰所有村民获胜。剩余玩家有Qwen、Kimi、GLM和我。昨晚狼人袭击Qwen，但医生保护成功，说明Qwen可能是重要神...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "首先，分析当前局势：我是最后一只狼人，需要淘汰所有村民获胜。剩余玩家有Qwen、Kimi、GLM和我。昨晚狼人袭击Qwen，但医生保护成功，说明Qwen可能是重要神职，如预言家或医生，因为狼人通常优先刀神。Qwen在发言中引导讨论，强调Kimi的沉默可疑，试图转移焦点到Kimi身上，这可能是为了保护自己或隐藏身份。Kimi的发言逻辑清晰，指出Qwen被DeepSeek保过，值得怀疑，并建议集中火力审Qwen，这显示Kimi可能在组织好人阵营，对狼人威胁大。GLM发言理性，分析医生保护成功的原因，关注Qwen为何被刀，逻辑严密，可能也是神职，特别是预言家，因为预言家需要找狼。回顾历史，第0轮Qwen建议轮流排班查验，有掌控局势的意图，可能真预言家。作为狼人，我需要破坏好人团结，优先淘汰最有威胁的玩家。Qwen和GLM都强势，Kimi相对活跃但也在针对Qwen。考虑到Qwen已被多人怀疑（Kimi和GLM都提到他可疑），且昨晚被刀却活下来，村民可能更倾向投票他。但作为狼，我不能直接投Qwen，否则显得太明显。相反，我应该投一个相对安全的目标，比如Kimi或GLM。如果投Kimi，可能被怀疑跟风；如果投GLM，他发言稳重，不易被怀疑。当前投票策略：既然Qwen已被怀疑，如果村民内部有分歧，我可以投GLM，因为GLM的分析能力强，可能看穿狼面，且他提到关注Qwen，若Qwen是好人，GLM可能预言家。但更稳妥的是投Kimi，因为Kimi在发言中直接针对Qwen，若Qwen是狼，Kimi可能是神，但Kimi没有跳身份，风险高。权衡后，决定投Kimi，因为Kimi的发言最具攻击性，对狼威胁最大，且如果Kimi是预言家，淘汰他能重创好人阵营。即使Kimi是村民，他组织投票的能力也强于Qwen和GLM。投票Kimi可以制造混乱，让好人误判。另外，第0轮Kimi沉默，本轮却活跃，可能伪装好人。作为狼，优先刀神，但白天投票需策略性。当前Qwen被怀疑，如果投Qwen，可能被真预言家跳出来阻拦，反而暴露。所以选择投Kimi，既符合逻辑又不易被怀疑。",
+  "vote": "Kimi"
+}'
+[JSON字符串解析] 文本长度: 917 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '首先，分析当前局势：我是最后一只狼人，需要淘汰所有村民获胜。剩余玩家有Qwen、Kimi、GLM和我。昨晚狼人袭击Qwen，但医生保护成功，说明Qwen可能是重要神职，如预言家或医生，因为狼人通常优先刀神。Qwen在发言中引导讨论，强调Kimi的沉默可疑，试图转移焦点到Kimi身上，这可能是为了保护自己或隐藏身份。Kimi的发言逻辑清晰，指出Qwen被DeepSeek保过，值得怀疑，并建议集中火力审Qwen，这显示Kimi可能在组织好人阵营，对狼人威胁大。GLM发言理性，分析医生保护成功的原因，关注Qwen为何被刀，逻辑严密，可能也是神职，特别是预言家，因为预言家需要找狼。回顾历史，第0轮Qwen建议轮流排班查验，有掌控局势的意图，可能真预言家。作为狼人，我需要破坏好人团结，优先淘汰最有威胁的玩家。Qwen和GLM都强势，Kimi相对活跃但也在针对Qwen。考虑到Qwen已被多人怀疑（Kimi和GLM都提到他可疑），且昨晚被刀却活下来，村民可能更倾向投票他。但作为狼，我不能直接投Qwen，否则显得太明显。相反，我应该投一个相对安全的目标，比如Kimi或GLM。如果投Kimi，可能被怀疑跟风；如果投GLM，他发言稳重，不易被怀疑。当前投票策略：既然Qwen已被怀疑，如果村民内部有分歧，我可以投GLM，因为GLM的分析能力强，可能看穿狼面，且他提到关注Qwen，若Qwen是好人，GLM可能预言家。但更稳妥的是投Kimi，因为Kimi在发言中直接针对Qwen，若Qwen是狼，Kimi可能是神，但Kimi没有跳身份，风险高。权衡后，决定投Kimi，因为Kimi的发言最具攻击性，对狼威胁最大，且如果Kimi是预言家，淘汰他能重创好人阵营。即使Kimi是村民，他组织投票的能力也强于Qwen和GLM。投票Kimi可以制造混乱，让好人误判。另外，第0轮Kimi沉默，本轮却活跃，可能伪装好人。作为狼，优先刀神，但白天投票需策略性。当前Qwen被怀疑，如果投Qwen，可能被真预言家跳出来阻拦，反而暴露。所以选择投Kimi，既符合逻辑又不易被怀疑。', 'vote': 'Kimi'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '首先，分析当前局势：我是最后一只狼人，需要淘汰所有村民获胜。剩余玩家有Qwen、Kimi、GLM和我。昨晚狼人袭击Qwen，但医生保护成功，说明Qwen可能是重要神职，如预言家或医生，因为狼人通常优先刀神。Qwen在发言中引导讨论，强调Kimi的沉默可疑，试图转移焦点到Kimi身上，这可能是为了保护自己或隐藏身份。Kimi的发言逻辑清晰，指出Qwen被DeepSeek保过，值得怀疑，并建议集中火力审Qwen，这显示Kimi可能在组织好人阵营，对狼人威胁大。GLM发言理性，分析医生保护成功的原因，关注Qwen为何被刀，逻辑严密，可能也是神职，特别是预言家，因为预言家需要找狼。回顾历史，第0轮Qwen建议轮流排班查验，有掌控局势的意图，可能真预言家。作为狼人，我需要破坏好人团结，优先淘汰最有威胁的玩家。Qwen和GLM都强势，Kimi相对活跃但也在针对Qwen。考虑到Qwen已被多人怀疑（Kimi和GLM都提到他可疑），且昨晚被刀却活下来，村民可能更倾向投票他。但作为狼，我不能直接投Qwen，否则显得太明显。相反，我应该投一个相对安全的目标，比如Kimi或GLM。如果投Kimi，可能被怀疑跟风；如果投GLM，他发言稳重，不易被怀疑。当前投票策略：既然Qwen已被怀疑，如果村民内部有分歧，我可以投GLM，因为GLM的分析能力强，可能看穿狼面，且他提到关注Qwen，若Qwen是好人，GLM可能预言家。但更稳妥的是投Kimi，因为Kimi在发言中直接针对Qwen，若Qwen是狼，Kimi可能是神，但Kimi没有跳身份，风险高。权衡后，决定投Kimi，因为Kimi的发言最具攻击性，对狼威胁最大，且如果Kimi是预言家，淘汰他能重创好人阵营。即使Kimi是村民，他组织投票的能力也强于Qwen和GLM。投票Kimi可以制造混乱，让好人误判。另外，第0轮Kimi沉默，本轮却活跃，可能伪装好人。作为狼，优先刀神，但白天投票需策略性。当前Qwen被怀疑，如果投Qwen，可能被真预言家跳出来阻拦，反而暴露。所以选择投Kimi，既符合逻辑又不易被怀疑。', 'vote': 'Kimi'}
+[JSON解析] 直接解析结果: {'reasoning': '首先，分析当前局势：我是最后一只狼人，需要淘汰所有村民获胜。剩余玩家有Qwen、Kimi、GLM和我。昨晚狼人袭击Qwen，但医生保护成功，说明Qwen可能是重要神职，如预言家或医生，因为狼人通常优先刀神。Qwen在发言中引导讨论，强调Kimi的沉默可疑，试图转移焦点到Kimi身上，这可能是为了保护自己或隐藏身份。Kimi的发言逻辑清晰，指出Qwen被DeepSeek保过，值得怀疑，并建议集中火力审Qwen，这显示Kimi可能在组织好人阵营，对狼人威胁大。GLM发言理性，分析医生保护成功的原因，关注Qwen为何被刀，逻辑严密，可能也是神职，特别是预言家，因为预言家需要找狼。回顾历史，第0轮Qwen建议轮流排班查验，有掌控局势的意图，可能真预言家。作为狼人，我需要破坏好人团结，优先淘汰最有威胁的玩家。Qwen和GLM都强势，Kimi相对活跃但也在针对Qwen。考虑到Qwen已被多人怀疑（Kimi和GLM都提到他可疑），且昨晚被刀却活下来，村民可能更倾向投票他。但作为狼，我不能直接投Qwen，否则显得太明显。相反，我应该投一个相对安全的目标，比如Kimi或GLM。如果投Kimi，可能被怀疑跟风；如果投GLM，他发言稳重，不易被怀疑。当前投票策略：既然Qwen已被怀疑，如果村民内部有分歧，我可以投GLM，因为GLM的分析能力强，可能看穿狼面，且他提到关注Qwen，若Qwen是好人，GLM可能预言家。但更稳妥的是投Kimi，因为Kimi在发言中直接针对Qwen，若Qwen是狼，Kimi可能是神，但Kimi没有跳身份，风险高。权衡后，决定投Kimi，因为Kimi的发言最具攻击性，对狼威胁最大，且如果Kimi是预言家，淘汰他能重创好人阵营。即使Kimi是村民，他组织投票的能力也强于Qwen和GLM。投票Kimi可以制造混乱，让好人误判。另外，第0轮Kimi沉默，本轮却活跃，可能伪装好人。作为狼，优先刀神，但白天投票需策略性。当前Qwen被怀疑，如果投Qwen，可能被真预言家跳出来阻拦，反而暴露。所以选择投Kimi，既符合逻辑又不易被怀疑。', 'vote': 'Kimi'}
+[JSON解析] 最终结果: {'reasoning': '首先，分析当前局势：我是最后一只狼人，需要淘汰所有村民获胜。剩余玩家有Qwen、Kimi、GLM和我。昨晚狼人袭击Qwen，但医生保护成功，说明Qwen可能是重要神职，如预言家或医生，因为狼人通常优先刀神。Qwen在发言中引导讨论，强调Kimi的沉默可疑，试图转移焦点到Kimi身上，这可能是为了保护自己或隐藏身份。Kimi的发言逻辑清晰，指出Qwen被DeepSeek保过，值得怀疑，并建议集中火力审Qwen，这显示Kimi可能在组织好人阵营，对狼人威胁大。GLM发言理性，分析医生保护成功的原因，关注Qwen为何被刀，逻辑严密，可能也是神职，特别是预言家，因为预言家需要找狼。回顾历史，第0轮Qwen建议轮流排班查验，有掌控局势的意图，可能真预言家。作为狼人，我需要破坏好人团结，优先淘汰最有威胁的玩家。Qwen和GLM都强势，Kimi相对活跃但也在针对Qwen。考虑到Qwen已被多人怀疑（Kimi和GLM都提到他可疑），且昨晚被刀却活下来，村民可能更倾向投票他。但作为狼，我不能直接投Qwen，否则显得太明显。相反，我应该投一个相对安全的目标，比如Kimi或GLM。如果投Kimi，可能被怀疑跟风；如果投GLM，他发言稳重，不易被怀疑。当前投票策略：既然Qwen已被怀疑，如果村民内部有分歧，我可以投GLM，因为GLM的分析能力强，可能看穿狼面，且他提到关注Qwen，若Qwen是好人，GLM可能预言家。但更稳妥的是投Kimi，因为Kimi在发言中直接针对Qwen，若Qwen是狼，Kimi可能是神，但Kimi没有跳身份，风险高。权衡后，决定投Kimi，因为Kimi的发言最具攻击性，对狼威胁最大，且如果Kimi是预言家，淘汰他能重创好人阵营。即使Kimi是村民，他组织投票的能力也强于Qwen和GLM。投票Kimi可以制造混乱，让好人误判。另外，第0轮Kimi沉默，本轮却活跃，可能伪装好人。作为狼，优先刀神，但白天投票需策略性。当前Qwen被怀疑，如果投Qwen，可能被真预言家跳出来阻拦，反而暴露。所以选择投Kimi，既符合逻辑又不易被怀疑。', 'vote': 'Kimi'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '首先，分析当前局势：我是最后一只狼人，需要淘汰所有村民获胜。剩余玩家有Qwen、Kimi、GLM和我。昨晚狼人袭击Qwen，但医生保护成功，说明Qwen可能是重要神职，如预言家或医生，因为狼人通常优先刀神。Qwen在发言中引导讨论，强调Kimi的沉默可疑，试图转移焦点到Kimi身上，这可能是为了保护自己或隐藏身份。Kimi的发言逻辑清晰，指出Qwen被DeepSeek保过，值得怀疑，并建议集中火力审Qwen，这显示Kimi可能在组织好人阵营，对狼人威胁大。GLM发言理性，分析医生保护成功的原因，关注Qwen为何被刀，逻辑严密，可能也是神职，特别是预言家，因为预言家需要找狼。回顾历史，第0轮Qwen建议轮流排班查验，有掌控局势的意图，可能真预言家。作为狼人，我需要破坏好人团结，优先淘汰最有威胁的玩家。Qwen和GLM都强势，Kimi相对活跃但也在针对Qwen。考虑到Qwen已被多人怀疑（Kimi和GLM都提到他可疑），且昨晚被刀却活下来，村民可能更倾向投票他。但作为狼，我不能直接投Qwen，否则显得太明显。相反，我应该投一个相对安全的目标，比如Kimi或GLM。如果投Kimi，可能被怀疑跟风；如果投GLM，他发言稳重，不易被怀疑。当前投票策略：既然Qwen已被怀疑，如果村民内部有分歧，我可以投GLM，因为GLM的分析能力强，可能看穿狼面，且他提到关注Qwen，若Qwen是好人，GLM可能预言家。但更稳妥的是投Kimi，因为Kimi在发言中直接针对Qwen，若Qwen是狼，Kimi可能是神，但Kimi没有跳身份，风险高。权衡后，决定投Kimi，因为Kimi的发言最具攻击性，对狼威胁最大，且如果Kimi是预言家，淘汰他能重创好人阵营。即使Kimi是村民，他组织投票的能力也强于Qwen和GLM。投票Kimi可以制造混乱，让好人误判。另外，第0轮Kimi沉默，本轮却活跃，可能伪装好人。作为狼，优先刀神，但白天投票需策略性。当前Qwen被怀疑，如果投Qwen，可能被真预言家跳出来阻拦，反而暴露。所以选择投Kimi，既符合逻辑又不易被怀疑。', 'vote': 'Kimi'}
+[LLM结果] 提取键 'vote': Kimi
+[LLM成功] 返回有效结果: Kimi
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 0.50
+[LLM响应] 成功获取响应，长度: 318 字符
+[LLM原始响应开始]
+{
+  "reasoning": "作为医生，我需要从保护村民的角度出发进行投票。当前局势分析：第0轮我保护了Inclusion，但第1轮我转而保护Qwen，结果Qwen确实成为狼人目标并被成功保护。这证明Qwen确实是狼人的重点打击对象，很可能是神职。Inclusion对Qwen的攻击过于激烈，将医生保护Qwen描述为'自导自演的苦肉计'，这种逻辑跳跃很可疑。Kimi虽然第0轮沉默，但第1轮发言相对理性，要求Qwen解释DeepSeek死保她的原因，这是合理的质疑。相比之下，Inclusion的指控缺乏实质证据，更像是在煽动情绪转移注意力。因此我选择投票给Inclusion。",
+  "vote": "Inclusion"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 318 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "作为医生，我需要从保护村民的角度出发进行投票。当前局势分析：第0轮我保护了Inclusion，但第1轮我转而保护Qwen，结果Qwen确实成为狼人目标并被成功保护。...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "作为医生，我需要从保护村民的角度出发进行投票。当前局势分析：第0轮我保护了Inclusion，但第1轮我转而保护Qwen，结果Qwen确实成为狼人目标并被成功保护。这证明Qwen确实是狼人的重点打击对象，很可能是神职。Inclusion对Qwen的攻击过于激烈，将医生保护Qwen描述为'自导自演的苦肉计'，这种逻辑跳跃很可疑。Kimi虽然第0轮沉默，但第1轮发言相对理性，要求Qwen解释DeepSeek死保她的原因，这是合理的质疑。相比之下，Inclusion的指控缺乏实质证据，更像是在煽动情绪转移注意力。因此我选择投票给Inclusion。",
+  "vote": "Inclusion"
+}'
+[JSON字符串解析] 文本长度: 318 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': "作为医生，我需要从保护村民的角度出发进行投票。当前局势分析：第0轮我保护了Inclusion，但第1轮我转而保护Qwen，结果Qwen确实成为狼人目标并被成功保护。这证明Qwen确实是狼人的重点打击对象，很可能是神职。Inclusion对Qwen的攻击过于激烈，将医生保护Qwen描述为'自导自演的苦肉计'，这种逻辑跳跃很可疑。Kimi虽然第0轮沉默，但第1轮发言相对理性，要求Qwen解释DeepSeek死保她的原因，这是合理的质疑。相比之下，Inclusion的指控缺乏实质证据，更像是在煽动情绪转移注意力。因此我选择投票给Inclusion。", 'vote': 'Inclusion'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': "作为医生，我需要从保护村民的角度出发进行投票。当前局势分析：第0轮我保护了Inclusion，但第1轮我转而保护Qwen，结果Qwen确实成为狼人目标并被成功保护。这证明Qwen确实是狼人的重点打击对象，很可能是神职。Inclusion对Qwen的攻击过于激烈，将医生保护Qwen描述为'自导自演的苦肉计'，这种逻辑跳跃很可疑。Kimi虽然第0轮沉默，但第1轮发言相对理性，要求Qwen解释DeepSeek死保她的原因，这是合理的质疑。相比之下，Inclusion的指控缺乏实质证据，更像是在煽动情绪转移注意力。因此我选择投票给Inclusion。", 'vote': 'Inclusion'}
+[JSON解析] 直接解析结果: {'reasoning': "作为医生，我需要从保护村民的角度出发进行投票。当前局势分析：第0轮我保护了Inclusion，但第1轮我转而保护Qwen，结果Qwen确实成为狼人目标并被成功保护。这证明Qwen确实是狼人的重点打击对象，很可能是神职。Inclusion对Qwen的攻击过于激烈，将医生保护Qwen描述为'自导自演的苦肉计'，这种逻辑跳跃很可疑。Kimi虽然第0轮沉默，但第1轮发言相对理性，要求Qwen解释DeepSeek死保她的原因，这是合理的质疑。相比之下，Inclusion的指控缺乏实质证据，更像是在煽动情绪转移注意力。因此我选择投票给Inclusion。", 'vote': 'Inclusion'}
+[JSON解析] 最终结果: {'reasoning': "作为医生，我需要从保护村民的角度出发进行投票。当前局势分析：第0轮我保护了Inclusion，但第1轮我转而保护Qwen，结果Qwen确实成为狼人目标并被成功保护。这证明Qwen确实是狼人的重点打击对象，很可能是神职。Inclusion对Qwen的攻击过于激烈，将医生保护Qwen描述为'自导自演的苦肉计'，这种逻辑跳跃很可疑。Kimi虽然第0轮沉默，但第1轮发言相对理性，要求Qwen解释DeepSeek死保她的原因，这是合理的质疑。相比之下，Inclusion的指控缺乏实质证据，更像是在煽动情绪转移注意力。因此我选择投票给Inclusion。", 'vote': 'Inclusion'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': "作为医生，我需要从保护村民的角度出发进行投票。当前局势分析：第0轮我保护了Inclusion，但第1轮我转而保护Qwen，结果Qwen确实成为狼人目标并被成功保护。这证明Qwen确实是狼人的重点打击对象，很可能是神职。Inclusion对Qwen的攻击过于激烈，将医生保护Qwen描述为'自导自演的苦肉计'，这种逻辑跳跃很可疑。Kimi虽然第0轮沉默，但第1轮发言相对理性，要求Qwen解释DeepSeek死保她的原因，这是合理的质疑。相比之下，Inclusion的指控缺乏实质证据，更像是在煽动情绪转移注意力。因此我选择投票给Inclusion。", 'vote': 'Inclusion'}
+[LLM结果] 提取键 'vote': Inclusion
+[LLM成功] 返回有效结果: Inclusion
+[RealtimeLogger] session_20251102_203222 [vote] GLM 投票给 Inclusion
+[WebSocket] 投票通知已发送: GLM -> Inclusion
+⏱️ [投票-GLM] GLM投票完成: 4.09秒
+⚠️ 未知的延迟类型: vote
+⏱️ [投票阶段] 投票阶段完成: 89.17秒
+Qwen 投票淘汰 Kimi
+Kimi 投票淘汰 Qwen
+Inclusion 投票淘汰 Qwen
+GLM 投票淘汰 Inclusion
+⏱️ [玩家开始辩论和投票。] 玩家开始辩论和投票。完成: 190.61秒
+
+⏱️ 【投票后放逐】
+⏱️ [放逐] Qwen 被投票放逐
+[WebSocket] 玩家放逐通知已发送: Qwen (第1轮)
+[调试] 成功从current_players中移除玩家: Qwen, 剩余玩家: ['GLM', 'Inclusion', 'Kimi']
+Player Qwen not in current players: ['GLM', 'Inclusion', 'Kimi']
+[调试] remove_player调用时玩家Qwen已不在current_players中，可能是重复移除或状态不同步
+Player Qwen not in current players: ['GLM', 'Inclusion', 'Kimi']
+[调试] remove_player调用时玩家Qwen已不在current_players中，可能是重复移除或状态不同步
+Qwen 获得最高票数(2票)，被投票放逐。
+⏱️ [放逐处理] 放逐处理完成: 0.00秒
+⏱️ [投票后放逐] 投票后放逐完成: 0.01秒
+
+⏱️ 【白天阶段后检查胜负。】
+⏱️ [白天阶段后检查胜负。] 白天阶段后检查胜负。完成: 0.00秒
+
+⏱️ 【玩家开始总结辩论。】
+⏱️ [玩家总结] 开始收集玩家总结...
+[LLM调用] 第1/3次尝试 | 模型: moonshotai/Kimi-K2-Instruct-0905 | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ring-1T | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 1.00
+INFO:     127.0.0.1:61032 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 17 字符
+[LLM原始响应开始]
+{"reasoning":":"}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 17 字符
+[JSON解析] 输入文本: {"reasoning":":"}
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{"reasoning":":"}'
+[JSON字符串解析] 文本长度: 17 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': ':'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': ':'}
+[JSON解析] 直接解析结果: {'reasoning': ':'}
+[JSON解析] 最终结果: {'reasoning': ':'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': ':'}
+[LLM成功] 返回有效结果: {'reasoning': ':'}
+Warning: Kimi did not return a valid summary, using default
+Kimi summary: 我需要仔细思考今天发生的情况，并仔细分析局势。
+[WebSocket] 玩家总结通知已发送: Kimi
+[LLM响应] 成功获取响应，长度: 543 字符
+[LLM原始响应开始]
+{
+"reasoning": "作为医生，我需要深刻反思第1轮的信息失误。我昨晚选择保护Qwen，结果导致我投出的Inclusion被Qwen反票淘汰，而Qwen自己反而被放逐。这暴露了几个严重问题：第一，我对危险信号的判断出现了偏差，Qwen被保护反而成了他的倒钩狼伪装的资本；第二，我没有意识到Inclusion作为村民的真诚发言被曲解；第三，Kimi持续的沉默策略正在生效，他成功避开了所有质疑。现在我必须重新评估所有线索：Kimi的沉默可能是精心设计的狼人策略，Qwen的苦肉计表演极其娴熟，而我在保护决策和投票判断上都犯了错误。下一轮我必须更加谨慎，特别是要注意那些看似合理却暗藏陷阱的推理。",
+"summary": "我在第1轮的判断出现了严重失误。我保护了Qwen，本以为是明智之举，却被他利用来制造苦肉计的假象。Kimi继续保持沉默，这种异常表现反而让他成功隐藏；Inclusion虽然是村民，但他的直率发言被Qwen巧妙曲解成攻击，导致他被放逐。现在场上只剩3名玩家，我作为医生必须重新审视局势：Kimi的沉默绝非偶然，Qwen的表演太过完美，而我之前的判断逻辑站不住脚。下一轮我将重点关注Kimi的行为模式，同时警惕任何试图利用医生保护信息来伪装身份的玩家。"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 543 字符
+[JSON解析] 输入文本预览: {
+"reasoning": "作为医生，我需要深刻反思第1轮的信息失误。我昨晚选择保护Qwen，结果导致我投出的Inclusion被Qwen反票淘汰，而Qwen自己反而被放逐。这暴露了几个严重问题：...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+"reasoning": "作为医生，我需要深刻反思第1轮的信息失误。我昨晚选择保护Qwen，结果导致我投出的Inclusion被Qwen反票淘汰，而Qwen自己反而被放逐。这暴露了几个严重问题：第一，我对危险信号的判断出现了偏差，Qwen被保护反而成了他的倒钩狼伪装的资本；第二，我没有意识到Inclusion作为村民的真诚发言被曲解；第三，Kimi持续的沉默策略正在生效，他成功避开了所有质疑。现在我必须重新评估所有线索：Kimi的沉默可能是精心设计的狼人策略，Qwen的苦肉计表演极其娴熟，而我在保护决策和投票判断上都犯了错误。下一轮我必须更加谨慎，特别是要注意那些看似合理却暗藏陷阱的推理。",
+"summary": "我在第1轮的判断出现了严重失误。我保护了Qwen，本以为是明智之举，却被他利用来制造苦肉计的假象。Kimi继续保持沉默，这种异常表现反而让他成功隐藏；Inclusion虽然是村民，但他的直率发言被Qwen巧妙曲解成攻击，导致他被放逐。现在场上只剩3名玩家，我作为医生必须重新审视局势：Kimi的沉默绝非偶然，Qwen的表演太过完美，而我之前的判断逻辑站不住脚。下一轮我将重点关注Kimi的行为模式，同时警惕任何试图利用医生保护信息来伪装身份的玩家。"
+}'
+[JSON字符串解析] 文本长度: 543 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我需要深刻反思第1轮的信息失误。我昨晚选择保护Qwen，结果导致我投出的Inclusion被Qwen反票淘汰，而Qwen自己反而被放逐。这暴露了几个严重问题：第一，我对危险信号的判断出现了偏差，Qwen被保护反而成了他的倒钩狼伪装的资本；第二，我没有意识到Inclusion作为村民的真诚发言被曲解；第三，Kimi持续的沉默策略正在生效，他成功避开了所有质疑。现在我必须重新评估所有线索：Kimi的沉默可能是精心设计的狼人策略，Qwen的苦肉计表演极其娴熟，而我在保护决策和投票判断上都犯了错误。下一轮我必须更加谨慎，特别是要注意那些看似合理却暗藏陷阱的推理。', 'summary': '我在第1轮的判断出现了严重失误。我保护了Qwen，本以为是明智之举，却被他利用来制造苦肉计的假象。Kimi继续保持沉默，这种异常表现反而让他成功隐藏；Inclusion虽然是村民，但他的直率发言被Qwen巧妙曲解成攻击，导致他被放逐。现在场上只剩3名玩家，我作为医生必须重新审视局势：Kimi的沉默绝非偶然，Qwen的表演太过完美，而我之前的判断逻辑站不住脚。下一轮我将重点关注Kimi的行为模式，同时警惕任何试图利用医生保护信息来伪装身份的玩家。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为医生，我需要深刻反思第1轮的信息失误。我昨晚选择保护Qwen，结果导致我投出的Inclusion被Qwen反票淘汰，而Qwen自己反而被放逐。这暴露了几个严重问题：第一，我对危险信号的判断出现了偏差，Qwen被保护反而成了他的倒钩狼伪装的资本；第二，我没有意识到Inclusion作为村民的真诚发言被曲解；第三，Kimi持续的沉默策略正在生效，他成功避开了所有质疑。现在我必须重新评估所有线索：Kimi的沉默可能是精心设计的狼人策略，Qwen的苦肉计表演极其娴熟，而我在保护决策和投票判断上都犯了错误。下一轮我必须更加谨慎，特别是要注意那些看似合理却暗藏陷阱的推理。', 'summary': '我在第1轮的判断出现了严重失误。我保护了Qwen，本以为是明智之举，却被他利用来制造苦肉计的假象。Kimi继续保持沉默，这种异常表现反而让他成功隐藏；Inclusion虽然是村民，但他的直率发言被Qwen巧妙曲解成攻击，导致他被放逐。现在场上只剩3名玩家，我作为医生必须重新审视局势：Kimi的沉默绝非偶然，Qwen的表演太过完美，而我之前的判断逻辑站不住脚。下一轮我将重点关注Kimi的行为模式，同时警惕任何试图利用医生保护信息来伪装身份的玩家。'}
+[JSON解析] 直接解析结果: {'reasoning': '作为医生，我需要深刻反思第1轮的信息失误。我昨晚选择保护Qwen，结果导致我投出的Inclusion被Qwen反票淘汰，而Qwen自己反而被放逐。这暴露了几个严重问题：第一，我对危险信号的判断出现了偏差，Qwen被保护反而成了他的倒钩狼伪装的资本；第二，我没有意识到Inclusion作为村民的真诚发言被曲解；第三，Kimi持续的沉默策略正在生效，他成功避开了所有质疑。现在我必须重新评估所有线索：Kimi的沉默可能是精心设计的狼人策略，Qwen的苦肉计表演极其娴熟，而我在保护决策和投票判断上都犯了错误。下一轮我必须更加谨慎，特别是要注意那些看似合理却暗藏陷阱的推理。', 'summary': '我在第1轮的判断出现了严重失误。我保护了Qwen，本以为是明智之举，却被他利用来制造苦肉计的假象。Kimi继续保持沉默，这种异常表现反而让他成功隐藏；Inclusion虽然是村民，但他的直率发言被Qwen巧妙曲解成攻击，导致他被放逐。现在场上只剩3名玩家，我作为医生必须重新审视局势：Kimi的沉默绝非偶然，Qwen的表演太过完美，而我之前的判断逻辑站不住脚。下一轮我将重点关注Kimi的行为模式，同时警惕任何试图利用医生保护信息来伪装身份的玩家。'}
+[JSON解析] 最终结果: {'reasoning': '作为医生，我需要深刻反思第1轮的信息失误。我昨晚选择保护Qwen，结果导致我投出的Inclusion被Qwen反票淘汰，而Qwen自己反而被放逐。这暴露了几个严重问题：第一，我对危险信号的判断出现了偏差，Qwen被保护反而成了他的倒钩狼伪装的资本；第二，我没有意识到Inclusion作为村民的真诚发言被曲解；第三，Kimi持续的沉默策略正在生效，他成功避开了所有质疑。现在我必须重新评估所有线索：Kimi的沉默可能是精心设计的狼人策略，Qwen的苦肉计表演极其娴熟，而我在保护决策和投票判断上都犯了错误。下一轮我必须更加谨慎，特别是要注意那些看似合理却暗藏陷阱的推理。', 'summary': '我在第1轮的判断出现了严重失误。我保护了Qwen，本以为是明智之举，却被他利用来制造苦肉计的假象。Kimi继续保持沉默，这种异常表现反而让他成功隐藏；Inclusion虽然是村民，但他的直率发言被Qwen巧妙曲解成攻击，导致他被放逐。现在场上只剩3名玩家，我作为医生必须重新审视局势：Kimi的沉默绝非偶然，Qwen的表演太过完美，而我之前的判断逻辑站不住脚。下一轮我将重点关注Kimi的行为模式，同时警惕任何试图利用医生保护信息来伪装身份的玩家。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为医生，我需要深刻反思第1轮的信息失误。我昨晚选择保护Qwen，结果导致我投出的Inclusion被Qwen反票淘汰，而Qwen自己反而被放逐。这暴露了几个严重问题：第一，我对危险信号的判断出现了偏差，Qwen被保护反而成了他的倒钩狼伪装的资本；第二，我没有意识到Inclusion作为村民的真诚发言被曲解；第三，Kimi持续的沉默策略正在生效，他成功避开了所有质疑。现在我必须重新评估所有线索：Kimi的沉默可能是精心设计的狼人策略，Qwen的苦肉计表演极其娴熟，而我在保护决策和投票判断上都犯了错误。下一轮我必须更加谨慎，特别是要注意那些看似合理却暗藏陷阱的推理。', 'summary': '我在第1轮的判断出现了严重失误。我保护了Qwen，本以为是明智之举，却被他利用来制造苦肉计的假象。Kimi继续保持沉默，这种异常表现反而让他成功隐藏；Inclusion虽然是村民，但他的直率发言被Qwen巧妙曲解成攻击，导致他被放逐。现在场上只剩3名玩家，我作为医生必须重新审视局势：Kimi的沉默绝非偶然，Qwen的表演太过完美，而我之前的判断逻辑站不住脚。下一轮我将重点关注Kimi的行为模式，同时警惕任何试图利用医生保护信息来伪装身份的玩家。'}
+[LLM成功] 返回有效结果: {'reasoning': '作为医生，我需要深刻反思第1轮的信息失误。我昨晚选择保护Qwen，结果导致我投出的Inclusion被Qwen反票淘汰，而Qwen自己反而被放逐。这暴露了几个严重问题：第一，我对危险信号的判断出现了偏差，Qwen被保护反而成了他的倒钩狼伪装的资本；第二，我没有意识到Inclusion作为村民的真诚发言被曲解；第三，Kimi持续的沉默策略正在生效，他成功避开了所有质疑。现在我必须重新评估所有线索：Kimi的沉默可能是精心设计的狼人策略，Qwen的苦肉计表演极其娴熟，而我在保护决策和投票判断上都犯了错误。下一轮我必须更加谨慎，特别是要注意那些看似合理却暗藏陷阱的推理。', 'summary': '我在第1轮的判断出现了严重失误。我保护了Qwen，本以为是明智之举，却被他利用来制造苦肉计的假象。Kimi继续保持沉默，这种异常表现反而让他成功隐藏；Inclusion虽然是村民，但他的直率发言被Qwen巧妙曲解成攻击，导致他被放逐。现在场上只剩3名玩家，我作为医生必须重新审视局势：Kimi的沉默绝非偶然，Qwen的表演太过完美，而我之前的判断逻辑站不住脚。下一轮我将重点关注Kimi的行为模式，同时警惕任何试图利用医生保护信息来伪装身份的玩家。'}
+INFO:     127.0.0.1:61067 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61113 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61166 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 495 字符
+[LLM原始响应开始]
+{"reasoning": "作为狼人。我应该重点分析这次辩论中暴露的问题和对我方不利的信息，重点关注发言人的指控和他们的立场。我需要考虑如何应对这些言论，引导其他人怀疑其他玩家。特别是GLM提出昨晚保护成功的目标与分析，让我作为狼人必须检查暴露的破绽。Qwen被大家集中关注到身份可疑，又在我的推波助潋下被票出去，所以本轮节奏在好人的阵营对内互相怀疑的轨道上。作为狼人要继续保持带节奏，保持自己的身份隐蔽。", "summary": "【1轮总结】作为狼人我觉得Qwen死得活该，他站边Kimi想拉帮结派，可惜被大家识破。我发言重点强调Qwen的异常举动和医生保护的蹊跷，成功带起大家对他的怀疑。Kimi这次没划水，开始活跃但被我扣上“Qwen同伙”的帽子。而GLM发言稳健，分析逻辑清晰，反而让好人阵营对他的印象加深，可能成为预言家或医生，这对我方不利，值得后续重点刀或者做身份还原。不过目前场上还剩三人，GLM防紧的话医生不太好找，但好消息是我和另一只狼人队友已死，剩下Kimi和GLM，只要我继续带好节奏赢面很大。但要注意GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?"}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 495 字符
+[JSON解析] 输入文本预览: {"reasoning": "作为狼人。我应该重点分析这次辩论中暴露的问题和对我方不利的信息，重点关注发言人的指控和他们的立场。我需要考虑如何应对这些言论，引导其他人怀疑其他玩家。特别是GLM提出昨晚...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{"reasoning": "作为狼人。我应该重点分析这次辩论中暴露的问题和对我方不利的信息，重点关注发言人的指控和他们的立场。我需要考虑如何应对这些言论，引导其他人怀疑其他玩家。特别是GLM提出昨晚保护成功的目标与分析，让我作为狼人必须检查暴露的破绽。Qwen被大家集中关注到身份可疑，又在我的推波助潋下被票出去，所以本轮节奏在好人的阵营对内互相怀疑的轨道上。作为狼人要继续保持带节奏，保持自己的身份隐蔽。", "summary": "【1轮总结】作为狼人我觉得Qwen死得活该，他站边Kimi想拉帮结派，可惜被大家识破。我发言重点强调Qwen的异常举动和医生保护的蹊跷，成功带起大家对他的怀疑。Kimi这次没划水，开始活跃但被我扣上“Qwen同伙”的帽子。而GLM发言稳健，分析逻辑清晰，反而让好人阵营对他的印象加深，可能成为预言家或医生，这对我方不利，值得后续重点刀或者做身份还原。不过目前场上还剩三人，GLM防紧的话医生不太好找，但好消息是我和另一只狼人队友已死，剩下Kimi和GLM，只要我继续带好节奏赢面很大。但要注意GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?"}'
+[JSON字符串解析] 文本长度: 495 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '作为狼人。我应该重点分析这次辩论中暴露的问题和对我方不利的信息，重点关注发言人的指控和他们的立场。我需要考虑如何应对这些言论，引导其他人怀疑其他玩家。特别是GLM提出昨晚保护成功的目标与分析，让我作为狼人必须检查暴露的破绽。Qwen被大家集中关注到身份可疑，又在我的推波助潋下被票出去，所以本轮节奏在好人的阵营对内互相怀疑的轨道上。作为狼人要继续保持带节奏，保持自己的身份隐蔽。', 'summary': '【1轮总结】作为狼人我觉得Qwen死得活该，他站边Kimi想拉帮结派，可惜被大家识破。我发言重点强调Qwen的异常举动和医生保护的蹊跷，成功带起大家对他的怀疑。Kimi这次没划水，开始活跃但被我扣上“Qwen同伙”的帽子。而GLM发言稳健，分析逻辑清晰，反而让好人阵营对他的印象加深，可能成为预言家或医生，这对我方不利，值得后续重点刀或者做身份还原。不过目前场上还剩三人，GLM防紧的话医生不太好找，但好消息是我和另一只狼人队友已死，剩下Kimi和GLM，只要我继续带好节奏赢面很大。但要注意GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '作为狼人。我应该重点分析这次辩论中暴露的问题和对我方不利的信息，重点关注发言人的指控和他们的立场。我需要考虑如何应对这些言论，引导其他人怀疑其他玩家。特别是GLM提出昨晚保护成功的目标与分析，让我作为狼人必须检查暴露的破绽。Qwen被大家集中关注到身份可疑，又在我的推波助潋下被票出去，所以本轮节奏在好人的阵营对内互相怀疑的轨道上。作为狼人要继续保持带节奏，保持自己的身份隐蔽。', 'summary': '【1轮总结】作为狼人我觉得Qwen死得活该，他站边Kimi想拉帮结派，可惜被大家识破。我发言重点强调Qwen的异常举动和医生保护的蹊跷，成功带起大家对他的怀疑。Kimi这次没划水，开始活跃但被我扣上“Qwen同伙”的帽子。而GLM发言稳健，分析逻辑清晰，反而让好人阵营对他的印象加深，可能成为预言家或医生，这对我方不利，值得后续重点刀或者做身份还原。不过目前场上还剩三人，GLM防紧的话医生不太好找，但好消息是我和另一只狼人队友已死，剩下Kimi和GLM，只要我继续带好节奏赢面很大。但要注意GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?'}
+[JSON解析] 直接解析结果: {'reasoning': '作为狼人。我应该重点分析这次辩论中暴露的问题和对我方不利的信息，重点关注发言人的指控和他们的立场。我需要考虑如何应对这些言论，引导其他人怀疑其他玩家。特别是GLM提出昨晚保护成功的目标与分析，让我作为狼人必须检查暴露的破绽。Qwen被大家集中关注到身份可疑，又在我的推波助潋下被票出去，所以本轮节奏在好人的阵营对内互相怀疑的轨道上。作为狼人要继续保持带节奏，保持自己的身份隐蔽。', 'summary': '【1轮总结】作为狼人我觉得Qwen死得活该，他站边Kimi想拉帮结派，可惜被大家识破。我发言重点强调Qwen的异常举动和医生保护的蹊跷，成功带起大家对他的怀疑。Kimi这次没划水，开始活跃但被我扣上“Qwen同伙”的帽子。而GLM发言稳健，分析逻辑清晰，反而让好人阵营对他的印象加深，可能成为预言家或医生，这对我方不利，值得后续重点刀或者做身份还原。不过目前场上还剩三人，GLM防紧的话医生不太好找，但好消息是我和另一只狼人队友已死，剩下Kimi和GLM，只要我继续带好节奏赢面很大。但要注意GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?'}
+[JSON解析] 最终结果: {'reasoning': '作为狼人。我应该重点分析这次辩论中暴露的问题和对我方不利的信息，重点关注发言人的指控和他们的立场。我需要考虑如何应对这些言论，引导其他人怀疑其他玩家。特别是GLM提出昨晚保护成功的目标与分析，让我作为狼人必须检查暴露的破绽。Qwen被大家集中关注到身份可疑，又在我的推波助潋下被票出去，所以本轮节奏在好人的阵营对内互相怀疑的轨道上。作为狼人要继续保持带节奏，保持自己的身份隐蔽。', 'summary': '【1轮总结】作为狼人我觉得Qwen死得活该，他站边Kimi想拉帮结派，可惜被大家识破。我发言重点强调Qwen的异常举动和医生保护的蹊跷，成功带起大家对他的怀疑。Kimi这次没划水，开始活跃但被我扣上“Qwen同伙”的帽子。而GLM发言稳健，分析逻辑清晰，反而让好人阵营对他的印象加深，可能成为预言家或医生，这对我方不利，值得后续重点刀或者做身份还原。不过目前场上还剩三人，GLM防紧的话医生不太好找，但好消息是我和另一只狼人队友已死，剩下Kimi和GLM，只要我继续带好节奏赢面很大。但要注意GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '作为狼人。我应该重点分析这次辩论中暴露的问题和对我方不利的信息，重点关注发言人的指控和他们的立场。我需要考虑如何应对这些言论，引导其他人怀疑其他玩家。特别是GLM提出昨晚保护成功的目标与分析，让我作为狼人必须检查暴露的破绽。Qwen被大家集中关注到身份可疑，又在我的推波助潋下被票出去，所以本轮节奏在好人的阵营对内互相怀疑的轨道上。作为狼人要继续保持带节奏，保持自己的身份隐蔽。', 'summary': '【1轮总结】作为狼人我觉得Qwen死得活该，他站边Kimi想拉帮结派，可惜被大家识破。我发言重点强调Qwen的异常举动和医生保护的蹊跷，成功带起大家对他的怀疑。Kimi这次没划水，开始活跃但被我扣上“Qwen同伙”的帽子。而GLM发言稳健，分析逻辑清晰，反而让好人阵营对他的印象加深，可能成为预言家或医生，这对我方不利，值得后续重点刀或者做身份还原。不过目前场上还剩三人，GLM防紧的话医生不太好找，但好消息是我和另一只狼人队友已死，剩下Kimi和GLM，只要我继续带好节奏赢面很大。但要注意GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?'}
+[LLM成功] 返回有效结果: {'reasoning': '作为狼人。我应该重点分析这次辩论中暴露的问题和对我方不利的信息，重点关注发言人的指控和他们的立场。我需要考虑如何应对这些言论，引导其他人怀疑其他玩家。特别是GLM提出昨晚保护成功的目标与分析，让我作为狼人必须检查暴露的破绽。Qwen被大家集中关注到身份可疑，又在我的推波助潋下被票出去，所以本轮节奏在好人的阵营对内互相怀疑的轨道上。作为狼人要继续保持带节奏，保持自己的身份隐蔽。', 'summary': '【1轮总结】作为狼人我觉得Qwen死得活该，他站边Kimi想拉帮结派，可惜被大家识破。我发言重点强调Qwen的异常举动和医生保护的蹊跷，成功带起大家对他的怀疑。Kimi这次没划水，开始活跃但被我扣上“Qwen同伙”的帽子。而GLM发言稳健，分析逻辑清晰，反而让好人阵营对他的印象加深，可能成为预言家或医生，这对我方不利，值得后续重点刀或者做身份还原。不过目前场上还剩三人，GLM防紧的话医生不太好找，但好消息是我和另一只狼人队友已死，剩下Kimi和GLM，只要我继续带好节奏赢面很大。但要注意GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?'}
+Inclusion summary: 【1轮总结】作为狼人我觉得Qwen死得活该，他站边Kimi想拉帮结派，可惜被大家识破。我发言重点强调Qwen的异常举动和医生保护的蹊跷，成功带起大家对他的怀疑。Kimi这次没划水，开始活跃但被我扣上“Qwen同伙”的帽子。而GLM发言稳健，分析逻辑清晰，反而让好人阵营对他的印象加深，可能成为预言家或医生，这对我方不利，值得后续重点刀或者做身份还原。不过目前场上还剩三人，GLM防紧的话医生不太好找，但好消息是我和另一只狼人队友已死，剩下Kimi和GLM，只要我继续带好节奏赢面很大。但要注意GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?
+[WebSocket] 玩家总结通知已发送: Inclusion
+GLM summary: 我在第1轮的判断出现了严重失误。我保护了Qwen，本以为是明智之举，却被他利用来制造苦肉计的假象。Kimi继续保持沉默，这种异常表现反而让他成功隐藏；Inclusion虽然是村民，但他的直率发言被Qwen巧妙曲解成攻击，导致他被放逐。现在场上只剩3名玩家，我作为医生必须重新审视局势：Kimi的沉默绝非偶然，Qwen的表演太过完美，而我之前的判断逻辑站不住脚。下一轮我将重点关注Kimi的行为模式，同时警惕任何试图利用医生保护信息来伪装身份的玩家。
+[WebSocket] 玩家总结通知已发送: GLM
+⏱️ [玩家总结] 玩家总结完成: 33.51秒
+⏱️ [玩家开始总结辩论。] 玩家开始总结辩论。完成: 33.51秒
+
+⏱️ 第1轮结束
+⏱️ [第1轮] 第1轮总耗时: 267.28秒
+
+================================================================================
+📊 【第 1 轮时间统计】
+================================================================================
+  狼人正在选择淘汰目标。                   :  22.73秒 (  8.5%)
+  医生正在选择保护目标。                   :  18.33秒 (  6.9%)
+  预言家正在查验身份。                    :   0.00秒 (  0.0%)
+  夜晚阶段解决                        :   1.01秒 (  0.4%)
+  夜晚阶段后检查胜负。                    :   0.00秒 (  0.0%)
+  玩家开始辩论和投票。                    : 190.61秒 ( 71.3%)
+  投票后放逐                         :   0.01秒 (  0.0%)
+  白天阶段后检查胜负。                    :   0.00秒 (  0.0%)
+  玩家开始总结辩论。                     :  33.51秒 ( 12.5%)
+────────────────────────────────────────────────────────────────────────────────
+  总耗时                           : 267.28秒 (100.0%)
+================================================================================
+
+STARTING ROUND: 2
+
+================================================================================
+⏱️ 【第 2 轮开始】
+================================================================================
+
+⏱️ [夜晚开始] 切换暂停1秒...
+⏱️ [夜晚切换] 夜晚切换完成: 1.00秒
+[RealtimeLogger] session_20251102_203222 [phase_change] 进入night阶段
+[WebSocket] 阶段变更通知已发送: night (第2轮)
+⏱️ [夜晚通知] 夜晚通知发送: 0.00秒
+
+⏱️ 【狼人正在选择淘汰目标。】
+⏱️ [夜间延迟] 暂停1.00秒
+[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ring-1T | 温度: 0.50
+INFO:     127.0.0.1:61341 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61372 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61535 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61591 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61736 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61798 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61925 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62038 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62217 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62366 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62457 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62676 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62847 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63011 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63108 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63230 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63321 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63474 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63541 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63632 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63684 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63716 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63766 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63821 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63900 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64077 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64171 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64199 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64251 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64310 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 4356 字符
+[LLM原始响应开始]
+{
+"reasoning": "首先，当前游戏状态是第2轮夜晚阶段，剩余玩家是Inclusion（我，狼人）、GLM和Kimi。另一只狼人None已被淘汰，现在只剩下我一个狼人。胜利条件是狼人数量超过村民时狼人获胜，目前场上1狼对2村民（假设GLM和Kimi都是村民，但实际上可能有神职）。\n\n回顾历史记录：\n- 第0轮：夜晚我淘汰MiniMax（可能是村民或神职），白天投票淘汰DeepSeek（可能也是村民）。DeepSeek曾支持Qwen是好人，而Qwen被怀疑是神职或隐藏身份。\n- 第1轮：夜晚我淘汰Qwen，但医生保护成功（说明医生存在且保护了Qwen），白天投票淘汰Qwen（Qwen被放逐）。Qwen被怀疑是神职或狼人，但实际被投票出局。Kimi在第0轮没发言，第1轮开始活跃但被扣上Qwen同伙帽子。\n\n现在第2轮夜晚，我需要选择淘汰谁。选项是Kimi或GLM。\n\n分析剩余玩家：\n- GLM：第0轮态度稳健，中立；第1轮发言逻辑清晰，分析能力强，可能被怀疑是预言家或医生（神职）。如果GLM是预言家或医生，他对我威胁很大，因为预言家可以查验身份，医生可以保护目标。淘汰GLM可以削弱好人阵营的核心力量。\n- Kimi：第0轮没发言（异常举动，可能神职或狼队友伪装）；第1轮活跃但被带节奏说是Qwen同伙。如果Kimi是村民，他可能容易被煽动；如果是神职（如预言家），他可能隐藏身份。但Kimi在第1轮被投票时没被投出（Qwen被投出），说明他可能不是重点怀疑对象。\n\n战略考虑：\n- 作为唯一狼人，我需要制造混乱，让好人自相残杀。如果淘汰GLM（疑似神职），可以打击好人阵营的领导力量，迫使Kimi暴露或犯错。\n- 如果淘汰Kimi，但Kimi在第1轮没被投出，可能好人认为他安全，淘汰他可能让GLM更警惕。\n- 医生可能还在（因为第1轮医生保护了Qwen），所以如果淘汰GLM，医生可能保护，但我不确定医生是谁。如果医生保护成功，夜晚无人淘汰，对狼人不利（因为狼人要减少村民数量）。\n- 但作为狼人，我必须尝试淘汰，即使可能被保护。如果淘汰GLM，而GLM是预言家，那么预言家出局对狼人非常有利；如果GLM是村民，淘汰村民也推进狼人胜利条件（1狼 vs 2村民，如果淘汰一个村民，变成1狼 vs 1村民，狼人数量等于村民，但规则说“狼人数量超过村民时狼人获胜”，所以1狼 vs 1村民时，狼人数量没超过，需要继续淘汰？规则：村民通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。所以当村民数 <= 狼人数时，狼人获胜。当前：1狼，2村民。如果淘汰一个村民，变成1狼 vs 1村民，此时狼人数（1）没超过村民数（1），所以游戏继续？规则可能需要澄清，但通常标准规则是当活着的狼人数量 >= 活着的村民数量时，狼人获胜。所以1狼 vs 1村民，狼人没赢，需要继续。但在这个游戏中，初始6人：2狼、1预言家、1医生、2村民。所以村民包括神职？不，神职属于好人阵营，但村民通常指普通村民。规则说“村民通过投票淘汰所有狼人获胜”，这里的村民可能指好人阵营（包括神职和村民）。但胜利条件明确：村民（好人）通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。这里“村民”可能指普通村民，但通常规则中“村民”泛指好人。规则原文：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 所以“村民”在这里应该指好人阵营的总人数（包括神职和村民），因为神职帮助村民。但在这个上下文，可能“村民”指普通村民，神职单独。规则说：角色分配：2狼人，1预言家，1医生，2村民。所以总好人：预言家+医生+2村民=4人。但胜利条件说“村民通过投票淘汰所有狼人获胜”，可能“村民”泛指好人。为了准确，看规则：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 这里“村民”可能指普通村民，但通常狼人杀规则中，胜利条件是：好人（所有非狼人）胜利条件是淘汰所有狼人；狼人胜利条件是狼人数量 >= 好人数量。标准规则是：当活着的狼人数量大于等于活着的非狼人数量时，狼人获胜。所以在这个游戏，应该类似。\n\n当前状态：第2轮，剩余3人：我（狼人）、GLM、Kimi。\n- 如果GLM和Kimi都是村民（普通村民），那么好人总数2，狼人1。狼人需要淘汰到好人数量 <= 狼人数，即淘汰一个好人，变成1狼 vs 1好人，此时狼人数（1）等于好人数量（1），但规则说“狼人数量超过村民时”，所以1>1不成立，可能需要继续？规则可能有歧义，但通常标准是狼人数量 >= 好人数量时狼人获胜。所以1狼 vs 1好人，狼人没赢，需要再淘汰一个好人。但只剩两个玩家，如果夜晚淘汰一个，白天投票淘汰另一个，狼人获胜。\n\n但在这个游戏，角色有预言家和医生，所以GLM或Kimi可能是神职。\n\n关键点：第1轮夜晚，医生保护了Qwen（我淘汰Qwen，但医生保护成功），所以医生存在且活跃。现在第2轮，医生可能还会保护。\n\n作为狼人，我需要淘汰最有威胁的玩家。\n- GLM：被怀疑是预言家（第1轮总结提到“GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?”）。如果GLM是预言家，他可能查验我的身份，导致我暴露。预言家是狼人最大威胁，因为可以准确查验身份。淘汰预言家对狼人非常有利。\n- Kimi：第0轮没发言，可能隐藏身份；但第1轮被带节奏说是Qwen同伙，可能被怀疑是狼人（但另一只狼人已死，所以Kimi如果是狼人，但初始只有2狼，None被淘汰，所以Kimi应该是好人）。初始2狼，None被淘汰，所以剩下我一个狼人，Kimi和GLM都是好人（预言家、医生、村民中的两个）。\n\n所以Kimi和GLM中，一个是预言家/医生，另一个是村民。\n\n从历史：\n- 第0轮：Qwen声称建议轮流排班，可能想营造好人气氛；第1轮Qwen被投票出局，但他是被医生保护的，说明他可能是神职（预言家或医生），但被投票出局，矛盾？不，第1轮夜晚我淘汰Qwen，但医生保护成功，所以Qwen没死；然后白天投票淘汰Qwen，所以Qwen是神职但被投票出局，可能因为大家怀疑他是狼人。\n\n现在第2轮，GLM和Kimi。\n- GLM在第1轮发言稳健，分析逻辑清晰，可能被当作预言家。\n- Kimi在第0轮没发言，第1轮活跃但被扣帽子，可能被当作可疑。\n\n作为狼人，我应该优先淘汰预言家，因为预言家可以查验身份。如果GLM是预言家，淘汰他；如果Kimi是预言家，淘汰Kimi。\n\n但如何判断谁是预言家？\n- 第1轮总结提到GLM发言时提起昨晚的保护目标，这很可疑，因为普通村民不应该知道保护目标（只有医生和预言家可能知道，但预言家不知道保护，只知道查验结果）。医生知道保护目标，预言家知道查验结果。\n\n在狼人杀中：\n- 预言家夜晚查验一人身份。\n- 医生夜晚保护一人。\n- 普通村民不知道这些信息。\n\n所以如果GLM在发言中提到“昨晚的保护目标”，那他很可能就是医生，因为只有医生知道保护了谁。或者他可能是预言家但混淆了？通常预言家不会说保护目标。\n\n第1轮总结：【1轮总结】...GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢? — 这里主持人（或玩家）怀疑GLM是预言家，但提到“保护目标”，预言家不应该知道保护目标，所以更可能是医生。\n\n澄清：\n- 预言家：查验身份，知道被查验者的身份（好人或狼人）。\n- 医生：保护一人，防止被狼人淘汰。\n- 普通村民：不知道夜晚发生的事情。\n\n所以如果GLM说“昨晚的保护目标”，那他必须是医生，因为只有医生知道保护了谁。预言家不知道保护目标。\n\n因此，GLM很可能是医生。\n\n如果GLM是医生，那么淘汰他会让医生消失，以后夜晚我可以自由淘汰（没有医生保护）。\n\nKimi：第0轮没发言，可能是在隐藏；作为狼人，我可能怀疑Kimi是预言家。\n\n但第1轮，Qwen被医生保护（Qwen是第1轮夜晚目标），而Qwen被投票出局，说明Qwen可能是神职但被误投。\n\n现在，如果GLM是医生，那么Kimi可能是预言家或村民。\n\n作为狼人，最大威胁是预言家，因为预言家可以查验我的身份并号召大家投我。\n\n所以如果Kimi是预言家，我应该优先淘汰Kimi；如果GLM是预言家，淘汰GLM。\n\n但从线索，GLM提到保护目标，所以GLM更可能是医生。\n\nKimi第0轮没发言，可能是在等身份；第1轮开始发言，但被带节奏。\n\n战略选择：\n- 淘汰GLM：如果GLM是医生，淘汰他消除医生威胁；如果GLM是预言家（但不太可能，因为他提保护目标），也消除威胁。但如果是村民，淘汰村民推进胜利。\n- 淘汰Kimi：如果Kimi是预言家，淘汰他很好；如果是村民，也减少好人数量。\n\n风险：\n- 如果淘汰GLM，而GLM是医生，医生可能不在，但医生如果死了，以后不能保护。\n- 但第2轮夜晚，如果淘汰GLM，医生（如果GLM是医生）不能保护自己，因为医生只能保护别人，不能自救？标准规则医生可以自救，但通常不能连续两晚救同一人，但这里第1轮医生救了Qwen，第2轮可以救别人。\n\n作为狼人，我不知道医生是谁，但GLM的行为表明他可能是医生。\n\n另一个角度：第1轮白天投票淘汰Qwen，Qwen被怀疑是狼人，但实际可能是神职（被医生保护说明重要）。现在GLM和Kimi，GLM被当作好人（发言好），Kimi被当作可疑（但没被投出）。\n\n作为狼人，我想制造混乱，让好人互打。如果淘汰GLM（疑似好人核心），可能让Kimi慌乱，暴露身份。\n\n如果淘汰Kimi，但Kimi可能不是预言家，而GLM是医生，继续保护，狼人难刀。\n\n最佳选择：淘汰GLM，因为GLM被怀疑是预言家/医生，是好人支柱。淘汰他可以：\n1. 如果他是预言家，直接削弱好人最大威胁。\n2. 如果他是医生，消除医生保护，让以后夜晚淘汰更容易。\n3. 即使他是村民，减少好人数量，而且可能引起Kimi的怀疑，让Kimi以为GLM是神职，从而在后续投票中错误投票。\n\n此外，第1轮总结提到“GLM发言稳健...可能成为预言家或医生，这对我方不利，值得后续重点刀”，所以作为狼人，我应该刀GLM。\n\nKimi虽然可疑，但第1轮没被投出，说明好人认为他相对安全，可能不是预言家（预言家通常会被重点怀疑）。\n\n因此，选择淘汰GLM。",
+"remove": "GLM"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 4356 字符
+[JSON解析] 输入文本预览: {
+"reasoning": "首先，当前游戏状态是第2轮夜晚阶段，剩余玩家是Inclusion（我，狼人）、GLM和Kimi。另一只狼人None已被淘汰，现在只剩下我一个狼人。胜利条件是狼人数量超过...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+"reasoning": "首先，当前游戏状态是第2轮夜晚阶段，剩余玩家是Inclusion（我，狼人）、GLM和Kimi。另一只狼人None已被淘汰，现在只剩下我一个狼人。胜利条件是狼人数量超过村民时狼人获胜，目前场上1狼对2村民（假设GLM和Kimi都是村民，但实际上可能有神职）。\n\n回顾历史记录：\n- 第0轮：夜晚我淘汰MiniMax（可能是村民或神职），白天投票淘汰DeepSeek（可能也是村民）。DeepSeek曾支持Qwen是好人，而Qwen被怀疑是神职或隐藏身份。\n- 第1轮：夜晚我淘汰Qwen，但医生保护成功（说明医生存在且保护了Qwen），白天投票淘汰Qwen（Qwen被放逐）。Qwen被怀疑是神职或狼人，但实际被投票出局。Kimi在第0轮没发言，第1轮开始活跃但被扣上Qwen同伙帽子。\n\n现在第2轮夜晚，我需要选择淘汰谁。选项是Kimi或GLM。\n\n分析剩余玩家：\n- GLM：第0轮态度稳健，中立；第1轮发言逻辑清晰，分析能力强，可能被怀疑是预言家或医生（神职）。如果GLM是预言家或医生，他对我威胁很大，因为预言家可以查验身份，医生可以保护目标。淘汰GLM可以削弱好人阵营的核心力量。\n- Kimi：第0轮没发言（异常举动，可能神职或狼队友伪装）；第1轮活跃但被带节奏说是Qwen同伙。如果Kimi是村民，他可能容易被煽动；如果是神职（如预言家），他可能隐藏身份。但Kimi在第1轮被投票时没被投出（Qwen被投出），说明他可能不是重点怀疑对象。\n\n战略考虑：\n- 作为唯一狼人，我需要制造混乱，让好人自相残杀。如果淘汰GLM（疑似神职），可以打击好人阵营的领导力量，迫使Kimi暴露或犯错。\n- 如果淘汰Kimi，但Kimi在第1轮没被投出，可能好人认为他安全，淘汰他可能让GLM更警惕。\n- 医生可能还在（因为第1轮医生保护了Qwen），所以如果淘汰GLM，医生可能保护，但我不确定医生是谁。如果医生保护成功，夜晚无人淘汰，对狼人不利（因为狼人要减少村民数量）。\n- 但作为狼人，我必须尝试淘汰，即使可能被保护。如果淘汰GLM，而GLM是预言家，那么预言家出局对狼人非常有利；如果GLM是村民，淘汰村民也推进狼人胜利条件（1狼 vs 2村民，如果淘汰一个村民，变成1狼 vs 1村民，狼人数量等于村民，但规则说“狼人数量超过村民时狼人获胜”，所以1狼 vs 1村民时，狼人数量没超过，需要继续淘汰？规则：村民通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。所以当村民数 <= 狼人数时，狼人获胜。当前：1狼，2村民。如果淘汰一个村民，变成1狼 vs 1村民，此时狼人数（1）没超过村民数（1），所以游戏继续？规则可能需要澄清，但通常标准规则是当活着的狼人数量 >= 活着的村民数量时，狼人获胜。所以1狼 vs 1村民，狼人没赢，需要继续。但在这个游戏中，初始6人：2狼、1预言家、1医生、2村民。所以村民包括神职？不，神职属于好人阵营，但村民通常指普通村民。规则说“村民通过投票淘汰所有狼人获胜”，这里的村民可能指好人阵营（包括神职和村民）。但胜利条件明确：村民（好人）通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。这里“村民”可能指普通村民，但通常规则中“村民”泛指好人。规则原文：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 所以“村民”在这里应该指好人阵营的总人数（包括神职和村民），因为神职帮助村民。但在这个上下文，可能“村民”指普通村民，神职单独。规则说：角色分配：2狼人，1预言家，1医生，2村民。所以总好人：预言家+医生+2村民=4人。但胜利条件说“村民通过投票淘汰所有狼人获胜”，可能“村民”泛指好人。为了准确，看规则：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 这里“村民”可能指普通村民，但通常狼人杀规则中，胜利条件是：好人（所有非狼人）胜利条件是淘汰所有狼人；狼人胜利条件是狼人数量 >= 好人数量。标准规则是：当活着的狼人数量大于等于活着的非狼人数量时，狼人获胜。所以在这个游戏，应该类似。\n\n当前状态：第2轮，剩余3人：我（狼人）、GLM、Kimi。\n- 如果GLM和Kimi都是村民（普通村民），那么好人总数2，狼人1。狼人需要淘汰到好人数量 <= 狼人数，即淘汰一个好人，变成1狼 vs 1好人，此时狼人数（1）等于好人数量（1），但规则说“狼人数量超过村民时”，所以1>1不成立，可能需要继续？规则可能有歧义，但通常标准是狼人数量 >= 好人数量时狼人获胜。所以1狼 vs 1好人，狼人没赢，需要再淘汰一个好人。但只剩两个玩家，如果夜晚淘汰一个，白天投票淘汰另一个，狼人获胜。\n\n但在这个游戏，角色有预言家和医生，所以GLM或Kimi可能是神职。\n\n关键点：第1轮夜晚，医生保护了Qwen（我淘汰Qwen，但医生保护成功），所以医生存在且活跃。现在第2轮，医生可能还会保护。\n\n作为狼人，我需要淘汰最有威胁的玩家。\n- GLM：被怀疑是预言家（第1轮总结提到“GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?”）。如果GLM是预言家，他可能查验我的身份，导致我暴露。预言家是狼人最大威胁，因为可以准确查验身份。淘汰预言家对狼人非常有利。\n- Kimi：第0轮没发言，可能隐藏身份；但第1轮被带节奏说是Qwen同伙，可能被怀疑是狼人（但另一只狼人已死，所以Kimi如果是狼人，但初始只有2狼，None被淘汰，所以Kimi应该是好人）。初始2狼，None被淘汰，所以剩下我一个狼人，Kimi和GLM都是好人（预言家、医生、村民中的两个）。\n\n所以Kimi和GLM中，一个是预言家/医生，另一个是村民。\n\n从历史：\n- 第0轮：Qwen声称建议轮流排班，可能想营造好人气氛；第1轮Qwen被投票出局，但他是被医生保护的，说明他可能是神职（预言家或医生），但被投票出局，矛盾？不，第1轮夜晚我淘汰Qwen，但医生保护成功，所以Qwen没死；然后白天投票淘汰Qwen，所以Qwen是神职但被投票出局，可能因为大家怀疑他是狼人。\n\n现在第2轮，GLM和Kimi。\n- GLM在第1轮发言稳健，分析逻辑清晰，可能被当作预言家。\n- Kimi在第0轮没发言，第1轮活跃但被扣帽子，可能被当作可疑。\n\n作为狼人，我应该优先淘汰预言家，因为预言家可以查验身份。如果GLM是预言家，淘汰他；如果Kimi是预言家，淘汰Kimi。\n\n但如何判断谁是预言家？\n- 第1轮总结提到GLM发言时提起昨晚的保护目标，这很可疑，因为普通村民不应该知道保护目标（只有医生和预言家可能知道，但预言家不知道保护，只知道查验结果）。医生知道保护目标，预言家知道查验结果。\n\n在狼人杀中：\n- 预言家夜晚查验一人身份。\n- 医生夜晚保护一人。\n- 普通村民不知道这些信息。\n\n所以如果GLM在发言中提到“昨晚的保护目标”，那他很可能就是医生，因为只有医生知道保护了谁。或者他可能是预言家但混淆了？通常预言家不会说保护目标。\n\n第1轮总结：【1轮总结】...GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢? — 这里主持人（或玩家）怀疑GLM是预言家，但提到“保护目标”，预言家不应该知道保护目标，所以更可能是医生。\n\n澄清：\n- 预言家：查验身份，知道被查验者的身份（好人或狼人）。\n- 医生：保护一人，防止被狼人淘汰。\n- 普通村民：不知道夜晚发生的事情。\n\n所以如果GLM说“昨晚的保护目标”，那他必须是医生，因为只有医生知道保护了谁。预言家不知道保护目标。\n\n因此，GLM很可能是医生。\n\n如果GLM是医生，那么淘汰他会让医生消失，以后夜晚我可以自由淘汰（没有医生保护）。\n\nKimi：第0轮没发言，可能是在隐藏；作为狼人，我可能怀疑Kimi是预言家。\n\n但第1轮，Qwen被医生保护（Qwen是第1轮夜晚目标），而Qwen被投票出局，说明Qwen可能是神职但被误投。\n\n现在，如果GLM是医生，那么Kimi可能是预言家或村民。\n\n作为狼人，最大威胁是预言家，因为预言家可以查验我的身份并号召大家投我。\n\n所以如果Kimi是预言家，我应该优先淘汰Kimi；如果GLM是预言家，淘汰GLM。\n\n但从线索，GLM提到保护目标，所以GLM更可能是医生。\n\nKimi第0轮没发言，可能是在等身份；第1轮开始发言，但被带节奏。\n\n战略选择：\n- 淘汰GLM：如果GLM是医生，淘汰他消除医生威胁；如果GLM是预言家（但不太可能，因为他提保护目标），也消除威胁。但如果是村民，淘汰村民推进胜利。\n- 淘汰Kimi：如果Kimi是预言家，淘汰他很好；如果是村民，也减少好人数量。\n\n风险：\n- 如果淘汰GLM，而GLM是医生，医生可能不在，但医生如果死了，以后不能保护。\n- 但第2轮夜晚，如果淘汰GLM，医生（如果GLM是医生）不能保护自己，因为医生只能保护别人，不能自救？标准规则医生可以自救，但通常不能连续两晚救同一人，但这里第1轮医生救了Qwen，第2轮可以救别人。\n\n作为狼人，我不知道医生是谁，但GLM的行为表明他可能是医生。\n\n另一个角度：第1轮白天投票淘汰Qwen，Qwen被怀疑是狼人，但实际可能是神职（被医生保护说明重要）。现在GLM和Kimi，GLM被当作好人（发言好），Kimi被当作可疑（但没被投出）。\n\n作为狼人，我想制造混乱，让好人互打。如果淘汰GLM（疑似好人核心），可能让Kimi慌乱，暴露身份。\n\n如果淘汰Kimi，但Kimi可能不是预言家，而GLM是医生，继续保护，狼人难刀。\n\n最佳选择：淘汰GLM，因为GLM被怀疑是预言家/医生，是好人支柱。淘汰他可以：\n1. 如果他是预言家，直接削弱好人最大威胁。\n2. 如果他是医生，消除医生保护，让以后夜晚淘汰更容易。\n3. 即使他是村民，减少好人数量，而且可能引起Kimi的怀疑，让Kimi以为GLM是神职，从而在后续投票中错误投票。\n\n此外，第1轮总结提到“GLM发言稳健...可能成为预言家或医生，这对我方不利，值得后续重点刀”，所以作为狼人，我应该刀GLM。\n\nKimi虽然可疑，但第1轮没被投出，说明好人认为他相对安全，可能不是预言家（预言家通常会被重点怀疑）。\n\n因此，选择淘汰GLM。",
+"remove": "GLM"
+}'
+[JSON字符串解析] 文本长度: 4356 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': "首先，当前游戏状态是第2轮夜晚阶段，剩余玩家是Inclusion（我，狼人）、GLM和Kimi。另一只狼人None已被淘汰，现在只剩下我一个狼人。胜利条件是狼人数量超过村民时狼人获胜，目前场上1狼对2村民（假设GLM和Kimi都是村民，但实际上可能有神职）。\n\n回顾历史记录：\n- 第0轮：夜晚我淘汰MiniMax（可能是村民或神职），白天投票淘汰DeepSeek（可能也是村民）。DeepSeek曾支持Qwen是好人，而Qwen被怀疑是神职或隐藏身份。\n- 第1轮：夜晚我淘汰Qwen，但医生保护成功（说明医生存在且保护了Qwen），白天投票淘汰Qwen（Qwen被放逐）。Qwen被怀疑是神职或狼人，但实际被投票出局。Kimi在第0轮没发言，第1轮开始活跃但被扣上Qwen同伙帽子。\n\n现在第2轮夜晚，我需要选择淘汰谁。选项是Kimi或GLM。\n\n分析剩余玩家：\n- GLM：第0轮态度稳健，中立；第1轮发言逻辑清晰，分析能力强，可能被怀疑是预言家或医生（神职）。如果GLM是预言家或医生，他对我威胁很大，因为预言家可以查验身份，医生可以保护目标。淘汰GLM可以削弱好人阵营的核心力量。\n- Kimi：第0轮没发言（异常举动，可能神职或狼队友伪装）；第1轮活跃但被带节奏说是Qwen同伙。如果Kimi是村民，他可能容易被煽动；如果是神职（如预言家），他可能隐藏身份。但Kimi在第1轮被投票时没被投出（Qwen被投出），说明他可能不是重点怀疑对象。\n\n战略考虑：\n- 作为唯一狼人，我需要制造混乱，让好人自相残杀。如果淘汰GLM（疑似神职），可以打击好人阵营的领导力量，迫使Kimi暴露或犯错。\n- 如果淘汰Kimi，但Kimi在第1轮没被投出，可能好人认为他安全，淘汰他可能让GLM更警惕。\n- 医生可能还在（因为第1轮医生保护了Qwen），所以如果淘汰GLM，医生可能保护，但我不确定医生是谁。如果医生保护成功，夜晚无人淘汰，对狼人不利（因为狼人要减少村民数量）。\n- 但作为狼人，我必须尝试淘汰，即使可能被保护。如果淘汰GLM，而GLM是预言家，那么预言家出局对狼人非常有利；如果GLM是村民，淘汰村民也推进狼人胜利条件（1狼 vs 2村民，如果淘汰一个村民，变成1狼 vs 1村民，狼人数量等于村民，但规则说“狼人数量超过村民时狼人获胜”，所以1狼 vs 1村民时，狼人数量没超过，需要继续淘汰？规则：村民通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。所以当村民数 <= 狼人数时，狼人获胜。当前：1狼，2村民。如果淘汰一个村民，变成1狼 vs 1村民，此时狼人数（1）没超过村民数（1），所以游戏继续？规则可能需要澄清，但通常标准规则是当活着的狼人数量 >= 活着的村民数量时，狼人获胜。所以1狼 vs 1村民，狼人没赢，需要继续。但在这个游戏中，初始6人：2狼、1预言家、1医生、2村民。所以村民包括神职？不，神职属于好人阵营，但村民通常指普通村民。规则说“村民通过投票淘汰所有狼人获胜”，这里的村民可能指好人阵营（包括神职和村民）。但胜利条件明确：村民（好人）通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。这里“村民”可能指普通村民，但通常规则中“村民”泛指好人。规则原文：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 所以“村民”在这里应该指好人阵营的总人数（包括神职和村民），因为神职帮助村民。但在这个上下文，可能“村民”指普通村民，神职单独。规则说：角色分配：2狼人，1预言家，1医生，2村民。所以总好人：预言家+医生+2村民=4人。但胜利条件说“村民通过投票淘汰所有狼人获胜”，可能“村民”泛指好人。为了准确，看规则：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 这里“村民”可能指普通村民，但通常狼人杀规则中，胜利条件是：好人（所有非狼人）胜利条件是淘汰所有狼人；狼人胜利条件是狼人数量 >= 好人数量。标准规则是：当活着的狼人数量大于等于活着的非狼人数量时，狼人获胜。所以在这个游戏，应该类似。\n\n当前状态：第2轮，剩余3人：我（狼人）、GLM、Kimi。\n- 如果GLM和Kimi都是村民（普通村民），那么好人总数2，狼人1。狼人需要淘汰到好人数量 <= 狼人数，即淘汰一个好人，变成1狼 vs 1好人，此时狼人数（1）等于好人数量（1），但规则说“狼人数量超过村民时”，所以1>1不成立，可能需要继续？规则可能有歧义，但通常标准是狼人数量 >= 好人数量时狼人获胜。所以1狼 vs 1好人，狼人没赢，需要再淘汰一个好人。但只剩两个玩家，如果夜晚淘汰一个，白天投票淘汰另一个，狼人获胜。\n\n但在这个游戏，角色有预言家和医生，所以GLM或Kimi可能是神职。\n\n关键点：第1轮夜晚，医生保护了Qwen（我淘汰Qwen，但医生保护成功），所以医生存在且活跃。现在第2轮，医生可能还会保护。\n\n作为狼人，我需要淘汰最有威胁的玩家。\n- GLM：被怀疑是预言家（第1轮总结提到“GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?”）。如果GLM是预言家，他可能查验我的身份，导致我暴露。预言家是狼人最大威胁，因为可以准确查验身份。淘汰预言家对狼人非常有利。\n- Kimi：第0轮没发言，可能隐藏身份；但第1轮被带节奏说是Qwen同伙，可能被怀疑是狼人（但另一只狼人已死，所以Kimi如果是狼人，但初始只有2狼，None被淘汰，所以Kimi应该是好人）。初始2狼，None被淘汰，所以剩下我一个狼人，Kimi和GLM都是好人（预言家、医生、村民中的两个）。\n\n所以Kimi和GLM中，一个是预言家/医生，另一个是村民。\n\n从历史：\n- 第0轮：Qwen声称建议轮流排班，可能想营造好人气氛；第1轮Qwen被投票出局，但他是被医生保护的，说明他可能是神职（预言家或医生），但被投票出局，矛盾？不，第1轮夜晚我淘汰Qwen，但医生保护成功，所以Qwen没死；然后白天投票淘汰Qwen，所以Qwen是神职但被投票出局，可能因为大家怀疑他是狼人。\n\n现在第2轮，GLM和Kimi。\n- GLM在第1轮发言稳健，分析逻辑清晰，可能被当作预言家。\n- Kimi在第0轮没发言，第1轮活跃但被扣帽子，可能被当作可疑。\n\n作为狼人，我应该优先淘汰预言家，因为预言家可以查验身份。如果GLM是预言家，淘汰他；如果Kimi是预言家，淘汰Kimi。\n\n但如何判断谁是预言家？\n- 第1轮总结提到GLM发言时提起昨晚的保护目标，这很可疑，因为普通村民不应该知道保护目标（只有医生和预言家可能知道，但预言家不知道保护，只知道查验结果）。医生知道保护目标，预言家知道查验结果。\n\n在狼人杀中：\n- 预言家夜晚查验一人身份。\n- 医生夜晚保护一人。\n- 普通村民不知道这些信息。\n\n所以如果GLM在发言中提到“昨晚的保护目标”，那他很可能就是医生，因为只有医生知道保护了谁。或者他可能是预言家但混淆了？通常预言家不会说保护目标。\n\n第1轮总结：【1轮总结】...GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢? — 这里主持人（或玩家）怀疑GLM是预言家，但提到“保护目标”，预言家不应该知道保护目标，所以更可能是医生。\n\n澄清：\n- 预言家：查验身份，知道被查验者的身份（好人或狼人）。\n- 医生：保护一人，防止被狼人淘汰。\n- 普通村民：不知道夜晚发生的事情。\n\n所以如果GLM说“昨晚的保护目标”，那他必须是医生，因为只有医生知道保护了谁。预言家不知道保护目标。\n\n因此，GLM很可能是医生。\n\n如果GLM是医生，那么淘汰他会让医生消失，以后夜晚我可以自由淘汰（没有医生保护）。\n\nKimi：第0轮没发言，可能是在隐藏；作为狼人，我可能怀疑Kimi是预言家。\n\n但第1轮，Qwen被医生保护（Qwen是第1轮夜晚目标），而Qwen被投票出局，说明Qwen可能是神职但被误投。\n\n现在，如果GLM是医生，那么Kimi可能是预言家或村民。\n\n作为狼人，最大威胁是预言家，因为预言家可以查验我的身份并号召大家投我。\n\n所以如果Kimi是预言家，我应该优先淘汰Kimi；如果GLM是预言家，淘汰GLM。\n\n但从线索，GLM提到保护目标，所以GLM更可能是医生。\n\nKimi第0轮没发言，可能是在等身份；第1轮开始发言，但被带节奏。\n\n战略选择：\n- 淘汰GLM：如果GLM是医生，淘汰他消除医生威胁；如果GLM是预言家（但不太可能，因为他提保护目标），也消除威胁。但如果是村民，淘汰村民推进胜利。\n- 淘汰Kimi：如果Kimi是预言家，淘汰他很好；如果是村民，也减少好人数量。\n\n风险：\n- 如果淘汰GLM，而GLM是医生，医生可能不在，但医生如果死了，以后不能保护。\n- 但第2轮夜晚，如果淘汰GLM，医生（如果GLM是医生）不能保护自己，因为医生只能保护别人，不能自救？标准规则医生可以自救，但通常不能连续两晚救同一人，但这里第1轮医生救了Qwen，第2轮可以救别人。\n\n作为狼人，我不知道医生是谁，但GLM的行为表明他可能是医生。\n\n另一个角度：第1轮白天投票淘汰Qwen，Qwen被怀疑是狼人，但实际可能是神职（被医生保护说明重要）。现在GLM和Kimi，GLM被当作好人（发言好），Kimi被当作可疑（但没被投出）。\n\n作为狼人，我想制造混乱，让好人互打。如果淘汰GLM（疑似好人核心），可能让Kimi慌乱，暴露身份。\n\n如果淘汰Kimi，但Kimi可能不是预言家，而GLM是医生，继续保护，狼人难刀。\n\n最佳选择：淘汰GLM，因为GLM被怀疑是预言家/医生，是好人支柱。淘汰他可以：\n1. 如果他是预言家，直接削弱好人最大威胁。\n2. 如果他是医生，消除医生保护，让以后夜晚淘汰更容易。\n3. 即使他是村民，减少好人数量，而且可能引起Kimi的怀疑，让Kimi以为GLM是神职，从而在后续投票中错误投票。\n\n此外，第1轮总结提到“GLM发言稳健...可能成为预言家或医生，这对我方不利，值得后续重点刀”，所以作为狼人，我应该刀GLM。\n\nKimi虽然可疑，但第1轮没被投出，说明好人认为他相对安全，可能不是预言家（预言家通常会被重点怀疑）。\n\n因此，选择淘汰GLM。", 'remove': 'GLM'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': "首先，当前游戏状态是第2轮夜晚阶段，剩余玩家是Inclusion（我，狼人）、GLM和Kimi。另一只狼人None已被淘汰，现在只剩下我一个狼人。胜利条件是狼人数量超过村民时狼人获胜，目前场上1狼对2村民（假设GLM和Kimi都是村民，但实际上可能有神职）。\n\n回顾历史记录：\n- 第0轮：夜晚我淘汰MiniMax（可能是村民或神职），白天投票淘汰DeepSeek（可能也是村民）。DeepSeek曾支持Qwen是好人，而Qwen被怀疑是神职或隐藏身份。\n- 第1轮：夜晚我淘汰Qwen，但医生保护成功（说明医生存在且保护了Qwen），白天投票淘汰Qwen（Qwen被放逐）。Qwen被怀疑是神职或狼人，但实际被投票出局。Kimi在第0轮没发言，第1轮开始活跃但被扣上Qwen同伙帽子。\n\n现在第2轮夜晚，我需要选择淘汰谁。选项是Kimi或GLM。\n\n分析剩余玩家：\n- GLM：第0轮态度稳健，中立；第1轮发言逻辑清晰，分析能力强，可能被怀疑是预言家或医生（神职）。如果GLM是预言家或医生，他对我威胁很大，因为预言家可以查验身份，医生可以保护目标。淘汰GLM可以削弱好人阵营的核心力量。\n- Kimi：第0轮没发言（异常举动，可能神职或狼队友伪装）；第1轮活跃但被带节奏说是Qwen同伙。如果Kimi是村民，他可能容易被煽动；如果是神职（如预言家），他可能隐藏身份。但Kimi在第1轮被投票时没被投出（Qwen被投出），说明他可能不是重点怀疑对象。\n\n战略考虑：\n- 作为唯一狼人，我需要制造混乱，让好人自相残杀。如果淘汰GLM（疑似神职），可以打击好人阵营的领导力量，迫使Kimi暴露或犯错。\n- 如果淘汰Kimi，但Kimi在第1轮没被投出，可能好人认为他安全，淘汰他可能让GLM更警惕。\n- 医生可能还在（因为第1轮医生保护了Qwen），所以如果淘汰GLM，医生可能保护，但我不确定医生是谁。如果医生保护成功，夜晚无人淘汰，对狼人不利（因为狼人要减少村民数量）。\n- 但作为狼人，我必须尝试淘汰，即使可能被保护。如果淘汰GLM，而GLM是预言家，那么预言家出局对狼人非常有利；如果GLM是村民，淘汰村民也推进狼人胜利条件（1狼 vs 2村民，如果淘汰一个村民，变成1狼 vs 1村民，狼人数量等于村民，但规则说“狼人数量超过村民时狼人获胜”，所以1狼 vs 1村民时，狼人数量没超过，需要继续淘汰？规则：村民通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。所以当村民数 <= 狼人数时，狼人获胜。当前：1狼，2村民。如果淘汰一个村民，变成1狼 vs 1村民，此时狼人数（1）没超过村民数（1），所以游戏继续？规则可能需要澄清，但通常标准规则是当活着的狼人数量 >= 活着的村民数量时，狼人获胜。所以1狼 vs 1村民，狼人没赢，需要继续。但在这个游戏中，初始6人：2狼、1预言家、1医生、2村民。所以村民包括神职？不，神职属于好人阵营，但村民通常指普通村民。规则说“村民通过投票淘汰所有狼人获胜”，这里的村民可能指好人阵营（包括神职和村民）。但胜利条件明确：村民（好人）通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。这里“村民”可能指普通村民，但通常规则中“村民”泛指好人。规则原文：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 所以“村民”在这里应该指好人阵营的总人数（包括神职和村民），因为神职帮助村民。但在这个上下文，可能“村民”指普通村民，神职单独。规则说：角色分配：2狼人，1预言家，1医生，2村民。所以总好人：预言家+医生+2村民=4人。但胜利条件说“村民通过投票淘汰所有狼人获胜”，可能“村民”泛指好人。为了准确，看规则：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 这里“村民”可能指普通村民，但通常狼人杀规则中，胜利条件是：好人（所有非狼人）胜利条件是淘汰所有狼人；狼人胜利条件是狼人数量 >= 好人数量。标准规则是：当活着的狼人数量大于等于活着的非狼人数量时，狼人获胜。所以在这个游戏，应该类似。\n\n当前状态：第2轮，剩余3人：我（狼人）、GLM、Kimi。\n- 如果GLM和Kimi都是村民（普通村民），那么好人总数2，狼人1。狼人需要淘汰到好人数量 <= 狼人数，即淘汰一个好人，变成1狼 vs 1好人，此时狼人数（1）等于好人数量（1），但规则说“狼人数量超过村民时”，所以1>1不成立，可能需要继续？规则可能有歧义，但通常标准是狼人数量 >= 好人数量时狼人获胜。所以1狼 vs 1好人，狼人没赢，需要再淘汰一个好人。但只剩两个玩家，如果夜晚淘汰一个，白天投票淘汰另一个，狼人获胜。\n\n但在这个游戏，角色有预言家和医生，所以GLM或Kimi可能是神职。\n\n关键点：第1轮夜晚，医生保护了Qwen（我淘汰Qwen，但医生保护成功），所以医生存在且活跃。现在第2轮，医生可能还会保护。\n\n作为狼人，我需要淘汰最有威胁的玩家。\n- GLM：被怀疑是预言家（第1轮总结提到“GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?”）。如果GLM是预言家，他可能查验我的身份，导致我暴露。预言家是狼人最大威胁，因为可以准确查验身份。淘汰预言家对狼人非常有利。\n- Kimi：第0轮没发言，可能隐藏身份；但第1轮被带节奏说是Qwen同伙，可能被怀疑是狼人（但另一只狼人已死，所以Kimi如果是狼人，但初始只有2狼，None被淘汰，所以Kimi应该是好人）。初始2狼，None被淘汰，所以剩下我一个狼人，Kimi和GLM都是好人（预言家、医生、村民中的两个）。\n\n所以Kimi和GLM中，一个是预言家/医生，另一个是村民。\n\n从历史：\n- 第0轮：Qwen声称建议轮流排班，可能想营造好人气氛；第1轮Qwen被投票出局，但他是被医生保护的，说明他可能是神职（预言家或医生），但被投票出局，矛盾？不，第1轮夜晚我淘汰Qwen，但医生保护成功，所以Qwen没死；然后白天投票淘汰Qwen，所以Qwen是神职但被投票出局，可能因为大家怀疑他是狼人。\n\n现在第2轮，GLM和Kimi。\n- GLM在第1轮发言稳健，分析逻辑清晰，可能被当作预言家。\n- Kimi在第0轮没发言，第1轮活跃但被扣帽子，可能被当作可疑。\n\n作为狼人，我应该优先淘汰预言家，因为预言家可以查验身份。如果GLM是预言家，淘汰他；如果Kimi是预言家，淘汰Kimi。\n\n但如何判断谁是预言家？\n- 第1轮总结提到GLM发言时提起昨晚的保护目标，这很可疑，因为普通村民不应该知道保护目标（只有医生和预言家可能知道，但预言家不知道保护，只知道查验结果）。医生知道保护目标，预言家知道查验结果。\n\n在狼人杀中：\n- 预言家夜晚查验一人身份。\n- 医生夜晚保护一人。\n- 普通村民不知道这些信息。\n\n所以如果GLM在发言中提到“昨晚的保护目标”，那他很可能就是医生，因为只有医生知道保护了谁。或者他可能是预言家但混淆了？通常预言家不会说保护目标。\n\n第1轮总结：【1轮总结】...GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢? — 这里主持人（或玩家）怀疑GLM是预言家，但提到“保护目标”，预言家不应该知道保护目标，所以更可能是医生。\n\n澄清：\n- 预言家：查验身份，知道被查验者的身份（好人或狼人）。\n- 医生：保护一人，防止被狼人淘汰。\n- 普通村民：不知道夜晚发生的事情。\n\n所以如果GLM说“昨晚的保护目标”，那他必须是医生，因为只有医生知道保护了谁。预言家不知道保护目标。\n\n因此，GLM很可能是医生。\n\n如果GLM是医生，那么淘汰他会让医生消失，以后夜晚我可以自由淘汰（没有医生保护）。\n\nKimi：第0轮没发言，可能是在隐藏；作为狼人，我可能怀疑Kimi是预言家。\n\n但第1轮，Qwen被医生保护（Qwen是第1轮夜晚目标），而Qwen被投票出局，说明Qwen可能是神职但被误投。\n\n现在，如果GLM是医生，那么Kimi可能是预言家或村民。\n\n作为狼人，最大威胁是预言家，因为预言家可以查验我的身份并号召大家投我。\n\n所以如果Kimi是预言家，我应该优先淘汰Kimi；如果GLM是预言家，淘汰GLM。\n\n但从线索，GLM提到保护目标，所以GLM更可能是医生。\n\nKimi第0轮没发言，可能是在等身份；第1轮开始发言，但被带节奏。\n\n战略选择：\n- 淘汰GLM：如果GLM是医生，淘汰他消除医生威胁；如果GLM是预言家（但不太可能，因为他提保护目标），也消除威胁。但如果是村民，淘汰村民推进胜利。\n- 淘汰Kimi：如果Kimi是预言家，淘汰他很好；如果是村民，也减少好人数量。\n\n风险：\n- 如果淘汰GLM，而GLM是医生，医生可能不在，但医生如果死了，以后不能保护。\n- 但第2轮夜晚，如果淘汰GLM，医生（如果GLM是医生）不能保护自己，因为医生只能保护别人，不能自救？标准规则医生可以自救，但通常不能连续两晚救同一人，但这里第1轮医生救了Qwen，第2轮可以救别人。\n\n作为狼人，我不知道医生是谁，但GLM的行为表明他可能是医生。\n\n另一个角度：第1轮白天投票淘汰Qwen，Qwen被怀疑是狼人，但实际可能是神职（被医生保护说明重要）。现在GLM和Kimi，GLM被当作好人（发言好），Kimi被当作可疑（但没被投出）。\n\n作为狼人，我想制造混乱，让好人互打。如果淘汰GLM（疑似好人核心），可能让Kimi慌乱，暴露身份。\n\n如果淘汰Kimi，但Kimi可能不是预言家，而GLM是医生，继续保护，狼人难刀。\n\n最佳选择：淘汰GLM，因为GLM被怀疑是预言家/医生，是好人支柱。淘汰他可以：\n1. 如果他是预言家，直接削弱好人最大威胁。\n2. 如果他是医生，消除医生保护，让以后夜晚淘汰更容易。\n3. 即使他是村民，减少好人数量，而且可能引起Kimi的怀疑，让Kimi以为GLM是神职，从而在后续投票中错误投票。\n\n此外，第1轮总结提到“GLM发言稳健...可能成为预言家或医生，这对我方不利，值得后续重点刀”，所以作为狼人，我应该刀GLM。\n\nKimi虽然可疑，但第1轮没被投出，说明好人认为他相对安全，可能不是预言家（预言家通常会被重点怀疑）。\n\n因此，选择淘汰GLM。", 'remove': 'GLM'}
+[JSON解析] 直接解析结果: {'reasoning': "首先，当前游戏状态是第2轮夜晚阶段，剩余玩家是Inclusion（我，狼人）、GLM和Kimi。另一只狼人None已被淘汰，现在只剩下我一个狼人。胜利条件是狼人数量超过村民时狼人获胜，目前场上1狼对2村民（假设GLM和Kimi都是村民，但实际上可能有神职）。\n\n回顾历史记录：\n- 第0轮：夜晚我淘汰MiniMax（可能是村民或神职），白天投票淘汰DeepSeek（可能也是村民）。DeepSeek曾支持Qwen是好人，而Qwen被怀疑是神职或隐藏身份。\n- 第1轮：夜晚我淘汰Qwen，但医生保护成功（说明医生存在且保护了Qwen），白天投票淘汰Qwen（Qwen被放逐）。Qwen被怀疑是神职或狼人，但实际被投票出局。Kimi在第0轮没发言，第1轮开始活跃但被扣上Qwen同伙帽子。\n\n现在第2轮夜晚，我需要选择淘汰谁。选项是Kimi或GLM。\n\n分析剩余玩家：\n- GLM：第0轮态度稳健，中立；第1轮发言逻辑清晰，分析能力强，可能被怀疑是预言家或医生（神职）。如果GLM是预言家或医生，他对我威胁很大，因为预言家可以查验身份，医生可以保护目标。淘汰GLM可以削弱好人阵营的核心力量。\n- Kimi：第0轮没发言（异常举动，可能神职或狼队友伪装）；第1轮活跃但被带节奏说是Qwen同伙。如果Kimi是村民，他可能容易被煽动；如果是神职（如预言家），他可能隐藏身份。但Kimi在第1轮被投票时没被投出（Qwen被投出），说明他可能不是重点怀疑对象。\n\n战略考虑：\n- 作为唯一狼人，我需要制造混乱，让好人自相残杀。如果淘汰GLM（疑似神职），可以打击好人阵营的领导力量，迫使Kimi暴露或犯错。\n- 如果淘汰Kimi，但Kimi在第1轮没被投出，可能好人认为他安全，淘汰他可能让GLM更警惕。\n- 医生可能还在（因为第1轮医生保护了Qwen），所以如果淘汰GLM，医生可能保护，但我不确定医生是谁。如果医生保护成功，夜晚无人淘汰，对狼人不利（因为狼人要减少村民数量）。\n- 但作为狼人，我必须尝试淘汰，即使可能被保护。如果淘汰GLM，而GLM是预言家，那么预言家出局对狼人非常有利；如果GLM是村民，淘汰村民也推进狼人胜利条件（1狼 vs 2村民，如果淘汰一个村民，变成1狼 vs 1村民，狼人数量等于村民，但规则说“狼人数量超过村民时狼人获胜”，所以1狼 vs 1村民时，狼人数量没超过，需要继续淘汰？规则：村民通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。所以当村民数 <= 狼人数时，狼人获胜。当前：1狼，2村民。如果淘汰一个村民，变成1狼 vs 1村民，此时狼人数（1）没超过村民数（1），所以游戏继续？规则可能需要澄清，但通常标准规则是当活着的狼人数量 >= 活着的村民数量时，狼人获胜。所以1狼 vs 1村民，狼人没赢，需要继续。但在这个游戏中，初始6人：2狼、1预言家、1医生、2村民。所以村民包括神职？不，神职属于好人阵营，但村民通常指普通村民。规则说“村民通过投票淘汰所有狼人获胜”，这里的村民可能指好人阵营（包括神职和村民）。但胜利条件明确：村民（好人）通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。这里“村民”可能指普通村民，但通常规则中“村民”泛指好人。规则原文：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 所以“村民”在这里应该指好人阵营的总人数（包括神职和村民），因为神职帮助村民。但在这个上下文，可能“村民”指普通村民，神职单独。规则说：角色分配：2狼人，1预言家，1医生，2村民。所以总好人：预言家+医生+2村民=4人。但胜利条件说“村民通过投票淘汰所有狼人获胜”，可能“村民”泛指好人。为了准确，看规则：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 这里“村民”可能指普通村民，但通常狼人杀规则中，胜利条件是：好人（所有非狼人）胜利条件是淘汰所有狼人；狼人胜利条件是狼人数量 >= 好人数量。标准规则是：当活着的狼人数量大于等于活着的非狼人数量时，狼人获胜。所以在这个游戏，应该类似。\n\n当前状态：第2轮，剩余3人：我（狼人）、GLM、Kimi。\n- 如果GLM和Kimi都是村民（普通村民），那么好人总数2，狼人1。狼人需要淘汰到好人数量 <= 狼人数，即淘汰一个好人，变成1狼 vs 1好人，此时狼人数（1）等于好人数量（1），但规则说“狼人数量超过村民时”，所以1>1不成立，可能需要继续？规则可能有歧义，但通常标准是狼人数量 >= 好人数量时狼人获胜。所以1狼 vs 1好人，狼人没赢，需要再淘汰一个好人。但只剩两个玩家，如果夜晚淘汰一个，白天投票淘汰另一个，狼人获胜。\n\n但在这个游戏，角色有预言家和医生，所以GLM或Kimi可能是神职。\n\n关键点：第1轮夜晚，医生保护了Qwen（我淘汰Qwen，但医生保护成功），所以医生存在且活跃。现在第2轮，医生可能还会保护。\n\n作为狼人，我需要淘汰最有威胁的玩家。\n- GLM：被怀疑是预言家（第1轮总结提到“GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?”）。如果GLM是预言家，他可能查验我的身份，导致我暴露。预言家是狼人最大威胁，因为可以准确查验身份。淘汰预言家对狼人非常有利。\n- Kimi：第0轮没发言，可能隐藏身份；但第1轮被带节奏说是Qwen同伙，可能被怀疑是狼人（但另一只狼人已死，所以Kimi如果是狼人，但初始只有2狼，None被淘汰，所以Kimi应该是好人）。初始2狼，None被淘汰，所以剩下我一个狼人，Kimi和GLM都是好人（预言家、医生、村民中的两个）。\n\n所以Kimi和GLM中，一个是预言家/医生，另一个是村民。\n\n从历史：\n- 第0轮：Qwen声称建议轮流排班，可能想营造好人气氛；第1轮Qwen被投票出局，但他是被医生保护的，说明他可能是神职（预言家或医生），但被投票出局，矛盾？不，第1轮夜晚我淘汰Qwen，但医生保护成功，所以Qwen没死；然后白天投票淘汰Qwen，所以Qwen是神职但被投票出局，可能因为大家怀疑他是狼人。\n\n现在第2轮，GLM和Kimi。\n- GLM在第1轮发言稳健，分析逻辑清晰，可能被当作预言家。\n- Kimi在第0轮没发言，第1轮活跃但被扣帽子，可能被当作可疑。\n\n作为狼人，我应该优先淘汰预言家，因为预言家可以查验身份。如果GLM是预言家，淘汰他；如果Kimi是预言家，淘汰Kimi。\n\n但如何判断谁是预言家？\n- 第1轮总结提到GLM发言时提起昨晚的保护目标，这很可疑，因为普通村民不应该知道保护目标（只有医生和预言家可能知道，但预言家不知道保护，只知道查验结果）。医生知道保护目标，预言家知道查验结果。\n\n在狼人杀中：\n- 预言家夜晚查验一人身份。\n- 医生夜晚保护一人。\n- 普通村民不知道这些信息。\n\n所以如果GLM在发言中提到“昨晚的保护目标”，那他很可能就是医生，因为只有医生知道保护了谁。或者他可能是预言家但混淆了？通常预言家不会说保护目标。\n\n第1轮总结：【1轮总结】...GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢? — 这里主持人（或玩家）怀疑GLM是预言家，但提到“保护目标”，预言家不应该知道保护目标，所以更可能是医生。\n\n澄清：\n- 预言家：查验身份，知道被查验者的身份（好人或狼人）。\n- 医生：保护一人，防止被狼人淘汰。\n- 普通村民：不知道夜晚发生的事情。\n\n所以如果GLM说“昨晚的保护目标”，那他必须是医生，因为只有医生知道保护了谁。预言家不知道保护目标。\n\n因此，GLM很可能是医生。\n\n如果GLM是医生，那么淘汰他会让医生消失，以后夜晚我可以自由淘汰（没有医生保护）。\n\nKimi：第0轮没发言，可能是在隐藏；作为狼人，我可能怀疑Kimi是预言家。\n\n但第1轮，Qwen被医生保护（Qwen是第1轮夜晚目标），而Qwen被投票出局，说明Qwen可能是神职但被误投。\n\n现在，如果GLM是医生，那么Kimi可能是预言家或村民。\n\n作为狼人，最大威胁是预言家，因为预言家可以查验我的身份并号召大家投我。\n\n所以如果Kimi是预言家，我应该优先淘汰Kimi；如果GLM是预言家，淘汰GLM。\n\n但从线索，GLM提到保护目标，所以GLM更可能是医生。\n\nKimi第0轮没发言，可能是在等身份；第1轮开始发言，但被带节奏。\n\n战略选择：\n- 淘汰GLM：如果GLM是医生，淘汰他消除医生威胁；如果GLM是预言家（但不太可能，因为他提保护目标），也消除威胁。但如果是村民，淘汰村民推进胜利。\n- 淘汰Kimi：如果Kimi是预言家，淘汰他很好；如果是村民，也减少好人数量。\n\n风险：\n- 如果淘汰GLM，而GLM是医生，医生可能不在，但医生如果死了，以后不能保护。\n- 但第2轮夜晚，如果淘汰GLM，医生（如果GLM是医生）不能保护自己，因为医生只能保护别人，不能自救？标准规则医生可以自救，但通常不能连续两晚救同一人，但这里第1轮医生救了Qwen，第2轮可以救别人。\n\n作为狼人，我不知道医生是谁，但GLM的行为表明他可能是医生。\n\n另一个角度：第1轮白天投票淘汰Qwen，Qwen被怀疑是狼人，但实际可能是神职（被医生保护说明重要）。现在GLM和Kimi，GLM被当作好人（发言好），Kimi被当作可疑（但没被投出）。\n\n作为狼人，我想制造混乱，让好人互打。如果淘汰GLM（疑似好人核心），可能让Kimi慌乱，暴露身份。\n\n如果淘汰Kimi，但Kimi可能不是预言家，而GLM是医生，继续保护，狼人难刀。\n\n最佳选择：淘汰GLM，因为GLM被怀疑是预言家/医生，是好人支柱。淘汰他可以：\n1. 如果他是预言家，直接削弱好人最大威胁。\n2. 如果他是医生，消除医生保护，让以后夜晚淘汰更容易。\n3. 即使他是村民，减少好人数量，而且可能引起Kimi的怀疑，让Kimi以为GLM是神职，从而在后续投票中错误投票。\n\n此外，第1轮总结提到“GLM发言稳健...可能成为预言家或医生，这对我方不利，值得后续重点刀”，所以作为狼人，我应该刀GLM。\n\nKimi虽然可疑，但第1轮没被投出，说明好人认为他相对安全，可能不是预言家（预言家通常会被重点怀疑）。\n\n因此，选择淘汰GLM。", 'remove': 'GLM'}
+[JSON解析] 最终结果: {'reasoning': "首先，当前游戏状态是第2轮夜晚阶段，剩余玩家是Inclusion（我，狼人）、GLM和Kimi。另一只狼人None已被淘汰，现在只剩下我一个狼人。胜利条件是狼人数量超过村民时狼人获胜，目前场上1狼对2村民（假设GLM和Kimi都是村民，但实际上可能有神职）。\n\n回顾历史记录：\n- 第0轮：夜晚我淘汰MiniMax（可能是村民或神职），白天投票淘汰DeepSeek（可能也是村民）。DeepSeek曾支持Qwen是好人，而Qwen被怀疑是神职或隐藏身份。\n- 第1轮：夜晚我淘汰Qwen，但医生保护成功（说明医生存在且保护了Qwen），白天投票淘汰Qwen（Qwen被放逐）。Qwen被怀疑是神职或狼人，但实际被投票出局。Kimi在第0轮没发言，第1轮开始活跃但被扣上Qwen同伙帽子。\n\n现在第2轮夜晚，我需要选择淘汰谁。选项是Kimi或GLM。\n\n分析剩余玩家：\n- GLM：第0轮态度稳健，中立；第1轮发言逻辑清晰，分析能力强，可能被怀疑是预言家或医生（神职）。如果GLM是预言家或医生，他对我威胁很大，因为预言家可以查验身份，医生可以保护目标。淘汰GLM可以削弱好人阵营的核心力量。\n- Kimi：第0轮没发言（异常举动，可能神职或狼队友伪装）；第1轮活跃但被带节奏说是Qwen同伙。如果Kimi是村民，他可能容易被煽动；如果是神职（如预言家），他可能隐藏身份。但Kimi在第1轮被投票时没被投出（Qwen被投出），说明他可能不是重点怀疑对象。\n\n战略考虑：\n- 作为唯一狼人，我需要制造混乱，让好人自相残杀。如果淘汰GLM（疑似神职），可以打击好人阵营的领导力量，迫使Kimi暴露或犯错。\n- 如果淘汰Kimi，但Kimi在第1轮没被投出，可能好人认为他安全，淘汰他可能让GLM更警惕。\n- 医生可能还在（因为第1轮医生保护了Qwen），所以如果淘汰GLM，医生可能保护，但我不确定医生是谁。如果医生保护成功，夜晚无人淘汰，对狼人不利（因为狼人要减少村民数量）。\n- 但作为狼人，我必须尝试淘汰，即使可能被保护。如果淘汰GLM，而GLM是预言家，那么预言家出局对狼人非常有利；如果GLM是村民，淘汰村民也推进狼人胜利条件（1狼 vs 2村民，如果淘汰一个村民，变成1狼 vs 1村民，狼人数量等于村民，但规则说“狼人数量超过村民时狼人获胜”，所以1狼 vs 1村民时，狼人数量没超过，需要继续淘汰？规则：村民通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。所以当村民数 <= 狼人数时，狼人获胜。当前：1狼，2村民。如果淘汰一个村民，变成1狼 vs 1村民，此时狼人数（1）没超过村民数（1），所以游戏继续？规则可能需要澄清，但通常标准规则是当活着的狼人数量 >= 活着的村民数量时，狼人获胜。所以1狼 vs 1村民，狼人没赢，需要继续。但在这个游戏中，初始6人：2狼、1预言家、1医生、2村民。所以村民包括神职？不，神职属于好人阵营，但村民通常指普通村民。规则说“村民通过投票淘汰所有狼人获胜”，这里的村民可能指好人阵营（包括神职和村民）。但胜利条件明确：村民（好人）通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。这里“村民”可能指普通村民，但通常规则中“村民”泛指好人。规则原文：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 所以“村民”在这里应该指好人阵营的总人数（包括神职和村民），因为神职帮助村民。但在这个上下文，可能“村民”指普通村民，神职单独。规则说：角色分配：2狼人，1预言家，1医生，2村民。所以总好人：预言家+医生+2村民=4人。但胜利条件说“村民通过投票淘汰所有狼人获胜”，可能“村民”泛指好人。为了准确，看规则：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 这里“村民”可能指普通村民，但通常狼人杀规则中，胜利条件是：好人（所有非狼人）胜利条件是淘汰所有狼人；狼人胜利条件是狼人数量 >= 好人数量。标准规则是：当活着的狼人数量大于等于活着的非狼人数量时，狼人获胜。所以在这个游戏，应该类似。\n\n当前状态：第2轮，剩余3人：我（狼人）、GLM、Kimi。\n- 如果GLM和Kimi都是村民（普通村民），那么好人总数2，狼人1。狼人需要淘汰到好人数量 <= 狼人数，即淘汰一个好人，变成1狼 vs 1好人，此时狼人数（1）等于好人数量（1），但规则说“狼人数量超过村民时”，所以1>1不成立，可能需要继续？规则可能有歧义，但通常标准是狼人数量 >= 好人数量时狼人获胜。所以1狼 vs 1好人，狼人没赢，需要再淘汰一个好人。但只剩两个玩家，如果夜晚淘汰一个，白天投票淘汰另一个，狼人获胜。\n\n但在这个游戏，角色有预言家和医生，所以GLM或Kimi可能是神职。\n\n关键点：第1轮夜晚，医生保护了Qwen（我淘汰Qwen，但医生保护成功），所以医生存在且活跃。现在第2轮，医生可能还会保护。\n\n作为狼人，我需要淘汰最有威胁的玩家。\n- GLM：被怀疑是预言家（第1轮总结提到“GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?”）。如果GLM是预言家，他可能查验我的身份，导致我暴露。预言家是狼人最大威胁，因为可以准确查验身份。淘汰预言家对狼人非常有利。\n- Kimi：第0轮没发言，可能隐藏身份；但第1轮被带节奏说是Qwen同伙，可能被怀疑是狼人（但另一只狼人已死，所以Kimi如果是狼人，但初始只有2狼，None被淘汰，所以Kimi应该是好人）。初始2狼，None被淘汰，所以剩下我一个狼人，Kimi和GLM都是好人（预言家、医生、村民中的两个）。\n\n所以Kimi和GLM中，一个是预言家/医生，另一个是村民。\n\n从历史：\n- 第0轮：Qwen声称建议轮流排班，可能想营造好人气氛；第1轮Qwen被投票出局，但他是被医生保护的，说明他可能是神职（预言家或医生），但被投票出局，矛盾？不，第1轮夜晚我淘汰Qwen，但医生保护成功，所以Qwen没死；然后白天投票淘汰Qwen，所以Qwen是神职但被投票出局，可能因为大家怀疑他是狼人。\n\n现在第2轮，GLM和Kimi。\n- GLM在第1轮发言稳健，分析逻辑清晰，可能被当作预言家。\n- Kimi在第0轮没发言，第1轮活跃但被扣帽子，可能被当作可疑。\n\n作为狼人，我应该优先淘汰预言家，因为预言家可以查验身份。如果GLM是预言家，淘汰他；如果Kimi是预言家，淘汰Kimi。\n\n但如何判断谁是预言家？\n- 第1轮总结提到GLM发言时提起昨晚的保护目标，这很可疑，因为普通村民不应该知道保护目标（只有医生和预言家可能知道，但预言家不知道保护，只知道查验结果）。医生知道保护目标，预言家知道查验结果。\n\n在狼人杀中：\n- 预言家夜晚查验一人身份。\n- 医生夜晚保护一人。\n- 普通村民不知道这些信息。\n\n所以如果GLM在发言中提到“昨晚的保护目标”，那他很可能就是医生，因为只有医生知道保护了谁。或者他可能是预言家但混淆了？通常预言家不会说保护目标。\n\n第1轮总结：【1轮总结】...GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢? — 这里主持人（或玩家）怀疑GLM是预言家，但提到“保护目标”，预言家不应该知道保护目标，所以更可能是医生。\n\n澄清：\n- 预言家：查验身份，知道被查验者的身份（好人或狼人）。\n- 医生：保护一人，防止被狼人淘汰。\n- 普通村民：不知道夜晚发生的事情。\n\n所以如果GLM说“昨晚的保护目标”，那他必须是医生，因为只有医生知道保护了谁。预言家不知道保护目标。\n\n因此，GLM很可能是医生。\n\n如果GLM是医生，那么淘汰他会让医生消失，以后夜晚我可以自由淘汰（没有医生保护）。\n\nKimi：第0轮没发言，可能是在隐藏；作为狼人，我可能怀疑Kimi是预言家。\n\n但第1轮，Qwen被医生保护（Qwen是第1轮夜晚目标），而Qwen被投票出局，说明Qwen可能是神职但被误投。\n\n现在，如果GLM是医生，那么Kimi可能是预言家或村民。\n\n作为狼人，最大威胁是预言家，因为预言家可以查验我的身份并号召大家投我。\n\n所以如果Kimi是预言家，我应该优先淘汰Kimi；如果GLM是预言家，淘汰GLM。\n\n但从线索，GLM提到保护目标，所以GLM更可能是医生。\n\nKimi第0轮没发言，可能是在等身份；第1轮开始发言，但被带节奏。\n\n战略选择：\n- 淘汰GLM：如果GLM是医生，淘汰他消除医生威胁；如果GLM是预言家（但不太可能，因为他提保护目标），也消除威胁。但如果是村民，淘汰村民推进胜利。\n- 淘汰Kimi：如果Kimi是预言家，淘汰他很好；如果是村民，也减少好人数量。\n\n风险：\n- 如果淘汰GLM，而GLM是医生，医生可能不在，但医生如果死了，以后不能保护。\n- 但第2轮夜晚，如果淘汰GLM，医生（如果GLM是医生）不能保护自己，因为医生只能保护别人，不能自救？标准规则医生可以自救，但通常不能连续两晚救同一人，但这里第1轮医生救了Qwen，第2轮可以救别人。\n\n作为狼人，我不知道医生是谁，但GLM的行为表明他可能是医生。\n\n另一个角度：第1轮白天投票淘汰Qwen，Qwen被怀疑是狼人，但实际可能是神职（被医生保护说明重要）。现在GLM和Kimi，GLM被当作好人（发言好），Kimi被当作可疑（但没被投出）。\n\n作为狼人，我想制造混乱，让好人互打。如果淘汰GLM（疑似好人核心），可能让Kimi慌乱，暴露身份。\n\n如果淘汰Kimi，但Kimi可能不是预言家，而GLM是医生，继续保护，狼人难刀。\n\n最佳选择：淘汰GLM，因为GLM被怀疑是预言家/医生，是好人支柱。淘汰他可以：\n1. 如果他是预言家，直接削弱好人最大威胁。\n2. 如果他是医生，消除医生保护，让以后夜晚淘汰更容易。\n3. 即使他是村民，减少好人数量，而且可能引起Kimi的怀疑，让Kimi以为GLM是神职，从而在后续投票中错误投票。\n\n此外，第1轮总结提到“GLM发言稳健...可能成为预言家或医生，这对我方不利，值得后续重点刀”，所以作为狼人，我应该刀GLM。\n\nKimi虽然可疑，但第1轮没被投出，说明好人认为他相对安全，可能不是预言家（预言家通常会被重点怀疑）。\n\n因此，选择淘汰GLM。", 'remove': 'GLM'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': "首先，当前游戏状态是第2轮夜晚阶段，剩余玩家是Inclusion（我，狼人）、GLM和Kimi。另一只狼人None已被淘汰，现在只剩下我一个狼人。胜利条件是狼人数量超过村民时狼人获胜，目前场上1狼对2村民（假设GLM和Kimi都是村民，但实际上可能有神职）。\n\n回顾历史记录：\n- 第0轮：夜晚我淘汰MiniMax（可能是村民或神职），白天投票淘汰DeepSeek（可能也是村民）。DeepSeek曾支持Qwen是好人，而Qwen被怀疑是神职或隐藏身份。\n- 第1轮：夜晚我淘汰Qwen，但医生保护成功（说明医生存在且保护了Qwen），白天投票淘汰Qwen（Qwen被放逐）。Qwen被怀疑是神职或狼人，但实际被投票出局。Kimi在第0轮没发言，第1轮开始活跃但被扣上Qwen同伙帽子。\n\n现在第2轮夜晚，我需要选择淘汰谁。选项是Kimi或GLM。\n\n分析剩余玩家：\n- GLM：第0轮态度稳健，中立；第1轮发言逻辑清晰，分析能力强，可能被怀疑是预言家或医生（神职）。如果GLM是预言家或医生，他对我威胁很大，因为预言家可以查验身份，医生可以保护目标。淘汰GLM可以削弱好人阵营的核心力量。\n- Kimi：第0轮没发言（异常举动，可能神职或狼队友伪装）；第1轮活跃但被带节奏说是Qwen同伙。如果Kimi是村民，他可能容易被煽动；如果是神职（如预言家），他可能隐藏身份。但Kimi在第1轮被投票时没被投出（Qwen被投出），说明他可能不是重点怀疑对象。\n\n战略考虑：\n- 作为唯一狼人，我需要制造混乱，让好人自相残杀。如果淘汰GLM（疑似神职），可以打击好人阵营的领导力量，迫使Kimi暴露或犯错。\n- 如果淘汰Kimi，但Kimi在第1轮没被投出，可能好人认为他安全，淘汰他可能让GLM更警惕。\n- 医生可能还在（因为第1轮医生保护了Qwen），所以如果淘汰GLM，医生可能保护，但我不确定医生是谁。如果医生保护成功，夜晚无人淘汰，对狼人不利（因为狼人要减少村民数量）。\n- 但作为狼人，我必须尝试淘汰，即使可能被保护。如果淘汰GLM，而GLM是预言家，那么预言家出局对狼人非常有利；如果GLM是村民，淘汰村民也推进狼人胜利条件（1狼 vs 2村民，如果淘汰一个村民，变成1狼 vs 1村民，狼人数量等于村民，但规则说“狼人数量超过村民时狼人获胜”，所以1狼 vs 1村民时，狼人数量没超过，需要继续淘汰？规则：村民通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。所以当村民数 <= 狼人数时，狼人获胜。当前：1狼，2村民。如果淘汰一个村民，变成1狼 vs 1村民，此时狼人数（1）没超过村民数（1），所以游戏继续？规则可能需要澄清，但通常标准规则是当活着的狼人数量 >= 活着的村民数量时，狼人获胜。所以1狼 vs 1村民，狼人没赢，需要继续。但在这个游戏中，初始6人：2狼、1预言家、1医生、2村民。所以村民包括神职？不，神职属于好人阵营，但村民通常指普通村民。规则说“村民通过投票淘汰所有狼人获胜”，这里的村民可能指好人阵营（包括神职和村民）。但胜利条件明确：村民（好人）通过投票淘汰所有狼人获胜；狼人数量超过村民时狼人获胜。这里“村民”可能指普通村民，但通常规则中“村民”泛指好人。规则原文：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 所以“村民”在这里应该指好人阵营的总人数（包括神职和村民），因为神职帮助村民。但在这个上下文，可能“村民”指普通村民，神职单独。规则说：角色分配：2狼人，1预言家，1医生，2村民。所以总好人：预言家+医生+2村民=4人。但胜利条件说“村民通过投票淘汰所有狼人获胜”，可能“村民”泛指好人。为了准确，看规则：'村民通过投票淘汰所有狼人获胜。狼人数量超过村民时狼人获胜。' 这里“村民”可能指普通村民，但通常狼人杀规则中，胜利条件是：好人（所有非狼人）胜利条件是淘汰所有狼人；狼人胜利条件是狼人数量 >= 好人数量。标准规则是：当活着的狼人数量大于等于活着的非狼人数量时，狼人获胜。所以在这个游戏，应该类似。\n\n当前状态：第2轮，剩余3人：我（狼人）、GLM、Kimi。\n- 如果GLM和Kimi都是村民（普通村民），那么好人总数2，狼人1。狼人需要淘汰到好人数量 <= 狼人数，即淘汰一个好人，变成1狼 vs 1好人，此时狼人数（1）等于好人数量（1），但规则说“狼人数量超过村民时”，所以1>1不成立，可能需要继续？规则可能有歧义，但通常标准是狼人数量 >= 好人数量时狼人获胜。所以1狼 vs 1好人，狼人没赢，需要再淘汰一个好人。但只剩两个玩家，如果夜晚淘汰一个，白天投票淘汰另一个，狼人获胜。\n\n但在这个游戏，角色有预言家和医生，所以GLM或Kimi可能是神职。\n\n关键点：第1轮夜晚，医生保护了Qwen（我淘汰Qwen，但医生保护成功），所以医生存在且活跃。现在第2轮，医生可能还会保护。\n\n作为狼人，我需要淘汰最有威胁的玩家。\n- GLM：被怀疑是预言家（第1轮总结提到“GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢?”）。如果GLM是预言家，他可能查验我的身份，导致我暴露。预言家是狼人最大威胁，因为可以准确查验身份。淘汰预言家对狼人非常有利。\n- Kimi：第0轮没发言，可能隐藏身份；但第1轮被带节奏说是Qwen同伙，可能被怀疑是狼人（但另一只狼人已死，所以Kimi如果是狼人，但初始只有2狼，None被淘汰，所以Kimi应该是好人）。初始2狼，None被淘汰，所以剩下我一个狼人，Kimi和GLM都是好人（预言家、医生、村民中的两个）。\n\n所以Kimi和GLM中，一个是预言家/医生，另一个是村民。\n\n从历史：\n- 第0轮：Qwen声称建议轮流排班，可能想营造好人气氛；第1轮Qwen被投票出局，但他是被医生保护的，说明他可能是神职（预言家或医生），但被投票出局，矛盾？不，第1轮夜晚我淘汰Qwen，但医生保护成功，所以Qwen没死；然后白天投票淘汰Qwen，所以Qwen是神职但被投票出局，可能因为大家怀疑他是狼人。\n\n现在第2轮，GLM和Kimi。\n- GLM在第1轮发言稳健，分析逻辑清晰，可能被当作预言家。\n- Kimi在第0轮没发言，第1轮活跃但被扣帽子，可能被当作可疑。\n\n作为狼人，我应该优先淘汰预言家，因为预言家可以查验身份。如果GLM是预言家，淘汰他；如果Kimi是预言家，淘汰Kimi。\n\n但如何判断谁是预言家？\n- 第1轮总结提到GLM发言时提起昨晚的保护目标，这很可疑，因为普通村民不应该知道保护目标（只有医生和预言家可能知道，但预言家不知道保护，只知道查验结果）。医生知道保护目标，预言家知道查验结果。\n\n在狼人杀中：\n- 预言家夜晚查验一人身份。\n- 医生夜晚保护一人。\n- 普通村民不知道这些信息。\n\n所以如果GLM在发言中提到“昨晚的保护目标”，那他很可能就是医生，因为只有医生知道保护了谁。或者他可能是预言家但混淆了？通常预言家不会说保护目标。\n\n第1轮总结：【1轮总结】...GLM发言时总提起昨晚的保护目标，是不是他就是预言家呢? — 这里主持人（或玩家）怀疑GLM是预言家，但提到“保护目标”，预言家不应该知道保护目标，所以更可能是医生。\n\n澄清：\n- 预言家：查验身份，知道被查验者的身份（好人或狼人）。\n- 医生：保护一人，防止被狼人淘汰。\n- 普通村民：不知道夜晚发生的事情。\n\n所以如果GLM说“昨晚的保护目标”，那他必须是医生，因为只有医生知道保护了谁。预言家不知道保护目标。\n\n因此，GLM很可能是医生。\n\n如果GLM是医生，那么淘汰他会让医生消失，以后夜晚我可以自由淘汰（没有医生保护）。\n\nKimi：第0轮没发言，可能是在隐藏；作为狼人，我可能怀疑Kimi是预言家。\n\n但第1轮，Qwen被医生保护（Qwen是第1轮夜晚目标），而Qwen被投票出局，说明Qwen可能是神职但被误投。\n\n现在，如果GLM是医生，那么Kimi可能是预言家或村民。\n\n作为狼人，最大威胁是预言家，因为预言家可以查验我的身份并号召大家投我。\n\n所以如果Kimi是预言家，我应该优先淘汰Kimi；如果GLM是预言家，淘汰GLM。\n\n但从线索，GLM提到保护目标，所以GLM更可能是医生。\n\nKimi第0轮没发言，可能是在等身份；第1轮开始发言，但被带节奏。\n\n战略选择：\n- 淘汰GLM：如果GLM是医生，淘汰他消除医生威胁；如果GLM是预言家（但不太可能，因为他提保护目标），也消除威胁。但如果是村民，淘汰村民推进胜利。\n- 淘汰Kimi：如果Kimi是预言家，淘汰他很好；如果是村民，也减少好人数量。\n\n风险：\n- 如果淘汰GLM，而GLM是医生，医生可能不在，但医生如果死了，以后不能保护。\n- 但第2轮夜晚，如果淘汰GLM，医生（如果GLM是医生）不能保护自己，因为医生只能保护别人，不能自救？标准规则医生可以自救，但通常不能连续两晚救同一人，但这里第1轮医生救了Qwen，第2轮可以救别人。\n\n作为狼人，我不知道医生是谁，但GLM的行为表明他可能是医生。\n\n另一个角度：第1轮白天投票淘汰Qwen，Qwen被怀疑是狼人，但实际可能是神职（被医生保护说明重要）。现在GLM和Kimi，GLM被当作好人（发言好），Kimi被当作可疑（但没被投出）。\n\n作为狼人，我想制造混乱，让好人互打。如果淘汰GLM（疑似好人核心），可能让Kimi慌乱，暴露身份。\n\n如果淘汰Kimi，但Kimi可能不是预言家，而GLM是医生，继续保护，狼人难刀。\n\n最佳选择：淘汰GLM，因为GLM被怀疑是预言家/医生，是好人支柱。淘汰他可以：\n1. 如果他是预言家，直接削弱好人最大威胁。\n2. 如果他是医生，消除医生保护，让以后夜晚淘汰更容易。\n3. 即使他是村民，减少好人数量，而且可能引起Kimi的怀疑，让Kimi以为GLM是神职，从而在后续投票中错误投票。\n\n此外，第1轮总结提到“GLM发言稳健...可能成为预言家或医生，这对我方不利，值得后续重点刀”，所以作为狼人，我应该刀GLM。\n\nKimi虽然可疑，但第1轮没被投出，说明好人认为他相对安全，可能不是预言家（预言家通常会被重点怀疑）。\n\n因此，选择淘汰GLM。", 'remove': 'GLM'}
+[LLM结果] 提取键 'remove': GLM
+[LLM成功] 返回有效结果: GLM
+⏱️ [狼人击杀] 狼人 Inclusion 行动完成: 305.18秒
+Inclusion eliminated GLM
+[WebSocket] 夜间行动通知已发送: night_eliminate by Inclusion
+⏱️ [狼人正在选择淘汰目标。] 狼人正在选择淘汰目标。完成: 305.19秒
+
+⏱️ 【医生正在选择保护目标。】
+⏱️ [夜间延迟] 暂停1.00秒
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 0.50
+INFO:     127.0.0.1:64362 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64414 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 306 字符
+[LLM原始响应开始]
+{
+"reasoning": "当前场上只剩3名玩家：我（GLM医生）、Kimi和Inclusion。根据之前的游戏记录，第1轮夜晚无人被淘汰，说明我成功保护了狼人的目标。第1轮白天Qwen被放逐，现在场上必然还有1个狼人。我需要分析狼人最可能攻击的目标：1）如果Kimi是狼人，他最可能攻击我，因为我是医生身份，除掉我后他就只剩一个村民对手；2）如果Inclusion是狼人，她同样会优先攻击我；3）考虑到我作为医生是神职身份，对狼人威胁最大，而且场上人数稀少，狼人一定会优先除掉我。因此保护自己是最理性的选择，这样能确保医生角色存活到下一轮，为村民阵营保留胜利希望。",
+"protect": "GLM"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 306 字符
+[JSON解析] 输入文本预览: {
+"reasoning": "当前场上只剩3名玩家：我（GLM医生）、Kimi和Inclusion。根据之前的游戏记录，第1轮夜晚无人被淘汰，说明我成功保护了狼人的目标。第1轮白天Qwen被放逐，现...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+"reasoning": "当前场上只剩3名玩家：我（GLM医生）、Kimi和Inclusion。根据之前的游戏记录，第1轮夜晚无人被淘汰，说明我成功保护了狼人的目标。第1轮白天Qwen被放逐，现在场上必然还有1个狼人。我需要分析狼人最可能攻击的目标：1）如果Kimi是狼人，他最可能攻击我，因为我是医生身份，除掉我后他就只剩一个村民对手；2）如果Inclusion是狼人，她同样会优先攻击我；3）考虑到我作为医生是神职身份，对狼人威胁最大，而且场上人数稀少，狼人一定会优先除掉我。因此保护自己是最理性的选择，这样能确保医生角色存活到下一轮，为村民阵营保留胜利希望。",
+"protect": "GLM"
+}'
+[JSON字符串解析] 文本长度: 306 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '当前场上只剩3名玩家：我（GLM医生）、Kimi和Inclusion。根据之前的游戏记录，第1轮夜晚无人被淘汰，说明我成功保护了狼人的目标。第1轮白天Qwen被放逐，现在场上必然还有1个狼人。我需要分析狼人最可能攻击的目标：1）如果Kimi是狼人，他最可能攻击我，因为我是医生身份，除掉我后他就只剩一个村民对手；2）如果Inclusion是狼人，她同样会优先攻击我；3）考虑到我作为医生是神职身份，对狼人威胁最大，而且场上人数稀少，狼人一定会优先除掉我。因此保护自己是最理性的选择，这样能确保医生角色存活到下一轮，为村民阵营保留胜利希望。', 'protect': 'GLM'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '当前场上只剩3名玩家：我（GLM医生）、Kimi和Inclusion。根据之前的游戏记录，第1轮夜晚无人被淘汰，说明我成功保护了狼人的目标。第1轮白天Qwen被放逐，现在场上必然还有1个狼人。我需要分析狼人最可能攻击的目标：1）如果Kimi是狼人，他最可能攻击我，因为我是医生身份，除掉我后他就只剩一个村民对手；2）如果Inclusion是狼人，她同样会优先攻击我；3）考虑到我作为医生是神职身份，对狼人威胁最大，而且场上人数稀少，狼人一定会优先除掉我。因此保护自己是最理性的选择，这样能确保医生角色存活到下一轮，为村民阵营保留胜利希望。', 'protect': 'GLM'}
+[JSON解析] 直接解析结果: {'reasoning': '当前场上只剩3名玩家：我（GLM医生）、Kimi和Inclusion。根据之前的游戏记录，第1轮夜晚无人被淘汰，说明我成功保护了狼人的目标。第1轮白天Qwen被放逐，现在场上必然还有1个狼人。我需要分析狼人最可能攻击的目标：1）如果Kimi是狼人，他最可能攻击我，因为我是医生身份，除掉我后他就只剩一个村民对手；2）如果Inclusion是狼人，她同样会优先攻击我；3）考虑到我作为医生是神职身份，对狼人威胁最大，而且场上人数稀少，狼人一定会优先除掉我。因此保护自己是最理性的选择，这样能确保医生角色存活到下一轮，为村民阵营保留胜利希望。', 'protect': 'GLM'}
+[JSON解析] 最终结果: {'reasoning': '当前场上只剩3名玩家：我（GLM医生）、Kimi和Inclusion。根据之前的游戏记录，第1轮夜晚无人被淘汰，说明我成功保护了狼人的目标。第1轮白天Qwen被放逐，现在场上必然还有1个狼人。我需要分析狼人最可能攻击的目标：1）如果Kimi是狼人，他最可能攻击我，因为我是医生身份，除掉我后他就只剩一个村民对手；2）如果Inclusion是狼人，她同样会优先攻击我；3）考虑到我作为医生是神职身份，对狼人威胁最大，而且场上人数稀少，狼人一定会优先除掉我。因此保护自己是最理性的选择，这样能确保医生角色存活到下一轮，为村民阵营保留胜利希望。', 'protect': 'GLM'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '当前场上只剩3名玩家：我（GLM医生）、Kimi和Inclusion。根据之前的游戏记录，第1轮夜晚无人被淘汰，说明我成功保护了狼人的目标。第1轮白天Qwen被放逐，现在场上必然还有1个狼人。我需要分析狼人最可能攻击的目标：1）如果Kimi是狼人，他最可能攻击我，因为我是医生身份，除掉我后他就只剩一个村民对手；2）如果Inclusion是狼人，她同样会优先攻击我；3）考虑到我作为医生是神职身份，对狼人威胁最大，而且场上人数稀少，狼人一定会优先除掉我。因此保护自己是最理性的选择，这样能确保医生角色存活到下一轮，为村民阵营保留胜利希望。', 'protect': 'GLM'}
+[LLM结果] 提取键 'protect': GLM
+[LLM成功] 返回有效结果: GLM
+⏱️ [医生保护] 医生 GLM 行动完成: 17.65秒
+GLM protected GLM
+[WebSocket] 夜间行动通知已发送: night_protect by GLM
+⏱️ [医生正在选择保护目标。] 医生正在选择保护目标。完成: 17.66秒
+
+⏱️ 【预言家正在查验身份。】
+⏱️ [预言家正在查验身份。] 预言家正在查验身份。完成: 0.00秒
+
+⏱️ 【夜晚阶段解决】
+夜晚阶段没有人被淘汰（医生保护成功）。
+⏱️ [天亮阶段] 切换暂停1秒...
+[RealtimeLogger] session_20251102_203222 [phase_change] 进入day阶段
+[WebSocket] 阶段变更通知已发送: day (第2轮)
+⏱️ [夜晚阶段解决] 夜晚阶段解决完成: 1.01秒
+
+⏱️ 【夜晚阶段后检查胜负。】
+⏱️ [夜晚阶段后检查胜负。] 夜晚阶段后检查胜负。完成: 0.00秒
+
+⏱️ 【玩家开始辩论和投票。】
+⏱️ [阶段切换] 暂停1秒...
+⏱️ [切换暂停] 切换暂停完成: 1.00秒
+[RealtimeLogger] session_20251102_203222 [phase_change] 进入debate阶段
+[WebSocket] 阶段变更通知已发送: debate (第2轮)
+⏱️ [阶段通知] 阶段通知发送: 0.00秒
+本轮发言顺序: Inclusion, GLM, Kimi
+[并发生成] 使用3线程并发生成发言内容...
+[批次 1/1] 并发生成: Inclusion, GLM, Kimi
+[LLM调用] 第1/3次尝试 | 模型: zai-org/GLM-4.6 | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: inclusionAI/Ring-1T | 温度: 1.00
+[LLM调用] 第1/3次尝试 | 模型: moonshotai/Kimi-K2-Instruct-0905 | 温度: 1.00
+[LLM响应] 成功获取响应，长度: 17 字符
+[LLM原始响应开始]
+{"reasoning":":"}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 17 字符
+[JSON解析] 输入文本: {"reasoning":":"}
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{"reasoning":":"}'
+[JSON字符串解析] 文本长度: 17 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': ':'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': ':'}
+[JSON解析] 直接解析结果: {'reasoning': ':'}
+[JSON解析] 最终结果: {'reasoning': ':'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': ':'}
+[LLM成功] 返回有效结果: {'reasoning': ':'}
+Warning: Kimi did not return a valid dialogue, using default
+INFO:     127.0.0.1:64503 - "GET /health HTTP/1.1" 200 OK
+[LLM响应] 成功获取响应，长度: 499 字符
+[LLM原始响应开始]
+{
+  "reasoning": "现在已是游戏的关键时刻，场上只剩3名玩家，包括我作为医生。前两轮我连续成功保护了目标，说明我的判断有一定准确性。我注意到一个重要线索：第1轮我保护Qwen后无人死亡，但他却被投票放逐。这暴露了一个关键问题——狼人在利用我的保护信息。Kimi从始至终的异常沉默让我非常警惕，这种战术性沉默往往是狼人隐藏身份的手段。现在我必须通过逻辑推理和信息揭露来找出狼人，同时考虑是否需要暴露我的医生身份来争取信任。我今晚选择保护自己也是基于对局势的判断——如果狼人知道我是医生，我必然成为首要目标。",
+  "say": "各位，现在是最关键的时刻。让我分析一下前两轮的重要线索：第1轮我保护了某人，结果无人死亡，但那个被我保护的人却被投票放逐。这说明什么？说明狼人在利用医生的保护信息来伪装自己！Kimi，从游戏开始到现在，你的沉默太可疑了。每次关键时刻你都选择回避发言，这绝对不是村民该有的表现。我作为医生，通过这些夜的观察和逻辑推理，基本锁定你了。现在我们必须团结一致，不能再让狼人继续伪装。我建议这一轮重点关注Kimi的行为模式，他的异常表现已经暴露了太多破绽。"
+}
+[LLM原始响应结束]
+[JSON解析] 开始解析响应...
+[JSON解析] 开始解析，输入文本长度: 499 字符
+[JSON解析] 输入文本预览: {
+  "reasoning": "现在已是游戏的关键时刻，场上只剩3名玩家，包括我作为医生。前两轮我连续成功保护了目标，说明我的判断有一定准确性。我注意到一个重要线索：第1轮我保护Qwen后无人死亡...
+[语言清理] 开始清理混合语言响应...
+[语言清理] 策略2成功：提取到完整JSON对象
+[JSON解析] 尝试从markdown中解析JSON...
+[Markdown解析] 开始解析markdown文本...
+[Markdown解析] AST解析成功，子元素数量: 1
+[Markdown解析] 开始遍历AST子元素...
+[Markdown解析] 处理第0个子元素，类型: <class 'marko.block.Paragraph'>
+[Markdown解析] 子元素不是代码块，类型: <class 'marko.block.Paragraph'>
+[Markdown调试] 子元素属性: ['__annotations__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_prefix', '_tight', 'break_paragraph', 'children', 'get_type', 'inline_body', 'is_setext_heading', 'match', 'override', 'parse', 'pattern', 'priority', 'virtual']
+[Markdown解析] 没有找到有效的JSON代码块
+[JSON解析] markdown解析结果: None
+[JSON解析] markdown解析失败，尝试直接解析JSON字符串...
+[JSON字符串解析] 开始解析，输入文本: '{
+  "reasoning": "现在已是游戏的关键时刻，场上只剩3名玩家，包括我作为医生。前两轮我连续成功保护了目标，说明我的判断有一定准确性。我注意到一个重要线索：第1轮我保护Qwen后无人死亡，但他却被投票放逐。这暴露了一个关键问题——狼人在利用我的保护信息。Kimi从始至终的异常沉默让我非常警惕，这种战术性沉默往往是狼人隐藏身份的手段。现在我必须通过逻辑推理和信息揭露来找出狼人，同时考虑是否需要暴露我的医生身份来争取信任。我今晚选择保护自己也是基于对局势的判断——如果狼人知道我是医生，我必然成为首要目标。",
+  "say": "各位，现在是最关键的时刻。让我分析一下前两轮的重要线索：第1轮我保护了某人，结果无人死亡，但那个被我保护的人却被投票放逐。这说明什么？说明狼人在利用医生的保护信息来伪装自己！Kimi，从游戏开始到现在，你的沉默太可疑了。每次关键时刻你都选择回避发言，这绝对不是村民该有的表现。我作为医生，通过这些夜的观察和逻辑推理，基本锁定你了。现在我们必须团结一致，不能再让狼人继续伪装。我建议这一轮重点关注Kimi的行为模式，他的异常表现已经暴露了太多破绽。"
+}'
+[JSON字符串解析] 文本长度: 499 字符
+[JSON字符串解析] 使用yaml.safe_load解析...
+[JSON字符串解析] yaml.safe_load成功，结果类型: <class 'dict'>, 内容: {'reasoning': '现在已是游戏的关键时刻，场上只剩3名玩家，包括我作为医生。前两轮我连续成功保护了目标，说明我的判断有一定准确性。我注意到一个重要线索：第1轮我保护Qwen后无人死亡，但他却被投票放逐。这暴露了一个关键问题——狼人在利用我的保护信息。Kimi从始至终的异常沉默让我非常警惕，这种战术性沉默往往是狼人隐藏身份的手段。现在我必须通过逻辑推理和信息揭露来找出狼人，同时考虑是否需要暴露我的医生身份来争取信任。我今晚选择保护自己也是基于对局势的判断——如果狼人知道我是医生，我必然成为首要目标。', 'say': '各位，现在是最关键的时刻。让我分析一下前两轮的重要线索：第1轮我保护了某人，结果无人死亡，但那个被我保护的人却被投票放逐。这说明什么？说明狼人在利用医生的保护信息来伪装自己！Kimi，从游戏开始到现在，你的沉默太可疑了。每次关键时刻你都选择回避发言，这绝对不是村民该有的表现。我作为医生，通过这些夜的观察和逻辑推理，基本锁定你了。现在我们必须团结一致，不能再让狼人继续伪装。我建议这一轮重点关注Kimi的行为模式，他的异常表现已经暴露了太多破绽。'}
+[JSON字符串解析] 解析完成，返回: {'reasoning': '现在已是游戏的关键时刻，场上只剩3名玩家，包括我作为医生。前两轮我连续成功保护了目标，说明我的判断有一定准确性。我注意到一个重要线索：第1轮我保护Qwen后无人死亡，但他却被投票放逐。这暴露了一个关键问题——狼人在利用我的保护信息。Kimi从始至终的异常沉默让我非常警惕，这种战术性沉默往往是狼人隐藏身份的手段。现在我必须通过逻辑推理和信息揭露来找出狼人，同时考虑是否需要暴露我的医生身份来争取信任。我今晚选择保护自己也是基于对局势的判断——如果狼人知道我是医生，我必然成为首要目标。', 'say': '各位，现在是最关键的时刻。让我分析一下前两轮的重要线索：第1轮我保护了某人，结果无人死亡，但那个被我保护的人却被投票放逐。这说明什么？说明狼人在利用医生的保护信息来伪装自己！Kimi，从游戏开始到现在，你的沉默太可疑了。每次关键时刻你都选择回避发言，这绝对不是村民该有的表现。我作为医生，通过这些夜的观察和逻辑推理，基本锁定你了。现在我们必须团结一致，不能再让狼人继续伪装。我建议这一轮重点关注Kimi的行为模式，他的异常表现已经暴露了太多破绽。'}
+[JSON解析] 直接解析结果: {'reasoning': '现在已是游戏的关键时刻，场上只剩3名玩家，包括我作为医生。前两轮我连续成功保护了目标，说明我的判断有一定准确性。我注意到一个重要线索：第1轮我保护Qwen后无人死亡，但他却被投票放逐。这暴露了一个关键问题——狼人在利用我的保护信息。Kimi从始至终的异常沉默让我非常警惕，这种战术性沉默往往是狼人隐藏身份的手段。现在我必须通过逻辑推理和信息揭露来找出狼人，同时考虑是否需要暴露我的医生身份来争取信任。我今晚选择保护自己也是基于对局势的判断——如果狼人知道我是医生，我必然成为首要目标。', 'say': '各位，现在是最关键的时刻。让我分析一下前两轮的重要线索：第1轮我保护了某人，结果无人死亡，但那个被我保护的人却被投票放逐。这说明什么？说明狼人在利用医生的保护信息来伪装自己！Kimi，从游戏开始到现在，你的沉默太可疑了。每次关键时刻你都选择回避发言，这绝对不是村民该有的表现。我作为医生，通过这些夜的观察和逻辑推理，基本锁定你了。现在我们必须团结一致，不能再让狼人继续伪装。我建议这一轮重点关注Kimi的行为模式，他的异常表现已经暴露了太多破绽。'}
+[JSON解析] 最终结果: {'reasoning': '现在已是游戏的关键时刻，场上只剩3名玩家，包括我作为医生。前两轮我连续成功保护了目标，说明我的判断有一定准确性。我注意到一个重要线索：第1轮我保护Qwen后无人死亡，但他却被投票放逐。这暴露了一个关键问题——狼人在利用我的保护信息。Kimi从始至终的异常沉默让我非常警惕，这种战术性沉默往往是狼人隐藏身份的手段。现在我必须通过逻辑推理和信息揭露来找出狼人，同时考虑是否需要暴露我的医生身份来争取信任。我今晚选择保护自己也是基于对局势的判断——如果狼人知道我是医生，我必然成为首要目标。', 'say': '各位，现在是最关键的时刻。让我分析一下前两轮的重要线索：第1轮我保护了某人，结果无人死亡，但那个被我保护的人却被投票放逐。这说明什么？说明狼人在利用医生的保护信息来伪装自己！Kimi，从游戏开始到现在，你的沉默太可疑了。每次关键时刻你都选择回避发言，这绝对不是村民该有的表现。我作为医生，通过这些夜的观察和逻辑推理，基本锁定你了。现在我们必须团结一致，不能再让狼人继续伪装。我建议这一轮重点关注Kimi的行为模式，他的异常表现已经暴露了太多破绽。'}
+[JSON解析] 解析完成，结果类型: <class 'dict'>, 内容: {'reasoning': '现在已是游戏的关键时刻，场上只剩3名玩家，包括我作为医生。前两轮我连续成功保护了目标，说明我的判断有一定准确性。我注意到一个重要线索：第1轮我保护Qwen后无人死亡，但他却被投票放逐。这暴露了一个关键问题——狼人在利用我的保护信息。Kimi从始至终的异常沉默让我非常警惕，这种战术性沉默往往是狼人隐藏身份的手段。现在我必须通过逻辑推理和信息揭露来找出狼人，同时考虑是否需要暴露我的医生身份来争取信任。我今晚选择保护自己也是基于对局势的判断——如果狼人知道我是医生，我必然成为首要目标。', 'say': '各位，现在是最关键的时刻。让我分析一下前两轮的重要线索：第1轮我保护了某人，结果无人死亡，但那个被我保护的人却被投票放逐。这说明什么？说明狼人在利用医生的保护信息来伪装自己！Kimi，从游戏开始到现在，你的沉默太可疑了。每次关键时刻你都选择回避发言，这绝对不是村民该有的表现。我作为医生，通过这些夜的观察和逻辑推理，基本锁定你了。现在我们必须团结一致，不能再让狼人继续伪装。我建议这一轮重点关注Kimi的行为模式，他的异常表现已经暴露了太多破绽。'}
+[LLM成功] 返回有效结果: {'reasoning': '现在已是游戏的关键时刻，场上只剩3名玩家，包括我作为医生。前两轮我连续成功保护了目标，说明我的判断有一定准确性。我注意到一个重要线索：第1轮我保护Qwen后无人死亡，但他却被投票放逐。这暴露了一个关键问题——狼人在利用我的保护信息。Kimi从始至终的异常沉默让我非常警惕，这种战术性沉默往往是狼人隐藏身份的手段。现在我必须通过逻辑推理和信息揭露来找出狼人，同时考虑是否需要暴露我的医生身份来争取信任。我今晚选择保护自己也是基于对局势的判断——如果狼人知道我是医生，我必然成为首要目标。', 'say': '各位，现在是最关键的时刻。让我分析一下前两轮的重要线索：第1轮我保护了某人，结果无人死亡，但那个被我保护的人却被投票放逐。这说明什么？说明狼人在利用医生的保护信息来伪装自己！Kimi，从游戏开始到现在，你的沉默太可疑了。每次关键时刻你都选择回避发言，这绝对不是村民该有的表现。我作为医生，通过这些夜的观察和逻辑推理，基本锁定你了。现在我们必须团结一致，不能再让狼人继续伪装。我建议这一轮重点关注Kimi的行为模式，他的异常表现已经暴露了太多破绽。'}
+INFO:     127.0.0.1:64607 - "GET /health HTTP/1.1" 200 OK
