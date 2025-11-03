@@ -67,6 +67,9 @@ app.add_middleware(
 @app.get("/")
 async def root():
     """根路径"""
+    index_path = os.path.join(frontend_build_path, "index.html")
+    if os.path.isfile(index_path):
+        return FileResponse(index_path)
     return {
         "message": "Werewolf Arena API",
         "version": settings.version,
