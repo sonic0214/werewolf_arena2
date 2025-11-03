@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline';
   style-src 'self' 'unsafe-inline';
-  img-src 'self' data: https:;
+  img-src 'self' data: https: blob:;
   font-src 'self' data:;
   connect-src 'self' https://werewolf-arena-backend.fly.dev https://werewolf-arena.onrender.com http://localhost:8000 http://localhost:3000 ws://localhost:8000 ws://localhost:3000 wss://werewolf-arena-backend.fly.dev wss://werewolf-arena.onrender.com;
   frame-ancestors 'none';
