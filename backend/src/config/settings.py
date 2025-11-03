@@ -59,7 +59,7 @@ class LLMSettings(BaseSettings):
 class ServerSettings(BaseSettings):
     """服务器配置"""
     host: str = "0.0.0.0"
-    port: int = 8000
+    port: int = 3000  # Render 默认端口为 3000
     reload: bool = False
     log_level: str = "info"
     workers: int = 1
